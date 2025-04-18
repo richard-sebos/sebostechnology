@@ -1,0 +1,195 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Sebos Technology</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2025-04-16T17:49:53-06:00</updated>
+  <author>
+    <name>Richard Chamberlain</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Richard Chamberlain </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Securing ROS 2 with AppArmor and Auditd</title>
+    <link href="http://localhost:4000/posts/Armor-Audit/" rel="alternate" type="text/html" title="Securing ROS 2 with AppArmor and Auditd" />
+    <published>2025-04-10T04:00:00-06:00</published>
+  
+    <updated>2025-04-10T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Armor-Audit/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Armor-Audit/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="ROS2 Install Series" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>AppArmor and Auditd
+
+
+  Three Linux security softwares that don’t get talk about enough are SELinux, AppArmor and Auditd.
+  Like file permission and firewalls, they can  are there to keep unwanted users and processes from access resources.
+  They can also report when this access is attenpted
+  These allow you to create security policies that can be customized to you robots needs.
+  Remember, yo...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Installing ROS 2 on Ubuntu with `ros2_install.sh`</title>
+    <link href="http://localhost:4000/posts/Installing-ROS2/" rel="alternate" type="text/html" title="Installing ROS 2 on Ubuntu with `ros2_install.sh`" />
+    <published>2025-04-09T11:58:00-06:00</published>
+  
+    <updated>2025-04-09T11:58:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Installing-ROS2/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Installing-ROS2/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="ROS2 Install Series" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>Here’s a polished, professional-yet-friendly article version of your script documentation. It’s structured with a Table of Contents, clear SEO-friendly wording, and paragraph formatting to make it reader- and documentation-friendly.
+
+Setting up a reliable and efficient ROS 2 development environment is a key step in any robotics or automation project. In our previous post, we covered how to:
+
+
+ ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User</title>
+    <link href="http://localhost:4000/posts/ROS2_Build-Part1/" rel="alternate" type="text/html" title="🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User" />
+    <published>2025-04-09T07:06:00-06:00</published>
+  
+    <updated>2025-04-09T07:06:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/ROS2_Build-Part1/</id>
+    <content type="text/html" src="http://localhost:4000/posts/ROS2_Build-Part1/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="ROS2 Install Series" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>Introduction
+
+Welcome to the first post in my series on setting up a secure ROS 2 system on Ubuntu. In this part, we’re going to lay the groundwork by updating the operating system and setting up a dedicated user for ROS 2. These initial steps might seem routine, but they’re crucial for building a system that’s stable, maintainable, and secure.
+
+Table of Contents
+
+  Introduction
+  Modular Bash ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Hardening Your Robot Project from the Start</title>
+    <link href="http://localhost:4000/posts/ROS2_Build/" rel="alternate" type="text/html" title="Hardening Your Robot Project from the Start" />
+    <published>2025-04-08T04:00:00-06:00</published>
+  
+    <updated>2025-04-08T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/ROS2_Build/</id>
+    <content type="text/html" src="http://localhost:4000/posts/ROS2_Build/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="ROS2 Install Series" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>As robotics becomes more accessible and developers take the leap into building their own intelligent machines, the importance of security cannot be overstated. Whether you’re tinkering with your first robot at home or developing a prototype for industrial use, it’s critical to think beyond just getting ROS2 installed and your nodes communicating.
+
+Welcome to the first post in a new series focus...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>How to Use QEMU to Run Linux VMs in Minutes</title>
+    <link href="http://localhost:4000/posts/Putty/" rel="alternate" type="text/html" title="How to Use QEMU to Run Linux VMs in Minutes" />
+    <published>2025-03-31T08:39:00-06:00</published>
+  
+    <updated>2025-03-31T08:39:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Putty/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Putty/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="linux" />
+    
+    <category term="virtualization" />
+    
+    <category term="sysadmin" />
+    
+    <category term="devops" />
+    
+  
+
+  <summary>Embracing Secure Remote Access with PuTTY SSH Keys
+
+In today’s digital landscape, secure remote access is crucial for managing 
+servers and networks efficiently. Enter PuTTY and SSH keys—a powerful duo 
+enhancing security and ease of access.
+
+What is PuTTY?
+
+PuTTY is a free, open-source tool widely used on Windows to establish SSH 
+or Telnet connections. Developed by Simon Tatham, it’s known fo...</summary>
+
+  </entry>
+
+</feed>
+
+
