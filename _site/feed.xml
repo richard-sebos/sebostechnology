@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-04-24T18:06:48-06:00</updated>
+  <updated>2025-04-24T18:51:53-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -20,25 +20,19 @@
 
   
   <entry>
-    <title>Securing ROS 2 with AppArmor and Auditd</title>
-    <link href="http://localhost:4000/posts/Armor-Audit/" rel="alternate" type="text/html" title="Securing ROS 2 with AppArmor and Auditd" />
-    <published>2025-04-10T04:00:00-06:00</published>
+    <title></title>
+    <link href="http://localhost:4000/posts/2025-04-10-Armor-Audit/" rel="alternate" type="text/html" title="" />
+    <published>2025-04-24T18:51:53-06:00</published>
   
-    <updated>2025-04-10T04:00:00-06:00</updated>
+    <updated>2025-04-24T18:11:34-06:00</updated>
   
-    <id>http://localhost:4000/posts/Armor-Audit/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Armor-Audit/" />
+    <id>http://localhost:4000/posts/2025-04-10-Armor-Audit/</id>
+    <content type="text/html" src="http://localhost:4000/posts/2025-04-10-Armor-Audit/" />
     <author>
       <name>Richard Chamberlain</name>
     </author>
 
   
-    
-    <category term="Robotics" />
-    
-    <category term="ROS2 Install Series" />
-    
-    <category term="Security" />
     
   
 
