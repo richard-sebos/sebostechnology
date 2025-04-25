@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-04-19T08:31:12-06:00</updated>
+  <updated>2025-04-24T18:06:48-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -42,14 +42,7 @@
     
   
 
-  <summary>AppArmor and Auditd
-
-
-  Three Linux security softwares that don’t get talk about enough are SELinux, AppArmor and Auditd.
-  Like file permission and firewalls, they can  are there to keep unwanted users and processes from access resources.
-  They can also report when this access is attenpted
-  These allow you to create security policies that can be customized to you robots needs.
-  Remember, yo...</summary>
+  <summary>When it comes to securing your ROS 2 environment, tools like AppArmor, SELinux, and Auditd are often overlooked—but they’re incredibly powerful. Like traditional file permissions and firewalls, these Linux security modules help control and monitor which users and processes have access to specific resources. More than just a defense layer, they also provide detailed audit logs when access is att...</summary>
 
   </entry>
 
