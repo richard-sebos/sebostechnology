@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Sebos Technology" />
+<meta property="og:title" content="Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/posts/2025-04-10-Armor-Audit/" />
-<meta property="og:url" content="http://localhost:4000/posts/2025-04-10-Armor-Audit/" />
+<meta name="description" content="When it comes to securing your ROS 2 environment, tools like AppArmor, SELinux, and Auditd are often overlooked—but they’re incredibly powerful. Like traditional file permissions and firewalls, these Linux security modules help control and monitor which users and processes have access to specific resources. More than just a defense layer, they also provide detailed audit logs when access is attempted or denied, making them essential for robotics applications where software interfaces with the real world." />
+<meta property="og:description" content="When it comes to securing your ROS 2 environment, tools like AppArmor, SELinux, and Auditd are often overlooked—but they’re incredibly powerful. Like traditional file permissions and firewalls, these Linux security modules help control and monitor which users and processes have access to specific resources. More than just a defense layer, they also provide detailed audit logs when access is attempted or denied, making them essential for robotics applications where software interfaces with the real world." />
+<link rel="canonical" href="http://localhost:4000/posts/Armor-Audit/" />
+<meta property="og:url" content="http://localhost:4000/posts/Armor-Audit/" />
 <meta property="og:site_name" content="Sebos Technology" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-04-24T18:51:53-06:00" />
+<meta property="article:published_time" content="2025-04-10T04:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Sebos Technology" />
+<meta property="twitter:title" content="Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-24T18:11:34-06:00","datePublished":"2025-04-24T18:51:53-06:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Sebos Technology","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2025-04-10-Armor-Audit/"},"url":"http://localhost:4000/posts/2025-04-10-Armor-Audit/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-24T19:03:59-06:00","datePublished":"2025-04-10T04:00:00-06:00","description":"When it comes to securing your ROS 2 environment, tools like AppArmor, SELinux, and Auditd are often overlooked—but they’re incredibly powerful. Like traditional file permissions and firewalls, these Linux security modules help control and monitor which users and processes have access to specific resources. More than just a defense layer, they also provide detailed audit logs when access is attempted or denied, making them essential for robotics applications where software interfaces with the real world.","headline":"Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Armor-Audit/"},"url":"http://localhost:4000/posts/Armor-Audit/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title> | Sebos Technology
+  <title>Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd | Sebos Technology
   </title>
 
   <!--
@@ -506,7 +506,7 @@
         
           
             
-              <span></span>
+              <span>Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</span>
             
 
           
@@ -751,7 +751,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip></h1>
+    <h1 data-toc-skip>Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</h1>
     
 
     <div class="post-meta text-muted">
@@ -768,13 +768,13 @@
 
 <time
   
-  data-ts="1745542313"
+  data-ts="1744279200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr 24, 2025
+  Apr 10, 2025
 </time>
 
       </span>
@@ -793,7 +793,7 @@
 
 <time
   
-  data-ts="1745539894"
+  data-ts="1745543039"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -857,7 +857,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate"></span>
+      <span class="label text-truncate">Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -870,7 +870,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4"></div>
+        <div class="label text-truncate py-2 ms-4">Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -1025,8 +1025,41 @@ systemctl start auditd
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/robotics/">Robotics</a>,
+          <a href="/categories/ros2-install-series/">ROS2 Install Series</a>,
+          <a href="/categories/security/">Security</a>
+      </div>
+    
 
     <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/ros2/"
+            class="post-tag no-text-decoration"
+          >ros2</a>
+        
+          <a
+            href="/tags/robotics/"
+            class="post-tag no-text-decoration"
+          >robotics</a>
+        
+          <a
+            href="/tags/cybersecurity/"
+            class="post-tag no-text-decoration"
+          >cybersecurity</a>
+        
+          <a
+            href="/tags/linux/"
+            class="post-tag no-text-decoration"
+          >linux</a>
+        
+      </div>
     
 
     <div
@@ -1129,7 +1162,21 @@ systemctl start auditd
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/2025-04-10-Armor-Audit/"></a>
+          <a href="/posts/Firewall-ROS2/">Robot Security with ROS2 and UFW</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Armor-Audit/">Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/ROS2_Build/">Hardening Your Robot Project from the Start</a>
         </li>
       
         
@@ -1144,20 +1191,6 @@ systemctl start auditd
         
         <li class="text-truncate lh-lg">
           <a href="/posts/ROS2_Build-Part1/">🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/ROS2_Build/">Hardening Your Robot Project from the Start</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/qemu-vm/">How to Use QEMU to Run Linux VMs in Minutes</a>
         </li>
       
     </ul>
@@ -1211,11 +1244,6 @@ systemctl start auditd
     
     
     
-  
-    
-    
-    
-    
       
         
         
@@ -1557,6 +1585,233 @@ systemctl start auditd
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1698,233 +1953,10 @@ systemctl start auditd
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2052,14 +2084,10 @@ systemctl start auditd
     
     
     
-      
-    
   
     
     
     
-    
-      
     
   
     
@@ -2119,13 +2147,13 @@ systemctl start auditd
         <a class="post-tag btn btn-outline-primary" href="/tags/proxmox/">proxmox</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/nas/">NAS</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/robotics/">robotics</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/ros2/">ros2</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/nas/">NAS</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/security/">security</a>
@@ -2188,6 +2216,141 @@ systemctl start auditd
 
 
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -2197,6 +2360,101 @@ systemctl start auditd
 
 
 
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Installing-ROS2/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1744221480"
+  data-df="ll"
+  
+>
+  Apr  9, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Installing ROS 2 on Ubuntu with `ros2_install.sh`</h4>
+              <div class="text-muted">
+                <p>Here’s a polished, professional-yet-friendly article version of your script documentation. It’s structured with a Table of Contents, clear SEO-friendly wording, and paragraph formatting to make it ...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/ROS2_Build-Part1/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1744203960"
+  data-df="ll"
+  
+>
+  Apr  9, 2025
+</time>
+
+              <h4 class="pt-0 my-2">🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User</h4>
+              <div class="text-muted">
+                <p>Introduction
+
+Welcome to the first post in my series on setting up a secure ROS 2 system on Ubuntu. In this part, we’re going to lay the groundwork by updating the operating system and setting up a...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/ROS2_Build/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1744106400"
+  data-df="ll"
+  
+>
+  Apr  8, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Hardening Your Robot Project from the Start</h4>
+              <div class="text-muted">
+                <p>As robotics becomes more accessible and developers take the leap into building their own intelligent machines, the importance of security cannot be overstated. Whether you’re tinkering with your fi...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -2218,9 +2476,13 @@ systemctl start auditd
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/Firewall-ROS2/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Robot Security with ROS2 and UFW</p>
+    </a>
   
 </nav>
 
@@ -2316,11 +2578,6 @@ systemctl start auditd
     
     
     
-  
-    
-    
-    
-    
       
         
         
@@ -2662,6 +2919,233 @@ systemctl start auditd
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -2803,233 +3287,10 @@ systemctl start auditd
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3157,14 +3418,10 @@ systemctl start auditd
     
     
     
-      
-    
   
     
     
     
-    
-      
     
   
     
@@ -3224,13 +3481,13 @@ systemctl start auditd
         <a class="post-tag btn btn-outline-primary" href="/tags/proxmox/">proxmox</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/nas/">NAS</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/robotics/">robotics</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/ros2/">ros2</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/nas/">NAS</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/security/">security</a>

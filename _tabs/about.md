@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 6
+order: 7
 ---
 
 From the moment I laid eyes on a personal computer in my teens, I knew these gadgets were going to revolutionize the way we work, live, and play. My journey began in those buzzing early days of PCs, sparking a lifelong love affair with technology.

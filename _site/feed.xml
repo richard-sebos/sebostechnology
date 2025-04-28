@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-04-24T18:51:53-06:00</updated>
+  <updated>2025-04-28T11:43:20-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -20,19 +20,60 @@
 
   
   <entry>
-    <title></title>
-    <link href="http://localhost:4000/posts/2025-04-10-Armor-Audit/" rel="alternate" type="text/html" title="" />
-    <published>2025-04-24T18:51:53-06:00</published>
+    <title>Robot Security with ROS2 and UFW</title>
+    <link href="http://localhost:4000/posts/Firewall-ROS2/" rel="alternate" type="text/html" title="Robot Security with ROS2 and UFW" />
+    <published>2025-04-27T04:00:00-06:00</published>
   
-    <updated>2025-04-24T18:11:34-06:00</updated>
+    <updated>2025-04-27T04:00:00-06:00</updated>
   
-    <id>http://localhost:4000/posts/2025-04-10-Armor-Audit/</id>
-    <content type="text/html" src="http://localhost:4000/posts/2025-04-10-Armor-Audit/" />
+    <id>http://localhost:4000/posts/Firewall-ROS2/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Firewall-ROS2/" />
     <author>
       <name>Richard Chamberlain</name>
     </author>
 
   
+    
+    <category term="Robotics" />
+    
+    <category term="ROS2 Install Series" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>🧠 Introduction: Why Robot Security Matters
+
+To me, robots are more than machines—they’re a reflection of human creativity and ingenuity. Whether designed to explore new worlds, ease daily burdens, entertain, or alleviate suffering, robots are becoming deeply embedded in our lives. But to do any of this, they must connect with the outside world.
+
+Table of Contents
+
+
+  Introduction: Why Robot Sec...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</title>
+    <link href="http://localhost:4000/posts/Armor-Audit/" rel="alternate" type="text/html" title="Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd" />
+    <published>2025-04-10T04:00:00-06:00</published>
+  
+    <updated>2025-04-24T19:03:59-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Armor-Audit/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Armor-Audit/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="ROS2 Install Series" />
+    
+    <category term="Security" />
     
   
 
@@ -114,7 +155,7 @@ Table of Contents
     <link href="http://localhost:4000/posts/ROS2_Build/" rel="alternate" type="text/html" title="Hardening Your Robot Project from the Start" />
     <published>2025-04-08T04:00:00-06:00</published>
   
-    <updated>2025-04-08T04:00:00-06:00</updated>
+    <updated>2025-04-24T18:54:11-06:00</updated>
   
     <id>http://localhost:4000/posts/ROS2_Build/</id>
     <content type="text/html" src="http://localhost:4000/posts/ROS2_Build/" />
@@ -135,45 +176,6 @@ Table of Contents
   <summary>As robotics becomes more accessible and developers take the leap into building their own intelligent machines, the importance of security cannot be overstated. Whether you’re tinkering with your first robot at home or developing a prototype for industrial use, it’s critical to think beyond just getting ROS2 installed and your nodes communicating.
 
 Welcome to the first post in a new series focus...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>How to Use QEMU to Run Linux VMs in Minutes</title>
-    <link href="http://localhost:4000/posts/Putty/" rel="alternate" type="text/html" title="How to Use QEMU to Run Linux VMs in Minutes" />
-    <published>2025-03-31T08:39:00-06:00</published>
-  
-    <updated>2025-03-31T08:39:00-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Putty/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Putty/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="linux" />
-    
-    <category term="virtualization" />
-    
-    <category term="sysadmin" />
-    
-    <category term="devops" />
-    
-  
-
-  <summary>Embracing Secure Remote Access with PuTTY SSH Keys
-
-In today’s digital landscape, secure remote access is crucial for managing 
-servers and networks efficiently. Enter PuTTY and SSH keys—a powerful duo 
-enhancing security and ease of access.
-
-What is PuTTY?
-
-PuTTY is a free, open-source tool widely used on Windows to establish SSH 
-or Telnet connections. Developed by Simon Tatham, it’s known fo...</summary>
 
   </entry>
 

@@ -30,23 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Network" />
+<meta property="og:title" content="Robot Security with ROS2 and UFW" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/tags/network/" />
-<meta property="og:url" content="http://localhost:4000/tags/network/" />
+<meta name="description" content="🧠 Introduction: Why Robot Security Matters" />
+<meta property="og:description" content="🧠 Introduction: Why Robot Security Matters" />
+<link rel="canonical" href="http://localhost:4000/posts/Firewall-ROS2/" />
+<meta property="og:url" content="http://localhost:4000/posts/Firewall-ROS2/" />
 <meta property="og:site_name" content="Sebos Technology" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-27T04:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Network" />
+<meta property="twitter:title" content="Robot Security with ROS2 and UFW" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Network","url":"http://localhost:4000/tags/network/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-27T04:00:00-06:00","datePublished":"2025-04-27T04:00:00-06:00","description":"🧠 Introduction: Why Robot Security Matters","headline":"Robot Security with ROS2 and UFW","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Firewall-ROS2/"},"url":"http://localhost:4000/posts/Firewall-ROS2/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Network | Sebos Technology
+  <title>Robot Security with ROS2 and UFW | Sebos Technology
   </title>
 
   <!--
@@ -110,9 +111,16 @@
   <!-- 3rd-party Dependencies -->
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.32.2/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
   
 
   <!-- Scripts -->
@@ -128,6 +136,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -177,9 +192,37 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
 
 
 
@@ -187,11 +230,15 @@
 
 
 
-<script defer src="/assets/js/dist/misc.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
 <!-- Pageviews -->
+
+  
+
+  
 
 
 
@@ -456,14 +503,10 @@
           
         
           
-            <span>
-              <a href="/tags/">Tags</a>
-            </span>
-          
         
           
             
-              <span>Network</span>
+              <span>Robot Security with ROS2 and UFW</span>
             
 
           
@@ -477,7 +520,7 @@
     </button>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -503,27 +546,218 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
 
 
 
-<article class="px-1">
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
   
     
-
-
-
-<div id="page-tag">
-  <h1 class="ps-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    Network
-    <span class="lead text-muted ps-2">1</span>
-  </h1>
-  <ul class="content ps-0">
     
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/SSH-Through-Firewall/">SSH Through Firewall</a>
-        <span class="dash flex-grow-1"></span>
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+
+
+
+
+
+
+<article class="px-1" data-toc="true">
+  <header>
+    <h1 data-toc-skip>Robot Security with ROS2 and UFW</h1>
+    
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -534,22 +768,397 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
-  data-ts="1724600400"
+  data-ts="1745748000"
   data-df="ll"
   
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
 >
-  Aug 25, 2024
+  Apr 27, 2025
 </time>
 
-      </li>
-    
-  </ul>
-</div>
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              <a href="https://twitter.com/richard-sebos">Richard Chamberlain</a>
+            
+          </em>
+        </span>
+
+        <div>
+          <!-- pageviews -->
+          
+
+          <!-- read time -->
+          <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="783 words"
+>
+  <em>4 min</em> read</span>
+
+        </div>
+      </div>
+    </div>
+  </header>
 
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">Robot Security with ROS2 and UFW</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">Robot Security with ROS2 and UFW</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
+
+  <div class="content">
+    <h2 id="-introduction-why-robot-security-matters"><span class="me-2">🧠 Introduction: Why Robot Security Matters</span><a href="#-introduction-why-robot-security-matters" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>To me, robots are more than machines—they’re a reflection of human creativity and ingenuity. Whether designed to explore new worlds, ease daily burdens, entertain, or alleviate suffering, robots are becoming deeply embedded in our lives. But to do any of this, they must connect with the outside world.</p>
+
+<h2 id="table-of-contents"><span class="me-2">Table of Contents</span><a href="#table-of-contents" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ol>
+  <li><a href="#introduction-why-robot-security-matters">Introduction: Why Robot Security Matters</a></li>
+  <li><a href="#robots-need-internetand-thats-a-risk">Robots Need Internet—And That’s a Risk</a></li>
+  <li><a href="#firewalls-and-robots-not-just-for-servers">Firewalls and Robots: Not Just for Servers</a></li>
+  <li><a href="#why-robots-arent-just-fancy-servers">Why Robots Aren’t Just Fancy Servers</a></li>
+  <li><a href="#using-ufw-for-ros-2-a-secure-setup">Using UFW for ROS 2: A Secure Setup</a></li>
+  <li><a href="#temporarily-allowing-system-updates">Temporarily Allowing System Updates</a></li>
+  <li><a href="#best-practices-recap">Best Practices Recap</a></li>
+  <li><a href="#conclusion-building-safer-smarter-robots">Conclusion: Building Safer, Smarter Robots</a></li>
+</ol>
+
+<hr />
+
+<p>That connection is a double-edged sword. In an age filled with malware, hackers, and increasing cyber threats, are we truly prepared for a future where robots outnumber people?</p>
+
+<hr />
+
+<h2 id="-robots-need-internetand-thats-a-risk"><span class="me-2">🌐 Robots Need Internet—And That’s a Risk</span><a href="#-robots-need-internetand-thats-a-risk" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Can a robot exist in isolation? In theory, yes—but most real-world robots need a communication channel to receive updates, new tasks, or telemetry feedback. Whether it’s via Wi-Fi, Ethernet, USB, or a console port, connectivity is vital.</p>
+
+<p>Firewalls help manage and control that connectivity. They protect a robot’s network interfaces—both wired and wireless—by filtering traffic. But traditional firewall models (like “allow all outbound, block all unsolicited inbound”) may not be sufficient for mobile, autonomous, and connected robots.</p>
+
+<hr />
+
+<h2 id="-firewalls-and-robots-not-just-for-servers"><span class="me-2">🧱 Firewalls and Robots: Not Just for Servers</span><a href="#-firewalls-and-robots-not-just-for-servers" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Typical servers live in protected data centers with layers of physical and network security: climate-controlled rooms, multiple firewalls, monitoring tools, and intrusion detection systems. But robots don’t have that luxury.</p>
+
+<p>Robots are mobile and autonomous. They need to bring their security with them. And for those built with resource-constrained hardware, adding security features like full endpoint protection or network segmentation isn’t always feasible.</p>
+
+<hr />
+
+<h2 id="-why-robots-arent-just-fancy-servers"><span class="me-2">🤖 Why Robots Aren’t Just Fancy Servers</span><a href="#-why-robots-arent-just-fancy-servers" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Sure, robots are cooler than servers. But from a networking standpoint, servers live in predictable environments. Robots live in the wild.</p>
+
+<ul>
+  <li>Servers have external security layers.</li>
+  <li>Robots must rely on <strong>built-in</strong> protections.</li>
+  <li>Many robots run on lightweight hardware and OS distributions that <strong>don’t include hardened firewall settings by default</strong>.</li>
+</ul>
+
+<p>That’s why configuring a Linux firewall on your ROS 2 robot is not optional—it’s essential.</p>
+
+<hr />
+
+<h2 id="-using-ufw-for-ros-2-a-secure-setup"><span class="me-2">🔥 Using UFW for ROS 2: A Secure Setup</span><a href="#-using-ufw-for-ros-2-a-secure-setup" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Linux firewalls like <strong>UFW (Uncomplicated Firewall)</strong> and <strong>firewalld</strong> are commonly used to manage rules and enforce security policies. For this guide, we’ll use <strong>UFW</strong>, as it’s simple and widely supported.</p>
+
+<h3 id="sample-ufw-script-for-ros-2-robots"><span class="me-2">Sample UFW Script for ROS 2 Robots</span><a href="#sample-ufw-script-for-ros-2-robots" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="nb">source</span> ./common.sh
+
+ufw_setup<span class="o">()</span> <span class="o">{</span>
+    ufw default deny incoming
+    ufw default deny outgoing
+
+    <span class="c"># Allow ROS node traffic out</span>
+    <span class="k">for </span>ip <span class="k">in</span> <span class="s2">"</span><span class="k">${</span><span class="nv">ROS_NODE_IPS</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span><span class="p">;</span> <span class="k">do
+        for </span>port <span class="k">in</span> <span class="o">{</span>7400..7600<span class="o">}</span><span class="p">;</span> <span class="k">do
+            </span>ufw allow out to <span class="s2">"</span><span class="nv">$ip</span><span class="s2">"</span> port <span class="s2">"</span><span class="nv">$port</span><span class="s2">"</span> proto udp
+        <span class="k">done
+    done</span>
+
+    <span class="c"># Allow SSH from development laptop only</span>
+    ufw allow <span class="k">in </span>from <span class="s2">"</span><span class="nv">$PROGRAMMER_LAPTOP_IP</span><span class="s2">"</span> to any port 22 proto tcp
+    ufw allow out to <span class="s2">"</span><span class="nv">$PROGRAMMER_LAPTOP_IP</span><span class="s2">"</span>
+
+    <span class="nb">echo</span> <span class="s1">'y'</span> | ufw <span class="nb">enable</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>This setup ensures:</p>
+<ul>
+  <li><strong>No unsolicited inbound</strong> or <strong>arbitrary outbound</strong> traffic</li>
+  <li><strong>ROS 2 communications</strong> via UDP to trusted nodes only</li>
+  <li><strong>SSH access</strong> from a specific IP (your programming laptop)</li>
+</ul>
+
+<hr />
+
+<h2 id="-temporarily-allowing-system-updates"><span class="me-2">📦 Temporarily Allowing System Updates</span><a href="#-temporarily-allowing-system-updates" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>To keep your robot secure <em>and</em> up to date, you may want to temporarily open up outbound access for package updates:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre>ufw_allow_updates<span class="o">()</span> <span class="o">{</span>
+    ufw allow out to any port 53 proto udp
+    ufw allow out 80/tcp
+    ufw allow out 443/tcp
+<span class="o">}</span>
+
+ufw_deny_updates<span class="o">()</span> <span class="o">{</span>
+    ufw delete allow out 53 proto udp
+    ufw delete allow out 80/tcp
+    ufw delete allow out 443/tcp
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>This way, you can install updates or patches, and then immediately <strong>lock it back down</strong>.</p>
+
+<hr />
+
+<h2 id="-best-practices-recap"><span class="me-2">✅ Best Practices Recap</span><a href="#-best-practices-recap" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>Security Practice</th>
+      <th>Why It Matters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">deny incoming</code>, <code class="language-plaintext highlighter-rouge">deny outgoing</code></td>
+      <td>Locks down everything by default</td>
+    </tr>
+    <tr>
+      <td>Restrict by IP &amp; port</td>
+      <td>Only allow what is explicitly trusted</td>
+    </tr>
+    <tr>
+      <td>Temporary rules for updates</td>
+      <td>Reduces open surface while staying up to date</td>
+    </tr>
+    <tr>
+      <td>Avoid <code class="language-plaintext highlighter-rouge">ufw allow 22/tcp</code></td>
+      <td>Prevents global SSH access</td>
+    </tr>
+    <tr>
+      <td>Use <code class="language-plaintext highlighter-rouge">ufw enable</code></td>
+      <td>Don’t forget to actually turn the firewall <strong>on</strong></td>
+    </tr>
+  </tbody>
+</table></div>
+
+<hr />
+
+<h2 id="-conclusion-building-safer-smarter-robots"><span class="me-2">🧠 Conclusion: Building Safer, Smarter Robots</span><a href="#-conclusion-building-safer-smarter-robots" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>In the world of robotics, connectivity is both a feature and a liability. Firewalls like UFW give us a lightweight, flexible way to protect our robots without overloading their systems. As robots become more autonomous and network-aware, the need for proper firewall configurations becomes critical—not optional.</p>
+
+<p>By using smart defaults, scoping access, and managing updates securely, we make sure that our robots are not just useful… but trustworthy.</p>
+
+<p>If you have questions, suggestions, or topics you’d love to see covered, drop a comment below. Let’s make robotics not just exciting and innovative—but secure as well.</p>
+
+<p>For more content like this, tools, and walkthroughs, visit my site at <strong><a href="https://sebostechnology.com">Sebos Technology</a></strong>.</p>
+
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/robotics/">Robotics</a>,
+          <a href="/categories/ros2-install-series/">ROS2 Install Series</a>,
+          <a href="/categories/security/">Security</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/ros2/"
+            class="post-tag no-text-decoration"
+          >ros2</a>
+        
+          <a
+            href="/tags/robotics/"
+            class="post-tag no-text-decoration"
+          >robotics</a>
+        
+          <a
+            href="/tags/cybersecurity/"
+            class="post-tag no-text-decoration"
+          >cybersecurity</a>
+        
+          <a
+            href="/tags/linux/"
+            class="post-tag no-text-decoration"
+          >linux</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://x.com/SebosInfo" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.facebook.com/richard.chamberlain" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.linkedin.com/in/richard-chamberlain-b9945a32/" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
+        <i class="fa-fw fab fa-linkedin"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
+</div>
+
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -1586,12 +2195,320 @@
             </div>
 
             
+              
+              
+
+
+
+
+
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Installing-ROS2/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1744221480"
+  data-df="ll"
+  
+>
+  Apr  9, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Installing ROS 2 on Ubuntu with `ros2_install.sh`</h4>
+              <div class="text-muted">
+                <p>Here’s a polished, professional-yet-friendly article version of your script documentation. It’s structured with a Table of Contents, clear SEO-friendly wording, and paragraph formatting to make it ...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/ROS2_Build-Part1/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1744203960"
+  data-df="ll"
+  
+>
+  Apr  9, 2025
+</time>
+
+              <h4 class="pt-0 my-2">🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User</h4>
+              <div class="text-muted">
+                <p>Introduction
+
+Welcome to the first post in my series on setting up a secure ROS 2 system on Ubuntu. In this part, we’re going to lay the groundwork by updating the operating system and setting up a...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/ROS2_Build/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1744106400"
+  data-df="ll"
+  
+>
+  Apr  8, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Hardening Your Robot Project from the Start</h4>
+              <div class="text-muted">
+                <p>As robotics becomes more accessible and developers take the leap into building their own intelligent machines, the importance of security cannot be overstated. Whether you’re tinkering with your fi...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/Armor-Audit/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
             
 
             <!-- The Footer -->
@@ -2650,6 +3567,11 @@
     
 
     <!-- Embedded scripts -->
+
+    
+      
+      <!-- The comments switcher -->
+
 
     
 

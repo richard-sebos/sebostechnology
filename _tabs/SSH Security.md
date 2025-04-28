@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 2
+order: 3
 ---
 # Your First Step to a Hardened SSH Server 
 ## What is sshd_config Part 1 of the SSH Security Series 

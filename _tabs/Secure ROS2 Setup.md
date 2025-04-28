@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 1
+order: 2
 ---
 
 # Hardening Your Robot Project from the Start
@@ -36,9 +36,9 @@ In this series, we’ll walk through key steps to build a more secure ROS2 setup
 
 - ✅ [Post-install system updates](https://dev.to/sebos/setting-up-a-secure-ros-2-system-part-2-updating-ubuntu-and-creating-a-ros-user-jl7)
 - 👤 [Creating a dedicated ROS user](https://dev.to/sebos/setting-up-a-secure-ros-2-system-part-2-updating-ubuntu-and-creating-a-ros-user-jl7)
-- 🤖 Installing ROS2 securely
-- 🔐 Configuring AppArmor and Auditd
-- 🌐 Setting up basic firewall rules
+- 🤖 [Installing ROS2 securely](https://dev.to/sebos/setting-up-a-secure-ros-2-system-part-3-installing-ros-2-3p2c)
+- 🔐 [Configuring AppArmor and Auditd](https://dev.to/sebos/securing-ros-2-with-apparmor-and-auditd-a-practical-guide-16fb)
+- 🌐 [Setting up basic firewall rules](https://dev.to/sebos/-robot-security-with-ros-2-and-ufw-firewalls-for-the-future-of-robotics-334e)
 - 🧰 Enabling SROS2 for secure communication
 - 🔎 Installing and configuring Suricata for network intrusion detection
 - 📄 Creating a baseline security report
@@ -62,3 +62,7 @@ Securing robotics projects might seem daunting at first, but just a few well-pla
 
 If you have questions, suggestions, or topics you’d love to see covered, drop a comment below. Let’s make robotics not just exciting and innovative—but secure as well.
 
+
+If you have questions, suggestions, or topics you’d love to see covered, drop a comment below. Let’s make robotics not just exciting and innovative—but secure as well.
+
+For more content like this, tools, and walkthroughs, visit my site at **[Sebos Technology](https://sebostechnology.com)**.
