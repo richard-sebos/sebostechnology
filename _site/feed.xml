@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-04-28T11:43:20-06:00</updated>
+  <updated>2025-04-30T05:20:43-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,36 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Securing ROS2 Nodes with SROS2t</title>
+    <link href="http://localhost:4000/posts/SROS2-Setup/" rel="alternate" type="text/html" title="Securing ROS2 Nodes with SROS2t" />
+    <published>2025-04-30T04:00:00-06:00</published>
+  
+    <updated>2025-04-30T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/SROS2-Setup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/SROS2-Setup/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="ROS2 Install Series" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a complex ecosystem of internal components, including a base controller, cameras, scanners, and movement modules. These components (ROS2 nodes) must communicate securely with each other.
+
+So, how do we sec...</summary>
+
+  </entry>
 
   
   <entry>
@@ -146,36 +176,6 @@ Table of Contents
 
   Introduction
   Modular Bash ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Hardening Your Robot Project from the Start</title>
-    <link href="http://localhost:4000/posts/ROS2_Build/" rel="alternate" type="text/html" title="Hardening Your Robot Project from the Start" />
-    <published>2025-04-08T04:00:00-06:00</published>
-  
-    <updated>2025-04-24T18:54:11-06:00</updated>
-  
-    <id>http://localhost:4000/posts/ROS2_Build/</id>
-    <content type="text/html" src="http://localhost:4000/posts/ROS2_Build/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="ROS2 Install Series" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>As robotics becomes more accessible and developers take the leap into building their own intelligent machines, the importance of security cannot be overstated. Whether you’re tinkering with your first robot at home or developing a prototype for industrial use, it’s critical to think beyond just getting ROS2 installed and your nodes communicating.
-
-Welcome to the first post in a new series focus...</summary>
 
   </entry>
 

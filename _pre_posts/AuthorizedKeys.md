@@ -1,4 +1,4 @@
-Absolutely! Here’s a clearer, more concise rewrite of the research on **Enforcing SSH Key Expiry and Rotation Policies with AuthorizedKeysCommand**:
+# Key Expiry and Rotation Policies with AuthorizedKeysCommand**:
 
 ---
 

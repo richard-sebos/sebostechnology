@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="Hardening Your Robot Project from the Start" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-24T18:54:11-06:00","datePublished":"2025-04-08T04:00:00-06:00","description":"As robotics becomes more accessible and developers take the leap into building their own intelligent machines, the importance of security cannot be overstated. Whether you’re tinkering with your first robot at home or developing a prototype for industrial use, it’s critical to think beyond just getting ROS2 installed and your nodes communicating.","headline":"Hardening Your Robot Project from the Start","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ROS2_Build/"},"url":"http://localhost:4000/posts/ROS2_Build/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-28T11:44:58-06:00","datePublished":"2025-04-08T04:00:00-06:00","description":"As robotics becomes more accessible and developers take the leap into building their own intelligent machines, the importance of security cannot be overstated. Whether you’re tinkering with your first robot at home or developing a prototype for industrial use, it’s critical to think beyond just getting ROS2 installed and your nodes communicating.","headline":"Hardening Your Robot Project from the Start","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ROS2_Build/"},"url":"http://localhost:4000/posts/ROS2_Build/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -717,13 +717,13 @@
 
 <time
   
-  data-ts="1745542451"
+  data-ts="1745862298"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr 24, 2025
+  Apr 28, 2025
 </time>
 
         </span>
@@ -826,7 +826,7 @@
   <li>🤖 <a href="https://dev.to/sebos/setting-up-a-secure-ros-2-system-part-3-installing-ros-2-3p2c">Installing ROS2 securely</a></li>
   <li>🔐 <a href="https://dev.to/sebos/securing-ros-2-with-apparmor-and-auditd-a-practical-guide-16fb">Configuring AppArmor and Auditd</a></li>
   <li>🌐 <a href="https://dev.to/sebos/-robot-security-with-ros-2-and-ufw-firewalls-for-the-future-of-robotics-334e">Setting up basic firewall rules</a></li>
-  <li>🧰 Enabling SROS2 for secure communication</li>
+  <li>🧰 <a href="https://dev.to/sebos/securing-ros2-nodes-with-sros2-encryption-and-permissions-for-robot-communications-m55">Enabling SROS2 for secure communication</a></li>
   <li>🔎 Installing and configuring Suricata for network intrusion detection</li>
   <li>📄 Creating a baseline security report</li>
   <li>🗓️ Automating periodic security checks with scheduled reports</li>
@@ -988,6 +988,20 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/SROS2-Setup/">Securing ROS2 Nodes with SROS2t</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/ROS2_Build/">Hardening Your Robot Project from the Start</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Firewall-ROS2/">Robot Security with ROS2 and UFW</a>
         </li>
       
@@ -1002,21 +1016,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ROS2_Build/">Hardening Your Robot Project from the Start</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/posts/Installing-ROS2/">Installing ROS 2 on Ubuntu with `ros2_install.sh`</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/ROS2_Build-Part1/">🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User</a>
         </li>
       
     </ul>
@@ -1193,6 +1193,221 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1356,233 +1571,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1964,6 +1952,12 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/robotics/">robotics</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ros2/">ros2</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/devops/">devops</a>
       
         
@@ -1971,12 +1965,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/proxmox/">proxmox</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/robotics/">robotics</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ros2/">ros2</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/nas/">NAS</a>
@@ -2178,6 +2166,18 @@
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -2251,7 +2251,7 @@ Welcome to the first post in my series on setting up a secure ROS 2 system on Ub
         </article>
       
         <article class="col">
-          <a href="/posts/Firewall-ROS2/" class="post-preview card h-100">
+          <a href="/posts/SROS2-Setup/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2263,18 +2263,16 @@ Welcome to the first post in my series on setting up a secure ROS 2 system on Ub
 
 <time
   
-  data-ts="1745748000"
+  data-ts="1746007200"
   data-df="ll"
   
 >
-  Apr 27, 2025
+  Apr 30, 2025
 </time>
 
-              <h4 class="pt-0 my-2">Robot Security with ROS2 and UFW</h4>
+              <h4 class="pt-0 my-2">Securing ROS2 Nodes with SROS2t</h4>
               <div class="text-muted">
-                <p>🧠 Introduction: Why Robot Security Matters
-
-To me, robots are more than machines—they’re a reflection of human creativity and ingenuity. Whether designed to explore new worlds, ease daily burdens, ...</p>
+                <p>In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a com...</p>
               </div>
             </div>
           </a>
@@ -2529,6 +2527,221 @@ To me, robots are more than machines—they’re a reflection of human creativit
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2692,233 +2905,6 @@ To me, robots are more than machines—they’re a reflection of human creativit
     
     
     
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3300,6 +3286,12 @@ To me, robots are more than machines—they’re a reflection of human creativit
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/robotics/">robotics</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ros2/">ros2</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/devops/">devops</a>
       
         
@@ -3307,12 +3299,6 @@ To me, robots are more than machines—they’re a reflection of human creativit
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/proxmox/">proxmox</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/robotics/">robotics</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ros2/">ros2</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/nas/">NAS</a>

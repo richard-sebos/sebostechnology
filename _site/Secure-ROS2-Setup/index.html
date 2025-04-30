@@ -38,12 +38,12 @@
 <meta property="og:url" content="http://localhost:4000/Secure-ROS2-Setup/" />
 <meta property="og:site_name" content="Sebos Technology" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-04-28T11:43:20-06:00" />
+<meta property="article:published_time" content="2025-04-30T05:20:43-06:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Secure ros2 setup" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-28T11:43:20-06:00","datePublished":"2025-04-28T11:43:20-06:00","description":"Hardening Your Robot Project from the Start","headline":"Secure ros2 setup","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Secure-ROS2-Setup/"},"url":"http://localhost:4000/Secure-ROS2-Setup/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-30T05:20:43-06:00","datePublished":"2025-04-30T05:20:43-06:00","description":"Hardening Your Robot Project from the Start","headline":"Secure ros2 setup","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Secure-ROS2-Setup/"},"url":"http://localhost:4000/Secure-ROS2-Setup/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -688,7 +688,7 @@
   <li>🤖 <a href="https://dev.to/sebos/setting-up-a-secure-ros-2-system-part-3-installing-ros-2-3p2c">Installing ROS2 securely</a></li>
   <li>🔐 <a href="https://dev.to/sebos/securing-ros-2-with-apparmor-and-auditd-a-practical-guide-16fb">Configuring AppArmor and Auditd</a></li>
   <li>🌐 <a href="https://dev.to/sebos/-robot-security-with-ros-2-and-ufw-firewalls-for-the-future-of-robotics-334e">Setting up basic firewall rules</a></li>
-  <li>🧰 Enabling SROS2 for secure communication</li>
+  <li>🧰 <a href="https://dev.to/sebos/securing-ros2-nodes-with-sros2-encryption-and-permissions-for-robot-communications-m55">Enabling SROS2 for secure communication</a></li>
   <li>🔎 Installing and configuring Suricata for network intrusion detection</li>
   <li>📄 Creating a baseline security report</li>
   <li>🗓️ Automating periodic security checks with scheduled reports</li>
@@ -750,6 +750,20 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/SROS2-Setup/">Securing ROS2 Nodes with SROS2t</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/ROS2_Build/">Hardening Your Robot Project from the Start</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Firewall-ROS2/">Robot Security with ROS2 and UFW</a>
         </li>
       
@@ -764,21 +778,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ROS2_Build/">Hardening Your Robot Project from the Start</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/posts/Installing-ROS2/">Installing ROS 2 on Ubuntu with `ros2_install.sh`</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/ROS2_Build-Part1/">🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User</a>
         </li>
       
     </ul>
@@ -955,6 +955,221 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1118,233 +1333,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1726,6 +1714,12 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/robotics/">robotics</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ros2/">ros2</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/devops/">devops</a>
       
         
@@ -1733,12 +1727,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/proxmox/">proxmox</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/robotics/">robotics</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ros2/">ros2</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/nas/">NAS</a>
@@ -1977,6 +1965,221 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2140,233 +2343,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2748,6 +2724,12 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/robotics/">robotics</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ros2/">ros2</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/devops/">devops</a>
       
         
@@ -2755,12 +2737,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/proxmox/">proxmox</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/robotics/">robotics</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ros2/">ros2</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/nas/">NAS</a>

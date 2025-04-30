@@ -1,6 +1,3 @@
-Absolutely! Here's a **friendly but professional blog article** version of that content, polished for readability and engagement. I kept the tone informative yet approachable, ideal for home lab enthusiasts, IT pros, or anyone interested in leveling up their SSH game.
-
----
 
 # Mastering SSH Key-Based Authentication: Secure Passwordless Login for Linux and Windows
 
@@ -15,6 +12,8 @@ If you want a **stronger, safer, and more convenient** way to access your server
 SSH keys are **cryptographic keys** that replace passwords for authentication. Instead of typing in a password every time you connect, your system uses a **private/public key pair**. It’s:
 - **More secure** (especially with longer keys like 4096-bit RSA or Ed25519).
 - **More convenient** (no more passwords to remember or brute-force attack risks).
+
+SSH keys consist of two parts: a public key and a private key. The public key is publicly available on the server, while the private key is kept on the client-side machine. When a user attempts to connect to a server via SSH, their client sends its public key to the server. The server then verifies the public key against its own keys and generates a unique session ID if authentication is successful. 
 
 Let’s dive in!
 

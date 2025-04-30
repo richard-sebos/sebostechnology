@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Proxmox Network Storage Firewall Rules" />
+<meta property="og:title" content="Securing ROS2 Nodes with SROS2t" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Proxmox Network Storage" />
-<meta property="og:description" content="Proxmox Network Storage" />
-<link rel="canonical" href="http://localhost:4000/posts/Proxmox-Network-Storage-Firewall/" />
-<meta property="og:url" content="http://localhost:4000/posts/Proxmox-Network-Storage-Firewall/" />
+<meta name="description" content="In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a complex ecosystem of internal components, including a base controller, cameras, scanners, and movement modules. These components (ROS2 nodes) must communicate securely with each other." />
+<meta property="og:description" content="In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a complex ecosystem of internal components, including a base controller, cameras, scanners, and movement modules. These components (ROS2 nodes) must communicate securely with each other." />
+<link rel="canonical" href="http://localhost:4000/posts/SROS2-Setup/" />
+<meta property="og:url" content="http://localhost:4000/posts/SROS2-Setup/" />
 <meta property="og:site_name" content="Sebos Technology" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-09-26T19:41:00-06:00" />
+<meta property="article:published_time" content="2025-04-30T04:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Proxmox Network Storage Firewall Rules" />
+<meta property="twitter:title" content="Securing ROS2 Nodes with SROS2t" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-26T19:41:00-06:00","datePublished":"2024-09-26T19:41:00-06:00","description":"Proxmox Network Storage","headline":"Proxmox Network Storage Firewall Rules","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Proxmox-Network-Storage-Firewall/"},"url":"http://localhost:4000/posts/Proxmox-Network-Storage-Firewall/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-30T04:00:00-06:00","datePublished":"2025-04-30T04:00:00-06:00","description":"In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a complex ecosystem of internal components, including a base controller, cameras, scanners, and movement modules. These components (ROS2 nodes) must communicate securely with each other.","headline":"Securing ROS2 Nodes with SROS2t","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SROS2-Setup/"},"url":"http://localhost:4000/posts/SROS2-Setup/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Proxmox Network Storage Firewall Rules | Sebos Technology
+  <title>Securing ROS2 Nodes with SROS2t | Sebos Technology
   </title>
 
   <!--
@@ -506,7 +506,7 @@
         
           
             
-              <span>Proxmox Network Storage Firewall Rules</span>
+              <span>Securing ROS2 Nodes with SROS2t</span>
             
 
           
@@ -640,6 +640,39 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -677,6 +710,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -684,6 +739,49 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -707,7 +805,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>Proxmox Network Storage Firewall Rules</h1>
+    <h1 data-toc-skip>Securing ROS2 Nodes with SROS2t</h1>
     
 
     <div class="post-meta text-muted">
@@ -724,13 +822,13 @@
 
 <time
   
-  data-ts="1727401260"
+  data-ts="1746007200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Sep 26, 2024
+  Apr 30, 2025
 </time>
 
       </span>
@@ -779,7 +877,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="563 words"
+  title="619 words"
 >
   <em>3 min</em> read</span>
 
@@ -790,7 +888,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">Proxmox Network Storage Firewall Rules</span>
+      <span class="label text-truncate">Securing ROS2 Nodes with SROS2t</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -803,7 +901,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">Proxmox Network Storage Firewall Rules</div>
+        <div class="label text-truncate py-2 ms-4">Securing ROS2 Nodes with SROS2t</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -813,154 +911,220 @@
   
 
   <div class="content">
-    <h1 id="proxmox-network-storage">Proxmox Network Storage</h1>
+    <p>In our <a href="https://dev.to/sebos/securing-ros-2-with-apparmor-and-auditd-a-practical-guide-16fb">previous post</a>, we configured the firewall and granted <code class="language-plaintext highlighter-rouge">$PROGRAMMER_LAPTOP_IP</code> access to the robot via SSH. But controlling a robot involves more than just external connections—<strong>a robot is a complex ecosystem of internal components</strong>, including a base controller, cameras, scanners, and movement modules. These components (ROS2 <em>nodes</em>) must communicate securely with each other.</p>
 
-<p>So far, we’ve utilized a Direct Attached Storage (DAS) and a Single Board Computer (SBC) to set up a NAS (Network Attached Storage) using Samba. The next step was securing the NAS by placing it on a dedicated VLAN subnet, isolating it from other devices in my home lab. This setup effectively reduces the attack surface and limits exposure to only the systems that need access. Now, we’ll focus on configuring firewall rules to ensure secure communication between the authorized devices and the NAS.</p>
+<p>So, how do we <strong>secure internal communication between ROS2 nodes</strong>?</p>
 
-<h2 id="firewall-aliases"><span class="me-2">Firewall Aliases</span><a href="#firewall-aliases" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
 
-<p>When setting up firewall rules, you’re assigning permissions for devices to access other devices. This can be done by specifying attributes such as MAC addresses, IP addresses, ports, and Fully Qualified Domain Names (FQDNs). However, managing these values, especially MAC addresses or IPs, can become cumbersome and difficult to remember after creating the rules.</p>
+<h2 id="-table-of-contents"><span class="me-2">📚 Table of Contents</span><a href="#-table-of-contents" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>For example, the dock for my MacBook Air has the MAC address <code class="language-plaintext highlighter-rouge">3A:2C:4F:5E:8B:1A</code>. Instead of trying to remember that, I can create an alias called <code class="language-plaintext highlighter-rouge">macbookair_dock</code> on the firewall. Now, whenever I use <code class="language-plaintext highlighter-rouge">macbookair_dock</code> in my firewall configuration, the system will recognize it as the corresponding MAC address <code class="language-plaintext highlighter-rouge">3A:2C:4F:5E:8B:1A</code>, making it easier to manage.</p>
+<ol>
+  <li><a href="#why-node-to-node-security-matters">Why Node-to-Node Security Matters</a></li>
+  <li><a href="#what-is-sros2">What Is SROS2?</a></li>
+  <li><a href="#sros2-setup-script-overview">SROS2 Setup Script Overview</a></li>
+  <li><a href="#step-by-step-sros2_setup-bash-function">Step-by-Step: <code class="language-plaintext highlighter-rouge">sros2_setup()</code> Bash Function</a>
+    <ul>
+      <li><a href="#1-install-openssl">Install OpenSSL</a></li>
+      <li><a href="#2-switch-to-ros-user">Switch to ROS2 User</a></li>
+      <li><a href="#3-initialize-keystore-and-keys">Initialize Keystore and Keys</a></li>
+      <li><a href="#4-define-node-permissions">Define Node Permissions</a></li>
+      <li><a href="#5-generate-signed-permissions-file">Generate Signed Permissions File</a></li>
+    </ul>
+  </li>
+  <li><a href="#security-context-summary">Security Context Summary</a></li>
+  <li><a href="#next-steps-intrusion-detection-with-suricata">Next Steps: Intrusion Detection with Suricata</a></li>
+</ol>
 
-<p>For this project, I’ve created the following aliases:</p>
+<hr />
 
-<div class="table-wrapper"><table>
-  <thead>
-    <tr>
-      <th>Alias</th>
-      <th>Type</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>macbookair_dock</td>
-      <td>MAC address</td>
-      <td>3A:2C:4F:5E:8B:1A</td>
-    </tr>
-    <tr>
-      <td>iPad</td>
-      <td>MAC address</td>
-      <td>F2:77:3C:6D:1E:82</td>
-    </tr>
-    <tr>
-      <td>iPhone</td>
-      <td>MAC address</td>
-      <td>09:AF:BA:63:92:4E</td>
-    </tr>
-    <tr>
-      <td>ProxmoxVE</td>
-      <td>Host(s)</td>
-      <td>192.168.177.7,192.168.177.8</td>
-    </tr>
-    <tr>
-      <td>ProxmoxBS</td>
-      <td>Host(s)</td>
-      <td>192.168.177.129</td>
-    </tr>
-    <tr>
-      <td>SambaPorts</td>
-      <td>Port(s)</td>
-      <td>137,138,139,445</td>
-    </tr>
-    <tr>
-      <td>SambaPve</td>
-      <td>Host(s)</td>
-      <td>192.168.197.7</td>
-    </tr>
-    <tr>
-      <td>SambaMedia</td>
-      <td>Host(s)</td>
-      <td>192.168.198.8</td>
-    </tr>
-  </tbody>
-</table></div>
+<h2 id="why-node-to-node-security-matters"><span class="me-2">Why Node-to-Node Security Matters</span><a href="#why-node-to-node-security-matters" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>With these aliases in place, the firewall rules we create in the next section will be much clearer and easier to manage.</p>
+<p>In robotic systems powered by <strong>ROS2</strong>, nodes constantly exchange data—some of it sensitive, such as movement commands or camera feeds. <strong>Without encryption and access control</strong>, this data is vulnerable to tampering or eavesdropping, especially in networked environments like factories or research labs.</p>
 
-<blockquote>
-  <p><strong>Note: MAC vs Hosts</strong><br />
-The servers on my network have static IP addresses, so using IP address would work well for them. However, many other devices do not have static IPs, making their IP addresses less reliable for identification. In these cases, using the MAC address (Media Access Control address) provides a more consistent and stable way to reference those devices.</p>
-</blockquote>
+<p>That’s where <strong>SROS2</strong> comes in.</p>
 
-<h2 id="proxmox-servers-to-nas"><span class="me-2">Proxmox Servers to NAS</span><a href="#proxmox-servers-to-nas" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
 
-<p>The Proxmox servers will be utilizing the NAS for two main purposes:</p>
+<h2 id="what-is-sros2"><span class="me-2">What Is SROS2?</span><a href="#what-is-sros2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p><strong>SROS2 (Secure ROS2)</strong> extends ROS2 with <strong>security mechanisms</strong> built on the DDS-Security standard. It uses <strong>OpenSSL</strong> to encrypt node communication and restrict access based on signed permissions.</p>
+
+<p>When configured, SROS2 creates a <strong>keystore directory</strong> containing:</p>
+
 <ul>
-  <li>ISO storage</li>
-  <li>Backups</li>
+  <li>A <strong>Certificate Authority (CA)</strong></li>
+  <li>Each node’s:
+    <ul>
+      <li>Public certificate</li>
+      <li>Private key</li>
+      <li>Signed permissions file</li>
+    </ul>
+  </li>
 </ul>
 
-<p>To enable this, the following firewall rules were necessary:</p>
+<p>This setup ensures <strong>only authorized nodes</strong> can participate in the ROS2 ecosystem.</p>
 
-<div class="table-wrapper"><table>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Interface</th>
-      <th>Source</th>
-      <th>Destination</th>
-      <th>Ports</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>VLANforProxmox</td>
-      <td>ProxmoxVE</td>
-      <td>SambaPve</td>
-      <td>SambaPorts</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>VLANforProxmox</td>
-      <td>ProxmoxBS</td>
-      <td>SambaPve</td>
-      <td>SambaPorts</td>
-    </tr>
-  </tbody>
-</table></div>
+<hr />
 
-<h3 id="rule-1"><span class="me-2">Rule 1:</span><a href="#rule-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>This rule permits the Proxmox servers to store ISO images on the NAS and ensures that virtual machines (VMs) can access the necessary storage resources for proper operation.</p>
+<h2 id="sros2-setup-script-overview"><span class="me-2">SROS2 Setup Script Overview</span><a href="#sros2-setup-script-overview" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h3 id="rule-2"><span class="me-2">Rule 2:</span><a href="#rule-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>This rule enables the Proxmox Backup Server to securely store backups on the NAS, ensuring that data is protected and recoverable as needed.</p>
+<p>To streamline setup, we created a script: <code class="language-plaintext highlighter-rouge">sros2_setup()</code>. This <strong>Bash function initializes a keystore and configures a node (<code class="language-plaintext highlighter-rouge">base_controler</code>) for secure communication</strong>.</p>
 
-<h2 id="virtual-servers-to-nas"><span class="me-2">Virtual Servers to NAS</span><a href="#virtual-servers-to-nas" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>It assumes:</p>
+<ul>
+  <li>A working ROS2 installation</li>
+  <li>ROS2 user and workspace set in an external script (<code class="language-plaintext highlighter-rouge">common.sh</code>)</li>
+</ul>
 
-<p>The virtual servers will use the NAS for shared storage. To facilitate this, the following firewall rules are required:</p>
+<hr />
 
-<div class="table-wrapper"><table>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Interface</th>
-      <th>Source</th>
-      <th>Destination</th>
-      <th>Ports</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>VLANforProxmoxVM</td>
-      <td>ProxmoxVE</td>
-      <td>SambaPve</td>
-      <td>SambaPorts</td>
-    </tr>
-  </tbody>
-</table></div>
+<h2 id="step-by-step-sros2_setup-bash-function"><span class="me-2">Step-by-Step: <code class="language-plaintext highlighter-rouge">sros2_setup()</code> Bash Function</span><a href="#step-by-step-sros2_setup-bash-function" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h2 id="wifi-to-media"><span class="me-2">WiFi to Media</span><a href="#wifi-to-media" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h3 id="1-install-openssl"><span class="me-2">1. Install OpenSSL</span><a href="#1-install-openssl" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>This setup allows my iPhone and iPad to access documents and media stored on the NAS. The following firewall rules were implemented to ensure secure access:</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>apt <span class="nb">install</span> <span class="nt">-y</span> openssl
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>Since access was not granted to the entire WiFi subnet, any additional users connecting to the WiFi network will not have access to the files on the shared NAS. This ensures a higher level of security by restricting access to only authorized devices.</p>
+<p>🔧 <em>Ensures the required cryptographic tools are available for SROS2 key generation.</em></p>
 
-<p>At this point, the Samba service has been installed, the VLANs are configured, and the firewall rules are in place. In the next article, I will cover mounting external hard drives and configuring Samba to further restrict access to the shared resources.</p>
+<hr />
 
+<h3 id="2-switch-to-ros2-user"><span class="me-2">2. Switch to ROS2 User</span><a href="#2-switch-to-ros2-user" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo</span> <span class="nt">-u</span> <span class="s2">"</span><span class="nv">$ROS_USER</span><span class="s2">"</span> bash <span class="nt">-c</span> <span class="s1">'...'</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>🏃 <em>Executes setup in the context of the non-root ROS2 user.</em></p>
+
+<p>Inside the block:</p>
+
+<h4 id="a-source-the-ros2-environment"><span class="me-2">a. Source the ROS2 Environment</span><a href="#a-source-the-ros2-environment" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">source</span> /opt/ros/<span class="nv">$ROS_DISTRO</span>/setup.bash
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>🔗 <em>Loads the ROS2 environment variables.</em></p>
+
+<h4 id="b-create-the-keystore-directory"><span class="me-2">b. Create the Keystore Directory</span><a href="#b-create-the-keystore-directory" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$ROS_WS</span>/sros2_keystore
+</pre></td></tr></tbody></table></code></div></div>
+
+<h4 id="c-initialize-the-keystore-and-create-keys"><span class="me-2">c. Initialize the Keystore and Create Keys</span><a href="#c-initialize-the-keystore-and-create-keys" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>ros2 security create_keystore <span class="nv">$ROS_WS</span>/sros2_keystore
+ros2 security create_key <span class="nv">$ROS_WS</span>/sros2_keystore base_controler
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>🔐 <em>Generates a secure identity for the <code class="language-plaintext highlighter-rouge">base_controler</code> node.</em></p>
+
+<hr />
+
+<h3 id="4-define-node-permissions"><span class="me-2">4. Define Node Permissions</span><a href="#4-define-node-permissions" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Create a file with the following XML content:</p>
+
+<div class="language-xml highlighter-rouge"><div class="code-header">
+        <span data-label-text="XML"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;permissions&gt;</span>
+  <span class="nt">&lt;grant</span> <span class="na">name=</span><span class="s">"base_controler_grant"</span> <span class="na">subject_name=</span><span class="s">"CN=base_controler"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;validity&gt;</span>
+      <span class="nt">&lt;not_before&gt;</span>2025-01-01T00:00:00<span class="nt">&lt;/not_before&gt;</span>
+      <span class="nt">&lt;not_after&gt;</span>2027-01-01T00:00:00<span class="nt">&lt;/not_after&gt;</span>
+    <span class="nt">&lt;/validity&gt;</span>
+    <span class="nt">&lt;allow</span> <span class="na">rule=</span><span class="s">"ALLOW"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;domains&gt;</span>
+        <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;/domains&gt;</span>
+      <span class="nt">&lt;topics&gt;</span>
+        <span class="nt">&lt;topic&gt;</span>*<span class="nt">&lt;/topic&gt;</span>
+      <span class="nt">&lt;/topics&gt;</span>
+      <span class="nt">&lt;partitions&gt;</span>
+        <span class="nt">&lt;partition&gt;</span>*<span class="nt">&lt;/partition&gt;</span>
+      <span class="nt">&lt;/partitions&gt;</span>
+    <span class="nt">&lt;/allow&gt;</span>
+  <span class="nt">&lt;/grant&gt;</span>
+<span class="nt">&lt;/permissions&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>📜 <em>This permission file grants the <code class="language-plaintext highlighter-rouge">base_controler</code> node access to all topics in domain ID 0.</em></p>
+
+<hr />
+
+<h3 id="5-generate-signed-permissions-file"><span class="me-2">5. Generate Signed Permissions File</span><a href="#5-generate-signed-permissions-file" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ros2 security create_permission <span class="nv">$ROS_WS</span>/sros2_keystore base_controler
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>✍️ <em>Signs the permissions file using the CA to make it valid and enforceable.</em></p>
+
+<hr />
+
+<h2 id="security-context-summary"><span class="me-2">Security Context Summary</span><a href="#security-context-summary" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>With this function, we now have:</p>
+
+<p>✅ A <strong>keystore initialized</strong> for SROS2<br />
+✅ A <strong>certificate and key pair</strong> for the <code class="language-plaintext highlighter-rouge">base_controler</code> node<br />
+✅ A <strong>signed permission file</strong> allowing communication<br />
+✅ <strong>End-to-end encryption</strong> for internal robot node communication</p>
+
+<p>Combined with previous security steps—<strong>AppArmor</strong>, <strong>Auditd</strong>, and <strong>firewall configuration</strong>—we’re building a layered security model for our robot.</p>
+
+<hr />
+<p><a href="https://github.com/richard-sebos/Ethical-Hacking-Robot/tree/main/SROS2">See code here</a>
+—</p>
+
+<h2 id="next-steps-intrusion-detection-with-suricata"><span class="me-2">Next Steps: Intrusion Detection with Suricata</span><a href="#next-steps-intrusion-detection-with-suricata" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Now that encrypted communication is set up within the robot’s internal architecture, the next step is to <strong>detect anomalies or intrusions at the network level</strong>. In our next article, we’ll integrate <strong>Suricata</strong>, an open-source intrusion detection system (IDS), to monitor traffic and alert on suspicious behavior.</p>
+
+<p>Stay tuned 👀</p>
+
+<hr />
+
+<p><em>Looking to learn more about ROS2 security, SROS2 node permissions, or robotic system hardening? Bookmark this <a href="https://dev.to/sebos/secure-ros2-setup-hardening-your-robot-project-from-the-start-448a">series</a> and follow along as we secure each layer of our Linux-based robotic system.</em></p>
+
+<p>For more content like this, tools, and walkthroughs, visit my site at <strong><a href="https://sebostechnology.com">Sebos Technology</a></strong>.</p>
 
   </div>
 
@@ -970,8 +1134,9 @@ The servers on my network have static IP addresses, so using IP address would wo
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/proxmox/">Proxmox</a>,
-          <a href="/categories/firewall/">Firewall</a>
+          <a href="/categories/robotics/">Robotics</a>,
+          <a href="/categories/ros2-install-series/">ROS2 Install Series</a>,
+          <a href="/categories/security/">Security</a>
       </div>
     
 
@@ -981,24 +1146,24 @@ The servers on my network have static IP addresses, so using IP address would wo
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/proxmox/"
+            href="/tags/ros2/"
             class="post-tag no-text-decoration"
-          >proxmox</a>
+          >ros2</a>
         
           <a
-            href="/tags/nas/"
+            href="/tags/robotics/"
             class="post-tag no-text-decoration"
-          >NAS</a>
+          >robotics</a>
         
           <a
-            href="/tags/storage/"
+            href="/tags/cybersecurity/"
             class="post-tag no-text-decoration"
-          >storage</a>
+          >cybersecurity</a>
         
           <a
-            href="/tags/firewall/"
+            href="/tags/linux/"
             class="post-tag no-text-decoration"
-          >Firewall</a>
+          >linux</a>
         
       </div>
     
@@ -2208,6 +2373,90 @@ The servers on my network have static IP addresses, so using IP address would wo
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
 
 
@@ -2224,7 +2473,7 @@ The servers on my network have static IP addresses, so using IP address would wo
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/Proxmox-Network-Storage/" class="post-preview card h-100">
+          <a href="/posts/Installing-ROS2/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2236,23 +2485,23 @@ The servers on my network have static IP addresses, so using IP address would wo
 
 <time
   
-  data-ts="1726449060"
+  data-ts="1744221480"
   data-df="ll"
   
 >
-  Sep 15, 2024
+  Apr  9, 2025
 </time>
 
-              <h4 class="pt-0 my-2">Proxmox Network Storages</h4>
+              <h4 class="pt-0 my-2">Installing ROS 2 on Ubuntu with `ros2_install.sh`</h4>
               <div class="text-muted">
-                <p>When I imagine the future of my home lab, I envision it filled with professional-grade equipment—a sleek server rack, servers humming away, and network switches blinking behind a perforated door. H...</p>
+                <p>Here’s a polished, professional-yet-friendly article version of your script documentation. It’s structured with a Table of Contents, clear SEO-friendly wording, and paragraph formatting to make it ...</p>
               </div>
             </div>
           </a>
         </article>
       
         <article class="col">
-          <a href="/posts/Proxmox-NAS-VLANs/" class="post-preview card h-100">
+          <a href="/posts/ROS2_Build-Part1/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2264,25 +2513,25 @@ The servers on my network have static IP addresses, so using IP address would wo
 
 <time
   
-  data-ts="1727049360"
+  data-ts="1744203960"
   data-df="ll"
   
 >
-  Sep 22, 2024
+  Apr  9, 2025
 </time>
 
-              <h4 class="pt-0 my-2">Implementing VLANs for Proxom and NAS</h4>
+              <h4 class="pt-0 my-2">🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User</h4>
               <div class="text-muted">
-                <p>Proxmox: Network for NAS
+                <p>Introduction
 
-In the previous post, we completed the Samba server setup, though the network connection strategy was still in development. Now, it’s time to explore how the Samba server ...</p>
+Welcome to the first post in my series on setting up a secure ROS 2 system on Ubuntu. In this part, we’re going to lay the groundwork by updating the operating system and setting up a...</p>
               </div>
             </div>
           </a>
         </article>
       
         <article class="col">
-          <a href="/posts/Securing-Root-Access/" class="post-preview card h-100">
+          <a href="/posts/ROS2_Build/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2294,16 +2543,16 @@ In the previous post, we completed the Samba server setup, though the network co
 
 <time
   
-  data-ts="1723941300"
+  data-ts="1744106400"
   data-df="ll"
   
 >
-  Aug 17, 2024
+  Apr  8, 2025
 </time>
 
-              <h4 class="pt-0 my-2">Securing Root Access</h4>
+              <h4 class="pt-0 my-2">Hardening Your Robot Project from the Start</h4>
               <div class="text-muted">
-                <p>Continuing our series on securing your Proxmox server, this article focuses on an essential aspect: securing root access. Like many other systems, Proxmox requires an administrator account to perfo...</p>
+                <p>As robotics becomes more accessible and developers take the leap into building their own intelligent machines, the importance of security cannot be overstated. Whether you’re tinkering with your fi...</p>
               </div>
             </div>
           </a>
@@ -2324,22 +2573,18 @@ In the previous post, we completed the Samba server setup, though the network co
 
   
     <a
-      href="/posts/Streamlining-SSH-Key-Management/"
+      href="/posts/Firewall-ROS2/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Streamlining SSH Key Management</p>
+      <p>Robot Security with ROS2 and UFW</p>
     </a>
   
 
   
-    <a
-      href="/posts/Securing-Samba-DAS/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Proxmox NAS Storage - Securing a Samba DAS</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
