@@ -30,7 +30,7 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Securing ROS2 Nodes with SROS2t" />
+<meta property="og:title" content="Securing ROS2 Nodes with SROS2" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a complex ecosystem of internal components, including a base controller, cameras, scanners, and movement modules. These components (ROS2 nodes) must communicate securely with each other." />
 <meta property="og:description" content="In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a complex ecosystem of internal components, including a base controller, cameras, scanners, and movement modules. These components (ROS2 nodes) must communicate securely with each other." />
@@ -40,14 +40,14 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2025-04-30T04:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Securing ROS2 Nodes with SROS2t" />
+<meta property="twitter:title" content="Securing ROS2 Nodes with SROS2" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-30T04:00:00-06:00","datePublished":"2025-04-30T04:00:00-06:00","description":"In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a complex ecosystem of internal components, including a base controller, cameras, scanners, and movement modules. These components (ROS2 nodes) must communicate securely with each other.","headline":"Securing ROS2 Nodes with SROS2t","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SROS2-Setup/"},"url":"http://localhost:4000/posts/SROS2-Setup/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-30T04:00:00-06:00","datePublished":"2025-04-30T04:00:00-06:00","description":"In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a complex ecosystem of internal components, including a base controller, cameras, scanners, and movement modules. These components (ROS2 nodes) must communicate securely with each other.","headline":"Securing ROS2 Nodes with SROS2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SROS2-Setup/"},"url":"http://localhost:4000/posts/SROS2-Setup/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Securing ROS2 Nodes with SROS2t | Sebos Technology
+  <title>Securing ROS2 Nodes with SROS2 | Sebos Technology
   </title>
 
   <!--
@@ -506,7 +506,7 @@
         
           
             
-              <span>Securing ROS2 Nodes with SROS2t</span>
+              <span>Securing ROS2 Nodes with SROS2</span>
             
 
           
@@ -805,7 +805,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>Securing ROS2 Nodes with SROS2t</h1>
+    <h1 data-toc-skip>Securing ROS2 Nodes with SROS2</h1>
     
 
     <div class="post-meta text-muted">
@@ -888,7 +888,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">Securing ROS2 Nodes with SROS2t</span>
+      <span class="label text-truncate">Securing ROS2 Nodes with SROS2</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -901,7 +901,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">Securing ROS2 Nodes with SROS2t</div>
+        <div class="label text-truncate py-2 ms-4">Securing ROS2 Nodes with SROS2</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -1268,14 +1268,21 @@ ros2 security create_key <span class="nv">$ROS_WS</span>/sros2_keystore base_con
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SROS2-Setup/">Securing ROS2 Nodes with SROS2t</a>
+          <a href="/posts/ROS2_Build/">Hardening Your Robot Project from the Start</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ROS2_Build/">Hardening Your Robot Project from the Start</a>
+          <a href="/posts/SROS2-Setup/">Securing ROS2 Nodes with SROS2</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-Key-Based/">Mastering SSH Key-Based Authentication</a>
         </li>
       
         
@@ -1290,13 +1297,6 @@ ros2 security create_key <span class="nv">$ROS_WS</span>/sros2_keystore base_con
         
         <li class="text-truncate lh-lg">
           <a href="/posts/Armor-Audit/">Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Installing-ROS2/">Installing ROS 2 on Ubuntu with `ros2_install.sh`</a>
         </li>
       
     </ul>
@@ -1876,6 +1876,27 @@ ros2 security create_key <span class="nv">$ROS_WS</span>/sros2_keystore base_con
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1960,136 +1981,7 @@ ros2 security create_key <span class="nv">$ROS_WS</span>/sros2_keystore base_con
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -2192,18 +2084,6 @@ ros2 security create_key <span class="nv">$ROS_WS</span>/sros2_keystore base_con
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2247,13 +2127,13 @@ ros2 security create_key <span class="nv">$ROS_WS</span>/sros2_keystore base_con
         <a class="post-tag btn btn-outline-primary" href="/tags/proxmox/">proxmox</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/automation/">Automation</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/nas/">NAS</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/security/">security</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/servers/">servers</a>
       
     </div>
   </section>
@@ -2573,11 +2453,11 @@ Welcome to the first post in my series on setting up a secure ROS 2 system on Ub
 
   
     <a
-      href="/posts/Firewall-ROS2/"
+      href="/posts/SSH-Key-Based/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Robot Security with ROS2 and UFW</p>
+      <p>Mastering SSH Key-Based Authentication</p>
     </a>
   
 
@@ -3206,6 +3086,27 @@ Welcome to the first post in my series on setting up a secure ROS 2 system on Ub
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -3290,136 +3191,7 @@ Welcome to the first post in my series on setting up a secure ROS 2 system on Ub
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -3522,18 +3294,6 @@ Welcome to the first post in my series on setting up a secure ROS 2 system on Ub
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3577,13 +3337,13 @@ Welcome to the first post in my series on setting up a secure ROS 2 system on Ub
         <a class="post-tag btn btn-outline-primary" href="/tags/proxmox/">proxmox</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/automation/">Automation</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/nas/">NAS</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/security/">security</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/servers/">servers</a>
       
     </div>
   </section>

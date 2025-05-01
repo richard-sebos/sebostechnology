@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd" />
+<meta property="og:title" content="Mastering SSH Key-Based Authentication" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="When it comes to securing your ROS 2 environment, tools like AppArmor, SELinux, and Auditd are often overlooked—but they’re incredibly powerful. Like traditional file permissions and firewalls, these Linux security modules help control and monitor which users and processes have access to specific resources. More than just a defense layer, they also provide detailed audit logs when access is attempted or denied, making them essential for robotics applications where software interfaces with the real world." />
-<meta property="og:description" content="When it comes to securing your ROS 2 environment, tools like AppArmor, SELinux, and Auditd are often overlooked—but they’re incredibly powerful. Like traditional file permissions and firewalls, these Linux security modules help control and monitor which users and processes have access to specific resources. More than just a defense layer, they also provide detailed audit logs when access is attempted or denied, making them essential for robotics applications where software interfaces with the real world." />
-<link rel="canonical" href="http://localhost:4000/posts/Armor-Audit/" />
-<meta property="og:url" content="http://localhost:4000/posts/Armor-Audit/" />
+<meta name="description" content="Mastering SSH Key-Based Authentication: Secure Passwordless Login for Linux and Windows" />
+<meta property="og:description" content="Mastering SSH Key-Based Authentication: Secure Passwordless Login for Linux and Windows" />
+<link rel="canonical" href="http://localhost:4000/posts/SSH-Key-Based/" />
+<meta property="og:url" content="http://localhost:4000/posts/SSH-Key-Based/" />
 <meta property="og:site_name" content="Sebos Technology" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-04-10T04:00:00-06:00" />
+<meta property="article:published_time" content="2025-04-29T12:32:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd" />
+<meta property="twitter:title" content="Mastering SSH Key-Based Authentication" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-24T19:03:59-06:00","datePublished":"2025-04-10T04:00:00-06:00","description":"When it comes to securing your ROS 2 environment, tools like AppArmor, SELinux, and Auditd are often overlooked—but they’re incredibly powerful. Like traditional file permissions and firewalls, these Linux security modules help control and monitor which users and processes have access to specific resources. More than just a defense layer, they also provide detailed audit logs when access is attempted or denied, making them essential for robotics applications where software interfaces with the real world.","headline":"Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Armor-Audit/"},"url":"http://localhost:4000/posts/Armor-Audit/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-29T12:32:00-06:00","datePublished":"2025-04-29T12:32:00-06:00","description":"Mastering SSH Key-Based Authentication: Secure Passwordless Login for Linux and Windows","headline":"Mastering SSH Key-Based Authentication","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SSH-Key-Based/"},"url":"http://localhost:4000/posts/SSH-Key-Based/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd | Sebos Technology
+  <title>Mastering SSH Key-Based Authentication | Sebos Technology
   </title>
 
   <!--
@@ -506,7 +506,7 @@
         
           
             
-              <span>Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</span>
+              <span>Mastering SSH Key-Based Authentication</span>
             
 
           
@@ -662,6 +662,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -677,6 +699,50 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -751,7 +817,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</h1>
+    <h1 data-toc-skip>Mastering SSH Key-Based Authentication</h1>
     
 
     <div class="post-meta text-muted">
@@ -768,41 +834,18 @@
 
 <time
   
-  data-ts="1744279200"
+  data-ts="1745951520"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr 10, 2025
+  Apr 29, 2025
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1745543039"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Apr 24, 2025
-</time>
-
-        </span>
       
 
       
@@ -846,7 +889,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="675 words"
+  title="698 words"
 >
   <em>3 min</em> read</span>
 
@@ -857,7 +900,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</span>
+      <span class="label text-truncate">Mastering SSH Key-Based Authentication</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -870,7 +913,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</div>
+        <div class="label text-truncate py-2 ms-4">Mastering SSH Key-Based Authentication</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -880,145 +923,303 @@
   
 
   <div class="content">
-    <p>When it comes to securing your ROS 2 environment, tools like <strong>AppArmor</strong>, <strong>SELinux</strong>, and <strong>Auditd</strong> are often overlooked—but they’re incredibly powerful. Like traditional file permissions and firewalls, these Linux security modules help control and monitor which users and processes have access to specific resources. More than just a defense layer, they also provide detailed audit logs when access is attempted or denied, making them essential for robotics applications where software interfaces with the real world.</p>
+    <h1 id="mastering-ssh-key-based-authentication-secure-passwordless-login-for-linux-and-windows">Mastering SSH Key-Based Authentication: Secure Passwordless Login for Linux and Windows</h1>
 
-<h2 id="table-of-contents"><span class="me-2">Table of Contents</span><a href="#table-of-contents" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>When managing remote servers, <strong>SSH (Secure Shell)</strong> is the standard for encrypted and secure communication. However, relying on passwords for SSH access leaves your systems vulnerable to:</p>
+
 <ol>
-  <li><a href="#introduction-to-linux-security-tools">Introduction to Linux Security Tools</a></li>
-  <li><a href="#understanding-selinux-vs-apparmor">Understanding SELinux vs AppArmor</a></li>
-  <li><a href="#getting-started-with-auditd">Getting Started with Auditd</a></li>
-  <li><a href="#how-apparmor-selinux-and-auditd-work-together">How AppArmor, SELinux, and Auditd Work Together</a></li>
-  <li><a href="#setting-up-apparmor-and-auditd-on-ubuntu-for-ros-2">Setting Up AppArmor and Auditd on Ubuntu for ROS 2</a>
+  <li>Credential stuffing</li>
+  <li>Phishing attacks</li>
+  <li>Keylogging and malware</li>
+  <li>Man-in-the-middle (MitM) attacks</li>
+  <li>Password reuse threats</li>
+  <li>Brute-force dictionary attacks</li>
+</ol>
+
+<p>If you’re looking for a <strong>safer, faster, and more reliable</strong> way to access your servers, <strong>SSH key-based authentication</strong> is the solution. In this guide, we’ll show you how to set up <strong>passwordless SSH login</strong> for <strong>Linux</strong> and <strong>Windows (via PuTTY)</strong> and share tips to boost your SSH security posture.</p>
+
+<hr />
+
+<h2 id="why-use-ssh-keys"><span class="me-2">Why Use SSH Keys?</span><a href="#why-use-ssh-keys" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>SSH keys are a pair of cryptographic files—a <strong>private key</strong> and a <strong>public key</strong>—that authenticate users without a password. This offers several advantages:</p>
+
+<ul>
+  <li><strong>Enhanced security</strong> (especially with stronger keys like 4096-bit RSA or modern Ed25519)</li>
+  <li><strong>Improved convenience</strong> (no passwords to remember or type repeatedly)</li>
+  <li><strong>Resilience against common attack vectors</strong></li>
+</ul>
+
+<p>When you connect to a server, your client offers the <strong>public key</strong>. If the server recognizes it and verifies the corresponding <strong>private key</strong>, access is granted—no password required.</p>
+
+<p>Let’s walk through setting this up step-by-step.</p>
+
+<hr />
+
+<h2 id="1-how-to-generate-ssh-keys"><span class="me-2">1. How to Generate SSH Keys</span><a href="#1-how-to-generate-ssh-keys" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<h3 id="on-linux-openssh"><span class="me-2">On Linux (OpenSSH)</span><a href="#on-linux-openssh" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<ol>
+  <li>Open your terminal.</li>
+  <li>Generate your SSH key pair:
+    <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
+</pre></td></tr></tbody></table></code></div>    </div>
     <ul>
-      <li><a href="#1-enable-and-start-apparmor">Enable and Start AppArmor</a></li>
-      <li><a href="#2-create-placeholder-ros-2-apparmor-profile">Create Placeholder ROS 2 AppArmor Profile</a></li>
-      <li><a href="#3-define-auditd-rules-for-ros-2-components">Define Auditd Rules for ROS 2 Components</a></li>
-      <li><a href="#4-apply-auditd-rules-and-enable-logging">Apply Auditd Rules and Enable Logging</a></li>
+      <li><code class="language-plaintext highlighter-rouge">-t rsa</code>: Specifies the algorithm (RSA).</li>
+      <li><code class="language-plaintext highlighter-rouge">-b 4096</code>: Sets key length for stronger encryption.</li>
+      <li><code class="language-plaintext highlighter-rouge">-C</code>: Optional comment for identifying the key.</li>
     </ul>
   </li>
-  <li><a href="#whats-next">What’s Next?</a></li>
+  <li>Press <strong>Enter</strong> to accept the default file location (<code class="language-plaintext highlighter-rouge">~/.ssh/id_rsa</code>).</li>
+  <li>Choose an optional <strong>passphrase</strong> for added protection.</li>
+  <li>Verify your keys:
+    <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">ls</span> <span class="nt">-l</span> ~/.ssh/id_rsa<span class="k">*</span>
+</pre></td></tr></tbody></table></code></div>    </div>
+    <p>You’ll see:</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">id_rsa</code> (your private key — keep it safe!)</li>
+      <li><code class="language-plaintext highlighter-rouge">id_rsa.pub</code> (your public key — upload this to servers)</li>
+    </ul>
+  </li>
+  <li>Upload your public key to the server:
+    <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ssh-copy-id user@server_name
+</pre></td></tr></tbody></table></code></div>    </div>
+    <p>This adds the key to the server’s <code class="language-plaintext highlighter-rouge">~/.ssh/authorized_keys</code> file.</p>
+  </li>
 </ol>
 
 <hr />
 
-<h2 id="understanding-selinux-vs-apparmor"><span class="me-2">Understanding SELinux vs AppArmor</span><a href="#understanding-selinux-vs-apparmor" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h3 id="on-windows-using-puttygen"><span class="me-2">On Windows (Using PuTTYgen)</span><a href="#on-windows-using-puttygen" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>Both <strong>SELinux</strong> and <strong>AppArmor</strong> are implementations of <strong>Mandatory Access Control (MAC)</strong>—a security framework built directly into the Linux kernel. This gives them a low-level ability to enforce strict policies and limit system access, reducing the risk of compromise.</p>
-
-<ul>
-  <li><strong>SELinux</strong> is commonly used in <strong>Red Hat-based distributions</strong> like CentOS and Fedora.</li>
-  <li><strong>AppArmor</strong> is more often found on <strong>Debian-based systems</strong>, including <strong>Ubuntu</strong>—which is where ROS 2 is frequently installed.</li>
-</ul>
-
-<p>Typically, systems run either SELinux or AppArmor, not both. For ROS 2 on Ubuntu, we’ll focus on AppArmor.</p>
-
-<h2 id="getting-started-with-auditd"><span class="me-2">Getting Started with Auditd</span><a href="#getting-started-with-auditd" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p><strong>Auditd</strong> is the Linux auditing daemon. It collects logs related to system activity, including access events from SELinux and AppArmor. You can use these logs to build or refine security policies—tightening access to only what’s necessary for your robot’s functionality.</p>
-
-<p>With Auditd, you can track execution of binaries, changes to configuration files, and access attempts—critical information when developing in <strong>secure robotics</strong> or <strong>industrial control systems (ICS)</strong> environments.</p>
-
-<h2 id="how-apparmor-selinux-and-auditd-work-together"><span class="me-2">How AppArmor, SELinux, and Auditd Work Together</span><a href="#how-apparmor-selinux-and-auditd-work-together" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>The workflow typically looks like this:</p>
-<ul>
-  <li>Start with <strong>AppArmor</strong> (or SELinux) in <strong>permissive</strong> mode to log but not block activity.</li>
-  <li>Use <strong>Auditd</strong> to monitor system events and understand what your robot software actually needs.</li>
-  <li>Based on this data, create or adjust security policies.</li>
-  <li>Once confident, switch to <strong>enforcing mode</strong> to actively block unauthorized actions.</li>
-</ul>
-
-<p>This iterative approach ensures security policies are accurate without disrupting development.</p>
+<ol>
+  <li>Download <a href="https://www.putty.org/">PuTTY</a> and open <strong>PuTTYgen</strong>.</li>
+  <li>Choose:
+    <ul>
+      <li><strong>Key type</strong>: RSA</li>
+      <li><strong>Number of bits</strong>: 4096</li>
+    </ul>
+  </li>
+  <li>Click <strong>Generate</strong> and move your mouse to create entropy.</li>
+  <li>Save your:
+    <ul>
+      <li><strong>Private key</strong> (<code class="language-plaintext highlighter-rouge">id_rsa.ppk</code>) securely (e.g., <code class="language-plaintext highlighter-rouge">C:\Users\your_username\ssh</code>)</li>
+      <li><strong>Public key</strong> by copying it from the PuTTYgen window</li>
+    </ul>
+  </li>
+  <li>SSH into your server using a password, then:
+    <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">echo</span> <span class="s2">"your-copied-public-key"</span> <span class="o">&gt;&gt;</span> ~/.ssh/authorized_keys
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+</ol>
 
 <hr />
 
-<h2 id="setting-up-apparmor-and-auditd-on-ubuntu-for-ros-2"><span class="me-2">Setting Up AppArmor and Auditd on Ubuntu for ROS 2</span><a href="#setting-up-apparmor-and-auditd-on-ubuntu-for-ros-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="2-configuring-ssh-clients"><span class="me-2">2. Configuring SSH Clients</span><a href="#2-configuring-ssh-clients" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>Since ROS 2 is usually deployed on Ubuntu, we’ll walk through enabling <strong>AppArmor</strong> and <strong>Auditd</strong> in this context. This setup lays the foundation for secure ROS 2 development and gives visibility into how your software interacts with the system.</p>
+<h3 id="linux-sshconfig"><span class="me-2">Linux: <code class="language-plaintext highlighter-rouge">~/.ssh/config</code></span><a href="#linux-sshconfig" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<h3 id="1-enable-and-start-apparmor"><span class="me-2">1. Enable and Start AppArmor</span><a href="#1-enable-and-start-apparmor" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Simplify server access by creating an SSH config file:</p>
+
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre>systemctl <span class="nb">enable </span>apparmor
-systemctl start apparmor
+</pre></td><td class="rouge-code"><pre>vi ~/.ssh/config
 </pre></td></tr></tbody></table></code></div></div>
-<p>This enables AppArmor to start on boot and begins enforcing any existing profiles.</p>
 
-<hr />
+<p>Add:</p>
 
-<h3 id="2-create-placeholder-ros-2-apparmor-profile"><span class="me-2">2. Create Placeholder ROS 2 AppArmor Profile</span><a href="#2-create-placeholder-ros-2-apparmor-profile" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre><span class="nb">mkdir</span> <span class="nt">-p</span> /etc/apparmor.d/ros2/
-<span class="nb">echo</span> <span class="s2">"# Placeholder ROS2 AppArmor profile"</span> <span class="o">&gt;</span> /etc/apparmor.d/ros2/ros2-default
-</pre></td></tr></tbody></table></code></div></div>
-<p>While this profile doesn’t enforce anything yet, it sets the stage for adding real rules as development progresses.</p>
-
-<hr />
-
-<h3 id="3-define-auditd-rules-for-ros-2-components"><span class="me-2">3. Define Auditd Rules for ROS 2 Components</span><a href="#3-define-auditd-rules-for-ros-2-components" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-ini highlighter-rouge"><div class="code-header">
+        <span data-label-text="Ini"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre><span class="nb">cat</span> <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh"> &gt; /etc/audit/rules.d/ros2.rules
--w /opt/ros -p x -k ros_exec
--w /home/</span><span class="nv">$ROS_USER</span><span class="sh">/ros2_ws -p x -k ros_ws_exec
--w /home/</span><span class="nv">$ROS_USER</span><span class="sh">/ros2_ws/src -p wa -k ros_src
--w /etc/ros2 -p wa -k ros_conf
--w /usr/bin/colcon -p x -k colcon_exec
--w /usr/bin/rosdep -p x -k rosdep_exec
--w /home/</span><span class="nv">$ROS_USER</span><span class="sh">/.bashrc -p wa -k ros_env
-</span><span class="no">EOF
-</span></pre></td></tr></tbody></table></code></div></div>
+</pre></td><td class="rouge-code"><pre><span class="err">Host</span> <span class="err">your_server_alias</span>
+    <span class="err">HostName</span> <span class="err">your.server.com</span>
+    <span class="err">User</span> <span class="err">your_username</span>
+    <span class="err">Port</span> <span class="err">22</span>
+    <span class="err">IdentityFile</span> <span class="err">~/.ssh/id_rsa</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>These rules log:</p>
-<ul>
-  <li><strong>Executions</strong> of binaries like ROS, <code class="language-plaintext highlighter-rouge">colcon</code>, and <code class="language-plaintext highlighter-rouge">rosdep</code></li>
-  <li><strong>Changes</strong> to source files, configs, and shell environment</li>
-</ul>
-
-<p>Use <code class="language-plaintext highlighter-rouge">$ROS_USER</code> as your development user or replace it directly.</p>
+<p>Now connect with:</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ssh your_server_alias
+</pre></td></tr></tbody></table></code></div></div>
 
 <hr />
 
-<h3 id="4-apply-auditd-rules-and-enable-logging"><span class="me-2">4. Apply Auditd Rules and Enable Logging</span><a href="#4-apply-auditd-rules-and-enable-logging" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="windows-putty"><span class="me-2">Windows: PuTTY</span><a href="#windows-putty" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<ol>
+  <li>Open <strong>PuTTY</strong>.</li>
+  <li>In the <strong>Session</strong> tab:
+    <ul>
+      <li>Host Name: your server’s IP or hostname</li>
+      <li>Port: 22</li>
+    </ul>
+  </li>
+  <li>Go to <strong>Connection &gt; SSH &gt; Auth</strong> and browse to your <code class="language-plaintext highlighter-rouge">.ppk</code> private key.</li>
+  <li>(Optional) Save the session for quick access later.</li>
+</ol>
+
+<hr />
+
+<h2 id="3-testing-your-ssh-connection"><span class="me-2">3. Testing Your SSH Connection</span><a href="#3-testing-your-ssh-connection" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li><strong>Linux:</strong>
+    <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> ssh your_server_alias
+</pre></td></tr></tbody></table></code></div>    </div>
+    <p>If configured correctly, you’ll connect without a password prompt.</p>
+  </li>
+  <li><strong>Windows (PuTTY):</strong>
+    <ul>
+      <li>Load your saved session and click <strong>Open</strong>.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="4-more-ssh-features-to-explore"><span class="me-2">4. More SSH Features to Explore</span><a href="#4-more-ssh-features-to-explore" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>SSH does more than log you in—here are a few powerful extras:</p>
+
+<h3 id="run-remote-commands"><span class="me-2">Run remote commands:</span><a href="#run-remote-commands" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ssh user@server <span class="s2">"uptime"</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="secure-file-transfers-with-scp"><span class="me-2">Secure file transfers with SCP:</span><a href="#secure-file-transfers-with-scp" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<ul>
+  <li>Upload:
+    <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>scp file.txt user@server:/remote/path/
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+  <li>Download:
+    <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>scp user@server:/remote/path/file.txt <span class="nb">.</span>
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+</ul>
+
+<h3 id="create-ssh-tunnels-port-forwarding"><span class="me-2">Create SSH tunnels (port forwarding):</span><a href="#create-ssh-tunnels-port-forwarding" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ssh <span class="nt">-L</span> 8080:example.com:80 user@server
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="use-an-ssh-agent-linux"><span class="me-2">Use an SSH agent (Linux):</span><a href="#use-an-ssh-agent-linux" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3
-</pre></td><td class="rouge-code"><pre>augenrules <span class="nt">--load</span>
-systemctl <span class="nb">enable </span>auditd
-systemctl start auditd
+</pre></td><td class="rouge-code"><pre><span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>ssh-agent <span class="nt">-s</span><span class="si">)</span><span class="s2">"</span>
+ssh-add ~/.ssh/id_rsa
 </pre></td></tr></tbody></table></code></div></div>
-<p>This applies your audit rules and ensures Auditd starts automatically.</p>
 
 <hr />
 
-<h2 id="whats-next"><span class="me-2">What’s Next?</span><a href="#whats-next" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="5-troubleshooting-ssh-key-issues"><span class="me-2">5. Troubleshooting SSH Key Issues</span><a href="#5-troubleshooting-ssh-key-issues" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>At this point, you have:</p>
 <ul>
-  <li>A fresh Ubuntu installation with ROS 2</li>
-  <li>A dedicated ROS user and the environment</li>
-  <li>Auditd and AppArmor installed and configured</li>
+  <li><strong>“Permission denied” errors?</strong><br />
+ Ensure correct file permissions:
+    <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre> <span class="nb">chmod </span>700 ~/.ssh
+ <span class="nb">chmod </span>600 ~/.ssh/authorized_keys
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+  <li><strong>PuTTY not connecting?</strong>
+    <ul>
+      <li>Make sure you’re using the <code class="language-plaintext highlighter-rouge">.ppk</code> format</li>
+      <li>Check PuTTY’s <strong>Event Log</strong> for specific errors</li>
+    </ul>
+  </li>
 </ul>
 
-<p>Next up in the series, we’ll explore how to configure <strong>firewall rules</strong> to further protect your robot’s communication channels and surface interfaces.</p>
+<hr />
 
-<p>If you have questions, suggestions, or topics you’d love to see covered, drop a comment below. Let’s make robotics not just exciting and innovative—but secure as well.</p>
+<h2 id="6-bonus-security-tips-for-ssh-hardening"><span class="me-2">6. Bonus Security Tips for SSH Hardening</span><a href="#6-bonus-security-tips-for-ssh-hardening" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Want enterprise-grade security? Consider:</p>
+
+<ol>
+  <li><strong>Use Ed25519 keys</strong> instead of RSA:
+    <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ssh-keygen <span class="nt">-t</span> ed25519 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+  <li><strong>Disable password authentication</strong>:
+Edit <code class="language-plaintext highlighter-rouge">/etc/ssh/sshd_config</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>PasswordAuthentication no
+ChallengeResponseAuthentication no
+</pre></td></tr></tbody></table></code></div>    </div>
+    <p>Then:</p>
+    <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>systemctl restart sshd
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+  <li><strong>Restrict SSH access to specific users</strong>:
+    <div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>AllowUsers your_username
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+  <li><strong>Install Fail2Ban or SSHGuard</strong> for intrusion detection and brute-force protection.</li>
+</ol>
+
+<hr />
+
+<h2 id="final-thoughts"><span class="me-2">Final Thoughts</span><a href="#final-thoughts" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>SSH key authentication is an essential skill for anyone working with servers—from home labs to production environments. It significantly <strong>improves security</strong>, eliminates password fatigue, and opens the door to more advanced remote workflows.</p>
+
+<p>Take the time to set it up properly—your systems (and your future self) will be better protected for it.</p>
+
+<hr />
+
+<p><strong>Have questions or want to dive deeper into SSH agent forwarding, key rotation strategies, or enterprise hardening? Drop a comment or reach out—we’re here to help.</strong></p>
 
   </div>
 
@@ -1028,9 +1229,9 @@ systemctl start auditd
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/robotics/">Robotics</a>,
-          <a href="/categories/ros2-install-series/">ROS2 Install Series</a>,
-          <a href="/categories/security/">Security</a>
+          <a href="/categories/github/">Github</a>,
+          <a href="/categories/bash/">Bash</a>,
+          <a href="/categories/automation/">Automation</a>
       </div>
     
 
@@ -1040,24 +1241,24 @@ systemctl start auditd
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/ros2/"
+            href="/tags/automation/"
             class="post-tag no-text-decoration"
-          >ros2</a>
+          >Automation</a>
         
           <a
-            href="/tags/robotics/"
+            href="/tags/bashscripting/"
             class="post-tag no-text-decoration"
-          >robotics</a>
+          >BashScripting</a>
         
           <a
-            href="/tags/cybersecurity/"
+            href="/tags/devops/"
             class="post-tag no-text-decoration"
-          >cybersecurity</a>
+          >DevOps</a>
         
           <a
-            href="/tags/linux/"
+            href="/tags/git/"
             class="post-tag no-text-decoration"
-          >linux</a>
+          >Git</a>
         
       </div>
     
@@ -2111,127 +2312,7 @@ systemctl start auditd
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -2247,7 +2328,7 @@ systemctl start auditd
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/Installing-ROS2/" class="post-preview card h-100">
+          <a href="/posts/AutoGithub/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2259,23 +2340,23 @@ systemctl start auditd
 
 <time
   
-  data-ts="1744221480"
+  data-ts="1741566720"
   data-df="ll"
   
 >
-  Apr  9, 2025
+  Mar  9, 2025
 </time>
 
-              <h4 class="pt-0 my-2">Installing ROS 2 on Ubuntu with `ros2_install.sh`</h4>
+              <h4 class="pt-0 my-2">Automating GitHub Code Check-Ins</h4>
               <div class="text-muted">
-                <p>Here’s a polished, professional-yet-friendly article version of your script documentation. It’s structured with a Table of Contents, clear SEO-friendly wording, and paragraph formatting to make it ...</p>
+                <p>I have a bad habit of not checking in my code. Because of this, I’ve ended up with code scattered across multiple machines over the years. A few years back, I started using GitHub, but if I’m being...</p>
               </div>
             </div>
           </a>
         </article>
       
         <article class="col">
-          <a href="/posts/ROS2_Build-Part1/" class="post-preview card h-100">
+          <a href="/posts/Getting-Started-with-Ansible/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2287,46 +2368,20 @@ systemctl start auditd
 
 <time
   
-  data-ts="1744203960"
+  data-ts="1728928740"
   data-df="ll"
   
 >
-  Apr  9, 2025
+  Oct 14, 2024
 </time>
 
-              <h4 class="pt-0 my-2">🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User</h4>
+              <h4 class="pt-0 my-2">Getting Started with Ansible - Automation Meets Cybersecurity</h4>
               <div class="text-muted">
-                <p>Introduction
+                <p>Ansible Setup
 
-Welcome to the first post in my series on setting up a secure ROS 2 system on Ubuntu. In this part, we’re going to lay the groundwork by updating the operating system and setting up a...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/ROS2_Build/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+In this article, I will walk you through setting up the Ansible Control server.
 
-
-
-
-<time
-  
-  data-ts="1744106400"
-  data-df="ll"
-  
->
-  Apr  8, 2025
-</time>
-
-              <h4 class="pt-0 my-2">Hardening Your Robot Project from the Start</h4>
-              <div class="text-muted">
-                <p>As robotics becomes more accessible and developers take the leap into building their own intelligent machines, the importance of security cannot be overstated. Whether you’re tinkering with your fi...</p>
+In future articles,we will create Ansible playbooks to deploy Zero Trust Access (ZTA) principles acro...</p>
               </div>
             </div>
           </a>
@@ -2347,21 +2402,21 @@ Welcome to the first post in my series on setting up a secure ROS 2 system on Ub
 
   
     <a
-      href="/posts/Installing-ROS2/"
+      href="/posts/Firewall-ROS2/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Installing ROS 2 on Ubuntu with `ros2_install.sh`</p>
+      <p>Robot Security with ROS2 and UFW</p>
     </a>
   
 
   
     <a
-      href="/posts/Firewall-ROS2/"
+      href="/posts/SROS2-Setup/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>Robot Security with ROS2 and UFW</p>
+      <p>Securing ROS2 Nodes with SROS2</p>
     </a>
   
 </nav>

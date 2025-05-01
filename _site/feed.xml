@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-04-30T05:20:43-06:00</updated>
+  <updated>2025-05-01T11:52:32-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -20,8 +20,8 @@
 
   
   <entry>
-    <title>Securing ROS2 Nodes with SROS2t</title>
-    <link href="http://localhost:4000/posts/SROS2-Setup/" rel="alternate" type="text/html" title="Securing ROS2 Nodes with SROS2t" />
+    <title>Securing ROS2 Nodes with SROS2</title>
+    <link href="http://localhost:4000/posts/SROS2-Setup/" rel="alternate" type="text/html" title="Securing ROS2 Nodes with SROS2" />
     <published>2025-04-30T04:00:00-06:00</published>
   
     <updated>2025-04-30T04:00:00-06:00</updated>
@@ -45,6 +45,43 @@
   <summary>In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a complex ecosystem of internal components, including a base controller, cameras, scanners, and movement modules. These components (ROS2 nodes) must communicate securely with each other.
 
 So, how do we sec...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Mastering SSH Key-Based Authentication</title>
+    <link href="http://localhost:4000/posts/SSH-Key-Based/" rel="alternate" type="text/html" title="Mastering SSH Key-Based Authentication" />
+    <published>2025-04-29T12:32:00-06:00</published>
+  
+    <updated>2025-04-29T12:32:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/SSH-Key-Based/</id>
+    <content type="text/html" src="http://localhost:4000/posts/SSH-Key-Based/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Github" />
+    
+    <category term="Bash" />
+    
+    <category term="Automation" />
+    
+  
+
+  <summary>Mastering SSH Key-Based Authentication: Secure Passwordless Login for Linux and Windows
+
+When managing remote servers, SSH (Secure Shell) is the standard for encrypted and secure communication. However, relying on passwords for SSH access leaves your systems vulnerable to:
+
+
+  Credential stuffing
+  Phishing attacks
+  Keylogging and malware
+  Man-in-the-middle (MitM) attacks
+  Password reuse thr...</summary>
 
   </entry>
 
@@ -141,41 +178,6 @@ Setting up a reliable and efficient ROS 2 development environment is a key step 
 
 
  ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User</title>
-    <link href="http://localhost:4000/posts/ROS2_Build-Part1/" rel="alternate" type="text/html" title="🛡️ Setting Up a Secure ROS 2 System Part 1 – Updating Ubuntu and Creating a ROS User" />
-    <published>2025-04-09T07:06:00-06:00</published>
-  
-    <updated>2025-04-09T07:06:00-06:00</updated>
-  
-    <id>http://localhost:4000/posts/ROS2_Build-Part1/</id>
-    <content type="text/html" src="http://localhost:4000/posts/ROS2_Build-Part1/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="ROS2 Install Series" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>Introduction
-
-Welcome to the first post in my series on setting up a secure ROS 2 system on Ubuntu. In this part, we’re going to lay the groundwork by updating the operating system and setting up a dedicated user for ROS 2. These initial steps might seem routine, but they’re crucial for building a system that’s stable, maintainable, and secure.
-
-Table of Contents
-
-  Introduction
-  Modular Bash ...</summary>
 
   </entry>
 

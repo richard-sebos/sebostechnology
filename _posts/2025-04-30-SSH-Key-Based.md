@@ -1,3 +1,11 @@
+---
+title: Mastering SSH Key-Based Authentication
+published: True
+date: 2025-04-29 18:32 +0000
+categories: [Github, Bash, Automation]
+tags: [Automation,BashScripting,DevOps,Git] 
+---
+
 # Mastering SSH Key-Based Authentication: Secure Passwordless Login for Linux and Windows
 
 When managing remote servers, **SSH (Secure Shell)** is the standard for encrypted and secure communication. However, relying on passwords for SSH access leaves your systems vulnerable to:
