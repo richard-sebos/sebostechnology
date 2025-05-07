@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-05-01T11:52:32-06:00</updated>
+  <updated>2025-05-01T11:56:51-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/SROS2-Setup/" rel="alternate" type="text/html" title="Securing ROS2 Nodes with SROS2" />
     <published>2025-04-30T04:00:00-06:00</published>
   
-    <updated>2025-04-30T04:00:00-06:00</updated>
+    <updated>2025-05-01T11:54:13-06:00</updated>
   
     <id>http://localhost:4000/posts/SROS2-Setup/</id>
     <content type="text/html" src="http://localhost:4000/posts/SROS2-Setup/" />
