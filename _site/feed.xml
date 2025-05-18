@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-05-01T11:56:51-06:00</updated>
+  <updated>2025-05-18T16:05:09-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>Securing ROS2 Nodes with SROS2</title>
-    <link href="http://localhost:4000/posts/SROS2-Setup/" rel="alternate" type="text/html" title="Securing ROS2 Nodes with SROS2" />
-    <published>2025-04-30T04:00:00-06:00</published>
+    <title>🛡️ Complete Guide to Fail2Ban - Protect Your SSH Server from Brute Force Attacks</title>
+    <link href="http://localhost:4000/posts/Fail2Ban/" rel="alternate" type="text/html" title="🛡️ Complete Guide to Fail2Ban - Protect Your SSH Server from Brute Force Attacks" />
+    <published>2025-05-18T06:11:00-06:00</published>
   
-    <updated>2025-05-01T11:54:13-06:00</updated>
+    <updated>2025-05-18T06:11:00-06:00</updated>
   
-    <id>http://localhost:4000/posts/SROS2-Setup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/SROS2-Setup/" />
+    <id>http://localhost:4000/posts/Fail2Ban/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Fail2Ban/" />
     <author>
       <name>Richard Chamberlain</name>
     </author>
@@ -42,19 +42,118 @@
     
   
 
-  <summary>In our previous post, we configured the firewall and granted $PROGRAMMER_LAPTOP_IP access to the robot via SSH. But controlling a robot involves more than just external connections—a robot is a complex ecosystem of internal components, including a base controller, cameras, scanners, and movement modules. These components (ROS2 nodes) must communicate securely with each other.
+  <summary>📝 Introduction
 
-So, how do we sec...</summary>
+Securing your SSH access is a fundamental step in hardening any Linux server. While using SSH Key-Based Authentication and enabling Two-Factor Authentication (2FA) significantly strengthen login security, these methods alone don’t prevent brute force attacks.
+
+📚 Table of Contents
+
+
+  Introduction
+  Why Brute Force Attacks Are Still a Threat
+  What is Fail2Ban?
+  
+    How to Set ...</summary>
 
   </entry>
 
   
   <entry>
-    <title>Mastering SSH Key-Based Authentication</title>
-    <link href="http://localhost:4000/posts/SSH-Key-Based/" rel="alternate" type="text/html" title="Mastering SSH Key-Based Authentication" />
-    <published>2025-04-29T12:32:00-06:00</published>
+    <title>🛡️ Securing ROS2 Robotic Projects with Auditd- A Practical Guide</title>
+    <link href="http://localhost:4000/posts/ROS2-Auditd/" rel="alternate" type="text/html" title="🛡️ Securing ROS2 Robotic Projects with Auditd- A Practical Guide" />
+    <published>2025-05-17T06:11:00-06:00</published>
   
-    <updated>2025-04-29T12:32:00-06:00</updated>
+    <updated>2025-05-17T06:11:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/ROS2-Auditd/</id>
+    <content type="text/html" src="http://localhost:4000/posts/ROS2-Auditd/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="ROS2 Install Series" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>In our ongoing journey to secure ROS2-based robotic projects, we’ve already implemented several foundational security measures. We started with a fresh installation, configured SROS2 for secure ROS communications, enabled AppArmor and Auditd, set up a firewall, and deployed Suricata for network monitoring.
+
+While AppArmor, Auditd, and Suricata all help define rules and profiles to protect and m...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>🔐 How to Set Up Multi-Factor Authentication (MFA) on Ubuntu for SSH</title>
+    <link href="http://localhost:4000/posts/MFA/" rel="alternate" type="text/html" title="🔐 How to Set Up Multi-Factor Authentication (MFA) on Ubuntu for SSH" />
+    <published>2025-05-10T11:31:00-06:00</published>
+  
+    <updated>2025-05-10T11:31:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/MFA/</id>
+    <content type="text/html" src="http://localhost:4000/posts/MFA/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Github" />
+    
+    <category term="Bash" />
+    
+    <category term="Automation" />
+    
+  
+
+  <summary>How to Set Up Multi-Factor Authentication (MFA) on Ubuntu for SSH
+
+Securing your Linux servers is more critical than ever, and one of the simplest ways to dramatically improve login security is by enabling Multi-Factor Authentication (MFA). This guide walks you through setting up MFA on a fresh Ubuntu 24.04 installation using Google Authenticator, ensuring your SSH access is protected against u...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>🔐 Securing ROS 2 Robots - Network Intrusion Detection with Suricata</title>
+    <link href="http://localhost:4000/posts/Suricata/" rel="alternate" type="text/html" title="🔐 Securing ROS 2 Robots - Network Intrusion Detection with Suricata" />
+    <published>2025-05-07T06:11:00-06:00</published>
+  
+    <updated>2025-05-10T07:19:10-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Suricata/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Suricata/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="ROS2 Install Series" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>As robots become more deeply integrated into logistics, healthcare, research, and everyday life, they also become more attractive targets for cyber threats. Network security in robotics is no longer optional—especially when those systems rely on distributed middleware like ROS 2 (Robot Operating System 2).
+
+In this article, part of our broader ROS 2 robot hardening series, we focus on using Sur...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>🔐 Mastering SSH Key-Based Authentication</title>
+    <link href="http://localhost:4000/posts/SSH-Key-Based/" rel="alternate" type="text/html" title="🔐 Mastering SSH Key-Based Authentication" />
+    <published>2025-05-03T10:11:00-06:00</published>
+  
+    <updated>2025-05-03T10:11:00-06:00</updated>
   
     <id>http://localhost:4000/posts/SSH-Key-Based/</id>
     <content type="text/html" src="http://localhost:4000/posts/SSH-Key-Based/" />
@@ -82,102 +181,6 @@ When managing remote servers, SSH (Secure Shell) is the standard for encrypted a
   Keylogging and malware
   Man-in-the-middle (MitM) attacks
   Password reuse thr...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Robot Security with ROS2 and UFW</title>
-    <link href="http://localhost:4000/posts/Firewall-ROS2/" rel="alternate" type="text/html" title="Robot Security with ROS2 and UFW" />
-    <published>2025-04-27T04:00:00-06:00</published>
-  
-    <updated>2025-04-27T04:00:00-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Firewall-ROS2/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Firewall-ROS2/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="ROS2 Install Series" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>🧠 Introduction: Why Robot Security Matters
-
-To me, robots are more than machines—they’re a reflection of human creativity and ingenuity. Whether designed to explore new worlds, ease daily burdens, entertain, or alleviate suffering, robots are becoming deeply embedded in our lives. But to do any of this, they must connect with the outside world.
-
-Table of Contents
-
-
-  Introduction: Why Robot Sec...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</title>
-    <link href="http://localhost:4000/posts/Armor-Audit/" rel="alternate" type="text/html" title="Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd" />
-    <published>2025-04-10T04:00:00-06:00</published>
-  
-    <updated>2025-04-24T19:03:59-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Armor-Audit/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Armor-Audit/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="ROS2 Install Series" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>When it comes to securing your ROS 2 environment, tools like AppArmor, SELinux, and Auditd are often overlooked—but they’re incredibly powerful. Like traditional file permissions and firewalls, these Linux security modules help control and monitor which users and processes have access to specific resources. More than just a defense layer, they also provide detailed audit logs when access is att...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Installing ROS 2 on Ubuntu with `ros2_install.sh`</title>
-    <link href="http://localhost:4000/posts/Installing-ROS2/" rel="alternate" type="text/html" title="Installing ROS 2 on Ubuntu with `ros2_install.sh`" />
-    <published>2025-04-09T11:58:00-06:00</published>
-  
-    <updated>2025-04-09T11:58:00-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Installing-ROS2/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Installing-ROS2/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="ROS2 Install Series" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>Here’s a polished, professional-yet-friendly article version of your script documentation. It’s structured with a Table of Contents, clear SEO-friendly wording, and paragraph formatting to make it reader- and documentation-friendly.
-
-Setting up a reliable and efficient ROS 2 development environment is a key step in any robotics or automation project. In our previous post, we covered how to:
-
-
- ...</summary>
 
   </entry>
 

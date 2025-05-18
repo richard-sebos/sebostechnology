@@ -1,7 +1,7 @@
 ---
-title: Mastering SSH Key-Based Authentication
+title: 🔐 Mastering SSH Key-Based Authentication
 published: True
-date: 2025-04-29 18:32 +0000
+date: 2025-05-03 16:11 +0000
 categories: [Github, Bash, Automation]
 tags: [Automation,BashScripting,DevOps,Git] 
 ---

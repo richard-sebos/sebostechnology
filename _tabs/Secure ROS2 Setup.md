@@ -40,8 +40,9 @@ In this series, we’ll walk through key steps to build a more secure ROS2 setup
 - 🔐 [Configuring AppArmor and Auditd](https://dev.to/sebos/securing-ros-2-with-apparmor-and-auditd-a-practical-guide-16fb)
 - 🌐 [Setting up basic firewall rules](https://dev.to/sebos/-robot-security-with-ros-2-and-ufw-firewalls-for-the-future-of-robotics-334e)
 - 🧰 [Enabling SROS2 for secure communication](https://dev.to/sebos/securing-ros2-nodes-with-sros2-encryption-and-permissions-for-robot-communications-m55)
-- 🔎 Installing and configuring Suricata for network intrusion detection
+- 🔎 [Installing and configuring Suricata for network intrusion detection](https://dev.to/sebos/securing-ros-2-robots-network-intrusion-detection-with-suricata-ipb)
 - 📄 Creating a baseline security report
+   - [Auditd](https://dev.to/sebos/securing-ros2-robotic-projects-
 - 🗓️ Automating periodic security checks with scheduled reports
 
 Each topic will have its own deep-dive post, so you can follow along step by step or jump to the parts that are most relevant to your setup.

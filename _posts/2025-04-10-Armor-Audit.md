@@ -1,6 +1,6 @@
 ---
 title: Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd 
-date: 2025-04-10 10:00:00 +0000
+date: 2025-04-25 10:00:00 +0000
 categories: [Robotics, ROS2 Install Series, Security]
 tags: [ros2, robotics, cybersecurity, linux]
 ---

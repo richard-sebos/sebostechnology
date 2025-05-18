@@ -1,0 +1,249 @@
+# 🛡️ **Complete Guide to Fail2Ban: Protect Your SSH Server from Brute Force Attacks**
+
+---
+## 📝 **Introduction**
+
+Securing your SSH access is a fundamental step in hardening any Linux server. While using [SSH Key-Based Authentication](https://dev.to/sebos/mastering-ssh-key-based-authentication-secure-passwordless-login-for-linux-and-windows-4okm) and enabling [Two-Factor Authentication (2FA)](https://dev.to/sebos/how-to-set-up-multi-factor-authentication-mfa-on-ubuntu-for-ssh-1201) significantly strengthen login security, these methods alone don’t prevent brute force attacks.
+
+## 📚 **Table of Contents**
+
+1. [Introduction](#introduction)
+2. [Why Brute Force Attacks Are Still a Threat](#why-brute-force-attacks-are-still-a-threat)
+3. [What is Fail2Ban?](#what-is-fail2ban)
+4. [How to Set Up Fail2Ban for SSH](#how-to-set-up-fail2ban-for-ssh)
+
+   * [File 1: Global Defaults – `/etc/fail2ban/jail.local`](#file-1-global-defaults--etcfail2banjaillocal)
+   * [File 2: SSH-Specific Settings – `/etc/fail2ban/jail.d/sshd.local`](#file-2-ssh-specific-settings--etcfail2banjaildsshdlocal)
+5. [Testing Fail2Ban Protection](#testing-fail2ban-protection)
+6. [Conclusion and Next Steps](#conclusion-and-next-steps)
+
+---
+
+
+Brute force attempts can lead to:
+
+* 🛡️ **Security Risks**
+* 📈 **Performance and Resource Impacts**
+* 📡 **Network Disruptions**
+* 📚 **Compliance and Audit Violations**
+
+Even with firewalls and IP restrictions using [AllowUsers](https://dev.to/sebos/limiting-ssh-access-with-tcp-wrappers-allowusers-and-ip-restrictions-kco), compromised devices within your network can still launch brute force attacks. This is where Fail2Ban comes in.
+
+---
+
+## 🚨 **Why Brute Force Attacks Are Still a Threat**
+
+You might think, *“I have SSH keys and 2FA enabled; isn’t that enough?”* Unfortunately, the answer is no. While these measures prevent unauthorized access, they don’t stop repeated failed login attempts that can:
+
+* Consume system resources
+* Fill up logs, affecting audit clarity
+* Trigger compliance violations
+* Potentially exploit zero-day vulnerabilities
+
+**Fail2Ban** actively prevents these attacks by blocking malicious IP addresses before they can become a bigger problem.
+
+---
+
+## 🔎 **What is Fail2Ban?**
+
+Fail2Ban is a powerful intrusion prevention system that monitors log files and reacts to suspicious activity, such as repeated failed authentication attempts. While we’re focusing on SSH in this guide, Fail2Ban also supports services like Apache, NGINX, and Sendmail.
+
+### ✅ **Common Fail2Ban Actions:**
+
+* Apply temporary or permanent bans
+* Block IP addresses using firewall rules
+* Modify IP sets for advanced firewall management
+* Add routes to blackhole malicious traffic
+* Send email notifications to administrators
+* Execute custom scripts
+* Log and alert without banning (monitoring mode)
+
+Fail2Ban’s actions are highly customizable, allowing you to tailor protections based on your specific security requirements.
+
+---
+
+## 🛠️ **How to Set Up Fail2Ban for SSH**
+
+Fail2Ban configuration primarily revolves around its **jail files**. The `jail.conf` file contains default settings, but it’s best practice to use `jail.local` and service-specific `.local` files for custom configurations.
+
+### 📦 **File 1: Global Defaults – `/etc/fail2ban/jail.local`**
+
+```ini
+[DEFAULT]
+
+# ========================
+# Fail2Ban Global Settings
+# ========================
+
+# IP addresses or networks to ignore (never ban). 
+# Add your trusted subnets and management IPs here.
+ignoreip = 127.0.0.1/8 ::1 192.168.178.0/24  
+
+# Duration for which an IP is banned after exceeding maxretry attempts.
+# Format examples: s (seconds), m (minutes), h (hours), d (days)
+bantime = 1h  
+
+# Time window within which maxretry failures must occur to trigger a ban.
+findtime = 10m  
+
+# Number of failed attempts before an IP gets banned.
+maxretry = 3  
+
+# Backend used to read logs. 
+# 'systemd' is recommended for modern systems using journalctl.
+backend = systemd  
+
+# Control DNS usage in logs and actions. 
+# Options: yes | warn | no 
+# 'warn' tries to resolve but continues if it fails.
+usedns = warn  
+
+# ===========================
+# Ban Action Configuration
+# ===========================
+# Action to take when a rule is triggered.
+# %(action_mwl)s: 
+#  - Ban the IP
+#  - Send an email with whois info and relevant logs
+action = %(action_mwl)s
+
+```
+
+---
+
+### 📦 **File 2: SSH-Specific Settings – `/etc/fail2ban/jail.d/sshd.local`**
+
+```ini
+[sshd]
+
+# ==========================
+# SSH Jail Configuration
+# ==========================
+
+# Enable the SSH jail to monitor and protect against brute-force attacks.
+enabled = true  
+
+# Port Fail2Ban should monitor for SSH connections.
+# If you run SSH on a custom port, replace 'ssh' with the actual port number (e.g., 2222).
+port = ssh  
+
+# Filter definition to use. 
+# 'sshd' refers to the default filter that matches common SSH authentication failures.
+filter = sshd  
+
+# Log file location. 
+# '%(sshd_log)s' uses the default value set by the system, typically /var/log/auth.log or journalctl.
+logpath = %(sshd_log)s  
+
+# Backend for reading logs.
+# 'systemd' is recommended if your system uses journalctl for logging.
+backend = systemd  
+
+# ==========================
+# SSH-Specific Overrides
+# ==========================
+
+# Time window to evaluate failed login attempts.
+# If 'maxretry' failures occur within this time, the IP will be banned.
+findtime = 5m  
+
+# Number of failed attempts allowed before triggering a ban.
+maxretry = 4  
+
+```
+
+💡 **Tip:** You can apply the same structure for other services like `nginx.local` or `apache.local` under `/etc/fail2ban/jail.d/` to keep configurations clean and organized.
+
+Fail2Ban processes configuration files in the following order:
+
+1. `/etc/fail2ban/jail.conf` (Defaults – *Do Not Modify*)
+2. `/etc/fail2ban/jail.local` (Global Overrides)
+3. All `.local` files in `/etc/fail2ban/jail.d/` (Service-Specific Settings)
+
+---
+
+## 🧩 **Testing Fail2Ban Protection**
+
+After setting up Fail2Ban, it’s crucial to validate that it correctly detects and mitigates brute force attempts.
+
+Here’s a simple script to simulate failed SSH logins:
+
+```bash
+#!/bin/bash
+
+# ===============================
+# Fail2Ban SSH Ban Trigger Script
+# ===============================
+# This script intentionally generates failed SSH login attempts 
+# to test if Fail2Ban properly detects and blocks brute-force attacks.
+
+# -------------------------------
+# Target Configuration
+# -------------------------------
+TARGET_HOST="192.168.178.13"    # IP address or hostname of the target server to test
+FAKE_USER="invaliduser"         # Non-existent username to force authentication failure
+ATTEMPTS=5                      # Number of failed attempts (match or exceed Fail2Ban 'maxretry' setting)
+
+echo "Triggering Fail2Ban by attempting to SSH as user '$FAKE_USER' to $TARGET_HOST"
+
+# -------------------------------
+# Brute-Force Simulation Loop
+# -------------------------------
+for i in $(seq 1 $ATTEMPTS); do
+    echo "Attempt $i..."
+    ssh \
+        -o PreferredAuthentications=password \    # Force password authentication (skip public key)
+        -o PubkeyAuthentication=no \              # Disable public key authentication entirely
+        -o StrictHostKeyChecking=no \              # Avoid host key verification prompts
+        -o ConnectTimeout=5 \                      # Limit each connection attempt to 5 seconds
+        "$FAKE_USER@$TARGET_HOST" exit             # Attempt to connect and immediately exit if successful (won't be)
+done
+
+# -------------------------------
+# Final Status Message
+# -------------------------------
+echo "Done. Check Fail2Ban status on the target server using:"
+echo "  sudo fail2ban-client status sshd"
+
+```
+
+Check the Fail2Ban status:
+
+```bash
+sudo fail2ban-client status sshd
+```
+
+Example output:
+
+```bash
+Status for the jail: sshd
+|- Filter
+|  |- Currently failed:	1
+|  |- Total failed:	5
+|  `- Journal matches:	_SYSTEMD_UNIT=sshd.service + _COMM=sshd
+`- Actions
+   |- Currently banned:	1
+   |- Total banned:	1
+   `- Banned IP list:	192.168.178.11
+```
+
+To manually unblock an IP before the ban expires:
+
+```bash
+sudo fail2ban-client set sshd unbanip 192.168.178.11
+```
+
+---
+
+## ✅ **Conclusion and Next Steps**
+
+SSH is a critical protocol for remote Linux server management but also remains a primary target for attackers. By combining Fail2Ban with [2FA](https://dev.to/sebos/how-to-set-up-multi-factor-authentication-mfa-on-ubuntu-for-ssh-1201), [SSH Key Authentication](https://dev.to/sebos/mastering-ssh-key-based-authentication-secure-passwordless-login-for-linux-and-windows-4okm), and [IP Restrictions](https://dev.to/sebos/limiting-ssh-access-with-tcp-wrappers-allowusers-and-ip-restrictions-kco), you create a multi-layered defense that significantly reduces the risk of compromise.
+
+---
+
+### 🔐 **New to SSH Security? Start Here!**
+
+Kick off your SSH hardening journey with [**Your First Steps to a Hardened SSH Server**](https://dev.to/sebos/your-first-step-to-a-hardened-ssh-server-49mj). Learn why securing `sshd_config` is critical and how to avoid common security pitfalls.
+
+Drop a comment or reach out—we’re here to help. For more content like this, tools, and walkthroughs, visit my site at **Sebos Technology**.
+
