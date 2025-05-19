@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-05-19T05:42:12-06:00</updated>
+  <updated>2025-05-19T09:00:59-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -34,26 +34,23 @@
 
   
     
-    <category term="Robotics" />
+    <category term="Linux Security" />
     
-    <category term="ROS2 Install Series" />
+    <category term="Server Hardening" />
     
-    <category term="Security" />
+    <category term="SSH Security" />
+    
+    <category term="Fail2Ban" />
+    
+    <category term="DevOps Tutorials" />
+    
+    <category term="Cybersecurity Best" />
+    
+    <category term="Practices" />
     
   
 
-  <summary>📝 Introduction
-
-Securing your SSH access is a fundamental step in hardening any Linux server. While using SSH Key-Based Authentication and enabling Two-Factor Authentication (2FA) significantly strengthen login security, these methods alone don’t prevent brute force attacks.
-
-📚 Table of Contents
-
-
-  Introduction
-  Why Brute Force Attacks Are Still a Threat
-  What is Fail2Ban?
-  
-    How to Set ...</summary>
+  <summary>Protect your Linux servers from SSH brute-force attacks with Fail2Ban. This guide covers easy-to-follow configuration steps, security best practices, and testing methods to harden your SSH access.</summary>
 
   </entry>
 

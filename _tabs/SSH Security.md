@@ -53,7 +53,7 @@ _A focus on securing SSH endpoints from unauthorized access and abuse._
 3. [Limiting SSH Access with TCP Wrappers, `AllowUsers`, and IP Restrictions](https://dev.to/sebos/limiting-ssh-access-with-tcp-wrappers-allowusers-and-ip-restrictions-kco)
 4. [Enforcing Strong SSH Authentication: Passwordless Login with Key-Based Auth](https://dev.to/sebos/mastering-ssh-key-based-authentication-secure-passwordless-login-for-linux-and-windows-4okm)
 5. [Integrating SSH with Two-Factor Authentication (2FA) using PAM](https://dev.to/sebos/how-to-set-up-multi-factor-authentication-mfa-on-ubuntu-for-ssh-1201)
-6. **Detecting and Mitigating SSH Brute Force Attacks with Fail2Ban**
+6. [Detecting and Mitigating SSH Brute Force Attacks with Fail2Ban](https://dev.to/sebos/complete-guide-to-fail2ban-protect-your-ssh-server-from-brute-force-attacks-3m3l)
 7. [SSH Security Boost: Implementing Port Knocking to Block Unauthorized Access](https://dev.to/sebos/ssh-security-boost-implementing-port-knocking-to-block-unauthorized-access-1n1n)
 8. [Automate Port Knocking with Dynamic Port Rotation for Secure SSH Access](https://dev.to/sebos/automate-port-knocking-with-dynamic-port-rotation-for-secure-ssh-access-pbh)
 9. **Securing SSH with SELinux: Custom Contexts and Policies**
