@@ -20,8 +20,8 @@
   {
     "title": "🛡️ Securing ROS2 Robotic Projects with Auditd- A Practical Guide",
     "url": "/posts/ROS2-Auditd/",
-    "categories": "Robotics, ROS2 Install Series, Security",
-    "tags": "ros2, robotics, cybersecurity, linux",
+    "categories": "Robotics, ROS2 Install Series, Security, Robotics Security, Linux System Hardening, ROS2 Development, Cybersecurity Best Practices, Open-Source Security Tools, Industrial IoT Security, DevSecOps for Robotics",
+    "tags": "ROS2 Security, Auditd Linux, Robotics Cybersecurity, Secure ROS Communications, Linux Auditing Tools, ROS2 Hardening, AppArmor and Auditd, Network Monitoring in Robotics, Robot Security Frameworks, SROS2 Configuration, ROS2 Development Security, Linux System Monitoring, ROS2 Build Security, Suricata IDS, Auditd Rules Examples, ROS2",
     "date": "2025-05-17 06:11:00 -0600",
     
 

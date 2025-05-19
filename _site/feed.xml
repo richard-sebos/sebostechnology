@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-05-19T09:00:59-06:00</updated>
+  <updated>2025-05-19T09:20:49-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/Fail2Ban/" rel="alternate" type="text/html" title="🛡️ Complete Guide to Fail2Ban - Protect Your SSH Server from Brute Force Attacks" />
     <published>2025-05-18T06:11:00-06:00</published>
   
-    <updated>2025-05-18T06:11:00-06:00</updated>
+    <updated>2025-05-19T09:02:25-06:00</updated>
   
     <id>http://localhost:4000/posts/Fail2Ban/</id>
     <content type="text/html" src="http://localhost:4000/posts/Fail2Ban/" />
@@ -76,11 +76,23 @@
     
     <category term="Security" />
     
+    <category term="Robotics Security" />
+    
+    <category term="Linux System Hardening" />
+    
+    <category term="ROS2 Development" />
+    
+    <category term="Cybersecurity Best Practices" />
+    
+    <category term="Open-Source Security Tools" />
+    
+    <category term="Industrial IoT Security" />
+    
+    <category term="DevSecOps for Robotics" />
+    
   
 
-  <summary>In our ongoing journey to secure ROS2-based robotic projects, we’ve already implemented several foundational security measures. We started with a fresh installation, configured SROS2 for secure ROS communications, enabled AppArmor and Auditd, set up a firewall, and deployed Suricata for network monitoring.
-
-While AppArmor, Auditd, and Suricata all help define rules and profiles to protect and m...</summary>
+  <summary>Learn how to enhance ROS2-based robotic project security using Auditd, a powerful Linux auditing tool. Discover real-world use cases, practical audit rules, and scripts to monitor ROS2 environments effectively without hindering development.</summary>
 
   </entry>
 
