@@ -3,20 +3,30 @@
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/richard-chamberlain-b9945a32/'
 
+- type: Dev.to
+  icon: 'fab fa-dev'   # Font Awesome icon for dev.to
+  url:  'https://dev.to/sebos'
+
+- type: Medium
+  icon: 'fab fa-medium'   # Font Awesome icon for Medium
+  url:  'https://medium.com/@info_39613'
+
+- type: github
+  icon: "fab fa-github"
+  url:  'https://github.com/richard-sebos'
+
 - type: Facebook
   icon: 'fab fa-facebook'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.facebook.com/richard.chamberlain'
 
-- type: github
-  icon: "fab fa-github"
-
 - type: twitter
   icon: "fa-brands fa-x-twitter"
-
+  url:  'https://x.com/SebosInfo'
 
 - type: email
   icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+  url: "mailto:info@sebostechnology.com"
+  noblank: true
 
 
 - type: rss
