@@ -1,62 +1,60 @@
 ---
-title: Automating GitHub Code Check-Ins
+title: Stop Losing Code: Automate Your GitHub Backups with Bash Scripts
 date: 2025-03-10 12:32 +0000
-categories: [Github, Bash, Automation]
-tags: [Automation,BashScripting,DevOps,Git] 
+categories: [Github, Bash, Automation, DevOps Tools, Code Management]
+tags: [Automation,BashScripting,DevOps,Git, Git Automation, ProductivityHacks] 
 ---
 
-I have a bad habit of not checking in my code. Because of this, I’ve ended up with code scattered across multiple machines over the years. A few years back, I started using GitHub, but if I’m being honest, only about half of my code actually makes it there. This year, I want that to change.  
-Here’s a Table of Contents for your article:  
-
-
-
-## **Table of Contents**  
-
-2. [Automating the Process](#automating-the-process)  
-3. [Linking a Project to a GitHub Repository](#linking-a-project-to-a-github-repository)  
-4. [Setting Up GitHub Authentication](#setting-up-github-authentication)  
-5. [Checking In Code](#checking-in-code)  
-6. [What’s Next?](#whats-next)  
+Are you tired of losing track of your projects and code scattered across multiple machines? You’re not alone. I used to have this bad habit of never checking in my code, which left me hunting down files across old laptops and virtual machines. That changed when I automated my GitHub workflow with simple Bash scripts. Here’s how you can **automate GitHub backups and secure your code effortlessly**.
 
 ---
 
-This makes navigation easier, especially if you're posting it in a markdown-friendly environment like GitHub or a wiki. Let me know if you’d like any modifications! 🚀
-## Automating the Process  
+## **🚀 Table of Contents**
 
-This morning, while creating a new directory structure for my Ethical Hacking Robot project, I realized that the code wasn’t checked in anywhere. As I designed a bash script to set up the directory structure, it seemed like the perfect time to fix this bad habit. I decided to create two additional scripts—one to link a project to a GitHub repository and another to handle syncing and pushing code automatically. After testing, both scripts worked well, and they’ve already improved my workflow.  
+1. [Why You Should Automate Code Backups](#why-you-should-automate-code-backups)
+2. [Automating GitHub Repository Setup](#automating-github-repository-setup)
+3. [Securing GitHub Authentication via SSH and API Tokens](#securing-github-authentication-via-ssh-and-api-tokens)
+4. [Automating Code Sync and Git Push](#automating-code-sync-and-git-push)
+5. [Final Thoughts and Next Steps](#final-thoughts-and-next-steps)
 
-## Linking a Project to a GitHub Repository  
+---
 
-To streamline the process, I created a script that links a new project to a GitHub repository as the project directories are being set up. This script relies on a configuration file, `setup_config.sh`, which includes:  
+## **📂 Why You Should Automate Code Backups**
 
-- **USERNAME** – The local Linux system username  
-- **GITHUB_REPO** – The GitHub repository URL  
-- **GIT_USER_NAME** – The GitHub account name  
-- **GIT_USER_EMAIL** – The email associated with the GitHub account  
-- **GITHUB_API_TOKEN** – A GitHub API token for authentication  
+Manual backups fail because… well, we’re human. Automating this process ensures that your projects are always safe, versioned, and recoverable—even if your machine crashes tomorrow.
 
-Since storing sensitive credentials directly in the config file is a bad practice, the API token isn’t hardcoded. Instead, it’s retrieved at runtime from a secure, restricted file (`/home/richard/.github_token`). The script structure is straightforward:  
+💡 **Pro Tip:** Automating GitHub repository creation and code check-ins not only saves time but also improves your DevOps hygiene.
+
+---
+
+## **🔧 Automating GitHub Repository Setup**
+
+While working on my *Ethical Hacking Robot* project, I realized my code wasn’t backed up anywhere. This led me to create a **Bash script that automatically links new projects to GitHub repositories** using a configuration file.
+
+### 🗂️ **Configuration Variables (setup\_config.sh):**
+
+* `USERNAME` – Linux user running the project
+* `GITHUB_REPO` – Target GitHub repository URL
+* `GIT_USER_NAME` – GitHub account name
+* `GIT_USER_EMAIL` – GitHub email
+* `GITHUB_API_TOKEN` – GitHub API token (retrieved securely at runtime)
+
+### 📄 **Sample Script:**
 
 ```bash
 #!/bin/bash
-
-# Load configuration variables
-source setup_config.sh  # User and GitHub setup
-
+source setup_config.sh
 LOGFILE="/home/$USERNAME/setup.log"
 exec > >(tee -a "$LOGFILE") 2>&1
 
-# Creates project users and files
-.
-.
-.
-# Call GitHub setup script
 bash setup_github.sh "$USERNAME" "$GITHUB_REPO" "$GIT_USER_NAME" "$GIT_USER_EMAIL" "$GITHUB_API_TOKEN"
 ```
 
-## Setting Up GitHub Authentication  
+---
 
-Once the script is executed, it sets up SSH authentication for GitHub access. It generates an SSH key for the project user and updates the `.ssh/config` file to streamline authentication:  
+## **🔐 Securing GitHub Authentication via SSH and API Tokens**
+
+Security first! Instead of hardcoding sensitive credentials, I store the GitHub API token in a secure file. The script then generates SSH keys and configures GitHub authentication automatically.
 
 ```bash
 sudo -u $USERNAME ssh-keygen -t rsa -b 4096 -C "$USERNAME@$(hostname)" -f $USER_HOME/.ssh/id_rsa -N ""
@@ -67,37 +65,15 @@ echo "Host github.com
     StrictHostKeyChecking no" | sudo -u $USERNAME tee $USER_HOME/.ssh/config > /dev/null
 ```
 
-Next, it uses `curl` and the GitHub API token to register the SSH key with GitHub:  
+💡 **Quick Security Tip:** Always restrict permissions on sensitive files like `.github_token` using `chmod 600`.
 
-```bash
-curl -H "Authorization: token $GITHUB_API_TOKEN" \
-     -H "Accept: application/vnd.github.v3+json" \
-     --data "{\"title\":\"$USERNAME@$(hostname)\", \"key\":\"$SSH_KEY_CONTENT\"}" \
-     https://api.github.com/user/keys
-```
+---
 
-With authentication in place, the script configures Git global settings and either clones the repository or pulls the latest updates if it already exists:  
+## **📦 Automating Code Sync and Git Push**
 
-```bash
-sudo -u $USERNAME git config --global user.name "$GIT_USER_NAME"
-sudo -u $USERNAME git config --global user.email "$GIT_USER_EMAIL"
+Now that authentication is set, it’s time to sync your local code with GitHub automatically.
 
-if [ -d "$USER_HOME/github/.git" ]; then
-    echo "✅ Repository already exists. Pulling latest updates..."
-    sudo -u $USERNAME git -C $USER_HOME/github pull origin main
-else
-    echo "🔹 Cloning GitHub repository..."
-    sudo -u $USERNAME git clone "$GITHUB_REPO" "$USER_HOME/github"
-fi
-```
-
-Since the project script creates a new Linux user to run the project under, `sudo` is necessary throughout this process.  
-
-## Checking In Code  
-
-Now that the project is linked to a repository, the next step is automating code check-ins. My repository stores development, staging, and production code. The check-in script specifically syncs development code with GitHub.  
-
-First, it defines the source and destination directories:  
+### 📁 **Define Source and Destination Paths:**
 
 ```bash
 SRC_ROS2="/home/ros2_dev/ros2_ws/src/"
@@ -105,25 +81,34 @@ SRC_NON_ROS="/home/ros2_dev/non_ros_code/"
 DEST_GITHUB="/home/ros2_dev/github/dev/"
 ```
 
-Then, `rsync` is used to sync the development directory with the local Git repository while excluding unnecessary build files:  
+### 🔄 **Sync Code Using Rsync:**
 
 ```bash
 rsync -av --exclude='build/' --exclude='install/' --exclude='log/' "$SRC_ROS2" "$DEST_GITHUB/src/"
-
-# Sync non-ROS2 code
 rsync -av "$SRC_NON_ROS" "$DEST_GITHUB/non_ros_code/"
 ```
 
-Finally, the script stages, commits, and pushes the code to GitHub:  
+### 📤 **Automate Git Commit and Push:**
 
 ```bash
 git add dev/
-git commit -m "Backup dev workspace to GitHub on $(date)"
+git commit -m "Automated backup on $(date)"
 git push origin main
 ```
 
-## What’s Next?  
+💡 **Pro Tip:** Schedule this script using `cron` for fully automated daily or hourly backups.
 
-While this setup is a significant improvement, it’s far from perfect. Right now, there are hardcoded paths everywhere, and the process isn’t fully automated. These are the next areas I’ll be addressing.  
+---
 
-If you're interested in the full code, you can find it [here](https://github.com/richard-sebos/Ethical-Hacking-Robot/tree/main/Git-Automation).
+## **📅 Final Thoughts and Next Steps**
+
+This workflow has saved me countless hours and secured my codebase across multiple projects. But it’s still a work in progress. Next, I plan to:
+
+* Replace hardcoded paths with dynamic variables.
+* Add full error handling and logging.
+* Publish a fully polished version of these scripts as a public GitHub repository.
+
+👉 **[Check out the full working scripts here!](https://github.com/richard-sebos/Ethical-Hacking-Robot/tree/main/Git-Automation)**
+
+If you found this helpful, **share it with your network or drop a comment below!** What automation hacks are you using to improve your workflow?
+
