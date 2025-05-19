@@ -1,6 +1,8 @@
 ---
-title: Stop Losing Code: Automate Your GitHub Backups with Bash Scripts
+title: Stop Losing Code - Automate Your GitHub Backups with Bash Scripts
 date: 2025-03-10 12:32 +0000
+description: "Step-by-step guide to secure and automate code backups using GitHub and Bash."
+image: /assets/img/AutoGithub-banner.png
 categories: [Github, Bash, Automation, DevOps Tools, Code Management]
 tags: [Automation,BashScripting,DevOps,Git, Git Automation, ProductivityHacks] 
 ---

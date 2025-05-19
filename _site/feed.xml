@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-05-18T16:05:09-06:00</updated>
+  <updated>2025-05-19T05:42:12-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -93,7 +93,7 @@ While AppArmor, Auditd, and Suricata all help define rules and profiles to prote
     <link href="http://localhost:4000/posts/MFA/" rel="alternate" type="text/html" title="🔐 How to Set Up Multi-Factor Authentication (MFA) on Ubuntu for SSH" />
     <published>2025-05-10T11:31:00-06:00</published>
   
-    <updated>2025-05-10T11:31:00-06:00</updated>
+    <updated>2025-05-18T16:06:13-06:00</updated>
   
     <id>http://localhost:4000/posts/MFA/</id>
     <content type="text/html" src="http://localhost:4000/posts/MFA/" />
@@ -153,7 +153,7 @@ In this article, part of our broader ROS 2 robot hardening series, we focus on u
     <link href="http://localhost:4000/posts/SSH-Key-Based/" rel="alternate" type="text/html" title="🔐 Mastering SSH Key-Based Authentication" />
     <published>2025-05-03T10:11:00-06:00</published>
   
-    <updated>2025-05-03T10:11:00-06:00</updated>
+    <updated>2025-05-18T16:06:13-06:00</updated>
   
     <id>http://localhost:4000/posts/SSH-Key-Based/</id>
     <content type="text/html" src="http://localhost:4000/posts/SSH-Key-Based/" />

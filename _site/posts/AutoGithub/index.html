@@ -30,24 +30,26 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Automating GitHub Code Check-Ins" />
+<meta property="og:title" content="Stop Losing Code - Automate Your GitHub Backups with Bash Scripts" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="I have a bad habit of not checking in my code. Because of this, I’ve ended up with code scattered across multiple machines over the years. A few years back, I started using GitHub, but if I’m being honest, only about half of my code actually makes it there. This year, I want that to change. Here’s a Table of Contents for your article:" />
-<meta property="og:description" content="I have a bad habit of not checking in my code. Because of this, I’ve ended up with code scattered across multiple machines over the years. A few years back, I started using GitHub, but if I’m being honest, only about half of my code actually makes it there. This year, I want that to change. Here’s a Table of Contents for your article:" />
+<meta name="description" content="Step-by-step guide to secure and automate code backups using GitHub and Bash." />
+<meta property="og:description" content="Step-by-step guide to secure and automate code backups using GitHub and Bash." />
 <link rel="canonical" href="http://localhost:4000/posts/AutoGithub/" />
 <meta property="og:url" content="http://localhost:4000/posts/AutoGithub/" />
 <meta property="og:site_name" content="Sebos Technology" />
+<meta property="og:image" content="http://localhost:4000/assets/img/AutoGithub-banner.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2025-03-10T06:32:00-06:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Automating GitHub Code Check-Ins" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/AutoGithub-banner.png" />
+<meta property="twitter:title" content="Stop Losing Code - Automate Your GitHub Backups with Bash Scripts" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-10T06:32:00-06:00","datePublished":"2025-03-10T06:32:00-06:00","description":"I have a bad habit of not checking in my code. Because of this, I’ve ended up with code scattered across multiple machines over the years. A few years back, I started using GitHub, but if I’m being honest, only about half of my code actually makes it there. This year, I want that to change. Here’s a Table of Contents for your article:","headline":"Automating GitHub Code Check-Ins","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/AutoGithub/"},"url":"http://localhost:4000/posts/AutoGithub/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-19T05:26:50-06:00","datePublished":"2025-03-10T06:32:00-06:00","description":"Step-by-step guide to secure and automate code backups using GitHub and Bash.","headline":"Stop Losing Code - Automate Your GitHub Backups with Bash Scripts","image":"http://localhost:4000/assets/img/AutoGithub-banner.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/AutoGithub/"},"url":"http://localhost:4000/posts/AutoGithub/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Automating GitHub Code Check-Ins | Sebos Technology
+  <title>Stop Losing Code - Automate Your GitHub Backups with Bash Scripts | Sebos Technology
   </title>
 
   <!--
@@ -506,7 +508,7 @@
         
           
             
-              <span>Automating GitHub Code Check-Ins</span>
+              <span>Stop Losing Code - Automate Your GitHub Backups with Bash Scripts</span>
             
 
           
@@ -573,6 +575,103 @@
 
 
 
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
 
 
 <!-- Add header for code snippets -->
@@ -670,6 +769,71 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -697,7 +861,9 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>Automating GitHub Code Check-Ins</h1>
+    <h1 data-toc-skip>Stop Losing Code - Automate Your GitHub Backups with Bash Scripts</h1>
+    
+      <p class="post-desc fw-light mb-4">Step-by-step guide to secure and automate code backups using GitHub and Bash.</p>
     
 
     <div class="post-meta text-muted">
@@ -727,7 +893,39 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
 
+
+
+
+<time
+  
+  data-ts="1747654010"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  May 19, 2025
+</time>
+
+        </span>
+      
+
+      
+        
+        
+        
+
+        
+
+        <div class="mt-3 mb-3">
+          <a href="/assets/img/AutoGithub-banner.png" class="popup img-link preview-img shimmer"><img src="/assets/img/AutoGithub-banner.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -769,9 +967,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="742 words"
+  title="522 words"
 >
-  <em>4 min</em> read</span>
+  <em>2 min</em> read</span>
 
         </div>
       </div>
@@ -780,7 +978,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">Automating GitHub Code Check-Ins</span>
+      <span class="label text-truncate">Stop Losing Code - Automate Your GitHub Backups with Bash Scripts</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -793,7 +991,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">Automating GitHub Code Check-Ins</div>
+        <div class="label text-truncate py-2 ms-4">Stop Losing Code - Automate Your GitHub Backups with Bash Scripts</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -803,39 +1001,45 @@
   
 
   <div class="content">
-    <p>I have a bad habit of not checking in my code. Because of this, I’ve ended up with code scattered across multiple machines over the years. A few years back, I started using GitHub, but if I’m being honest, only about half of my code actually makes it there. This year, I want that to change.<br />
-Here’s a Table of Contents for your article:</p>
+    <p>Are you tired of losing track of your projects and code scattered across multiple machines? You’re not alone. I used to have this bad habit of never checking in my code, which left me hunting down files across old laptops and virtual machines. That changed when I automated my GitHub workflow with simple Bash scripts. Here’s how you can <strong>automate GitHub backups and secure your code effortlessly</strong>.</p>
 
-<h2 id="table-of-contents"><span class="me-2"><strong>Table of Contents</strong></span><a href="#table-of-contents" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+
+<h2 id="-table-of-contents"><span class="me-2"><strong>🚀 Table of Contents</strong></span><a href="#-table-of-contents" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <ol>
-  <li><a href="#automating-the-process">Automating the Process</a></li>
-  <li><a href="#linking-a-project-to-a-github-repository">Linking a Project to a GitHub Repository</a></li>
-  <li><a href="#setting-up-github-authentication">Setting Up GitHub Authentication</a></li>
-  <li><a href="#checking-in-code">Checking In Code</a></li>
-  <li><a href="#whats-next">What’s Next?</a></li>
+  <li><a href="#why-you-should-automate-code-backups">Why You Should Automate Code Backups</a></li>
+  <li><a href="#automating-github-repository-setup">Automating GitHub Repository Setup</a></li>
+  <li><a href="#securing-github-authentication-via-ssh-and-api-tokens">Securing GitHub Authentication via SSH and API Tokens</a></li>
+  <li><a href="#automating-code-sync-and-git-push">Automating Code Sync and Git Push</a></li>
+  <li><a href="#final-thoughts-and-next-steps">Final Thoughts and Next Steps</a></li>
 </ol>
 
 <hr />
 
-<p>This makes navigation easier, especially if you’re posting it in a markdown-friendly environment like GitHub or a wiki. Let me know if you’d like any modifications! 🚀</p>
-<h2 id="automating-the-process"><span class="me-2">Automating the Process</span><a href="#automating-the-process" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="-why-you-should-automate-code-backups"><span class="me-2"><strong>📂 Why You Should Automate Code Backups</strong></span><a href="#-why-you-should-automate-code-backups" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>This morning, while creating a new directory structure for my Ethical Hacking Robot project, I realized that the code wasn’t checked in anywhere. As I designed a bash script to set up the directory structure, it seemed like the perfect time to fix this bad habit. I decided to create two additional scripts—one to link a project to a GitHub repository and another to handle syncing and pushing code automatically. After testing, both scripts worked well, and they’ve already improved my workflow.</p>
+<p>Manual backups fail because… well, we’re human. Automating this process ensures that your projects are always safe, versioned, and recoverable—even if your machine crashes tomorrow.</p>
 
-<h2 id="linking-a-project-to-a-github-repository"><span class="me-2">Linking a Project to a GitHub Repository</span><a href="#linking-a-project-to-a-github-repository" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>💡 <strong>Pro Tip:</strong> Automating GitHub repository creation and code check-ins not only saves time but also improves your DevOps hygiene.</p>
 
-<p>To streamline the process, I created a script that links a new project to a GitHub repository as the project directories are being set up. This script relies on a configuration file, <code class="language-plaintext highlighter-rouge">setup_config.sh</code>, which includes:</p>
+<hr />
+
+<h2 id="-automating-github-repository-setup"><span class="me-2"><strong>🔧 Automating GitHub Repository Setup</strong></span><a href="#-automating-github-repository-setup" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>While working on my <em>Ethical Hacking Robot</em> project, I realized my code wasn’t backed up anywhere. This led me to create a <strong>Bash script that automatically links new projects to GitHub repositories</strong> using a configuration file.</p>
+
+<h3 id="️-configuration-variables-setup_configsh"><span class="me-2">🗂️ <strong>Configuration Variables (setup_config.sh):</strong></span><a href="#️-configuration-variables-setup_configsh" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <ul>
-  <li><strong>USERNAME</strong> – The local Linux system username</li>
-  <li><strong>GITHUB_REPO</strong> – The GitHub repository URL</li>
-  <li><strong>GIT_USER_NAME</strong> – The GitHub account name</li>
-  <li><strong>GIT_USER_EMAIL</strong> – The email associated with the GitHub account</li>
-  <li><strong>GITHUB_API_TOKEN</strong> – A GitHub API token for authentication</li>
+  <li><code class="language-plaintext highlighter-rouge">USERNAME</code> – Linux user running the project</li>
+  <li><code class="language-plaintext highlighter-rouge">GITHUB_REPO</code> – Target GitHub repository URL</li>
+  <li><code class="language-plaintext highlighter-rouge">GIT_USER_NAME</code> – GitHub account name</li>
+  <li><code class="language-plaintext highlighter-rouge">GIT_USER_EMAIL</code> – GitHub email</li>
+  <li><code class="language-plaintext highlighter-rouge">GITHUB_API_TOKEN</code> – GitHub API token (retrieved securely at runtime)</li>
 </ul>
 
-<p>Since storing sensitive credentials directly in the config file is a bad practice, the API token isn’t hardcoded. Instead, it’s retrieved at runtime from a secure, restricted file (<code class="language-plaintext highlighter-rouge">/home/richard/.github_token</code>). The script structure is straightforward:</p>
+<h3 id="-sample-script"><span class="me-2">📄 <strong>Sample Script:</strong></span><a href="#-sample-script" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -845,33 +1049,19 @@ Here’s a Table of Contents for your article:</p>
 4
 5
 6
-7
-8
-9
-10
-11
-12
-13
-14
 </pre></td><td class="rouge-code"><pre><span class="c">#!/bin/bash</span>
-
-<span class="c"># Load configuration variables</span>
-<span class="nb">source </span>setup_config.sh  <span class="c"># User and GitHub setup</span>
-
+<span class="nb">source </span>setup_config.sh
 <span class="nv">LOGFILE</span><span class="o">=</span><span class="s2">"/home/</span><span class="nv">$USERNAME</span><span class="s2">/setup.log"</span>
 <span class="nb">exec</span> <span class="o">&gt;</span> <span class="o">&gt;(</span><span class="nb">tee</span> <span class="nt">-a</span> <span class="s2">"</span><span class="nv">$LOGFILE</span><span class="s2">"</span><span class="o">)</span> 2&gt;&amp;1
 
-<span class="c"># Creates project users and files</span>
-<span class="nb">.</span>
-<span class="nb">.</span>
-<span class="nb">.</span>
-<span class="c"># Call GitHub setup script</span>
 bash setup_github.sh <span class="s2">"</span><span class="nv">$USERNAME</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$GITHUB_REPO</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$GIT_USER_NAME</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$GIT_USER_EMAIL</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$GITHUB_API_TOKEN</span><span class="s2">"</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="setting-up-github-authentication"><span class="me-2">Setting Up GitHub Authentication</span><a href="#setting-up-github-authentication" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
 
-<p>Once the script is executed, it sets up SSH authentication for GitHub access. It generates an SSH key for the project user and updates the <code class="language-plaintext highlighter-rouge">.ssh/config</code> file to streamline authentication:</p>
+<h2 id="-securing-github-authentication-via-ssh-and-api-tokens"><span class="me-2"><strong>🔐 Securing GitHub Authentication via SSH and API Tokens</strong></span><a href="#-securing-github-authentication-via-ssh-and-api-tokens" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Security first! Instead of hardcoding sensitive credentials, I store the GitHub API token in a secure file. The script then generates SSH keys and configures GitHub authentication automatically.</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -889,53 +1079,15 @@ bash setup_github.sh <span class="s2">"</span><span class="nv">$USERNAME</span><
     StrictHostKeyChecking no"</span> | <span class="nb">sudo</span> <span class="nt">-u</span> <span class="nv">$USERNAME</span> <span class="nb">tee</span> <span class="nv">$USER_HOME</span>/.ssh/config <span class="o">&gt;</span> /dev/null
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Next, it uses <code class="language-plaintext highlighter-rouge">curl</code> and the GitHub API token to register the SSH key with GitHub:</p>
+<p>💡 <strong>Quick Security Tip:</strong> Always restrict permissions on sensitive files like <code class="language-plaintext highlighter-rouge">.github_token</code> using <code class="language-plaintext highlighter-rouge">chmod 600</code>.</p>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="rouge-code"><pre>curl <span class="nt">-H</span> <span class="s2">"Authorization: token </span><span class="nv">$GITHUB_API_TOKEN</span><span class="s2">"</span> <span class="se">\</span>
-     <span class="nt">-H</span> <span class="s2">"Accept: application/vnd.github.v3+json"</span> <span class="se">\</span>
-     <span class="nt">--data</span> <span class="s2">"{</span><span class="se">\"</span><span class="s2">title</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="nv">$USERNAME</span><span class="s2">@</span><span class="si">$(</span><span class="nb">hostname</span><span class="si">)</span><span class="se">\"</span><span class="s2">, </span><span class="se">\"</span><span class="s2">key</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="nv">$SSH_KEY_CONTENT</span><span class="se">\"</span><span class="s2">}"</span> <span class="se">\</span>
-     https://api.github.com/user/keys
-</pre></td></tr></tbody></table></code></div></div>
+<hr />
 
-<p>With authentication in place, the script configures Git global settings and either clones the repository or pulls the latest updates if it already exists:</p>
+<h2 id="-automating-code-sync-and-git-push"><span class="me-2"><strong>📦 Automating Code Sync and Git Push</strong></span><a href="#-automating-code-sync-and-git-push" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo</span> <span class="nt">-u</span> <span class="nv">$USERNAME</span> git config <span class="nt">--global</span> user.name <span class="s2">"</span><span class="nv">$GIT_USER_NAME</span><span class="s2">"</span>
-<span class="nb">sudo</span> <span class="nt">-u</span> <span class="nv">$USERNAME</span> git config <span class="nt">--global</span> user.email <span class="s2">"</span><span class="nv">$GIT_USER_EMAIL</span><span class="s2">"</span>
+<p>Now that authentication is set, it’s time to sync your local code with GitHub automatically.</p>
 
-<span class="k">if</span> <span class="o">[</span> <span class="nt">-d</span> <span class="s2">"</span><span class="nv">$USER_HOME</span><span class="s2">/github/.git"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
-    </span><span class="nb">echo</span> <span class="s2">"✅ Repository already exists. Pulling latest updates..."</span>
-    <span class="nb">sudo</span> <span class="nt">-u</span> <span class="nv">$USERNAME</span> git <span class="nt">-C</span> <span class="nv">$USER_HOME</span>/github pull origin main
-<span class="k">else
-    </span><span class="nb">echo</span> <span class="s2">"🔹 Cloning GitHub repository..."</span>
-    <span class="nb">sudo</span> <span class="nt">-u</span> <span class="nv">$USERNAME</span> git clone <span class="s2">"</span><span class="nv">$GITHUB_REPO</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$USER_HOME</span><span class="s2">/github"</span>
-<span class="k">fi</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>Since the project script creates a new Linux user to run the project under, <code class="language-plaintext highlighter-rouge">sudo</code> is necessary throughout this process.</p>
-
-<h2 id="checking-in-code"><span class="me-2">Checking In Code</span><a href="#checking-in-code" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>Now that the project is linked to a repository, the next step is automating code check-ins. My repository stores development, staging, and production code. The check-in script specifically syncs development code with GitHub.</p>
-
-<p>First, it defines the source and destination directories:</p>
+<h3 id="-define-source-and-destination-paths"><span class="me-2">📁 <strong>Define Source and Destination Paths:</strong></span><a href="#-define-source-and-destination-paths" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -947,21 +1099,17 @@ bash setup_github.sh <span class="s2">"</span><span class="nv">$USERNAME</span><
 <span class="nv">DEST_GITHUB</span><span class="o">=</span><span class="s2">"/home/ros2_dev/github/dev/"</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Then, <code class="language-plaintext highlighter-rouge">rsync</code> is used to sync the development directory with the local Git repository while excluding unnecessary build files:</p>
+<h3 id="-sync-code-using-rsync"><span class="me-2">🔄 <strong>Sync Code Using Rsync:</strong></span><a href="#-sync-code-using-rsync" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3
-4
 </pre></td><td class="rouge-code"><pre>rsync <span class="nt">-av</span> <span class="nt">--exclude</span><span class="o">=</span><span class="s1">'build/'</span> <span class="nt">--exclude</span><span class="o">=</span><span class="s1">'install/'</span> <span class="nt">--exclude</span><span class="o">=</span><span class="s1">'log/'</span> <span class="s2">"</span><span class="nv">$SRC_ROS2</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$DEST_GITHUB</span><span class="s2">/src/"</span>
-
-<span class="c"># Sync non-ROS2 code</span>
 rsync <span class="nt">-av</span> <span class="s2">"</span><span class="nv">$SRC_NON_ROS</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$DEST_GITHUB</span><span class="s2">/non_ros_code/"</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Finally, the script stages, commits, and pushes the code to GitHub:</p>
+<h3 id="-automate-git-commit-and-push"><span class="me-2">📤 <strong>Automate Git Commit and Push:</strong></span><a href="#-automate-git-commit-and-push" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -969,15 +1117,28 @@ rsync <span class="nt">-av</span> <span class="s2">"</span><span class="nv">$SRC
 2
 3
 </pre></td><td class="rouge-code"><pre>git add dev/
-git commit <span class="nt">-m</span> <span class="s2">"Backup dev workspace to GitHub on </span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2">"</span>
+git commit <span class="nt">-m</span> <span class="s2">"Automated backup on </span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2">"</span>
 git push origin main
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="whats-next"><span class="me-2">What’s Next?</span><a href="#whats-next" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>💡 <strong>Pro Tip:</strong> Schedule this script using <code class="language-plaintext highlighter-rouge">cron</code> for fully automated daily or hourly backups.</p>
 
-<p>While this setup is a significant improvement, it’s far from perfect. Right now, there are hardcoded paths everywhere, and the process isn’t fully automated. These are the next areas I’ll be addressing.</p>
+<hr />
 
-<p>If you’re interested in the full code, you can find it <a href="https://github.com/richard-sebos/Ethical-Hacking-Robot/tree/main/Git-Automation">here</a>.</p>
+<h2 id="-final-thoughts-and-next-steps"><span class="me-2"><strong>📅 Final Thoughts and Next Steps</strong></span><a href="#-final-thoughts-and-next-steps" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>This workflow has saved me countless hours and secured my codebase across multiple projects. But it’s still a work in progress. Next, I plan to:</p>
+
+<ul>
+  <li>Replace hardcoded paths with dynamic variables.</li>
+  <li>Add full error handling and logging.</li>
+  <li>Publish a fully polished version of these scripts as a public GitHub repository.</li>
+</ul>
+
+<p>👉 <strong><a href="https://github.com/richard-sebos/Ethical-Hacking-Robot/tree/main/Git-Automation">Check out the full working scripts here!</a></strong></p>
+
+<p>If you found this helpful, <strong>share it with your network or drop a comment below!</strong> What automation hacks are you using to improve your workflow?</p>
+
 
   </div>
 
@@ -989,7 +1150,9 @@ git push origin main
         
           <a href="/categories/github/">Github</a>,
           <a href="/categories/bash/">Bash</a>,
-          <a href="/categories/automation/">Automation</a>
+          <a href="/categories/automation/">Automation</a>,
+          <a href="/categories/devops-tools/">DevOps Tools</a>,
+          <a href="/categories/code-management/">Code Management</a>
       </div>
     
 
@@ -1017,6 +1180,16 @@ git push origin main
             href="/tags/git/"
             class="post-tag no-text-decoration"
           >Git</a>
+        
+          <a
+            href="/tags/git-automation/"
+            class="post-tag no-text-decoration"
+          >Git Automation</a>
+        
+          <a
+            href="/tags/productivityhacks/"
+            class="post-tag no-text-decoration"
+          >ProductivityHacks</a>
         
       </div>
     
@@ -1121,14 +1294,21 @@ git push origin main
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Fail2Ban/">🛡️ Complete Guide to Fail2Ban - Protect Your SSH Server from Brute Force Attacks</a>
+          <a href="/posts/AutoGithub/">Stop Losing Code - Automate Your GitHub Backups with Bash Scripts</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ROS2-Auditd/">🛡️ Securing ROS2 Robotic Projects with Auditd- A Practical Guide</a>
+          <a href="/posts/Armor-Audit/">Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-Key-Based/">🔐 Mastering SSH Key-Based Authentication</a>
         </li>
       
         
@@ -1142,14 +1322,7 @@ git push origin main
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Suricata/">🔐 Securing ROS 2 Robots - Network Intrusion Detection with Suricata</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/SSH-Key-Based/">🔐 Mastering SSH Key-Based Authentication</a>
+          <a href="/posts/Putty/">Embracing Secure Remote Access with PuTTY SSH Key</a>
         </li>
       
     </ul>
@@ -1348,75 +1521,6 @@ git push origin main
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1426,206 +1530,6 @@ git push origin main
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1970,6 +1874,300 @@ git push origin main
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -2270,85 +2468,6 @@ git push origin main
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2438,172 +2557,10 @@ git push origin main
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2799,6 +2756,272 @@ git push origin main
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3588,75 +3811,6 @@ In future articles,we will create Ansible playbooks to deploy Zero Trust Access 
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -3666,206 +3820,6 @@ In future articles,we will create Ansible playbooks to deploy Zero Trust Access 
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -4210,6 +4164,300 @@ In future articles,we will create Ansible playbooks to deploy Zero Trust Access 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -4510,85 +4758,6 @@ In future articles,we will create Ansible playbooks to deploy Zero Trust Access 
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -4678,172 +4847,10 @@ In future articles,we will create Ansible playbooks to deploy Zero Trust Access 
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -5039,6 +5046,272 @@ In future articles,we will create Ansible playbooks to deploy Zero Trust Access 
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
