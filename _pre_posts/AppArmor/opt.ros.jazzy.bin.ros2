@@ -1,0 +1,17 @@
+# Last Modified: Mon May 19 19:36:50 2025
+abi <abi/3.0>,
+
+include <tunables/global>
+
+/opt/ros/jazzy/bin/ros2 {
+  include <abstractions/base>
+  include <abstractions/python>
+
+  /opt/ros/jazzy/bin/ros2 r,
+
+  # Ensure subprocesses run under the same profile or unconfined as needed
+  /usr/bin/python3.12 cx,  
+
+  # Deny tester_group (or any user) access to this directory via ros2
+  deny /home/rosbot/ros2_ws/** rwx,
+}

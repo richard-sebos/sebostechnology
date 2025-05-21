@@ -30,7 +30,7 @@ While Auditd provides invaluable insights by logging actions, AppArmor lets us d
 
 ## 🔍 **What Is AppArmor?**
 
-**AppArmor** is a Linux security module that confines applications and processes by enforcing access control policies. Unlike traditional permission systems, AppArmor policies work at the application level, specifying exactly what files, capabilities, and resources an application—or user group—can access.
+**AppArmor** is a Linux security module that confines applications and processes by enforcing access control policies. Unlike traditional permission systems, AppArmor policies work at the application level, specifying exactly what files, capabilities, and resources an application—or user group—can access resources.
 
 ### 📌 **Key Features of AppArmor:**
 
@@ -154,7 +154,3 @@ By combining **Auditd** for monitoring and **AppArmor** for enforcement, you est
 Starting in **Complain Mode** allows teams to observe and refine security policies without disrupting development or testing. And when it’s time to lock things down, switching to **Enforce Mode** provides solid protection against unauthorized access—whether accidental or malicious.
 
 Remember, security is a process, not a one-time event. Stay vigilant, review logs regularly, and adjust policies as your projects evolve.
-
----
-
-Would you like me to prepare the social media snippets for this article as well?

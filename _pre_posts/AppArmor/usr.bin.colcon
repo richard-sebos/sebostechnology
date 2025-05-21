@@ -1,0 +1,24 @@
+# Last Modified: Mon May 19 19:38:36 2025
+abi <abi/3.0>,
+
+include <tunables/global>
+
+/usr/bin/colcon flags=(complain) {
+  include <abstractions/base>
+  include <abstractions/python>
+
+  /usr/bin/colcon r,
+
+  # Ensure subprocesses run under the same profile or unconfined as needed
+  /usr/bin/python3.12 cx,
+
+  # Deny tester_group (or any user) access to this directory via ros2
+  deny /home/rosbot/ros2_ws/** rwx,
+  deny /home/rosbot/ros2_ws_test/** rwx,
+
+  # General permissions to avoid blocking normal behavior
+  /home/rosbot/** rw,
+  /tmp/** rw,
+  /var/** rw,
+  /** r,
+}
