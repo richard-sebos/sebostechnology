@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-05-19T16:21:10-06:00</updated>
+  <updated>2025-05-21T18:14:22-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,36 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>🛡️ How Secure Are Your Linux Files? Access Control Demystified</title>
+    <link href="http://localhost:4000/posts/DAC-ACL-MAC/" rel="alternate" type="text/html" title="🛡️ How Secure Are Your Linux Files? Access Control Demystified" />
+    <published>2025-05-21T06:11:00-06:00</published>
+  
+    <updated>2025-05-21T06:11:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/DAC-ACL-MAC/</id>
+    <content type="text/html" src="http://localhost:4000/posts/DAC-ACL-MAC/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux access control" />
+    
+    <category term="Linux security" />
+    
+    <category term="system permissions" />
+    
+    <category term="Linux auditing" />
+    
+  
+
+  <summary>Learn how to secure Linux files using DAC, ACLs, and MAC. Explore key tools like AppArmor, SELinux, and Auditd to enhance system access control and prevent unauthorized access.</summary>
+
+  </entry>
 
   
   <entry>
@@ -153,43 +183,6 @@ Securing your Linux servers is more critical than ever, and one of the simplest 
   <summary>As robots become more deeply integrated into logistics, healthcare, research, and everyday life, they also become more attractive targets for cyber threats. Network security in robotics is no longer optional—especially when those systems rely on distributed middleware like ROS 2 (Robot Operating System 2).
 
 In this article, part of our broader ROS 2 robot hardening series, we focus on using Sur...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>🔐 Mastering SSH Key-Based Authentication</title>
-    <link href="http://localhost:4000/posts/SSH-Key-Based/" rel="alternate" type="text/html" title="🔐 Mastering SSH Key-Based Authentication" />
-    <published>2025-05-03T10:11:00-06:00</published>
-  
-    <updated>2025-05-18T16:06:13-06:00</updated>
-  
-    <id>http://localhost:4000/posts/SSH-Key-Based/</id>
-    <content type="text/html" src="http://localhost:4000/posts/SSH-Key-Based/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Github" />
-    
-    <category term="Bash" />
-    
-    <category term="Automation" />
-    
-  
-
-  <summary>Mastering SSH Key-Based Authentication: Secure Passwordless Login for Linux and Windows
-
-When managing remote servers, SSH (Secure Shell) is the standard for encrypted and secure communication. However, relying on passwords for SSH access leaves your systems vulnerable to:
-
-
-  Credential stuffing
-  Phishing attacks
-  Keylogging and malware
-  Man-in-the-middle (MitM) attacks
-  Password reuse thr...</summary>
 
   </entry>
 
