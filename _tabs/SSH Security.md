@@ -56,6 +56,7 @@ _A focus on securing SSH endpoints from unauthorized access and abuse._
 6. [Detecting and Mitigating SSH Brute Force Attacks with Fail2Ban](https://dev.to/sebos/complete-guide-to-fail2ban-protect-your-ssh-server-from-brute-force-attacks-3m3l)
 7. [SSH Security Boost: Implementing Port Knocking to Block Unauthorized Access](https://dev.to/sebos/ssh-security-boost-implementing-port-knocking-to-block-unauthorized-access-1n1n)
 8. [Automate Port Knocking with Dynamic Port Rotation for Secure SSH Access](https://dev.to/sebos/automate-port-knocking-with-dynamic-port-rotation-for-secure-ssh-access-pbh)
+9. [Restricting User and SSH Access](https://richard-sebos.github.io/sebostechnology/posts/Restricted-Access/)
 9. **Securing SSH with SELinux: Custom Contexts and Policies**
 10. **Controlling SSH Agent Forwarding to Prevent Credential Leakage**
 2. **Hardened SSH Configurations: Best Practices for `sshd_config`**
@@ -141,4 +142,6 @@ Stay tuned as we dig deeper into securing your SSH services, one layer at a time
 
 Have questions, ideas, or a specific SSH-related topic you’d like covered in a future post? Drop a comment or reach out—your input helps shape the direction of this series.
 
-For more content like this, tools, and walkthroughs, visit my site at **[Sebos Technology](https://richard-sebos.github.io/sebostechnology/)**.
+---
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
