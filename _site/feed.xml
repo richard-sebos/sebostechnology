@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-05-21T18:14:22-06:00</updated>
+  <updated>2025-05-25T09:36:15-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,38 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>🔐 Restricting SSH Access with a Limited User Account</title>
+    <link href="http://localhost:4000/posts/Restricted-Access/" rel="alternate" type="text/html" title="🔐 Restricting SSH Access with a Limited User Account" />
+    <published>2025-05-25T06:11:00-06:00</published>
+  
+    <updated>2025-05-25T06:11:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Restricted-Access/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Restricted-Access/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux Security" />
+    
+    <category term="SSH Hardening" />
+    
+    <category term="System Administration" />
+    
+    <category term="Server Security" />
+    
+    <category term="User Management" />
+    
+  
+
+  <summary>Secure your Linux systems by using a restricted user for SSH access and separating admin privileges. Learn how to configure rbash, limit executable commands, and enhance server security with this practical guide for sysadmins.</summary>
+
+  </entry>
 
   
   <entry>
@@ -153,36 +185,6 @@
   <summary>How to Set Up Multi-Factor Authentication (MFA) on Ubuntu for SSH
 
 Securing your Linux servers is more critical than ever, and one of the simplest ways to dramatically improve login security is by enabling Multi-Factor Authentication (MFA). This guide walks you through setting up MFA on a fresh Ubuntu 24.04 installation using Google Authenticator, ensuring your SSH access is protected against u...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>🔐 Securing ROS 2 Robots - Network Intrusion Detection with Suricata</title>
-    <link href="http://localhost:4000/posts/Suricata/" rel="alternate" type="text/html" title="🔐 Securing ROS 2 Robots - Network Intrusion Detection with Suricata" />
-    <published>2025-05-07T06:11:00-06:00</published>
-  
-    <updated>2025-05-10T07:19:10-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Suricata/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Suricata/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="ROS2 Install Series" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>As robots become more deeply integrated into logistics, healthcare, research, and everyday life, they also become more attractive targets for cyber threats. Network security in robotics is no longer optional—especially when those systems rely on distributed middleware like ROS 2 (Robot Operating System 2).
-
-In this article, part of our broader ROS 2 robot hardening series, we focus on using Sur...</summary>
 
   </entry>
 
