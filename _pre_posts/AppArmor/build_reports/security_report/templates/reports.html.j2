@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; }
+        h1 { text-align: center; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        h3 { color: #333; margin-top: 20px; }
+        .module { margin-bottom: 40px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        summary { cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Modular Security Report</h1>
+    {% for report in reports %}
+        <div class="module">
+            <h2>{{ report.module }}</h2>
+            <p><strong>Summary:</strong> {{ report.summary }}</p>
+            <details>
+                <summary>View details</summary>
+                {% if report.details %}
+                    {% for key, events in report.details.items() %}
+                        <h3>{{ key }}</h3>
+                        {% if events %}
+                            <pre>
+{% for event in events %}
+{{ event }}
+{% endfor %}
+                            </pre>
+                        {% else %}
+                            <p>No entries found for {{ key }}.</p>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <p>No events found.</p>
+                {% endif %}
+            </details>
+        </div>
+    {% endfor %}
+</body>
+</html>
+

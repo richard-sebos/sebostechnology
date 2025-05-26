@@ -1,0 +1,12 @@
+audit_keys:
+  - privileged
+  - logins
+  - apparmor
+  - network
+  - ros_exec
+  - ros_ws_exec
+  - ros_src
+  - ros_conf
+  - colcon_exec
+  - rosdep_exec
+  - ros_env
