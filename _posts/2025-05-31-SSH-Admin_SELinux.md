@@ -33,7 +33,7 @@ In this part, we take the next step: **blocking direct SSH logins for admin-leve
 
 This method provides a powerful control point that can’t be bypassed by misconfigured SSH settings alone.
 
-> **New to SELinux?** Learn the basics in our [SELinux Primer]()
+> **New to SELinux?** Learn the basics in our [SELinux Primer](https://richard-sebos.github.io/sebostechnology/posts/SELinux-Basics/)
 
 ---
 
