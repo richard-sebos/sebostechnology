@@ -57,7 +57,7 @@ _A focus on securing SSH endpoints from unauthorized access and abuse._
 7. [SSH Security Boost: Implementing Port Knocking to Block Unauthorized Access](https://dev.to/sebos/ssh-security-boost-implementing-port-knocking-to-block-unauthorized-access-1n1n)
 8. [Automate Port Knocking with Dynamic Port Rotation for Secure SSH Access](https://dev.to/sebos/automate-port-knocking-with-dynamic-port-rotation-for-secure-ssh-access-pbh)
 9. [Restricting User and SSH Access](https://richard-sebos.github.io/sebostechnology/posts/Restricted-Access/)
-9. **Securing SSH with SELinux: Custom Contexts and Policies**
+9. [Securing SSH with SELinux: Custom Contexts and Policies](https://richard-sebos.github.io/sebostechnology/posts/SSH-Admin_SELinux/)
 10. **Controlling SSH Agent Forwarding to Prevent Credential Leakage**
 2. **Hardened SSH Configurations: Best Practices for `sshd_config`**
 
