@@ -7,7 +7,6 @@ Because true security doesn’t just start at the login prompt—it controls who
 image: /assets/img/SSH-SELinx.png
 categories: [Linux Security, SSH Hardening, System Administration, Server Security, User Management]
 tags: [SSH security, restricted SSH user, rbash Linux, secure SSH login, Linux sysadmin tips, SSH hardening practices, limiting SSH access, two-account SSH model, secure Linux configuration, SSH restricted shell]
-
 ---
 
 Preventing direct administrative SSH access is a vital component of any defense-in-depth strategy. In this guide, we’ll explore how to restrict privileged users from logging in via SSH using SELinux’s `ssh_sysadm_login` boolean. This ensures that administrative access is only available **after** connecting through a restricted, non-privileged jump account — a critical safeguard against misconfiguration and privilege abuse.

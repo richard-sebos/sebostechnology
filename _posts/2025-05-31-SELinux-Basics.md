@@ -7,7 +7,6 @@ Best of all? It's free, flexible, and built into most major Linux distributions.
 image: /assets/img/SELinuxBasics.png
 categories: [Linux Security, SSH Hardening, System Administration, Server Security, User Management]
 tags: [SSH security, restricted SSH user, rbash Linux, secure SSH login, Linux sysadmin tips, SSH hardening practices, limiting SSH access, two-account SSH model, secure Linux configuration, SSH restricted shell]
-
 ---
 
 **What if you had access to a powerful security tool—developed by the NSA—designed to lock down your Linux system from the inside out?**
