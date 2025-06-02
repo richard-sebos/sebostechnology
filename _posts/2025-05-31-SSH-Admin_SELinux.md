@@ -17,7 +17,7 @@ Preventing direct administrative SSH access is a vital component of any defense-
 
 ## 🧭 Overview: Why Restrict Admin SSH Access
 
-In [Part 1 of this series](), we set up a **restricted jump user** — a non-privileged account used to SSH into a Linux server. This user can then escalate privileges locally (e.g., using `su`) but **cannot SSH directly as root or another admin**.
+In [Part 1 of this series](https://richard-sebos.github.io/sebostechnology/posts/Restricted-Access/), we set up a **restricted jump user** — a non-privileged account used to SSH into a Linux server. This user can then escalate privileges locally (e.g., using `su`) but **cannot SSH directly as root or another admin**.
 
 In this part, we take the next step: **blocking direct SSH logins for admin-level users** using SELinux. Specifically, we’ll manipulate the `ssh_sysadm_login` boolean to enforce this restriction.
 

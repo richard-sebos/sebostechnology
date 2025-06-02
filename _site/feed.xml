@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-05-25T09:45:53-06:00</updated>
+  <updated>2025-06-01T18:06:08-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,56 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Ssh Admin_selinux</title>
+    <link href="http://localhost:4000/posts/SSH-Admin_SELinux/" rel="alternate" type="text/html" title="Ssh Admin_selinux" />
+    <published>2025-05-31T00:00:00-06:00</published>
+  
+    <updated>2025-05-31T00:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/SSH-Admin_SELinux/</id>
+    <content type="text/html" src="http://localhost:4000/posts/SSH-Admin_SELinux/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+  
+
+  <summary>🛡️ Blocking Admin SSH Logins with SELinux (ssh_sysadm_login)
+
+Preventing direct administrative SSH access is a vital component of any defense-in-depth strategy. In this guide, we’ll explore how to restrict privileged users from logging in via SSH using SELinux’s ssh_sysadm_login boolean. This ensures that administrative access is only available after connecting through a restricted, non-privile...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Selinux Basics</title>
+    <link href="http://localhost:4000/posts/SELinux-Basics/" rel="alternate" type="text/html" title="Selinux Basics" />
+    <published>2025-05-31T00:00:00-06:00</published>
+  
+    <updated>2025-05-31T00:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/SELinux-Basics/</id>
+    <content type="text/html" src="http://localhost:4000/posts/SELinux-Basics/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+  
+
+  <summary>🔐 SELinux Basics for Secure Linux Administration
+
+What if you had access to a powerful security tool—developed by the NSA—designed to lock down your Linux system from the inside out?
+
+Imagine a system that goes beyond traditional file permissions, offering enterprise-grade controls that prevent even root users or compromised processes from wreaking havoc. Now imagine that tool is free, open-sou...</summary>
+
+  </entry>
 
   
   <entry>
@@ -113,78 +163,6 @@
   
 
   <summary>Protect your Linux servers from SSH brute-force attacks with Fail2Ban. This guide covers easy-to-follow configuration steps, security best practices, and testing methods to harden your SSH access.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>🛡️ Securing ROS2 Robotic Projects with Auditd- A Practical Guide</title>
-    <link href="http://localhost:4000/posts/ROS2-Auditd/" rel="alternate" type="text/html" title="🛡️ Securing ROS2 Robotic Projects with Auditd- A Practical Guide" />
-    <published>2025-05-17T06:11:00-06:00</published>
-  
-    <updated>2025-05-19T09:26:59-06:00</updated>
-  
-    <id>http://localhost:4000/posts/ROS2-Auditd/</id>
-    <content type="text/html" src="http://localhost:4000/posts/ROS2-Auditd/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="ROS2 Install Series" />
-    
-    <category term="Security" />
-    
-    <category term="Robotics Security" />
-    
-    <category term="Linux System Hardening" />
-    
-    <category term="ROS2 Development" />
-    
-    <category term="Cybersecurity Best Practices" />
-    
-    <category term="Open-Source Security Tools" />
-    
-    <category term="Industrial IoT Security" />
-    
-    <category term="DevSecOps for Robotics" />
-    
-  
-
-  <summary>Learn how to enhance ROS2-based robotic project security using Auditd, a powerful Linux auditing tool. Discover real-world use cases, practical audit rules, and scripts to monitor ROS2 environments effectively without hindering development.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>🔐 How to Set Up Multi-Factor Authentication (MFA) on Ubuntu for SSH</title>
-    <link href="http://localhost:4000/posts/MFA/" rel="alternate" type="text/html" title="🔐 How to Set Up Multi-Factor Authentication (MFA) on Ubuntu for SSH" />
-    <published>2025-05-10T11:31:00-06:00</published>
-  
-    <updated>2025-05-18T16:06:13-06:00</updated>
-  
-    <id>http://localhost:4000/posts/MFA/</id>
-    <content type="text/html" src="http://localhost:4000/posts/MFA/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Github" />
-    
-    <category term="Bash" />
-    
-    <category term="Automation" />
-    
-  
-
-  <summary>How to Set Up Multi-Factor Authentication (MFA) on Ubuntu for SSH
-
-Securing your Linux servers is more critical than ever, and one of the simplest ways to dramatically improve login security is by enabling Multi-Factor Authentication (MFA). This guide walks you through setting up MFA on a fresh Ubuntu 24.04 installation using Google Authenticator, ensuring your SSH access is protected against u...</summary>
 
   </entry>
 
