@@ -1,4 +1,14 @@
-# 🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)
+---
+title: 🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)
+date: 2025-06-01 12:11 +0000
+description: "In this guide, you’ll learn how to use SELinux to block direct SSH access for privileged users, enforcing access through a restricted jump account instead. By disabling the ssh_sysadm_login boolean and mapping users to the sysadm_u role, you gain a policy-enforced control point that hardens your system against misconfiguration, privilege abuse, and lateral movement.
+
+Because true security doesn’t just start at the login prompt—it controls who gets there in the first place."
+image: /assets/img/Restricted-Access.png
+categories: [Linux Security, SSH Hardening, System Administration, Server Security, User Management]
+tags: [SSH security, restricted SSH user, rbash Linux, secure SSH login, Linux sysadmin tips, SSH hardening practices, limiting SSH access, two-account SSH model, secure Linux configuration, SSH restricted shell]
+
+---
 
 Preventing direct administrative SSH access is a vital component of any defense-in-depth strategy. In this guide, we’ll explore how to restrict privileged users from logging in via SSH using SELinux’s `ssh_sysadm_login` boolean. This ensures that administrative access is only available **after** connecting through a restricted, non-privileged jump account — a critical safeguard against misconfiguration and privilege abuse.
 

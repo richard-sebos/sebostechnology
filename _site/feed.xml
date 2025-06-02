@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-01T18:06:08-06:00</updated>
+  <updated>2025-06-01T18:20:45-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,11 @@
 
   
   <entry>
-    <title>Ssh Admin_selinux</title>
-    <link href="http://localhost:4000/posts/SSH-Admin_SELinux/" rel="alternate" type="text/html" title="Ssh Admin_selinux" />
-    <published>2025-05-31T00:00:00-06:00</published>
+    <title>🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)</title>
+    <link href="http://localhost:4000/posts/SSH-Admin_SELinux/" rel="alternate" type="text/html" title="🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)" />
+    <published>2025-06-01T06:11:00-06:00</published>
   
-    <updated>2025-05-31T00:00:00-06:00</updated>
+    <updated>2025-06-01T06:11:00-06:00</updated>
   
     <id>http://localhost:4000/posts/SSH-Admin_SELinux/</id>
     <content type="text/html" src="http://localhost:4000/posts/SSH-Admin_SELinux/" />
@@ -34,21 +34,30 @@
 
   
     
+    <category term="Linux Security" />
+    
+    <category term="SSH Hardening" />
+    
+    <category term="System Administration" />
+    
+    <category term="Server Security" />
+    
+    <category term="User Management" />
+    
   
 
-  <summary>🛡️ Blocking Admin SSH Logins with SELinux (ssh_sysadm_login)
-
-Preventing direct administrative SSH access is a vital component of any defense-in-depth strategy. In this guide, we’ll explore how to restrict privileged users from logging in via SSH using SELinux’s ssh_sysadm_login boolean. This ensures that administrative access is only available after connecting through a restricted, non-privile...</summary>
+  <summary>In this guide, you’ll learn how to use SELinux to block direct SSH access for privileged users, enforcing access through a restricted jump account instead. By disabling the ssh_sysadm_login boolean and mapping users to the sysadm_u role, you gain a policy-enforced control point that hardens your system against misconfiguration, privilege abuse, and lateral movement.
+Because true security doesn’...</summary>
 
   </entry>
 
   
   <entry>
-    <title>Selinux Basics</title>
-    <link href="http://localhost:4000/posts/SELinux-Basics/" rel="alternate" type="text/html" title="Selinux Basics" />
-    <published>2025-05-31T00:00:00-06:00</published>
+    <title>🔐 *SELinux Basics for Secure Linux Administration*</title>
+    <link href="http://localhost:4000/posts/SELinux-Basics/" rel="alternate" type="text/html" title="🔐 *SELinux Basics for Secure Linux Administration*" />
+    <published>2025-06-01T06:11:00-06:00</published>
   
-    <updated>2025-05-31T00:00:00-06:00</updated>
+    <updated>2025-06-01T06:11:00-06:00</updated>
   
     <id>http://localhost:4000/posts/SELinux-Basics/</id>
     <content type="text/html" src="http://localhost:4000/posts/SELinux-Basics/" />
@@ -58,13 +67,20 @@ Preventing direct administrative SSH access is a vital component of any defense-
 
   
     
+    <category term="Linux Security" />
+    
+    <category term="SSH Hardening" />
+    
+    <category term="System Administration" />
+    
+    <category term="Server Security" />
+    
+    <category term="User Management" />
+    
   
 
-  <summary>🔐 SELinux Basics for Secure Linux Administration
-
-What if you had access to a powerful security tool—developed by the NSA—designed to lock down your Linux system from the inside out?
-
-Imagine a system that goes beyond traditional file permissions, offering enterprise-grade controls that prevent even root users or compromised processes from wreaking havoc. Now imagine that tool is free, open-sou...</summary>
+  <summary>SELinux (Security-Enhanced Linux) is that bodyguard. It&amp;#39;s a powerful security framework that enforces strict access controls at the kernel level, protecting your system from internal threats, misconfigurations, and privilege escalation—even when traditional permissions fail.
+Best of all? It&amp;#39;s free, flexible, and built into most major Linux distributions.</summary>
 
   </entry>
 

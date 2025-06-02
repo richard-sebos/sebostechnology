@@ -1,4 +1,14 @@
-# 🔐 *SELinux Basics for Secure Linux Administration*
+---
+title: 🔐 *SELinux Basics for Secure Linux Administration*
+date: 2025-06-01 12:11 +0000
+description: "SELinux (Security-Enhanced Linux) is that bodyguard. It's a powerful security framework that enforces strict access controls at the kernel level, protecting your system from internal threats, misconfigurations, and privilege escalation—even when traditional permissions fail.
+
+Best of all? It's free, flexible, and built into most major Linux distributions."
+image: /assets/img/Restricted-Access.png
+categories: [Linux Security, SSH Hardening, System Administration, Server Security, User Management]
+tags: [SSH security, restricted SSH user, rbash Linux, secure SSH login, Linux sysadmin tips, SSH hardening practices, limiting SSH access, two-account SSH model, secure Linux configuration, SSH restricted shell]
+
+---
 
 **What if you had access to a powerful security tool—developed by the NSA—designed to lock down your Linux system from the inside out?**
 
