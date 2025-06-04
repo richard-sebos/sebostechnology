@@ -68,7 +68,7 @@ While AppArmor provides a convenient and reliable form of MAC for many use cases
 
 Moving forward, I’m evaluating whether continuing with Oracle Linux and ROS2 integration is worth the investment, or if I should double down on Ubuntu and invest in hardening it with SELinux and Firewalld. Your feedback and suggestions on this are welcome.
 
-> Learn more about [SELinux here](#) *(link to be updated)*
+> Learn more about [SELinux here](https://richard-sebos.github.io/sebostechnology/posts/SELinux-Basics/) 
 
 ---
 *Looking to learn more about ROS2 security, SROS2 node permissions, or robotic system hardening? Bookmark this [series](https://dev.to/sebos/secure-ros2-setup-hardening-your-robot-project-from-the-start-448a) and follow along as we secure each layer of our Linux-based robotic system.*
