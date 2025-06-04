@@ -30,23 +30,26 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="SSH security" />
+<meta property="og:title" content="🔐 AppArmor amd ROS2 – The Article I Tried Not to Write" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/tags/ssh-security/" />
-<meta property="og:url" content="http://localhost:4000/tags/ssh-security/" />
+<meta name="description" content="Discover why AppArmor may not be ideal for ROS2 development with colcon. Learn from real-world insights comparing AppArmor, SELinux, and Oracle Linux in robotics system security." />
+<meta property="og:description" content="Discover why AppArmor may not be ideal for ROS2 development with colcon. Learn from real-world insights comparing AppArmor, SELinux, and Oracle Linux in robotics system security." />
+<link rel="canonical" href="http://localhost:4000/posts/AppArmor-ROS2/" />
+<meta property="og:url" content="http://localhost:4000/posts/AppArmor-ROS2/" />
 <meta property="og:site_name" content="Sebos Technology" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="SSH security" />
+<meta property="og:image" content="http://localhost:4000/assets/img/Apparmor-ROS2.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-03T06:11:00-06:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/Apparmor-ROS2.png" />
+<meta property="twitter:title" content="🔐 AppArmor amd ROS2 – The Article I Tried Not to Write" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"SSH security","url":"http://localhost:4000/tags/ssh-security/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-03T06:11:00-06:00","datePublished":"2025-06-03T06:11:00-06:00","description":"Discover why AppArmor may not be ideal for ROS2 development with colcon. Learn from real-world insights comparing AppArmor, SELinux, and Oracle Linux in robotics system security.","headline":"🔐 AppArmor amd ROS2 – The Article I Tried Not to Write","image":"http://localhost:4000/assets/img/Apparmor-ROS2.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/AppArmor-ROS2/"},"url":"http://localhost:4000/posts/AppArmor-ROS2/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>SSH security | Sebos Technology
+  <title>🔐 AppArmor amd ROS2 – The Article I Tried Not to Write | Sebos Technology
   </title>
 
   <!--
@@ -110,9 +113,16 @@
   <!-- 3rd-party Dependencies -->
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.32.2/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
   
 
   <!-- Scripts -->
@@ -128,6 +138,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -177,9 +194,37 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
 
 
 
@@ -187,11 +232,15 @@
 
 
 
-<script defer src="/assets/js/dist/misc.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
 <!-- Pageviews -->
+
+  
+
+  
 
 
 
@@ -502,14 +551,10 @@
           
         
           
-            <span>
-              <a href="/tags/">Tags</a>
-            </span>
-          
         
           
             
-              <span>SSH security</span>
+              <span>🔐 AppArmor amd ROS2 – The Article I Tried Not to Write</span>
             
 
           
@@ -523,7 +568,7 @@
     </button>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -549,27 +594,285 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
 
 
 
-<article class="px-1">
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+  
+  
+
   
     
-
-
-
-<div id="page-tag">
-  <h1 class="ps-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    SSH security
-    <span class="lead text-muted ps-2">3</span>
-  </h1>
-  <ul class="content ps-0">
+      
+      
     
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/SSH-Admin_SELinux/">🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)</a>
-        <span class="dash flex-grow-1"></span>
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+
+
+
+
+
+
+<article class="px-1" data-toc="true">
+  <header>
+    <h1 data-toc-skip>🔐 AppArmor amd ROS2 – The Article I Tried Not to Write</h1>
+    
+      <p class="post-desc fw-light mb-4">Discover why AppArmor may not be ideal for ROS2 development with colcon. Learn from real-world insights comparing AppArmor, SELinux, and Oracle Linux in robotics system security.</p>
+    
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -580,70 +883,360 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
-  data-ts="1748779860"
+  data-ts="1748952660"
   data-df="ll"
   
->
-  Jun  1, 2025
-</time>
-
-      </li>
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/SELinux-Basics/">🔐 *SELinux Basics for Secure Linux Administration*</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1748779860"
-  data-df="ll"
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jun  1, 2025
+  Jun  3, 2025
 </time>
 
-      </li>
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/Restricted-Access/">🔐 Restricting SSH Access with a Limited User Account</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+        
+        
+        
+
+        
+
+        <div class="mt-3 mb-3">
+          <a href="/assets/img/Apparmor-ROS2.png" class="popup img-link preview-img shimmer"><img src="/assets/img/Apparmor-ROS2.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              <a href="https://twitter.com/richard-sebos">Richard Chamberlain</a>
+            
+          </em>
+        </span>
+
+        <div>
+          <!-- pageviews -->
+          
+
+          <!-- read time -->
+          <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
 
 
 
 
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1748175060"
-  data-df="ll"
-  
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="796 words"
 >
-  May 25, 2025
-</time>
+  <em>4 min</em> read</span>
 
-      </li>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">🔐 AppArmor amd ROS2 – The Article I Tried Not to Write</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">🔐 AppArmor amd ROS2 – The Article I Tried Not to Write</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
+
+  <div class="content">
+    <h2 id="introduction"><span class="me-2">Introduction</span><a href="#introduction" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>When I began my ROS2 integration project, AppArmor wasn’t even on my radar. My background included years of experience with RHEL and Oracle Linux, and I had developed a solid understanding of SELinux. Initially, I attempted to make ROS2 work on Oracle Linux, expecting a straightforward integration. However, after several days of troubleshooting and configuration tweaks, I was still encountering persistent issues.</p>
+
+<p>Next, I shifted my focus to using SELinux on Ubuntu. Unfortunately, this too presented complications that weren’t worth resolving at the time. Although both SELinux and Oracle Linux theoretically support ROS2, the practical reality was too time-consuming to justify. On the other hand, I knew that AppArmor was the default MAC (Mandatory Access Control) system on Ubuntu and had proven compatibility with ROS2. That’s when I decided to explore AppArmor more deeply.</p>
+
+<hr />
+<h2 id="table-of-contents"><span class="me-2">Table of Contents</span><a href="#table-of-contents" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ol>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#mandatory-access-control-in-linux">Mandatory Access Control in Linux</a></li>
+  <li><a href="#why-apparmor-didnt-work-for-my-use-case">Why AppArmor Didn’t Work for My Use Case</a></li>
+  <li><a href="#is-apparmor-the-wrong-tool-for-ros2-and-colcon">Is AppArmor the Wrong Tool for ROS2 and <code class="language-plaintext highlighter-rouge">colcon</code>?</a></li>
+  <li><a href="#would-i-still-use-apparmor">Would I Still Use AppArmor?</a></li>
+  <li>
+    <h2 id="conclusion-and-next-steps"><span class="me-2"><a href="#conclusion-and-next-steps">Conclusion and Next Steps</a></span><a href="#conclusion-and-next-steps" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  </li>
+</ol>
+
+<h2 id="mandatory-access-control-in-linux"><span class="me-2">Mandatory Access Control in Linux</span><a href="#mandatory-access-control-in-linux" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Linux supports multiple types of access control mechanisms, such as:</p>
+
+<ul>
+  <li><strong>DAC (Discretionary Access Control)</strong>: The traditional file permission system based on user and group ownership.</li>
+  <li><strong>ACL (Access Control Lists)</strong>: More fine-grained controls layered on top of DAC.</li>
+  <li><strong>MAC (Mandatory Access Control)</strong>: A system-enforced security layer that restricts program capabilities beyond user-level permissions.</li>
+</ul>
+
+<p><a href="https://richard-sebos.github.io/sebostechnology/posts/DAC-ACL-MAC/">Learn more about DAC, ACL, and MAC</a></p>
+
+<p>Both <strong>AppArmor</strong> and <strong>SELinux</strong> fall under the MAC category but operate in fundamentally different ways. AppArmor is path-based and easier to configure, making it attractive for developers who want a quicker security solution. It works by defining what specific programs can do with files and directories, thereby extending the traditional DAC model to provide stricter access policies.</p>
+
+<hr />
+
+<h2 id="why-apparmor-didnt-work-for-my-use-case"><span class="me-2">Why AppArmor Didn’t Work for My Use Case</span><a href="#why-apparmor-didnt-work-for-my-use-case" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>A prime example of AppArmor’s limitations came up with the <code class="language-plaintext highlighter-rouge">colcon</code> command, which is essential for building ROS2 packages. From a security standpoint, I only wanted <code class="language-plaintext highlighter-rouge">colcon</code> to have access during controlled build and deployment phases, such as during UAT or production deployments.</p>
+
+<p>In theory, blocking <code class="language-plaintext highlighter-rouge">colcon</code> from accessing certain directories should have prevented execution. However, the reality was more complex. <code class="language-plaintext highlighter-rouge">colcon</code> launched a Python subprocess that failed due to denied permissions, yet some parts of the <code class="language-plaintext highlighter-rouge">colcon</code> process still executed. This partial execution created a domino effect, requiring a growing list of subprocesses and tools to be explicitly added to the AppArmor policy—a time-consuming and error-prone effort.</p>
+
+<hr />
+
+<h2 id="is-apparmor-the-wrong-tool-for-ros2-and-colcon"><span class="me-2">Is AppArmor the Wrong Tool for ROS2 and <code class="language-plaintext highlighter-rouge">colcon</code>?</span><a href="#is-apparmor-the-wrong-tool-for-ros2-and-colcon" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>In many cases, AppArmor works exactly as designed—but not necessarily as expected. Its job is not to prevent a program from running entirely, but to restrict what it can access once it’s running. As a result, a program like <code class="language-plaintext highlighter-rouge">colcon</code> can still execute and must handle permission errors internally. AppArmor applies these rules system-wide, across all users.</p>
+
+<p>In the context of ROS2 development tools like <code class="language-plaintext highlighter-rouge">colcon</code>, AppArmor simply isn’t granular or dynamic enough to offer the kind of control required during various development and deployment stages. For this reason, I would not recommend using AppArmor as the primary access control mechanism for ROS2 build tools.</p>
+
+<hr />
+
+<h2 id="would-i-still-use-apparmor"><span class="me-2">Would I Still Use AppArmor?</span><a href="#would-i-still-use-apparmor" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Yes, I would still use AppArmor—just not for development tools like <code class="language-plaintext highlighter-rouge">colcon</code>. I put AppArmor in the same category as <strong>UFW (Uncomplicated Firewall)</strong>: easy to use, effective in specific contexts, and suitable when paired with other security layers.</p>
+
+<p>However, in the case of robotics systems, where the device and its controller must directly interact with hardware and have minimal external layers, these limitations become more noticeable. At this juncture, I’m exploring whether it’s more viable to get <strong>Oracle Linux</strong> working with <strong>ROS2</strong> or to invest time in enabling <strong>SELinux</strong> and <strong>Firewalld</strong> on <strong>Ubuntu</strong>.</p>
+
+<hr />
+
+<h2 id="conclusion-and-next-steps-1"><span class="me-2">Conclusion and Next Steps</span><a href="#conclusion-and-next-steps-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>While AppArmor provides a convenient and reliable form of MAC for many use cases, it’s not the ideal fit for every scenario—especially those involving complex, multi-stage build tools like <code class="language-plaintext highlighter-rouge">colcon</code>. Its compatibility with Ubuntu and simplicity make it a solid default, but its limitations become clear in advanced ROS2 development environments.</p>
+
+<p>Moving forward, I’m evaluating whether continuing with Oracle Linux and ROS2 integration is worth the investment, or if I should double down on Ubuntu and invest in hardening it with SELinux and Firewalld. Your feedback and suggestions on this are welcome.</p>
+
+<blockquote>
+  <p>Learn more about <a href="#">SELinux here</a> <em>(link to be updated)</em></p>
+</blockquote>
+
+<hr />
+<p><em>Looking to learn more about ROS2 security, SROS2 node permissions, or robotic system hardening? Bookmark this <a href="https://dev.to/sebos/secure-ros2-setup-hardening-your-robot-project-from-the-start-448a">series</a> and follow along as we secure each layer of our Linux-based robotic system.</em>
+—
+<strong>Need Linux expertise?</strong> I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you’re troubleshooting, optimizing, or building from scratch—I’ve got you covered.</p>
+
+<p>📬 Drop a comment or <a href="mailto:info@sebostechnology.com">email me</a> to collaborate. For more tutorials, tools, and insights, visit <a href="https://sebostechnology.com">sebostechnology.com</a>.</p>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
     
-  </ul>
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/robotics/">Robotics</a>,
+          <a href="/categories/ros2-install-series/">ROS2 Install Series</a>,
+          <a href="/categories/security/">Security</a>,
+          <a href="/categories/robotics-security/">Robotics Security</a>,
+          <a href="/categories/linux-system-hardening/">Linux System Hardening</a>,
+          <a href="/categories/ros2-development/">ROS2 Development</a>,
+          <a href="/categories/cybersecurity-best-practices/">Cybersecurity Best Practices</a>,
+          <a href="/categories/open-source-security-tools/">Open-Source Security Tools</a>,
+          <a href="/categories/industrial-iot-security/">Industrial IoT Security</a>,
+          <a href="/categories/devsecops-for-robotics/">DevSecOps for Robotics</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/ros2-security/"
+            class="post-tag no-text-decoration"
+          >ROS2 Security</a>
+        
+          <a
+            href="/tags/auditd-linux/"
+            class="post-tag no-text-decoration"
+          >Auditd Linux</a>
+        
+          <a
+            href="/tags/robotics-cybersecurity/"
+            class="post-tag no-text-decoration"
+          >Robotics Cybersecurity</a>
+        
+          <a
+            href="/tags/secure-ros-communications/"
+            class="post-tag no-text-decoration"
+          >Secure ROS Communications</a>
+        
+          <a
+            href="/tags/linux-auditing-tools/"
+            class="post-tag no-text-decoration"
+          >Linux Auditing Tools</a>
+        
+          <a
+            href="/tags/ros2-hardening/"
+            class="post-tag no-text-decoration"
+          >ROS2 Hardening</a>
+        
+          <a
+            href="/tags/apparmor-and-auditd/"
+            class="post-tag no-text-decoration"
+          >AppArmor and Auditd</a>
+        
+          <a
+            href="/tags/network-monitoring-in-robotics/"
+            class="post-tag no-text-decoration"
+          >Network Monitoring in Robotics</a>
+        
+          <a
+            href="/tags/robot-security-frameworks/"
+            class="post-tag no-text-decoration"
+          >Robot Security Frameworks</a>
+        
+          <a
+            href="/tags/sros2-configuration/"
+            class="post-tag no-text-decoration"
+          >SROS2 Configuration</a>
+        
+          <a
+            href="/tags/ros2-development-security/"
+            class="post-tag no-text-decoration"
+          >ROS2 Development Security</a>
+        
+          <a
+            href="/tags/linux-system-monitoring/"
+            class="post-tag no-text-decoration"
+          >Linux System Monitoring</a>
+        
+          <a
+            href="/tags/ros2-build-security/"
+            class="post-tag no-text-decoration"
+          >ROS2 Build Security</a>
+        
+          <a
+            href="/tags/suricata-ids/"
+            class="post-tag no-text-decoration"
+          >Suricata IDS</a>
+        
+          <a
+            href="/tags/auditd-rules-examples/"
+            class="post-tag no-text-decoration"
+          >Auditd Rules Examples</a>
+        
+          <a
+            href="/tags/ros2/"
+            class="post-tag no-text-decoration"
+          >ROS2</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://x.com/SebosInfo" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.facebook.com/richard.chamberlain" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.linkedin.com/in/richard-chamberlain-b9945a32/" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
+        <i class="fa-fw fab fa-linkedin"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
 
-  
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -3507,12 +4100,344 @@
             </div>
 
             
+              
+              
+
+
+
+
+
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/ROS2-Auditd/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1747483860"
+  data-df="ll"
+  
+>
+  May 17, 2025
+</time>
+
+              <h4 class="pt-0 my-2">🛡️ Securing ROS2 Robotic Projects with Auditd- A Practical Guide</h4>
+              <div class="text-muted">
+                <p>Learn how to enhance ROS2-based robotic project security using Auditd, a powerful Linux auditing tool. Discover real-world use cases, practical audit rules, and scripts to monitor ROS2 environments...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/Firewall-ROS2/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1745748000"
+  data-df="ll"
+  
+>
+  Apr 27, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Robot Security with ROS2 and UFW</h4>
+              <div class="text-muted">
+                <p>🧠 Introduction: Why Robot Security Matters
+
+To me, robots are more than machines—they’re a reflection of human creativity and ingenuity. Whether designed to explore new worlds, ease daily burdens, ...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/Armor-Audit/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1745575200"
+  data-df="ll"
+  
+>
+  Apr 25, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Setting Up a Secure ROS 2 System Part 4 - AppArmor and Auditd</h4>
+              <div class="text-muted">
+                <p>When it comes to securing your ROS 2 environment, tools like AppArmor, SELinux, and Auditd are often overlooked—but they’re incredibly powerful. Like traditional file permissions and firewalls, the...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/SSH-Admin_SELinux/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
             
 
             <!-- The Footer -->
@@ -6398,6 +7323,11 @@
     
 
     <!-- Embedded scripts -->
+
+    
+      
+      <!-- The comments switcher -->
+
 
     
 

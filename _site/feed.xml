@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-01T19:37:05-06:00</updated>
+  <updated>2025-06-03T18:09:31-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,53 @@
 
   
   <entry>
+    <title>🔐 AppArmor amd ROS2 – The Article I Tried Not to Write</title>
+    <link href="http://localhost:4000/posts/AppArmor-ROS2/" rel="alternate" type="text/html" title="🔐 AppArmor amd ROS2 – The Article I Tried Not to Write" />
+    <published>2025-06-03T06:11:00-06:00</published>
+  
+    <updated>2025-06-03T06:11:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/AppArmor-ROS2/</id>
+    <content type="text/html" src="http://localhost:4000/posts/AppArmor-ROS2/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="ROS2 Install Series" />
+    
+    <category term="Security" />
+    
+    <category term="Robotics Security" />
+    
+    <category term="Linux System Hardening" />
+    
+    <category term="ROS2 Development" />
+    
+    <category term="Cybersecurity Best Practices" />
+    
+    <category term="Open-Source Security Tools" />
+    
+    <category term="Industrial IoT Security" />
+    
+    <category term="DevSecOps for Robotics" />
+    
+  
+
+  <summary>Discover why AppArmor may not be ideal for ROS2 development with colcon. Learn from real-world insights comparing AppArmor, SELinux, and Oracle Linux in robotics system security.</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)</title>
     <link href="http://localhost:4000/posts/SSH-Admin_SELinux/" rel="alternate" type="text/html" title="🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)" />
     <published>2025-06-01T06:11:00-06:00</published>
   
-    <updated>2025-06-01T19:31:34-06:00</updated>
+    <updated>2025-06-01T19:46:41-06:00</updated>
   
     <id>http://localhost:4000/posts/SSH-Admin_SELinux/</id>
     <content type="text/html" src="http://localhost:4000/posts/SSH-Admin_SELinux/" />
@@ -57,7 +99,7 @@ Because true security doesn’...</summary>
     <link href="http://localhost:4000/posts/SELinux-Basics/" rel="alternate" type="text/html" title="🔐 *SELinux Basics for Secure Linux Administration*" />
     <published>2025-06-01T06:11:00-06:00</published>
   
-    <updated>2025-06-01T19:31:34-06:00</updated>
+    <updated>2025-06-01T19:46:41-06:00</updated>
   
     <id>http://localhost:4000/posts/SELinux-Basics/</id>
     <content type="text/html" src="http://localhost:4000/posts/SELinux-Basics/" />
@@ -143,42 +185,6 @@ Best of all? It&amp;#39;s free, flexible, and built into most major Linux distri
   
 
   <summary>Learn how to secure Linux files using DAC, ACLs, and MAC. Explore key tools like AppArmor, SELinux, and Auditd to enhance system access control and prevent unauthorized access.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>🛡️ Complete Guide to Fail2Ban - Protect Your SSH Server from Brute Force Attacks</title>
-    <link href="http://localhost:4000/posts/Fail2Ban/" rel="alternate" type="text/html" title="🛡️ Complete Guide to Fail2Ban - Protect Your SSH Server from Brute Force Attacks" />
-    <published>2025-05-18T06:11:00-06:00</published>
-  
-    <updated>2025-05-19T09:02:25-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Fail2Ban/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Fail2Ban/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Linux Security" />
-    
-    <category term="Server Hardening" />
-    
-    <category term="SSH Security" />
-    
-    <category term="Fail2Ban" />
-    
-    <category term="DevOps Tutorials" />
-    
-    <category term="Cybersecurity Best" />
-    
-    <category term="Practices" />
-    
-  
-
-  <summary>Protect your Linux servers from SSH brute-force attacks with Fail2Ban. This guide covers easy-to-follow configuration steps, security best practices, and testing methods to harden your SSH access.</summary>
 
   </entry>
 

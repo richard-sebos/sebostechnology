@@ -45,7 +45,7 @@
 <meta property="twitter:title" content="🛡️ Blocking Admin SSH Logins with SELinux (ssh_sysadm_login)" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-01T19:31:34-06:00","datePublished":"2025-06-01T06:11:00-06:00","description":"In this guide, you’ll learn how to use SELinux to block direct SSH access for privileged users, enforcing access through a restricted jump account instead. By disabling the ssh_sysadm_login boolean and mapping users to the sysadm_u role, you gain a policy-enforced control point that hardens your system against misconfiguration, privilege abuse, and lateral movement. Because true security doesn’t just start at the login prompt—it controls who gets there in the first place.","headline":"🛡️ Blocking Admin SSH Logins with SELinux (ssh_sysadm_login)","image":"http://localhost:4000/assets/img/SSH-SELinx.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SSH-Admin_SELinux/"},"url":"http://localhost:4000/posts/SSH-Admin_SELinux/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-01T19:46:41-06:00","datePublished":"2025-06-01T06:11:00-06:00","description":"In this guide, you’ll learn how to use SELinux to block direct SSH access for privileged users, enforcing access through a restricted jump account instead. By disabling the ssh_sysadm_login boolean and mapping users to the sysadm_u role, you gain a policy-enforced control point that hardens your system against misconfiguration, privilege abuse, and lateral movement. Because true security doesn’t just start at the login prompt—it controls who gets there in the first place.","headline":"🛡️ Blocking Admin SSH Logins with SELinux (ssh_sysadm_login)","image":"http://localhost:4000/assets/img/SSH-SELinx.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SSH-Admin_SELinux/"},"url":"http://localhost:4000/posts/SSH-Admin_SELinux/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -898,7 +898,7 @@ Because true security doesn’t just start at the login prompt—it controls who
 
 <time
   
-  data-ts="1748827894"
+  data-ts="1748828801"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -1344,6 +1344,13 @@ sestatus
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/AppArmor-ROS2/">🔐 AppArmor amd ROS2 – The Article I Tried Not to Write</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/SELinux-Basics/">🔐 *SELinux Basics for Secure Linux Administration*</a>
         </li>
       
@@ -1366,13 +1373,6 @@ sestatus
         
         <li class="text-truncate lh-lg">
           <a href="/posts/DAC-ACL-MAC/">🛡️ How Secure Are Your Linux Files? Access Control Demystified</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/ROS2-Auditd/">🛡️ Securing ROS2 Robotic Projects with Auditd- A Practical Guide</a>
         </li>
       
     </ul>
@@ -4387,9 +4387,13 @@ sestatus
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/AppArmor-ROS2/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>🔐 AppArmor amd ROS2 – The Article I Tried Not to Write</p>
+    </a>
   
 </nav>
 

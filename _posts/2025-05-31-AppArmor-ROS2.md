@@ -1,15 +1,11 @@
 ---
 title: 🔐 AppArmor amd ROS2 – The Article I Tried Not to Write
-date: 2025-05-31 12:11 +0000
+date: 2025-06-03 12:11 +0000
 description: "Discover why AppArmor may not be ideal for ROS2 development with colcon. Learn from real-world insights comparing AppArmor, SELinux, and Oracle Linux in robotics system security."
 image: /assets/img/Apparmor-ROS2.png
 categories: [Robotics, ROS2 Install Series, Security,Robotics Security,Linux System Hardening, ROS2 Development, Cybersecurity Best Practices, Open-Source Security Tools, Industrial IoT Security, DevSecOps for Robotics]
 tags: [ROS2 Security, Auditd Linux, Robotics Cybersecurity, Secure ROS Communications,Linux Auditing Tools, ROS2 Hardening, AppArmor and Auditd, Network Monitoring in Robotics, Robot Security Frameworks, SROS2 Configuration, ROS2 Development Security, Linux System Monitoring, ROS2 Build Security, Suricata IDS, Auditd Rules Examples, ROS2,]
 ---
-
-# AppArmor – The Article I Tried Not to Write
-
-
 
 ## Introduction
 
