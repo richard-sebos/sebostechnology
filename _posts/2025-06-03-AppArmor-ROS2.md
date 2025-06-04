@@ -1,5 +1,5 @@
 ---
-title: 🔐 AppArmor amd ROS2 – The Article I Tried Not to Write
+title: 🔐 AppArmor and ROS2 – The Article I Tried Not to Write
 date: 2025-06-03 12:11 +0000
 description: "Discover why AppArmor may not be ideal for ROS2 development with colcon. Learn from real-world insights comparing AppArmor, SELinux, and Oracle Linux in robotics system security."
 image: /assets/img/Apparmor-ROS2.png
