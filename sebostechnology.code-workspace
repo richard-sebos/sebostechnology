@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../../Deploy/terraform"
+		},
+		{
+			"path": "../../articles"
 		}
 	],
 	"settings": {}
