@@ -1,6 +1,9 @@
 ---
-title: "Streamlining SSH Key Management"
+title: "Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions "
 date: 2025-04-27 23:39 +0000
+image:
+  path: /assets/img/Limit-SSH-Access.png
+  alt: Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions
 categories: [SSH, AllowUsers]
 tags: [ SSH, servers, cybersecurity]
 ---

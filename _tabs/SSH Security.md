@@ -49,8 +49,8 @@ Here’s how the upcoming posts will be structured:
 ## 🔐 **SSH Security & Hardening Series**
 _A focus on securing SSH endpoints from unauthorized access and abuse._
 
-1. [Segregation SSH Traffic] (https://dev.to/sebos/segregation-ssh-traffic-1814)
-3. [Limiting SSH Access with TCP Wrappers, `AllowUsers`, and IP Restrictions](https://dev.to/sebos/limiting-ssh-access-with-tcp-wrappers-allowusers-and-ip-restrictions-kco)
+1. [Segregation SSH Traffic](https://dev.to/sebos/segregation-ssh-traffic-1814)
+3. [Limiting SSH Access with TCP Wrappers, `AllowUsers`, and IP Restrictions](https://richard-sebos.github.io/sebostechnology/posts/SSH-AllowUsers/)
 4. [Enforcing Strong SSH Authentication: Passwordless Login with Key-Based Auth](https://dev.to/sebos/mastering-ssh-key-based-authentication-secure-passwordless-login-for-linux-and-windows-4okm)
 5. [Integrating SSH with Two-Factor Authentication (2FA) using PAM](https://dev.to/sebos/how-to-set-up-multi-factor-authentication-mfa-on-ubuntu-for-ssh-1201)
 6. [Detecting and Mitigating SSH Brute Force Attacks with Fail2Ban](https://dev.to/sebos/complete-guide-to-fail2ban-protect-your-ssh-server-from-brute-force-attacks-3m3l)
@@ -58,7 +58,7 @@ _A focus on securing SSH endpoints from unauthorized access and abuse._
 8. [Automate Port Knocking with Dynamic Port Rotation for Secure SSH Access](https://dev.to/sebos/automate-port-knocking-with-dynamic-port-rotation-for-secure-ssh-access-pbh)
 9. [Restricting User and SSH Access](https://richard-sebos.github.io/sebostechnology/posts/Restricted-Access/)
 9. [Securing SSH with SELinux: Custom Contexts and Policies](https://richard-sebos.github.io/sebostechnology/posts/SSH-Admin_SELinux/)
-10. [Secure Remote Deployments with SSH Agent Forwarding and GitHub](https://richard-sebos.github.io/sebostechnology/posts/Agent-Forwarding/)
+10. [Controlling SSH Agent Forwarding to Prevent Credential Leakage](https://richard-sebos.github.io/sebostechnology/posts/Agent-Forwarding/)
 2. **Hardened SSH Configurations: Best Practices for `sshd_config`**
 
 ---
