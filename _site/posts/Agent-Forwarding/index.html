@@ -1484,6 +1484,20 @@ ssh-add <span class="nt">-t</span> 3600 &lt;key_path&gt;
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-Polices/">Secure SSH Access with Modular Policy Files</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-AllowUsers/">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Agent-Forwarding/">Secure Remote Deployments with SSH Agent Forwarding and GitHub</a>
         </li>
       
@@ -1499,20 +1513,6 @@ ssh-add <span class="nt">-t</span> 3600 &lt;key_path&gt;
         
         <li class="text-truncate lh-lg">
           <a href="/posts/SELinux-Basics/">🔐 *SELinux Basics for Secure Linux Administration*</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/SSH-Admin_SELinux/">🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Restricted-Access/">🔐 Restricting SSH Access with a Limited User Account</a>
         </li>
       
     </ul>
@@ -3471,6 +3471,8 @@ ssh-add <span class="nt">-t</span> 3600 &lt;key_path&gt;
     
     
     
+      
+    
   
     
     
@@ -4715,6 +4717,18 @@ ssh-add <span class="nt">-t</span> 3600 &lt;key_path&gt;
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -4728,6 +4742,42 @@ ssh-add <span class="nt">-t</span> 3600 &lt;key_path&gt;
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/SSH-Polices/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1749981600"
+  data-df="ll"
+  
+>
+  Jun 15, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Secure SSH Access with Modular Policy Files</h4>
+              <div class="text-muted">
+                <p>Table of Contents
+
+
+  Introduction
+  Why SSH Policy Files Matter
+  Using sshd_config and Include Files
+  Policy 1: SSH Connection Limiting
+  Policy 2: Login Restrictions and Authentication
+  Policy...</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/SSH-AllowUsers/" class="post-preview card h-100">
@@ -4749,7 +4799,7 @@ ssh-add <span class="nt">-t</span> 3600 &lt;key_path&gt;
   Apr 27, 2025
 </time>
 
-              <h4 class="pt-0 my-2">Streamlining SSH Key Management</h4>
+              <h4 class="pt-0 my-2">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </h4>
               <div class="text-muted">
                 <p>Securing SSH access is a crucial step in hardening your Linux servers. In our previous discussion, we highlighted the importance of SSH as a secure communication protocol and introduced the sshd_co...</p>
               </div>
@@ -4787,36 +4837,6 @@ Now that you have Port Knocking configured, let’s take it a step further! Inst
           </a>
         </article>
       
-        <article class="col">
-          <a href="/posts/Port-Knocking/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1739058120"
-  data-df="ll"
-  
->
-  Feb  8, 2025
-</time>
-
-              <h4 class="pt-0 my-2">SSH Security Boost - Implementing Port Knocking to Block Unauthorized Access</h4>
-              <div class="text-muted">
-                <p>Introduction
-
-Securing SSH access is critical for home lab users and new system administrators looking to protect their remote servers. One effective way to enhance security is Port Knocking, a tec...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -4841,9 +4861,13 @@ Securing SSH access is critical for home lab users and new system administrators
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/SSH-Polices/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Secure SSH Access with Modular Policy Files</p>
+    </a>
   
 </nav>
 
@@ -6843,6 +6867,8 @@ Securing SSH access is critical for home lab users and new system administrators
     
     
     
+    
+      
     
   
     

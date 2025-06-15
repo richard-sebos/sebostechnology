@@ -574,6 +574,75 @@
 
 
 
+  
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- create the image wrapper -->
+      
+
+      
+      
+
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
 
 <!-- Add header for code snippets -->
 
@@ -632,6 +701,63 @@
 
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
+  
+    <article class="card-wrapper card">
+      <a href="/posts/Suricata/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">🔐 Securing ROS 2 Robots - Network Intrusion Detection with Suricata</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>As robots become more deeply integrated into logistics, healthcare, research, and everyday life, they also become more attractive targets for cyber threats. Network security in robotics is no longe...</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1746619860"
+  data-df="ll"
+  
+>
+  May  7, 2025
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      Robotics,
+                      ROS2 Install Series,
+                      Security
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
   
     <article class="card-wrapper card">
       <a href="/posts/SSH-Key-Based/" class="post-preview row g-0 flex-md-row-reverse">
@@ -754,10 +880,25 @@ When managing remote servers, SSH (Secure Shell) is the standard for encrypted a
         
 
         
+          
+          
 
-        <div class="col-md-12">
+          
+
+          
+
+          
+
+          <div class="col-md-5">
+            <div class="preview-img  shimmer"><img src="/assets/img/Limit-SSH-Access.png" alt="Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions"  loading="lazy"></div>
+          </div>
+
+          
+        
+
+        <div class="col-md-7">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Streamlining SSH Key Management</h1>
+            <h1 class="card-title my-2 mt-md-0">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>Securing SSH access is a crucial step in hardening your Linux servers. In our previous discussion, we highlighted the importance of SSH as a secure communication protocol and introduced the sshd_co...</p>
@@ -1157,66 +1298,6 @@ Welcome to the first post in my series on setting up a secure ROS 2 system on Ub
       </a>
     </article>
   
-    <article class="card-wrapper card">
-      <a href="/posts/QEMU-ISO/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Running Linux in QEMU -  How to Build a VM from an ISO</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>Running Linux in QEMU for Testing on IBM PowerPC (or x86)
-
-I recently had the chance to work on an IBM Power 6 system running Linux—a first for me. While I’ve spent years working with x86 and ARM s...</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1743851220"
-  data-df="ll"
-  
->
-  Apr  5, 2025
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      QEMU,
-                      Virtualization,
-                      Cybersecurity,
-                      Sysadmin
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
 </div>
 <!-- #post-list -->
 
@@ -1393,6 +1474,20 @@ I recently had the chance to work on an IBM Power 6 system running Linux—a fir
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-Polices/">Secure SSH Access with Modular Policy Files</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-AllowUsers/">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Agent-Forwarding/">Secure Remote Deployments with SSH Agent Forwarding and GitHub</a>
         </li>
       
@@ -1408,20 +1503,6 @@ I recently had the chance to work on an IBM Power 6 system running Linux—a fir
         
         <li class="text-truncate lh-lg">
           <a href="/posts/SELinux-Basics/">🔐 *SELinux Basics for Secure Linux Administration*</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/SSH-Admin_SELinux/">🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Restricted-Access/">🔐 Restricting SSH Access with a Limited User Account</a>
         </li>
       
     </ul>
@@ -3379,6 +3460,8 @@ I recently had the chance to work on an IBM Power 6 system running Linux—a fir
     
     
     
+    
+      
     
   
     
@@ -6394,6 +6477,8 @@ I recently had the chance to work on an IBM Power 6 system running Linux—a fir
     
     
     
+    
+      
     
   
     

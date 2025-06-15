@@ -30,24 +30,28 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Streamlining SSH Key Management" />
+<meta property="og:title" content="Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Securing SSH access is a crucial step in hardening your Linux servers. In our previous discussion, we highlighted the importance of SSH as a secure communication protocol and introduced the sshd_config file, the primary configuration point for the SSH daemon." />
 <meta property="og:description" content="Securing SSH access is a crucial step in hardening your Linux servers. In our previous discussion, we highlighted the importance of SSH as a secure communication protocol and introduced the sshd_config file, the primary configuration point for the SSH daemon." />
 <link rel="canonical" href="http://localhost:4000/posts/SSH-AllowUsers/" />
 <meta property="og:url" content="http://localhost:4000/posts/SSH-AllowUsers/" />
 <meta property="og:site_name" content="Sebos Technology" />
+<meta property="og:image" content="http://localhost:4000/assets/img/Limit-SSH-Access.png" />
+<meta property="og:image:alt" content="Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2025-04-27T17:39:00-06:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Streamlining SSH Key Management" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/Limit-SSH-Access.png" />
+<meta name="twitter:image:alt" content="Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions" />
+<meta property="twitter:title" content="Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-27T17:39:00-06:00","datePublished":"2025-04-27T17:39:00-06:00","description":"Securing SSH access is a crucial step in hardening your Linux servers. In our previous discussion, we highlighted the importance of SSH as a secure communication protocol and introduced the sshd_config file, the primary configuration point for the SSH daemon.","headline":"Streamlining SSH Key Management","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SSH-AllowUsers/"},"url":"http://localhost:4000/posts/SSH-AllowUsers/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-13T05:17:46-06:00","datePublished":"2025-04-27T17:39:00-06:00","description":"Securing SSH access is a crucial step in hardening your Linux servers. In our previous discussion, we highlighted the importance of SSH as a secure communication protocol and introduced the sshd_config file, the primary configuration point for the SSH daemon.","headline":"Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions","image":{"alt":"Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions","url":"http://localhost:4000/assets/img/Limit-SSH-Access.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SSH-AllowUsers/"},"url":"http://localhost:4000/posts/SSH-AllowUsers/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Streamlining SSH Key Management | Sebos Technology
+  <title>Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions  | Sebos Technology
   </title>
 
   <!--
@@ -552,7 +556,7 @@
         
           
             
-              <span>Streamlining SSH Key Management</span>
+              <span>Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </span>
             
 
           
@@ -619,6 +623,103 @@
 
 
 
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
 
 
 <!-- Add header for code snippets -->
@@ -775,7 +876,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>Streamlining SSH Key Management</h1>
+    <h1 data-toc-skip>Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </h1>
     
 
     <div class="post-meta text-muted">
@@ -805,7 +906,39 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
 
+
+
+
+<time
+  
+  data-ts="1749813466"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Jun 13, 2025
+</time>
+
+        </span>
+      
+
+      
+        
+        
+        
+
+        
+
+        <div class="mt-3 mb-3">
+          <a href="/assets/img/Limit-SSH-Access.png" class="popup img-link preview-img shimmer"><img src="/assets/img/Limit-SSH-Access.png"  alt="Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions" width="1200" height="630"  loading="lazy"></a><figcaption class="text-center pt-2 pb-2">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions</figcaption></div>
       
 
       <div class="d-flex justify-content-between">
@@ -858,7 +991,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">Streamlining SSH Key Management</span>
+      <span class="label text-truncate">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -871,7 +1004,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">Streamlining SSH Key Management</div>
+        <div class="label text-truncate py-2 ms-4">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -1155,6 +1288,20 @@ firewall-cmd <span class="nt">--reload</span>
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-Polices/">Secure SSH Access with Modular Policy Files</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-AllowUsers/">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Agent-Forwarding/">Secure Remote Deployments with SSH Agent Forwarding and GitHub</a>
         </li>
       
@@ -1170,20 +1317,6 @@ firewall-cmd <span class="nt">--reload</span>
         
         <li class="text-truncate lh-lg">
           <a href="/posts/SELinux-Basics/">🔐 *SELinux Basics for Secure Linux Administration*</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/SSH-Admin_SELinux/">🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Restricted-Access/">🔐 Restricting SSH Access with a Limited User Account</a>
         </li>
       
     </ul>
@@ -3142,6 +3275,8 @@ firewall-cmd <span class="nt">--reload</span>
     
     
     
+      
+    
   
     
     
@@ -4201,6 +4336,18 @@ firewall-cmd <span class="nt">--reload</span>
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -6602,6 +6749,8 @@ To me, robots are more than machines—they’re a reflection of human creativit
     
     
     
+    
+      
     
   
     

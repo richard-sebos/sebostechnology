@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-08T17:51:43-06:00</updated>
+  <updated>2025-06-15T15:35:56-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,52 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Secure SSH Access with Modular Policy Files</title>
+    <link href="http://localhost:4000/posts/SSH-Polices/" rel="alternate" type="text/html" title="Secure SSH Access with Modular Policy Files" />
+    <published>2025-06-15T04:00:00-06:00</published>
+  
+    <updated>2025-06-15T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/SSH-Polices/</id>
+    <content type="text/html" src="http://localhost:4000/posts/SSH-Polices/" />
+    <author>
+      <name>Richard Chamberlaiin</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Security" />
+    
+    <category term="DevOps" />
+    
+  
+
+  <summary>Table of Contents
+
+
+  Introduction
+  Why SSH Policy Files Matter
+  Using sshd_config and Include Files
+  Policy 1: SSH Connection Limiting
+  Policy 2: Login Restrictions and Authentication
+  Policy 3: Disable Forwarding and Tunneling
+  Policy 4: Secure Environment Variable Handling
+  Policy 5: Controlled Access Overrides
+  Conclusion
+
+
+
+
+Introduction
+
+When it comes to securing SSH, there are pl...</summary>
+
+  </entry>
 
   
   <entry>
@@ -149,38 +195,6 @@ Because true security doesn’...</summary>
 
   <summary>SELinux (Security-Enhanced Linux) is that bodyguard. It&amp;#39;s a powerful security framework that enforces strict access controls at the kernel level, protecting your system from internal threats, misconfigurations, and privilege escalation—even when traditional permissions fail.
 Best of all? It&amp;#39;s free, flexible, and built into most major Linux distributions.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>🔐 Restricting SSH Access with a Limited User Account</title>
-    <link href="http://localhost:4000/posts/Restricted-Access/" rel="alternate" type="text/html" title="🔐 Restricting SSH Access with a Limited User Account" />
-    <published>2025-05-25T06:11:00-06:00</published>
-  
-    <updated>2025-05-25T06:11:00-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Restricted-Access/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Restricted-Access/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Linux Security" />
-    
-    <category term="SSH Hardening" />
-    
-    <category term="System Administration" />
-    
-    <category term="Server Security" />
-    
-    <category term="User Management" />
-    
-  
-
-  <summary>Secure your Linux systems by using a restricted user for SSH access and separating admin privileges. Learn how to configure rbash, limit executable commands, and enhance server security with this practical guide for sysadmins.</summary>
 
   </entry>
 

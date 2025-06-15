@@ -1141,6 +1141,20 @@ Include ~/.ssh/include.d/pve
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-Polices/">Secure SSH Access with Modular Policy Files</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-AllowUsers/">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Agent-Forwarding/">Secure Remote Deployments with SSH Agent Forwarding and GitHub</a>
         </li>
       
@@ -1156,20 +1170,6 @@ Include ~/.ssh/include.d/pve
         
         <li class="text-truncate lh-lg">
           <a href="/posts/SELinux-Basics/">🔐 *SELinux Basics for Secure Linux Administration*</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/SSH-Admin_SELinux/">🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Restricted-Access/">🔐 Restricting SSH Access with a Limited User Account</a>
         </li>
       
     </ul>
@@ -3128,6 +3128,8 @@ Include ~/.ssh/include.d/pve
     
     
     
+      
+    
   
     
     
@@ -4299,6 +4301,18 @@ Include ~/.ssh/include.d/pve
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4363,6 +4377,42 @@ Include ~/.ssh/include.d/pve
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
+          <a href="/posts/SSH-Polices/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1749981600"
+  data-df="ll"
+  
+>
+  Jun 15, 2025
+</time>
+
+              <h4 class="pt-0 my-2">Secure SSH Access with Modular Policy Files</h4>
+              <div class="text-muted">
+                <p>Table of Contents
+
+
+  Introduction
+  Why SSH Policy Files Matter
+  Using sshd_config and Include Files
+  Policy 1: SSH Connection Limiting
+  Policy 2: Login Restrictions and Authentication
+  Policy...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
           <a href="/posts/Agent-Forwarding/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -4410,39 +4460,9 @@ Include ~/.ssh/include.d/pve
   Apr 27, 2025
 </time>
 
-              <h4 class="pt-0 my-2">Streamlining SSH Key Management</h4>
+              <h4 class="pt-0 my-2">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </h4>
               <div class="text-muted">
                 <p>Securing SSH access is a crucial step in hardening your Linux servers. In our previous discussion, we highlighted the importance of SSH as a secure communication protocol and introduced the sshd_co...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/Auto-Port-Knocking/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1739102580"
-  data-df="ll"
-  
->
-  Feb  9, 2025
-</time>
-
-              <h4 class="pt-0 my-2">Automate Port Knocking with Dynamic Port Rotation for Secure SSH Access</h4>
-              <div class="text-muted">
-                <p>Introduction
-
-Now that you have Port Knocking configured, let’s take it a step further! Instead of using a static knocking sequence, we will automatically rotate knock ports daily using a systemd t...</p>
               </div>
             </div>
           </a>
@@ -6478,6 +6498,8 @@ Now that you have Port Knocking configured, let’s take it a step further! Inst
     
     
     
+    
+      
     
   
     
