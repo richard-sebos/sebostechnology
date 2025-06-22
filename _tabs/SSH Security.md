@@ -67,7 +67,7 @@ _A focus on securing SSH endpoints from unauthorized access and abuse._
 _Dive deep into key-based authentication, lifecycle management, and advanced identity practices._
 
 1. [Streamlining SSH Key Management](https://dev.to/sebos/streamlining-ssh-key-management-93b)
-2. **Enforcing SSH Key Expiry and Rotation Policies with `AuthorizedKeysCommand`**
+2. [Enforcing SSH Key Expiry and Rotation Policies with `AuthorizedKeysCommand`](https://richard-sebos.github.io/sebostechnology/posts/SSH-Auth-Key-Rotation/)
 3. **Using OpenSSH Certificates for Scalable Trust Management**
 4. **SSH Key Escrow and Backup Strategies: Balancing Security and Availability**
 5. **Managing SSH Key Access in Multi-Tenant Cloud Environments**

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-22T09:45:53-06:00</updated>
+  <updated>2025-06-22T09:53:14-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -52,7 +52,7 @@ When setting up a new Linux server, it’s common practice to configure SSH auth
     <link href="http://localhost:4000/posts/SSH-Polices/" rel="alternate" type="text/html" title="Secure SSH Access with Modular Policy Files" />
     <published>2025-06-15T04:00:00-06:00</published>
   
-    <updated>2025-06-15T04:00:00-06:00</updated>
+    <updated>2025-06-22T09:47:40-06:00</updated>
   
     <id>http://localhost:4000/posts/SSH-Polices/</id>
     <content type="text/html" src="http://localhost:4000/posts/SSH-Polices/" />
@@ -82,7 +82,7 @@ When it comes to securing SSH, there are plenty of guides and videos focusing on
     <link href="http://localhost:4000/posts/Agent-Forwarding/" rel="alternate" type="text/html" title="Secure Remote Deployments with SSH Agent Forwarding and GitHub" />
     <published>2025-06-05T04:00:00-06:00</published>
   
-    <updated>2025-06-05T04:00:00-06:00</updated>
+    <updated>2025-06-22T09:47:40-06:00</updated>
   
     <id>http://localhost:4000/posts/Agent-Forwarding/</id>
     <content type="text/html" src="http://localhost:4000/posts/Agent-Forwarding/" />

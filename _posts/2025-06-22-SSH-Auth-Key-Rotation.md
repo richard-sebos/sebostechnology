@@ -55,6 +55,9 @@ AuthorizedKeysFile none
 
 # Use custom script to retrieve keys dynamically
 AuthorizedKeysCommand /usr/local/bin/ssh-key-expiry-check
+
+## Use a low-privilege user
+AuthorizedKeysCommandUser nobody
 ```
 
 This setup disables static file lookups and instead invokes a script that determines which keys are valid based on expiration dates defined in a structured data file.
@@ -123,5 +126,5 @@ Implementing even basic key rotation mechanisms helps enforce better operational
 
 ---
 **Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.
-  
+
 📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
