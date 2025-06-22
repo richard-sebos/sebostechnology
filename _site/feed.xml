@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-15T15:35:56-06:00</updated>
+  <updated>2025-06-22T09:45:53-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,34 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>SSH Authentication Key Rotation: Why and How to Expire SSH Keys</title>
+    <link href="http://localhost:4000/posts/SSH-Auth-Key-Rotation/" rel="alternate" type="text/html" title="SSH Authentication Key Rotation: Why and How to Expire SSH Keys" />
+    <published>2025-06-22T04:00:00-06:00</published>
+  
+    <updated>2025-06-22T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/SSH-Auth-Key-Rotation/</id>
+    <content type="text/html" src="http://localhost:4000/posts/SSH-Auth-Key-Rotation/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>Introduction
+
+When setting up a new Linux server, it’s common practice to configure SSH authentication using public keys. Often, these keys are reused indefinitely—sometimes for weeks, months, or even years. While SSH keys provide a robust layer of security, they can also introduce risk if not managed properly. Unlike passwords, SSH keys are not usually rotated or set to expire, leading to a fa...</summary>
+
+  </entry>
 
   
   <entry>
@@ -42,25 +70,9 @@
     
   
 
-  <summary>Table of Contents
+  <summary>Introduction
 
-
-  Introduction
-  Why SSH Policy Files Matter
-  Using sshd_config and Include Files
-  Policy 1: SSH Connection Limiting
-  Policy 2: Login Restrictions and Authentication
-  Policy 3: Disable Forwarding and Tunneling
-  Policy 4: Secure Environment Variable Handling
-  Policy 5: Controlled Access Overrides
-  Conclusion
-
-
-
-
-Introduction
-
-When it comes to securing SSH, there are pl...</summary>
+When it comes to securing SSH, there are plenty of guides and videos focusing on the “first 10 things to change” in your SSH setup. However, this article goes beyond that. We focus on how to group SSH settings into modular, reusable security policy files—providing a flexible and maintainable way to secure your SSH server. By organizing configuration options into purpose-built file...</summary>
 
   </entry>
 
@@ -162,39 +174,6 @@ When it comes to securing SSH, there are pl...</summary>
 
   <summary>In this guide, you’ll learn how to use SELinux to block direct SSH access for privileged users, enforcing access through a restricted jump account instead. By disabling the ssh_sysadm_login boolean and mapping users to the sysadm_u role, you gain a policy-enforced control point that hardens your system against misconfiguration, privilege abuse, and lateral movement.
 Because true security doesn’...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>🔐 *SELinux Basics for Secure Linux Administration*</title>
-    <link href="http://localhost:4000/posts/SELinux-Basics/" rel="alternate" type="text/html" title="🔐 *SELinux Basics for Secure Linux Administration*" />
-    <published>2025-06-01T06:11:00-06:00</published>
-  
-    <updated>2025-06-01T19:46:41-06:00</updated>
-  
-    <id>http://localhost:4000/posts/SELinux-Basics/</id>
-    <content type="text/html" src="http://localhost:4000/posts/SELinux-Basics/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Linux Security" />
-    
-    <category term="SSH Hardening" />
-    
-    <category term="System Administration" />
-    
-    <category term="Server Security" />
-    
-    <category term="User Management" />
-    
-  
-
-  <summary>SELinux (Security-Enhanced Linux) is that bodyguard. It&amp;#39;s a powerful security framework that enforces strict access controls at the kernel level, protecting your system from internal threats, misconfigurations, and privilege escalation—even when traditional permissions fail.
-Best of all? It&amp;#39;s free, flexible, and built into most major Linux distributions.</summary>
 
   </entry>
 

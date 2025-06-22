@@ -11,6 +11,11 @@ image:
 excerpt: "Hardening your SSH server doesn't have to be complicated. Learn how to use modular policy files with OpenSSH to simplify configuration, improve security, and streamline management."
 toc: true
 ---
+## Introduction
+
+When it comes to securing SSH, there are plenty of guides and videos focusing on the "first 10 things to change" in your SSH setup. However, this article goes beyond that. We focus on how to group SSH settings into modular, reusable security policy files—providing a flexible and maintainable way to secure your SSH server. By organizing configuration options into purpose-built files, you can enforce security best practices, mitigate known vulnerabilities, and maintain clarity across your server fleet.
+
+---
 
 ## Table of Contents
 
@@ -23,12 +28,6 @@ toc: true
 7. [Policy 4: Secure Environment Variable Handling](#policy-4-secure-environment-variable-handling)
 8. [Policy 5: Controlled Access Overrides](#policy-5-controlled-access-overrides)
 9. [Conclusion](#conclusion)
-
----
-
-## Introduction
-
-When it comes to securing SSH, there are plenty of guides and videos focusing on the "first 10 things to change" in your SSH setup. However, this article goes beyond that. We focus on how to group SSH settings into modular, reusable security policy files—providing a flexible and maintainable way to secure your SSH server. By organizing configuration options into purpose-built files, you can enforce security best practices, mitigate known vulnerabilities, and maintain clarity across your server fleet.
 
 ---
 
@@ -258,3 +257,6 @@ Use this approach to apply conditional access policies without compromising the 
 
 Modular SSH security policy files simplify the configuration and management of secure SSH servers. By leveraging OpenSSH’s `Include` directive, you can enforce strong authentication, restrict risky features, and apply custom access controls—all while keeping your configuration clean and maintainable. Start with a solid base policy and extend it with modular, reusable files to achieve flexible, scalable SSH hardening.
 
+---
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).

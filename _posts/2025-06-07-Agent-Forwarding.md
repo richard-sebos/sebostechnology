@@ -3,7 +3,7 @@ title: "Secure Remote Deployments with SSH Agent Forwarding and GitHub"
 date: 2025-06-05 10:00:00 +0000
 categories: [DevOps, Security]
 tags: [SSH, GitHub, Deployment, Agent Forwarding, Bastion Host]
-pin: true
+pin: false
 image:
   path: /assets/img/AgentForwarding.png
   alt: SSH Agent Forwarding with GitHub

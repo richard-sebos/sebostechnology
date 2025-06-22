@@ -59,7 +59,7 @@ _A focus on securing SSH endpoints from unauthorized access and abuse._
 9. [Restricting User and SSH Access](https://richard-sebos.github.io/sebostechnology/posts/Restricted-Access/)
 9. [Securing SSH with SELinux: Custom Contexts and Policies](https://richard-sebos.github.io/sebostechnology/posts/SSH-Admin_SELinux/)
 10. [Controlling SSH Agent Forwarding to Prevent Credential Leakage](https://richard-sebos.github.io/sebostechnology/posts/Agent-Forwarding/)
-2. **Hardened SSH Configurations: Best Practices for `sshd_config`**
+2. [Secure SSH Access with Modular Policy Files](https://richard-sebos.github.io/sebostechnology/posts/SSH-Polices/)
 
 ---
 
