@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-22T09:53:14-06:00</updated>
+  <updated>2025-06-24T19:06:58-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/SSH-Auth-Key-Rotation/" rel="alternate" type="text/html" title="SSH Authentication Key Rotation: Why and How to Expire SSH Keys" />
     <published>2025-06-22T04:00:00-06:00</published>
   
-    <updated>2025-06-22T04:00:00-06:00</updated>
+    <updated>2025-06-22T10:14:27-06:00</updated>
   
     <id>http://localhost:4000/posts/SSH-Auth-Key-Rotation/</id>
     <content type="text/html" src="http://localhost:4000/posts/SSH-Auth-Key-Rotation/" />

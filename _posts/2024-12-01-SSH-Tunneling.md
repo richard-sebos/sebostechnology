@@ -1,7 +1,10 @@
 ---
-title: Understanding SSH Tunneling: Secure Data Transport Beyond SSH
+title: Understanding SSH Tunneling Secure Data Transport Beyond SSH
 date: 2024-12-01 16:21 +0000
 categories: [Linux, DEVOPS]
+image:
+  path: /assets/img/MasterTunneling.png
+  alt: SSH Tunnel
 tags: [SecureConnections, EncryptedTraffic, CyberSecurity, RemoteAccess]
 ---
 In a previous blog post, I discussed [SSH Proxy Jump](https://richard-sebos.github.io/sebostechnology/posts/SSH-Through-Firewall/), a method that 

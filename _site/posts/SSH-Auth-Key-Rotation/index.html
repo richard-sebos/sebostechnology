@@ -47,7 +47,7 @@
 <meta property="twitter:title" content="SSH Authentication Key Rotation: Why and How to Expire SSH Keys" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-22T04:00:00-06:00","datePublished":"2025-06-22T04:00:00-06:00","description":"Introduction","headline":"SSH Authentication Key Rotation: Why and How to Expire SSH Keys","image":{"alt":"SSH Key Rotation","url":"http://localhost:4000/assets/img/SSH-Keys-Expiration.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SSH-Auth-Key-Rotation/"},"url":"http://localhost:4000/posts/SSH-Auth-Key-Rotation/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-22T10:14:27-06:00","datePublished":"2025-06-22T04:00:00-06:00","description":"Introduction","headline":"SSH Authentication Key Rotation: Why and How to Expire SSH Keys","image":{"alt":"SSH Key Rotation","url":"http://localhost:4000/assets/img/SSH-Keys-Expiration.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/SSH-Auth-Key-Rotation/"},"url":"http://localhost:4000/posts/SSH-Auth-Key-Rotation/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -896,6 +896,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1750608867"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Jun 22, 2025
+</time>
+
+        </span>
+      
 
       
         
@@ -947,7 +970,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="770 words"
+  title="780 words"
 >
   <em>4 min</em> read</span>
 
@@ -1028,11 +1051,17 @@
 3
 4
 5
+6
+7
+8
 </pre></td><td class="rouge-code"><pre><span class="c"># Disable default authorized_keys lookup</span>
 AuthorizedKeysFile none
 
 <span class="c"># Use custom script to retrieve keys dynamically</span>
 AuthorizedKeysCommand /usr/local/bin/ssh-key-expiry-check
+
+<span class="c">## Use a low-privilege user</span>
+AuthorizedKeysCommandUser nobody
 </pre></td></tr></tbody></table></code></div></div>
 
 <p>This setup disables static file lookups and instead invokes a script that determines which keys are valid based on expiration dates defined in a structured data file.</p>
@@ -1271,6 +1300,20 @@ Disconnected from UNKNOWN port 65535
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-Tunneling/">Understanding SSH Tunneling Secure Data Transport Beyond SSH</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-Auth-Key-Rotation/">SSH Authentication Key Rotation: Why and How to Expire SSH Keys</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/Agent-Forwarding/">Secure Remote Deployments with SSH Agent Forwarding and GitHub</a>
         </li>
       
@@ -1285,21 +1328,7 @@ Disconnected from UNKNOWN port 65535
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SSH-Auth-Key-Rotation/">SSH Authentication Key Rotation: Why and How to Expire SSH Keys</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/posts/SSH-AllowUsers/">Limiting SSH Access with TCP Wrappers, AllowUsers, and IP Restrictions </a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/AppArmor-ROS2/">🔐 AppArmor and ROS2 – The Article I Tried Not to Write</a>
         </li>
       
     </ul>
