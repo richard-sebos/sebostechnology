@@ -1,13 +1,13 @@
 ---
+layout: post
 title: "Using a Jump Server and SSH ProxyJump in Your Homelab"
+author: Richard Chamberlain
 date: 2025-06-29 08:00:00 +0000
 categories: [Linux, Networking, Security]
 tags: [linux, ssh, jump-server, bastion, homelab]
 image:
   path: /assets/img/JumpServer.png
   alt: Jump Server 
-description: >-
-  Secure your homelab with a jump server and SSH ProxyJump. This guide walks through setting up a bastion host, generating SSH keys, and configuring SSH access for internal VMs.
 ---
 
 ## What Is a Jump Server (or Bastion Host)?
