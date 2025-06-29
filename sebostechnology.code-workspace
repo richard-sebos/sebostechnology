@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../../articles"
+		},
+		{
+			"path": "../../tank"
 		}
 	],
 	"settings": {}

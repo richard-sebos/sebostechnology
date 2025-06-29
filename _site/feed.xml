@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-06-24T19:16:36-06:00</updated>
+  <updated>2025-06-29T13:37:25-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,34 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Using a Jump Server and SSH ProxyJump in Your Homelab</title>
+    <link href="http://localhost:4000/posts/Jump-Server/" rel="alternate" type="text/html" title="Using a Jump Server and SSH ProxyJump in Your Homelab" />
+    <published>2025-06-29T02:00:00-06:00</published>
+  
+    <updated>2025-06-29T02:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Jump-Server/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Jump-Server/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Networking" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>Secure your homelab with a jump server and SSH ProxyJump. This guide walks through setting up a bastion host, generating SSH keys, and configuring SSH access for internal VMs.</summary>
+
+  </entry>
 
   
   <entry>
@@ -141,39 +169,6 @@ When it comes to securing SSH, there are plenty of guides and videos focusing on
   
 
   <summary>Discover why AppArmor may not be ideal for ROS2 development with colcon. Learn from real-world insights comparing AppArmor, SELinux, and Oracle Linux in robotics system security.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)</title>
-    <link href="http://localhost:4000/posts/SSH-Admin_SELinux/" rel="alternate" type="text/html" title="🛡️ Blocking Admin SSH Logins with SELinux (`ssh_sysadm_login`)" />
-    <published>2025-06-01T06:11:00-06:00</published>
-  
-    <updated>2025-06-01T19:46:41-06:00</updated>
-  
-    <id>http://localhost:4000/posts/SSH-Admin_SELinux/</id>
-    <content type="text/html" src="http://localhost:4000/posts/SSH-Admin_SELinux/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Linux Security" />
-    
-    <category term="SSH Hardening" />
-    
-    <category term="System Administration" />
-    
-    <category term="Server Security" />
-    
-    <category term="User Management" />
-    
-  
-
-  <summary>In this guide, you’ll learn how to use SELinux to block direct SSH access for privileged users, enforcing access through a restricted jump account instead. By disabling the ssh_sysadm_login boolean and mapping users to the sysadm_u role, you gain a policy-enforced control point that hardens your system against misconfiguration, privilege abuse, and lateral movement.
-Because true security doesn’...</summary>
 
   </entry>
 
