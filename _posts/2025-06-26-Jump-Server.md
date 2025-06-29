@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Using a Jump Server and SSH ProxyJump in Your Homelab"
 date: 2025-06-29 08:00:00 +0000
 categories: [Linux, Networking, Security]
@@ -11,7 +10,7 @@ description: >-
   Secure your homelab with a jump server and SSH ProxyJump. This guide walks through setting up a bastion host, generating SSH keys, and configuring SSH access for internal VMs.
 ---
 
-### What Is a Jump Server (or Bastion Host)?
+## What Is a Jump Server (or Bastion Host)?
 
 If you're running multiple Linux servers in your homelab or a small network, having a **centralized way to access them** can save a lot of time and improve security. This is where a **jump server**—also called a **bastion host**—comes into play.
 
@@ -23,7 +22,7 @@ While the terms are often used interchangeably, "bastion host" is more common in
 
 ---
 
-### Why Use a Jump Server?
+## Why Use a Jump Server?
 
 The main benefit is **security**. Rather than allowing direct SSH access to every server in your network, you only expose the jump server. All internal machines stay private and are only accessible through this single point. This limits the potential attack surface and makes it easier to monitor and control access.
 
@@ -31,7 +30,7 @@ It also improves operational efficiency by letting you manage all systems from o
 
 ---
 
-### SSH ProxyJump: Secure Routing Through a Jump Host
+## SSH ProxyJump: Secure Routing Through a Jump Host
 
 To connect to internal systems via the jump server, we'll use an SSH feature called **ProxyJump**, which routes traffic through an intermediate host.
 
@@ -49,7 +48,7 @@ Using separate keys makes it easier to manage access and rotate keys if needed.
 
 ---
 
-### Setting Up the Bastion Host
+## Setting Up the Bastion Host
 
 Start with a minimal Linux install and harden it by:
 
@@ -63,7 +62,7 @@ Your bastion should sit in a DMZ or a network zone that can reach internal syste
 
 ---
 
-### Connecting via SSH Jump
+## Connecting via SSH Jump
 
 You can quickly connect to an internal system using the `-J` option:
 
@@ -112,7 +111,7 @@ ssh internal-vm
 
 ---
 
-### Security Advantages of This Setup
+## Security Advantages of This Setup
 
 Using `ProxyJump` with a jump server improves security by:
 
@@ -123,7 +122,7 @@ Using `ProxyJump` with a jump server improves security by:
 
 ---
 
-### Is This Bulletproof?
+## Is This Bulletproof?
 
 No system is hack-proof. But this setup raises the bar significantly. An attacker would need to:
 
