@@ -3,6 +3,9 @@ title: How to Build and Manage Virtual Machines Using Proxmox CLI - A Step-by-St
 date: 2025-01-05 22:53 16:21 +0000
 categories: [Linux, DEVOPS]
 tags: [Proxmox. ITAutomation, VMDeployment, CommandLineTools]
+image:
+  path: /assets/img/CLI-Promox.png
+  alt:  Proxmox CLI  
 ---
 
 Recently, I needed to set up a series of virtual machines (VMs) in Proxmox for a project. One of the VMs was intended for high-end data processing, and I wasn’t entirely certain about the exact requirements at the outset. To address this, I decided to experiment with various configurations until I found the optimal setup. While the Proxmox web interface is excellent, I needed a quicker, more flexible way to make incremental changes without navigating through multiple steps in the GUI. As someone who spends most of their time in the command line, using the Proxmox `qm` command-line interface felt like a natural fit.
@@ -122,3 +125,5 @@ Cloning or using a VM template would certainly be a valid approach for creating 
 
 How might you adapt this script for your project? Whether you’re automating VM deployments or just testing out configurations, using the Proxmox CLI can save time and streamline your workflows.
 
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
