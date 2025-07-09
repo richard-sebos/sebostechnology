@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-07-02T17:50:10-06:00</updated>
+  <updated>2025-07-08T18:58:37-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,35 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>SSH Over Tor Cool, Practical, or Just Tinfoil Hats?</title>
+    <link href="http://localhost:4000/posts/SSH-Through-Tor/" rel="alternate" type="text/html" title="SSH Over Tor Cool, Practical, or Just Tinfoil Hats?" />
+    <published>2025-07-08T04:00:00-06:00</published>
+  
+    <updated>2025-07-08T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/SSH-Through-Tor/</id>
+    <content type="text/html" src="http://localhost:4000/posts/SSH-Through-Tor/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Networking" />
+    
+  
+
+  <summary>Introduction
+
+When I first encountered the idea of tunneling SSH traffic over Tor, two things came to mind: it sounded incredibly cool—and frustratingly complex. There was also a sense that it might edge me a little closer to feeling like a hacker. This article walks through how SSH over Tor works, how I set it up myself, and whether it’s actually practical… or merely a tinfoil‑hat experiment.
+...</summary>
+
+  </entry>
 
   
   <entry>
@@ -133,32 +162,6 @@ When setting up a new Linux server, it’s common practice to configure SSH auth
   <summary>Introduction
 
 When it comes to securing SSH, there are plenty of guides and videos focusing on the “first 10 things to change” in your SSH setup. However, this article goes beyond that. We focus on how to group SSH settings into modular, reusable security policy files—providing a flexible and maintainable way to secure your SSH server. By organizing configuration options into purpose-built file...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Secure Remote Deployments with SSH Agent Forwarding and GitHub</title>
-    <link href="http://localhost:4000/posts/Agent-Forwarding/" rel="alternate" type="text/html" title="Secure Remote Deployments with SSH Agent Forwarding and GitHub" />
-    <published>2025-06-05T04:00:00-06:00</published>
-  
-    <updated>2025-06-22T09:47:40-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Agent-Forwarding/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Agent-Forwarding/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="DevOps" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>A practical guide to secure remote deployments using SSH Agent Forwarding and GitHub SSH key integration—no private key exposure on remote hosts.</summary>
 
   </entry>
 

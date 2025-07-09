@@ -10,7 +10,6 @@ mermaid: false
 image:
   path: /assets/img/Suricata_robots_reports.png
   alt: "Suricata monitoring robot network traffic"
-  lqip: /assets/img/posts/suricata-robotics-cover-lqip.jpg # optional
 ---
 ## Introduction
 
