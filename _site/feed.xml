@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-07-08T18:58:37-06:00</updated>
+  <updated>2025-07-13T15:45:18-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Stop Reusing Old SSH Keys: How to Use a Signing CA for Expiring SSH Auth</title>
+    <link href="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" rel="alternate" type="text/html" title="Stop Reusing Old SSH Keys: How to Use a Signing CA for Expiring SSH Auth" />
+    <published>2025-07-13T04:00:00-06:00</published>
+  
+    <updated>2025-07-13T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/</id>
+    <content type="text/html" src="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>Learn how to protect your Linux servers using OpenSSH Signing CAs and expiring SSH authentication keys. Short-lived SSH keys improve security and minimize attack surfaces.</summary>
+
+  </entry>
 
   
   <entry>
@@ -53,7 +79,7 @@ When I first encountered the idea of tunneling SSH traffic over Tor, two things 
     <link href="http://localhost:4000/posts/Suricata-Reporting/" rel="alternate" type="text/html" title="Monitoring Robot Network Traffic with Suricata" />
     <published>2025-07-01T03:00:00-06:00</published>
   
-    <updated>2025-07-01T03:00:00-06:00</updated>
+    <updated>2025-07-08T19:01:23-06:00</updated>
   
     <id>http://localhost:4000/posts/Suricata-Reporting/</id>
     <content type="text/html" src="http://localhost:4000/posts/Suricata-Reporting/" />
@@ -132,36 +158,6 @@ A jump server acts as a secure gateway between your workstation and your interna
   <summary>Introduction
 
 When setting up a new Linux server, it’s common practice to configure SSH authentication using public keys. Often, these keys are reused indefinitely—sometimes for weeks, months, or even years. While SSH keys provide a robust layer of security, they can also introduce risk if not managed properly. Unlike passwords, SSH keys are not usually rotated or set to expire, leading to a fa...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Secure SSH Access with Modular Policy Files</title>
-    <link href="http://localhost:4000/posts/SSH-Polices/" rel="alternate" type="text/html" title="Secure SSH Access with Modular Policy Files" />
-    <published>2025-06-15T04:00:00-06:00</published>
-  
-    <updated>2025-06-22T09:47:40-06:00</updated>
-  
-    <id>http://localhost:4000/posts/SSH-Polices/</id>
-    <content type="text/html" src="http://localhost:4000/posts/SSH-Polices/" />
-    <author>
-      <name>Richard Chamberlaiin</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-    <category term="Security" />
-    
-    <category term="DevOps" />
-    
-  
-
-  <summary>Introduction
-
-When it comes to securing SSH, there are plenty of guides and videos focusing on the “first 10 things to change” in your SSH setup. However, this article goes beyond that. We focus on how to group SSH settings into modular, reusable security policy files—providing a flexible and maintainable way to secure your SSH server. By organizing configuration options into purpose-built file...</summary>
 
   </entry>
 
