@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stop Reusing Old SSH Keys: How to Use a Signing CA for Expiring SSH Auth"
+title: "Stop Reusing Old SSH Keys How to Use a Signing CA for Expiring SSH Auth"
 date: 2025-07-13 10:00:00 +0000
 description: "Learn how to protect your Linux servers using OpenSSH Signing CAs and expiring SSH authentication keys. Short-lived SSH keys improve security and minimize attack surfaces."
 categories: [Linux, Security]
