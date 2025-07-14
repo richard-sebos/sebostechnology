@@ -3,6 +3,9 @@ title: SSH Through Firewall
 date: 2024-09-01 15:40 +0000
 categories: [ProxoxVE, Cybersecurity]
 tags: [SSH, Security, Proxy Jump, Network,Hardening, Best Practices]
+image:
+  path: /assets/img/proxmox_firewall.png
+  alt: "SSH Jump Server through firewall"
 ---
 
 # Proxmox Security Series:SSH Through Firewall

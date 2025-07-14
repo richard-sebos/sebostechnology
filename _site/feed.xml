@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-07-13T15:45:18-06:00</updated>
+  <updated>2025-07-13T18:05:54-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,11 @@
 
   
   <entry>
-    <title>Stop Reusing Old SSH Keys: How to Use a Signing CA for Expiring SSH Auth</title>
-    <link href="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" rel="alternate" type="text/html" title="Stop Reusing Old SSH Keys: How to Use a Signing CA for Expiring SSH Auth" />
+    <title>Stop Reusing Old SSH Keys How to Use a Signing CA for Expiring SSH Auth</title>
+    <link href="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" rel="alternate" type="text/html" title="Stop Reusing Old SSH Keys How to Use a Signing CA for Expiring SSH Auth" />
     <published>2025-07-13T04:00:00-06:00</published>
   
-    <updated>2025-07-13T04:00:00-06:00</updated>
+    <updated>2025-07-13T16:29:15-06:00</updated>
   
     <id>http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/</id>
     <content type="text/html" src="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" />
@@ -40,7 +40,9 @@
     
   
 
-  <summary>Learn how to protect your Linux servers using OpenSSH Signing CAs and expiring SSH authentication keys. Short-lived SSH keys improve security and minimize attack surfaces.</summary>
+  <summary>Introduction to SSH Authentication Keys
+
+SSH keys are simple to create and are usually one of the first tools Linux administrators learn to use. They provide a secure, passwordless method to access remote servers by pairing a private key on the local machine with a public key stored on the server. However, a key limitation is that traditional SSH keys, generated using tools like ssh-keygen, do ...</summary>
 
   </entry>
 

@@ -68,7 +68,7 @@ _Dive deep into key-based authentication, lifecycle management, and advanced ide
 
 1. [Streamlining SSH Key Management](https://dev.to/sebos/streamlining-ssh-key-management-93b)
 2. [Enforcing SSH Key Expiry and Rotation Policies with `AuthorizedKeysCommand`](https://richard-sebos.github.io/sebostechnology/posts/SSH-Auth-Key-Rotation/)
-3. **Using OpenSSH Certificates for Scalable Trust Management**
+3. [Using OpenSSH Certificates for Scalable Trust Management](https://richard-sebos.github.io/sebostechnology/posts/OpenSSH-Cert-SSH-Keys/)
 4. **SSH Key Escrow and Backup Strategies: Balancing Security and Availability**
 5. **Managing SSH Key Access in Multi-Tenant Cloud Environments**
 6. **Ephemeral SSH Keys and Just-in-Time Access for Zero Trust Architectures**
@@ -81,7 +81,7 @@ _Guides to use SSH for secure communications and complex network setups._
 1. [Mastering SSH Tunneling: A Guide to Securing Your Network Traffic](https://dev.to/sebos/mastering-ssh-tunneling-a-guide-to-securing-your-network-traffic-3iaj)
 2. [Understanding SSH and Reverse SSH: A Guide for Beginners](https://dev.to/sebos/understanding-ssh-and-reverse-ssh-a-guide-for-beginners-18ch)
 3. [Implementing SSH ProxyJump for Isolated Bastion Host Architectures](https://richard-sebos.github.io/sebostechnology/posts/Jump-Server/)
-4. **SSH over Tor: Hiding Your Endpoint for Censorship Evasion**
+4. [SSH over Tor: Hiding Your Endpoint for Censorship Evasion](https://richard-sebos.github.io/sebostechnology/posts/SSH-Through-Tor/)
 5. **Creating Chrooted SSH Jails for Limited Access Users**
 6. **Dynamic DNS + SSH: Reliable Access to Dynamic IP Servers**
 7. **SSH Multiplexing: Speeding Up Repeated Connections**
