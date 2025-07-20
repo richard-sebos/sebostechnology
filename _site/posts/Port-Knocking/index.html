@@ -30,24 +30,28 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="SSH Security Boost - Implementing Port Knocking to Block Unauthorized Access" />
+<meta property="og:title" content="🔐 How to Secure SSH on Your Home Lab with Port Knocking (Step-by-Step)" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Introduction" />
-<meta property="og:description" content="Introduction" />
+<meta name="description" content="Introduction: Why Port Knocking Matters" />
+<meta property="og:description" content="Introduction: Why Port Knocking Matters" />
 <link rel="canonical" href="http://localhost:4000/posts/Port-Knocking/" />
 <meta property="og:url" content="http://localhost:4000/posts/Port-Knocking/" />
 <meta property="og:site_name" content="Sebos Technology" />
+<meta property="og:image" content="http://localhost:4000/assets/img/Port_Knocking.png" />
+<meta property="og:image:alt" content="Learn exactly how to configure Port Knocking on Linux" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2025-02-08T17:42:00-06:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="SSH Security Boost - Implementing Port Knocking to Block Unauthorized Access" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/Port_Knocking.png" />
+<meta name="twitter:image:alt" content="Learn exactly how to configure Port Knocking on Linux" />
+<meta property="twitter:title" content="🔐 How to Secure SSH on Your Home Lab with Port Knocking (Step-by-Step)" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-02-08T17:42:00-06:00","datePublished":"2025-02-08T17:42:00-06:00","description":"Introduction","headline":"SSH Security Boost - Implementing Port Knocking to Block Unauthorized Access","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Port-Knocking/"},"url":"http://localhost:4000/posts/Port-Knocking/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-02-08T17:42:00-06:00","datePublished":"2025-02-08T17:42:00-06:00","description":"Introduction: Why Port Knocking Matters","headline":"🔐 How to Secure SSH on Your Home Lab with Port Knocking (Step-by-Step)","image":{"alt":"Learn exactly how to configure Port Knocking on Linux","url":"http://localhost:4000/assets/img/Port_Knocking.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Port-Knocking/"},"url":"http://localhost:4000/posts/Port-Knocking/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>SSH Security Boost - Implementing Port Knocking to Block Unauthorized Access | Sebos Technology
+  <title>🔐 How to Secure SSH on Your Home Lab with Port Knocking (Step-by-Step) | Sebos Technology
   </title>
 
   <!--
@@ -552,7 +556,7 @@
         
           
             
-              <span>SSH Security Boost - Implementing Port Knocking to Block Unauthorized Access</span>
+              <span>🔐 How to Secure SSH on Your Home Lab with Port Knocking (Step-by-Step)</span>
             
 
           
@@ -619,6 +623,103 @@
 
 
 
+
+  
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
 
 
 <!-- Add header for code snippets -->
@@ -844,6 +945,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -874,7 +997,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>SSH Security Boost - Implementing Port Knocking to Block Unauthorized Access</h1>
+    <h1 data-toc-skip>🔐 How to Secure SSH on Your Home Lab with Port Knocking (Step-by-Step)</h1>
     
 
     <div class="post-meta text-muted">
@@ -905,6 +1028,15 @@
       <!-- lastmod date -->
       
 
+      
+        
+        
+        
+
+        
+
+        <div class="mt-3 mb-3">
+          <a href="/assets/img/Port_Knocking.png" class="popup img-link preview-img shimmer"><img src="/assets/img/Port_Knocking.png"  alt="Learn exactly how to configure Port Knocking on Linux" width="1200" height="630"  loading="lazy"></a><figcaption class="text-center pt-2 pb-2">Learn exactly how to configure Port Knocking on Linux</figcaption></div>
       
 
       <div class="d-flex justify-content-between">
@@ -946,7 +1078,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="637 words"
+  title="692 words"
 >
   <em>3 min</em> read</span>
 
@@ -957,7 +1089,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">SSH Security Boost - Implementing Port Knocking to Block Unauthorized Access</span>
+      <span class="label text-truncate">🔐 How to Secure SSH on Your Home Lab with Port Knocking (Step-by-Step)</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -970,7 +1102,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">SSH Security Boost - Implementing Port Knocking to Block Unauthorized Access</div>
+        <div class="label text-truncate py-2 ms-4">🔐 How to Secure SSH on Your Home Lab with Port Knocking (Step-by-Step)</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -980,62 +1112,52 @@
   
 
   <div class="content">
-    <h2 id="introduction"><span class="me-2"><strong>Introduction</strong></span><a href="#introduction" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="introduction-why-port-knocking-matters"><span class="me-2"><strong>Introduction: Why Port Knocking Matters</strong></span><a href="#introduction-why-port-knocking-matters" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>Securing SSH access is critical for <strong>home lab users</strong> and <strong>new system administrators</strong> looking to protect their remote servers. One effective way to enhance security is <strong>Port Knocking</strong>, a technique that keeps SSH access hidden until a predefined sequence of connection attempts (or “knocks”) is made on specific ports. When the correct sequence is detected, the firewall dynamically allows SSH access.</p>
+<p><strong>Every open SSH port is an open invitation.</strong> Even in a home lab, exposed SSH services are routinely scanned by bots and malicious actors looking for a foothold. Leaving SSH visible on port <strong>22</strong> is practically begging for brute-force attacks.</p>
+
+<p>For home lab users and junior sysadmins, <strong>Port Knocking</strong> provides a stealthy layer of security. It hides your SSH service completely until a secret sequence of network requests is sent — think of it as a “knock-knock” before entry is allowed.</p>
+
+<p>In this guide, you’ll learn exactly how to configure Port Knocking on Linux using <code class="language-plaintext highlighter-rouge">knockd</code> and <code class="language-plaintext highlighter-rouge">iptables</code> to keep your SSH server <strong>hidden and secure.</strong></p>
 
 <hr />
 
-<h1 id="table-of-contents"><strong>Table of Contents</strong></h1>
+<h1 id="-table-of-contents">📋 <strong>Table of Contents</strong></h1>
 
 <ol>
-  <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#understanding-port-knocking">Understanding Port Knocking</a></li>
-  <li><a href="#installing-and-configuring-knockd">Installing and Configuring knockd</a>
-    <ul>
-      <li><a href="#step-1-install-knockd">Step 1: Install knockd</a></li>
-      <li><a href="#step-2-edit-the-knockd-configuration-file">Step 2: Edit the knockd Configuration File</a></li>
-      <li><a href="#step-3-enable-knockd-on-startup">Step 3: Enable knockd on Startup</a></li>
-    </ul>
-  </li>
-  <li><a href="#adjusting-firewall-rules">Adjusting Firewall Rules</a>
-    <ul>
-      <li><a href="#allow-established-connections">Allow Established Connections</a></li>
-      <li><a href="#block-ssh-by-default">Block SSH by Default</a></li>
-    </ul>
-  </li>
-  <li><a href="#enabling-and-starting-knockd-with-systemctl">Enabling and Starting knockd with systemctl</a>
-    <ul>
-      <li><a href="#reload-systemd-daemon">Reload Systemd Daemon</a></li>
-      <li><a href="#enable-knockd-to-start-at-boot">Enable knockd to Start at Boot</a></li>
-      <li><a href="#start-the-knockd-service">Start the knockd Service</a></li>
-      <li><a href="#verify-knockd-status">Verify knockd Status</a></li>
-    </ul>
-  </li>
-  <li><a href="#testing-port-knocking">Testing Port Knocking</a></li>
-  <li><a href="#next-steps-automating-port-knocking">Next Steps: Automating Port Knocking</a></li>
+  <li><a href="#what-is-port-knocking">What Is Port Knocking?</a></li>
+  <li><a href="#installing-and-configuring-knockd">Installing and Configuring knockd</a></li>
+  <li><a href="#adjusting-iptables-for-port-knocking">Adjusting iptables for Port Knocking</a></li>
+  <li><a href="#starting-knockd-with-systemctl">Starting knockd with systemctl</a></li>
+  <li><a href="#testing-your-port-knocking-setup">Testing Your Port Knocking Setup</a></li>
+  <li><a href="#next-steps-dynamic-port-knocking">Next Steps: Dynamic Port Knocking</a></li>
 </ol>
 
-<p>📌 <strong>Read Part 2: <a href="#">Automating Port Knocking with Dynamic Port Rotation</a></strong></p>
-
-<h3 id="part-of-the-ethical-hacking-robot-project"><span class="me-2">Part of the <a href="https://dev.to/sebos/hacking-robot-needed-raspberry-pi-need-not-apply-49l6">Ethical Hacking Robot Project</a></span><a href="#part-of-the-ethical-hacking-robot-project" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<hr />
-
-<p>By the end of this tutorial, you’ll have a <strong>fully functional Port Knocking setup</strong>, ensuring that your SSH server remains hidden from unauthorized access.</p>
+<p>👉 <strong>Continue to Part 2:</strong> <a href="#">Automating Port Knocking with Dynamic Port Rotation »</a></p>
 
 <hr />
 
-<h2 id="1-understanding-port-knocking"><span class="me-2"><strong>1. Understanding Port Knocking</strong></span><a href="#1-understanding-port-knocking" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="1️⃣-what-is-port-knocking"><span class="me-2">1️⃣ <strong>What Is Port Knocking?</strong></span><a href="#1️⃣-what-is-port-knocking" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>By default, your SSH service listens on port <strong>22</strong>, which makes it an easy target for <strong>brute-force attacks</strong> and <strong>port scanning</strong>. With <strong>Port Knocking</strong>, your SSH port remains <strong>closed</strong> unless a specific <strong>sequence of connection attempts</strong> is made on predefined ports. Once the correct sequence is received, the firewall temporarily opens SSH access for the client.</p>
+<p>Normally, your SSH service listens openly on <strong>port 22</strong>, making it a common target. Port Knocking hides this service behind a firewall. Only after a specific <strong>sequence of connection attempts</strong> (knocks) to predefined ports does your server dynamically allow SSH access — temporarily and securely.</p>
+
+<h3 id="-how-it-works"><span class="me-2">🔍 <strong>How It Works:</strong></span><a href="#-how-it-works" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<ol>
+  <li>Client sends TCP connection attempts to hidden ports (the “knock sequence”).</li>
+  <li><code class="language-plaintext highlighter-rouge">knockd</code> detects the correct sequence.</li>
+  <li>Firewall dynamically opens SSH access for that client IP.</li>
+  <li>SSH connection becomes possible.</li>
+  <li>Optionally, another sequence can “lock” it again.</li>
+</ol>
 
 <hr />
 
-<h2 id="2-installing-and-configuring-knockd"><span class="me-2"><strong>2. Installing and Configuring knockd</strong></span><a href="#2-installing-and-configuring-knockd" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="2️⃣-installing-and-configuring-knockd"><span class="me-2">2️⃣ <strong>Installing and Configuring knockd</strong></span><a href="#2️⃣-installing-and-configuring-knockd" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h3 id="step-1-install-knockd"><span class="me-2"><strong>Step 1: Install knockd</strong></span><a href="#step-1-install-knockd" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="-step-1-install-knockd"><span class="me-2">🔧 Step 1: Install knockd</span><a href="#-step-1-install-knockd" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>For <strong>Debian/Ubuntu</strong>, install <code class="language-plaintext highlighter-rouge">knockd</code> with:</p>
+<p>On <strong>Debian/Ubuntu</strong>:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1043,7 +1165,7 @@
 </pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>apt update <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt <span class="nb">install </span>knockd <span class="nt">-y</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>For <strong>CentOS/RHEL</strong>, use:</p>
+<p>On <strong>CentOS/RHEL</strong>:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1053,12 +1175,12 @@
 
 <hr />
 
-<h3 id="step-2-edit-the-knockd-configuration-file"><span class="me-2"><strong>Step 2: Edit the knockd Configuration File</strong></span><a href="#step-2-edit-the-knockd-configuration-file" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="-step-2-configure-knockd"><span class="me-2">🔧 Step 2: Configure knockd</span><a href="#-step-2-configure-knockd" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>Modify <code class="language-plaintext highlighter-rouge">/etc/knockd.conf</code> to define the <strong>knocking sequence</strong> and the commands to open or close SSH access:</p>
+<p>Edit <code class="language-plaintext highlighter-rouge">/etc/knockd.conf</code> to define your <strong>custom knock sequences</strong>:</p>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-ini highlighter-rouge"><div class="code-header">
+        <span data-label-text="Ini"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1070,50 +1192,44 @@
 9
 10
 11
-12
-13
-</pre></td><td class="rouge-code"><pre><span class="c">### Open SSH Access  </span>
-<span class="o">[</span>openSSH]  
-    sequence <span class="o">=</span> 60842,31027,56118  
-    seq_timeout <span class="o">=</span> 5  
-    <span class="nb">command</span>     <span class="o">=</span> /sbin/iptables <span class="nt">-I</span> INPUT <span class="nt">-s</span> %IP% <span class="nt">-p</span> tcp <span class="nt">--dport</span> 22 <span class="nt">-j</span> ACCEPT  
-    tcpflags    <span class="o">=</span> syn  
+</pre></td><td class="rouge-code"><pre><span class="nn">[openSSH]</span>
+    <span class="py">sequence</span> <span class="p">=</span> <span class="s">60842,31027,56118</span>
+    <span class="py">seq_timeout</span> <span class="p">=</span> <span class="s">5</span>
+    <span class="py">command</span>     <span class="p">=</span> <span class="s">/sbin/iptables -I INPUT -s %IP% -p tcp --dport 22 -j ACCEPT</span>
+    <span class="py">tcpflags</span>    <span class="p">=</span> <span class="s">syn</span>
 
-<span class="c">### Close SSH Access  </span>
-<span class="o">[</span>closeSSH]  
-    sequence    <span class="o">=</span> 56118,31027,60842  
-    seq_timeout <span class="o">=</span> 5  
-    <span class="nb">command</span>     <span class="o">=</span> /sbin/iptables <span class="nt">-D</span> INPUT <span class="nt">-s</span> %IP% <span class="nt">-p</span> tcp <span class="nt">--dport</span> 22 <span class="nt">-j</span> ACCEPT  
-    tcpflags    <span class="o">=</span> syn  
+<span class="nn">[closeSSH]</span>
+    <span class="py">sequence</span>    <span class="p">=</span> <span class="s">56118,31027,60842</span>
+    <span class="py">seq_timeout</span> <span class="p">=</span> <span class="s">5</span>
+    <span class="py">command</span>     <span class="p">=</span> <span class="s">/sbin/iptables -D INPUT -s %IP% -p tcp --dport 22 -j ACCEPT</span>
+    <span class="py">tcpflags</span>    <span class="p">=</span> <span class="s">syn</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>💡 <strong>Tip:</strong> You can modify the <code class="language-plaintext highlighter-rouge">sequence</code> values to any ports of your choice for additional security.</p>
+<p>💡 <strong>Tip:</strong> Customize the sequence to random high-numbered ports for extra obscurity.</p>
 
 <hr />
 
-<h3 id="step-3-enable-knockd-on-startup"><span class="me-2"><strong>Step 3: Enable knockd on Startup</strong></span><a href="#step-3-enable-knockd-on-startup" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="-step-3-enable-knockd-at-startup"><span class="me-2">🔧 Step 3: Enable knockd at Startup</span><a href="#-step-3-enable-knockd-at-startup" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>Edit <code class="language-plaintext highlighter-rouge">/etc/default/knockd</code> to ensure the service runs on boot:</p>
+<p>Edit <code class="language-plaintext highlighter-rouge">/etc/default/knockd</code>:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="rouge-code"><pre><span class="nv">START_KNOCKD</span><span class="o">=</span>1  
+</pre></td><td class="rouge-code"><pre><span class="nv">START_KNOCKD</span><span class="o">=</span>1
 <span class="nv">KNOCKD_OPTS</span><span class="o">=</span><span class="s2">"-i ens18"</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>💡 <strong>Tip:</strong> Use <code class="language-plaintext highlighter-rouge">ip a</code> to find your network interface if unsure.</p>
+<p>➡️ Replace <code class="language-plaintext highlighter-rouge">ens18</code> with your network interface (<code class="language-plaintext highlighter-rouge">ip a</code> will show you).</p>
 
 <hr />
 
-<h2 id="3-adjusting-firewall-rules"><span class="me-2"><strong>3. Adjusting Firewall Rules</strong></span><a href="#3-adjusting-firewall-rules" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="3️⃣-adjusting-iptables-for-port-knocking"><span class="me-2">3️⃣ <strong>Adjusting iptables for Port Knocking</strong></span><a href="#3️⃣-adjusting-iptables-for-port-knocking" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>Before enabling Port Knocking, modify your <strong>iptables</strong> rules:</p>
+<p>Before you lock down SSH, ensure active connections won’t get cut off mid-setup.</p>
 
-<h3 id="-allow-established-connections"><span class="me-2">✅ <strong>Allow Established Connections</strong></span><a href="#-allow-established-connections" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>To prevent active SSH sessions from being interrupted:</p>
+<h3 id="-allow-established-connections"><span class="me-2">✅ Allow Established Connections</span><a href="#-allow-established-connections" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1121,9 +1237,7 @@
 </pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>iptables <span class="nt">-A</span> INPUT <span class="nt">-m</span> conntrack <span class="nt">--ctstate</span> ESTABLISHED,RELATED <span class="nt">-j</span> ACCEPT
 </pre></td></tr></tbody></table></code></div></div>
 
-<h3 id="-block-ssh-by-default"><span class="me-2">❌ <strong>Block SSH by Default</strong></span><a href="#-block-ssh-by-default" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>Until the correct knock sequence is received, <strong>block all SSH traffic</strong>:</p>
+<h3 id="-block-ssh-by-default"><span class="me-2">❌ Block SSH by Default</span><a href="#-block-ssh-by-default" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1133,9 +1247,9 @@
 
 <hr />
 
-<h2 id="4-enabling-and-starting-knockd-with-systemctl"><span class="me-2"><strong>4. Enabling and Starting knockd with systemctl</strong></span><a href="#4-enabling-and-starting-knockd-with-systemctl" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="4️⃣-starting-knockd-with-systemctl"><span class="me-2">4️⃣ <strong>Starting knockd with systemctl</strong></span><a href="#4️⃣-starting-knockd-with-systemctl" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h3 id="reload-systemd-daemon"><span class="me-2"><strong>Reload Systemd Daemon</strong></span><a href="#reload-systemd-daemon" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="-reload-systemd"><span class="me-2">🔄 Reload systemd</span><a href="#-reload-systemd" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1143,7 +1257,7 @@
 </pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>systemctl daemon-reload
 </pre></td></tr></tbody></table></code></div></div>
 
-<h3 id="enable-knockd-to-start-at-boot"><span class="me-2"><strong>Enable knockd to Start at Boot</strong></span><a href="#enable-knockd-to-start-at-boot" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="-enable-knockd-at-boot"><span class="me-2">🚀 Enable knockd at Boot</span><a href="#-enable-knockd-at-boot" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1151,7 +1265,7 @@
 </pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>systemctl <span class="nb">enable </span>knockd
 </pre></td></tr></tbody></table></code></div></div>
 
-<h3 id="start-the-knockd-service"><span class="me-2"><strong>Start the knockd Service</strong></span><a href="#start-the-knockd-service" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="️-start-knockd"><span class="me-2">▶️ Start knockd</span><a href="#️-start-knockd" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1159,7 +1273,7 @@
 </pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>systemctl start knockd
 </pre></td></tr></tbody></table></code></div></div>
 
-<h3 id="verify-knockd-status"><span class="me-2"><strong>Verify knockd Status</strong></span><a href="#verify-knockd-status" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="-verify-knockd-status"><span class="me-2">🔍 Verify knockd Status</span><a href="#-verify-knockd-status" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1167,13 +1281,15 @@
 </pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>systemctl status knockd
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>If successful, you should see <strong>“active (running)”</strong>. 🚀</p>
+<p>Look for <code class="language-plaintext highlighter-rouge">active (running)</code>.</p>
 
 <hr />
 
-<h2 id="5-testing-port-knocking"><span class="me-2"><strong>5. Testing Port Knocking</strong></span><a href="#5-testing-port-knocking" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="5️⃣-testing-your-port-knocking-setup"><span class="me-2">5️⃣ <strong>Testing Your Port Knocking Setup</strong></span><a href="#5️⃣-testing-your-port-knocking-setup" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>From your <strong>client machine</strong>, install <code class="language-plaintext highlighter-rouge">knock</code> and send the <strong>openSSH</strong> sequence:</p>
+<h3 id="-open-ssh-access"><span class="me-2">🔨 Open SSH Access</span><a href="#-open-ssh-access" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>From your <strong>client machine</strong>:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1181,7 +1297,7 @@
 </pre></td><td class="rouge-code"><pre>knock <span class="nt">-v</span> your-server-ip 60842 31027 56118
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Now, try <strong>SSH access</strong>:</p>
+<p>Then attempt SSH:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1189,7 +1305,7 @@
 </pre></td><td class="rouge-code"><pre>ssh user@your-server-ip
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>To <strong>lock SSH</strong> again:</p>
+<h3 id="-lock-ssh-access-again"><span class="me-2">🔒 Lock SSH Access Again</span><a href="#-lock-ssh-access-again" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -1197,18 +1313,34 @@
 </pre></td><td class="rouge-code"><pre>knock <span class="nt">-v</span> your-server-ip 56118 31027 60842
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Your <strong>SSH access should now be revoked</strong>! 🎉</p>
+<p>✅ Your SSH should now be inaccessible until you knock again.</p>
 
 <hr />
 
-<h2 id="next-steps-automating-port-knocking"><span class="me-2"><strong>Next Steps: Automating Port Knocking</strong></span><a href="#next-steps-automating-port-knocking" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="6️⃣-next-steps-dynamic-port-knocking"><span class="me-2">6️⃣ <strong>Next Steps: Dynamic Port Knocking</strong></span><a href="#6️⃣-next-steps-dynamic-port-knocking" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>While this setup is effective, <strong>using the same knock sequence indefinitely</strong> can pose a security risk. A more advanced approach involves <strong>automatically rotating knock sequences</strong> using a <strong>systemd timer</strong>.</p>
+<p>While static port sequences work, <strong>dynamic rotation increases security further</strong>. By rotating knock sequences automatically, you reduce the risk of exposure if an attacker is watching.</p>
 
-<p>📌 <strong>Read Part 2: <a href="https://dev.to/sebos/automate-port-knocking-with-dynamic-port-rotation-for-secure-ssh-access-pbh">Automating Port Knocking with Dynamic Port Rotation</a></strong></p>
+<p>👉 <strong>Continue to Part 2:</strong> <a href="https://dev.to/sebos/automate-port-knocking-with-dynamic-port-rotation-for-secure-ssh-access-pbh">Automating Port Knocking with Dynamic Port Rotation »</a>
+📂 <strong>Config files and code available:</strong> <a href="https://github.com/richard-sebos/Ethical-Hacking-Robot/blob/main/SSH/knockd_readme.md">GitHub Repository</a></p>
 
-<p><a href="https://github.com/richard-sebos/Ethical-Hacking-Robot/blob/main/SSH/knockd_readme.md">code and config files there</a>
-These two articles should now be <strong>separate and more digestible</strong> for readers. Let me know if you need any tweaks before publishing! 🚀</p>
+<hr />
+
+<h1 id="️-conclusion-why-this-matters-for-your-home-lab">🛡️ <strong>Conclusion: Why This Matters for Your Home Lab</strong></h1>
+
+<p>You’ve now secured your SSH service behind an invisible firewall layer.
+With Port Knocking in place:</p>
+
+<ul>
+  <li>Bots and scanners can’t see your SSH port.</li>
+  <li>Only you (or those with the knock sequence) can access it.</li>
+  <li>Your home lab security is now smarter and stealthier.</li>
+</ul>
+
+<p>🔐 <strong>Security isn’t just about strong passwords — it’s about being invisible to attackers.</strong> Port Knocking delivers exactly that.</p>
+
+<p><strong>Need Linux expertise?</strong> I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you’re troubleshooting, optimizing, or building from scratch—I’ve got you covered.<br />
+📬 Drop a comment or <a href="mailto:info@sebostechnology.com">email me</a> to collaborate. For more tutorials, tools, and insights, visit <a href="https://sebostechnology.com">sebostechnology.com</a>.</p>
 
   </div>
 
@@ -1351,27 +1483,6 @@ These two articles should now be <strong>separate and more digestible</strong> f
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/OpenSSH-Cert-SSH-Keys/">Stop Reusing Old SSH Keys How to Use a Signing CA for Expiring SSH Auth</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Building-VM/">How to Build and Manage Virtual Machines Using Proxmox CLI (2025 Guide)</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Suricata-Reporting/">Monitoring Robot Network Traffic with Suricata</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/posts/SSH-Through-Tor/">SSH Over Tor Cool, Practical, or Just Tinfoil Hats?</a>
         </li>
       
@@ -1379,7 +1490,28 @@ These two articles should now be <strong>separate and more digestible</strong> f
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Jump-Server/">Using a Jump Server and SSH ProxyJump in Your Homelab</a>
+          <a href="/posts/OpenSSH-Cert-SSH-Keys/">Stop Reusing Old SSH Keys How to Use a Signing CA for Expiring SSH Auth</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-chroot/">Using chroot to Restrict Linux Applications for Enhanced Security</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/SSH-Through-Firewall/">SSH Through Firewall</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Building-VM/">How to Build and Manage Virtual Machines Using Proxmox CLI (2025 Guide)</a>
         </li>
       
     </ul>
@@ -1728,125 +1860,6 @@ These two articles should now be <strong>separate and more digestible</strong> f
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1856,351 +1869,6 @@ These two articles should now be <strong>separate and more digestible</strong> f
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2485,352 +2153,6 @@ These two articles should now be <strong>separate and more digestible</strong> f
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
   
     
     
@@ -3630,6 +2952,207 @@ These two articles should now be <strong>separate and more digestible</strong> f
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -4088,6 +3611,508 @@ These two articles should now be <strong>separate and more digestible</strong> f
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -4222,7 +4247,156 @@ These two articles should now be <strong>separate and more digestible</strong> f
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -4258,6 +4432,11 @@ These two articles should now be <strong>separate and more digestible</strong> f
         
         
 
+  
+    
+    
+    
+    
   
     
     
@@ -4704,10 +4883,10 @@ These two articles should now be <strong>separate and more digestible</strong> f
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">Linux</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ssh/">SSH</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/devops/">devops</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/devops/">devops</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/ssh/">SSH</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cybersecurity/">CyberSecurity</a>
@@ -5530,125 +5709,6 @@ When setting up a new Linux server, it’s common practice to configure SSH auth
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -5658,351 +5718,6 @@ When setting up a new Linux server, it’s common practice to configure SSH auth
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -6287,352 +6002,6 @@ When setting up a new Linux server, it’s common practice to configure SSH auth
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
   
     
     
@@ -7432,6 +6801,207 @@ When setting up a new Linux server, it’s common practice to configure SSH auth
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -7890,6 +7460,508 @@ When setting up a new Linux server, it’s common practice to configure SSH auth
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -8024,7 +8096,156 @@ When setting up a new Linux server, it’s common practice to configure SSH auth
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -8060,6 +8281,11 @@ When setting up a new Linux server, it’s common practice to configure SSH auth
         
         
 
+  
+    
+    
+    
+    
   
     
     
@@ -8506,10 +8732,10 @@ When setting up a new Linux server, it’s common practice to configure SSH auth
         <a class="post-tag btn btn-outline-primary" href="/tags/linux/">Linux</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ssh/">SSH</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/devops/">devops</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/devops/">devops</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/ssh/">SSH</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/cybersecurity/">CyberSecurity</a>

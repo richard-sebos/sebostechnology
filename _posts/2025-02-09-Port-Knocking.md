@@ -1,188 +1,198 @@
 ---
-title: SSH Security Boost - Implementing Port Knocking to Block Unauthorized Access
+title: 🔐 How to Secure SSH on Your Home Lab with Port Knocking (Step-by-Step)
 date: 2025-02-08 23:42 +0000
 categories: [SSH, Auth Keys]
 tags: [DevOps, CyberSecurity, SSH, EthicalHacking]
+image:
+  path: /assets/img/Port_Knocking.png
+  alt: "Learn exactly how to configure Port Knocking on Linux"
 ---
 
 
-## **Introduction**  
 
-Securing SSH access is critical for **home lab users** and **new system administrators** looking to protect their remote servers. One effective way to enhance security is **Port Knocking**, a technique that keeps SSH access hidden until a predefined sequence of connection attempts (or "knocks") is made on specific ports. When the correct sequence is detected, the firewall dynamically allows SSH access.  
+## **Introduction: Why Port Knocking Matters**
 
----
+**Every open SSH port is an open invitation.** Even in a home lab, exposed SSH services are routinely scanned by bots and malicious actors looking for a foothold. Leaving SSH visible on port **22** is practically begging for brute-force attacks.
 
-# **Table of Contents**  
+For home lab users and junior sysadmins, **Port Knocking** provides a stealthy layer of security. It hides your SSH service completely until a secret sequence of network requests is sent — think of it as a "knock-knock" before entry is allowed.
 
-1. [Introduction](#introduction)  
-2. [Understanding Port Knocking](#understanding-port-knocking)  
-3. [Installing and Configuring knockd](#installing-and-configuring-knockd)  
-   - [Step 1: Install knockd](#step-1-install-knockd)  
-   - [Step 2: Edit the knockd Configuration File](#step-2-edit-the-knockd-configuration-file)  
-   - [Step 3: Enable knockd on Startup](#step-3-enable-knockd-on-startup)  
-4. [Adjusting Firewall Rules](#adjusting-firewall-rules)  
-   - [Allow Established Connections](#allow-established-connections)  
-   - [Block SSH by Default](#block-ssh-by-default)  
-5. [Enabling and Starting knockd with systemctl](#enabling-and-starting-knockd-with-systemctl)  
-   - [Reload Systemd Daemon](#reload-systemd-daemon)  
-   - [Enable knockd to Start at Boot](#enable-knockd-to-start-at-boot)  
-   - [Start the knockd Service](#start-the-knockd-service)  
-   - [Verify knockd Status](#verify-knockd-status)  
-6. [Testing Port Knocking](#testing-port-knocking)  
-7. [Next Steps: Automating Port Knocking](#next-steps-automating-port-knocking)  
-
-📌 **Read Part 2: [Automating Port Knocking with Dynamic Port Rotation](#)**  
-
-### Part of the [Ethical Hacking Robot Project](https://dev.to/sebos/hacking-robot-needed-raspberry-pi-need-not-apply-49l6)
----
-
-
-By the end of this tutorial, you’ll have a **fully functional Port Knocking setup**, ensuring that your SSH server remains hidden from unauthorized access.  
+In this guide, you'll learn exactly how to configure Port Knocking on Linux using `knockd` and `iptables` to keep your SSH server **hidden and secure.**
 
 ---
 
-## **1. Understanding Port Knocking**  
+# 📋 **Table of Contents**
 
-By default, your SSH service listens on port **22**, which makes it an easy target for **brute-force attacks** and **port scanning**. With **Port Knocking**, your SSH port remains **closed** unless a specific **sequence of connection attempts** is made on predefined ports. Once the correct sequence is received, the firewall temporarily opens SSH access for the client.  
+1. [What Is Port Knocking?](#what-is-port-knocking)
+2. [Installing and Configuring knockd](#installing-and-configuring-knockd)
+3. [Adjusting iptables for Port Knocking](#adjusting-iptables-for-port-knocking)
+4. [Starting knockd with systemctl](#starting-knockd-with-systemctl)
+5. [Testing Your Port Knocking Setup](#testing-your-port-knocking-setup)
+6. [Next Steps: Dynamic Port Knocking](#next-steps-dynamic-port-knocking)
+
+👉 **Continue to Part 2:** [Automating Port Knocking with Dynamic Port Rotation »](#)
 
 ---
 
-## **2. Installing and Configuring knockd**  
+## 1️⃣ **What Is Port Knocking?**
 
-### **Step 1: Install knockd**  
+Normally, your SSH service listens openly on **port 22**, making it a common target. Port Knocking hides this service behind a firewall. Only after a specific **sequence of connection attempts** (knocks) to predefined ports does your server dynamically allow SSH access — temporarily and securely.
 
-For **Debian/Ubuntu**, install `knockd` with:  
+### 🔍 **How It Works:**
+
+1. Client sends TCP connection attempts to hidden ports (the "knock sequence").
+2. `knockd` detects the correct sequence.
+3. Firewall dynamically opens SSH access for that client IP.
+4. SSH connection becomes possible.
+5. Optionally, another sequence can "lock" it again.
+
+---
+
+## 2️⃣ **Installing and Configuring knockd**
+
+### 🔧 Step 1: Install knockd
+
+On **Debian/Ubuntu**:
 
 ```bash
 sudo apt update && sudo apt install knockd -y
-```  
+```
 
-For **CentOS/RHEL**, use:  
+On **CentOS/RHEL**:
 
 ```bash
 sudo yum install knock -y
-```  
+```
 
 ---
 
-### **Step 2: Edit the knockd Configuration File**  
+### 🔧 Step 2: Configure knockd
 
-Modify `/etc/knockd.conf` to define the **knocking sequence** and the commands to open or close SSH access:  
+Edit `/etc/knockd.conf` to define your **custom knock sequences**:
 
-```bash
-### Open SSH Access  
-[openSSH]  
-    sequence = 60842,31027,56118  
-    seq_timeout = 5  
-    command     = /sbin/iptables -I INPUT -s %IP% -p tcp --dport 22 -j ACCEPT  
-    tcpflags    = syn  
+```ini
+[openSSH]
+    sequence = 60842,31027,56118
+    seq_timeout = 5
+    command     = /sbin/iptables -I INPUT -s %IP% -p tcp --dport 22 -j ACCEPT
+    tcpflags    = syn
 
-### Close SSH Access  
-[closeSSH]  
-    sequence    = 56118,31027,60842  
-    seq_timeout = 5  
-    command     = /sbin/iptables -D INPUT -s %IP% -p tcp --dport 22 -j ACCEPT  
-    tcpflags    = syn  
-```  
+[closeSSH]
+    sequence    = 56118,31027,60842
+    seq_timeout = 5
+    command     = /sbin/iptables -D INPUT -s %IP% -p tcp --dport 22 -j ACCEPT
+    tcpflags    = syn
+```
 
-💡 **Tip:** You can modify the `sequence` values to any ports of your choice for additional security.  
+💡 **Tip:** Customize the sequence to random high-numbered ports for extra obscurity.
 
 ---
 
-### **Step 3: Enable knockd on Startup**  
+### 🔧 Step 3: Enable knockd at Startup
 
-Edit `/etc/default/knockd` to ensure the service runs on boot:  
+Edit `/etc/default/knockd`:
 
 ```bash
-START_KNOCKD=1  
+START_KNOCKD=1
 KNOCKD_OPTS="-i ens18"
-```  
+```
 
-💡 **Tip:** Use `ip a` to find your network interface if unsure.  
+➡️ Replace `ens18` with your network interface (`ip a` will show you).
 
 ---
 
-## **3. Adjusting Firewall Rules**  
+## 3️⃣ **Adjusting iptables for Port Knocking**
 
-Before enabling Port Knocking, modify your **iptables** rules:  
+Before you lock down SSH, ensure active connections won't get cut off mid-setup.
 
-### ✅ **Allow Established Connections**  
-
-To prevent active SSH sessions from being interrupted:  
+### ✅ Allow Established Connections
 
 ```bash
 sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
-```  
+```
 
-### ❌ **Block SSH by Default**  
-
-Until the correct knock sequence is received, **block all SSH traffic**:  
+### ❌ Block SSH by Default
 
 ```bash
 sudo iptables -A INPUT -p tcp --dport 22 -j REJECT
-```  
+```
 
 ---
 
-## **4. Enabling and Starting knockd with systemctl**  
+## 4️⃣ **Starting knockd with systemctl**
 
-### **Reload Systemd Daemon**  
+### 🔄 Reload systemd
 
 ```bash
 sudo systemctl daemon-reload
-```  
+```
 
-### **Enable knockd to Start at Boot**  
+### 🚀 Enable knockd at Boot
 
 ```bash
 sudo systemctl enable knockd
-```  
+```
 
-### **Start the knockd Service**  
+### ▶️ Start knockd
 
 ```bash
 sudo systemctl start knockd
-```  
+```
 
-### **Verify knockd Status**  
+### 🔍 Verify knockd Status
 
 ```bash
 sudo systemctl status knockd
-```  
+```
 
-If successful, you should see **"active (running)"**. 🚀  
+Look for `active (running)`.
 
 ---
 
-## **5. Testing Port Knocking**  
+## 5️⃣ **Testing Your Port Knocking Setup**
 
-From your **client machine**, install `knock` and send the **openSSH** sequence:  
+### 🔨 Open SSH Access
+
+From your **client machine**:
 
 ```bash
 knock -v your-server-ip 60842 31027 56118
-```  
+```
 
-Now, try **SSH access**:  
+Then attempt SSH:
 
 ```bash
 ssh user@your-server-ip
-```  
+```
 
-To **lock SSH** again:  
+### 🔒 Lock SSH Access Again
 
 ```bash
 knock -v your-server-ip 56118 31027 60842
-```  
+```
 
-Your **SSH access should now be revoked**! 🎉  
+✅ Your SSH should now be inaccessible until you knock again.
 
 ---
 
-## **Next Steps: Automating Port Knocking**  
+## 6️⃣ **Next Steps: Dynamic Port Knocking**
 
-While this setup is effective, **using the same knock sequence indefinitely** can pose a security risk. A more advanced approach involves **automatically rotating knock sequences** using a **systemd timer**.  
+While static port sequences work, **dynamic rotation increases security further**. By rotating knock sequences automatically, you reduce the risk of exposure if an attacker is watching.
 
-📌 **Read Part 2: [Automating Port Knocking with Dynamic Port Rotation](https://dev.to/sebos/automate-port-knocking-with-dynamic-port-rotation-for-secure-ssh-access-pbh)**  
+👉 **Continue to Part 2:** [Automating Port Knocking with Dynamic Port Rotation »](https://dev.to/sebos/automate-port-knocking-with-dynamic-port-rotation-for-secure-ssh-access-pbh)
+📂 **Config files and code available:** [GitHub Repository](https://github.com/richard-sebos/Ethical-Hacking-Robot/blob/main/SSH/knockd_readme.md)
 
-[code and config files there](https://github.com/richard-sebos/Ethical-Hacking-Robot/blob/main/SSH/knockd_readme.md)
-These two articles should now be **separate and more digestible** for readers. Let me know if you need any tweaks before publishing! 🚀
+---
+
+# 🛡️ **Conclusion: Why This Matters for Your Home Lab**
+
+You’ve now secured your SSH service behind an invisible firewall layer.
+With Port Knocking in place:
+
+* Bots and scanners can’t see your SSH port.
+* Only you (or those with the knock sequence) can access it.
+* Your home lab security is now smarter and stealthier.
+
+🔐 **Security isn’t just about strong passwords — it’s about being invisible to attackers.** Port Knocking delivers exactly that.
+
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).

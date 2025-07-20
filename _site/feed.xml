@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-07-13T18:05:54-06:00</updated>
+  <updated>2025-07-20T06:52:43-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,39 @@
 
   
   <entry>
+    <title>Using chroot to Restrict Linux Applications for Enhanced Security</title>
+    <link href="http://localhost:4000/posts/SSH-chroot/" rel="alternate" type="text/html" title="Using chroot to Restrict Linux Applications for Enhanced Security" />
+    <published>2025-07-20T02:00:00-06:00</published>
+  
+    <updated>2025-07-20T02:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/SSH-chroot/</id>
+    <content type="text/html" src="http://localhost:4000/posts/SSH-chroot/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>Introduction
+
+Modern Linux distributions often include hundreds or even thousands of individual programs. Each one of these programs adds another potential entry point for malicious actors seeking to compromise your system. This raises an important question: what if you could run an application in isolation, without the need to introduce even more applications or dependencies? This is where Lin...</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Stop Reusing Old SSH Keys How to Use a Signing CA for Expiring SSH Auth</title>
     <link href="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" rel="alternate" type="text/html" title="Stop Reusing Old SSH Keys How to Use a Signing CA for Expiring SSH Auth" />
     <published>2025-07-13T04:00:00-06:00</published>
   
-    <updated>2025-07-13T16:29:15-06:00</updated>
+    <updated>2025-07-20T04:17:34-06:00</updated>
   
     <id>http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/</id>
     <content type="text/html" src="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" />
@@ -52,7 +80,7 @@ SSH keys are simple to create and are usually one of the first tools Linux admin
     <link href="http://localhost:4000/posts/SSH-Through-Tor/" rel="alternate" type="text/html" title="SSH Over Tor Cool, Practical, or Just Tinfoil Hats?" />
     <published>2025-07-08T04:00:00-06:00</published>
   
-    <updated>2025-07-08T04:00:00-06:00</updated>
+    <updated>2025-07-20T04:17:34-06:00</updated>
   
     <id>http://localhost:4000/posts/SSH-Through-Tor/</id>
     <content type="text/html" src="http://localhost:4000/posts/SSH-Through-Tor/" />
@@ -132,34 +160,6 @@ In a previous phase of this robotics project, Suricata was installed as part of 
 If you’re running multiple Linux servers in your homelab or a small network, having a centralized way to access them can save a lot of time and improve security. This is where a jump server—also called a bastion host—comes into play.
 
 A jump server acts as a secure gateway between your workstation and your internal systems. Instead of connecting to each...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>SSH Authentication Key Rotation: Why and How to Expire SSH Keys</title>
-    <link href="http://localhost:4000/posts/SSH-Auth-Key-Rotation/" rel="alternate" type="text/html" title="SSH Authentication Key Rotation: Why and How to Expire SSH Keys" />
-    <published>2025-06-22T04:00:00-06:00</published>
-  
-    <updated>2025-06-22T10:14:27-06:00</updated>
-  
-    <id>http://localhost:4000/posts/SSH-Auth-Key-Rotation/</id>
-    <content type="text/html" src="http://localhost:4000/posts/SSH-Auth-Key-Rotation/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>Introduction
-
-When setting up a new Linux server, it’s common practice to configure SSH authentication using public keys. Often, these keys are reused indefinitely—sometimes for weeks, months, or even years. While SSH keys provide a robust layer of security, they can also introduce risk if not managed properly. Unlike passwords, SSH keys are not usually rotated or set to expire, leading to a fa...</summary>
 
   </entry>
 
