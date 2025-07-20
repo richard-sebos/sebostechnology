@@ -132,3 +132,5 @@ If your organization or homelab employs Just-in-Time (JIT) access tools, this ap
 
 Over the past year, I've explored numerous methods to protect SSH servers. Of everything I've tested, using expiring SSH certificates has been the simplest and most effective way to enhance SSH security. If you already run Linux servers that only accept SSH key authentication, and you can make those keys valid only when needed—often in under a minute—why wouldn’t you take advantage of this added security?
 
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).

@@ -109,3 +109,5 @@ Without Tor, SSH traffic reveals unencrypted metadata—like where the connectio
 
 Is SSH over Tor the ultimate tool of hackers? Not quite. It does provide an additional anonymity layer, but it’s not practical for daily use. Is it cool? Definitely—setting it up is satisfying. Is it practical? For pentesting and adversary‑simulation, yes. But if you use it for everything, that’s when it turns tinfoil‑hat territory. Choose wisely based on your use case.
 
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
