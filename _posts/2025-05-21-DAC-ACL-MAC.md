@@ -210,3 +210,12 @@ Implementing robust access controls is vital for Linux system security:
 
 By understanding and appropriately applying these mechanisms, administrators can significantly enhance the security posture of their Linux systems.
 
+
+---
+
+☕ **Did you find this article helpful?**  
+Consider supporting more content like this by buying me a coffee:  
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow)](https://www.buymeacoffee.com/sebostechnology)  
+Your support helps me write more Linux tips, tutorials, and deep dives.
+
+[https://www.buymeacoffee.com/sebostechnology](https://www.buymeacoffee.com/sebostechnology)

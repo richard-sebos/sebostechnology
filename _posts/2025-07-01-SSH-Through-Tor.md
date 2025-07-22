@@ -111,3 +111,12 @@ Is SSH over Tor the ultimate tool of hackers? Not quite. It does provide an addi
 
 **Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
 📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
+
+---
+
+☕ **Did you find this article helpful?**  
+Consider supporting more content like this by buying me a coffee:  
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow)](https://www.buymeacoffee.com/sebostechnology)  
+Your support helps me write more Linux tips, tutorials, and deep dives.
+
+[https://www.buymeacoffee.com/sebostechnology](https://www.buymeacoffee.com/sebostechnology)

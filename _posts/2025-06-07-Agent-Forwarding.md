@@ -196,3 +196,12 @@ ssh-add -t 3600 <key_path>
 With the rise of cloud infrastructure and **distributed application deployment**, protecting your **SSH private keys** while enabling remote operations is more critical than ever. By using **SSH Agent Forwarding**, you can maintain **secure access to GitHub** and other services without compromising key security on remote hosts.
 
 This strategy is ideal for teams scaling deployments across environments while adhering to security best practices.
+
+---
+
+☕ **Did you find this article helpful?**  
+Consider supporting more content like this by buying me a coffee:  
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow)](https://www.buymeacoffee.com/sebostechnology)  
+Your support helps me write more Linux tips, tutorials, and deep dives.
+
+[https://www.buymeacoffee.com/sebostechnology](https://www.buymeacoffee.com/sebostechnology)

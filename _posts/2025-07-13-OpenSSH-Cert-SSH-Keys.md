@@ -143,3 +143,4 @@ Consider supporting more content like this by buying me a coffee:
 Your support helps me write more Linux tips, tutorials, and deep dives.
 
 [https://www.buymeacoffee.com/sebostechnology](https://www.buymeacoffee.com/sebostechnology)
+
