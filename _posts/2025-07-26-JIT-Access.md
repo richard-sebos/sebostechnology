@@ -5,7 +5,8 @@ date: 2025-07-27 08:00:00 +0000
 categories: [Security, Proxmox]
 tags: [ssh, bastion, homelab, jit-access, openssh]
 pin: false
-  image: /assets/img/JIT-Access.png
+image: 
+  path: /assets/img/JIT-Access.png
   alt: "Bastion Host SSH Access"
   caption: "SSH with Security: Temporary Access Made Easy"
 ---
