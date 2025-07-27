@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-07-20T06:52:43-06:00</updated>
+  <updated>2025-07-22T04:30:07-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/SSH-chroot/" rel="alternate" type="text/html" title="Using chroot to Restrict Linux Applications for Enhanced Security" />
     <published>2025-07-20T02:00:00-06:00</published>
   
-    <updated>2025-07-20T02:00:00-06:00</updated>
+    <updated>2025-07-21T19:09:22-06:00</updated>
   
     <id>http://localhost:4000/posts/SSH-chroot/</id>
     <content type="text/html" src="http://localhost:4000/posts/SSH-chroot/" />
@@ -52,7 +52,7 @@ Modern Linux distributions often include hundreds or even thousands of individua
     <link href="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" rel="alternate" type="text/html" title="Stop Reusing Old SSH Keys How to Use a Signing CA for Expiring SSH Auth" />
     <published>2025-07-13T04:00:00-06:00</published>
   
-    <updated>2025-07-20T04:17:34-06:00</updated>
+    <updated>2025-07-21T19:14:49-06:00</updated>
   
     <id>http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/</id>
     <content type="text/html" src="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" />
@@ -80,7 +80,7 @@ SSH keys are simple to create and are usually one of the first tools Linux admin
     <link href="http://localhost:4000/posts/SSH-Through-Tor/" rel="alternate" type="text/html" title="SSH Over Tor Cool, Practical, or Just Tinfoil Hats?" />
     <published>2025-07-08T04:00:00-06:00</published>
   
-    <updated>2025-07-20T04:17:34-06:00</updated>
+    <updated>2025-07-21T19:14:49-06:00</updated>
   
     <id>http://localhost:4000/posts/SSH-Through-Tor/</id>
     <content type="text/html" src="http://localhost:4000/posts/SSH-Through-Tor/" />
@@ -109,7 +109,7 @@ When I first encountered the idea of tunneling SSH traffic over Tor, two things 
     <link href="http://localhost:4000/posts/Suricata-Reporting/" rel="alternate" type="text/html" title="Monitoring Robot Network Traffic with Suricata" />
     <published>2025-07-01T03:00:00-06:00</published>
   
-    <updated>2025-07-08T19:01:23-06:00</updated>
+    <updated>2025-07-21T19:14:49-06:00</updated>
   
     <id>http://localhost:4000/posts/Suricata-Reporting/</id>
     <content type="text/html" src="http://localhost:4000/posts/Suricata-Reporting/" />
@@ -137,7 +137,7 @@ In a previous phase of this robotics project, Suricata was installed as part of 
     <link href="http://localhost:4000/posts/Jump-Server/" rel="alternate" type="text/html" title="Using a Jump Server and SSH ProxyJump in Your Homelab" />
     <published>2025-06-29T02:00:00-06:00</published>
   
-    <updated>2025-06-29T17:02:26-06:00</updated>
+    <updated>2025-07-21T19:14:49-06:00</updated>
   
     <id>http://localhost:4000/posts/Jump-Server/</id>
     <content type="text/html" src="http://localhost:4000/posts/Jump-Server/" />
