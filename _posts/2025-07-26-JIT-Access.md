@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Just-in-Time (JIT) SSH Access with a Bastion Host on Proxmox VE"
 date: 2025-07-27 08:00:00 +0000
 categories: [Security, Proxmox]
