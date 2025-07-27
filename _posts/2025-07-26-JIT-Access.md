@@ -8,7 +8,6 @@ pin: false
 image: 
   path: /assets/img/JIT-Access.png
   alt: "Bastion Host SSH Access"
-  caption: "SSH with Security: Temporary Access Made Easy"
 ---
 
 
