@@ -3,6 +3,9 @@ title: Mastering SSH Traffic Segregation - Enhance Security and Performance
 date: 2024-09-08 20:48 +0000
 categories: [ssh, cybersecurity]
 tags: [ssh traffic, segregation, cybersecurity] 
+image: 
+  path: /assets/img/SSH-Segregation.png
+  alt: "Mastering SSH Traffic"
 ---
 
 In today’s fast-paced, automation-driven environments, **SSH traffic** is the backbone of countless administrative and deployment tasks. From powerful tools like **Ansible**, **rsync**, and **Terraform** to container platforms like **Docker**, these services generate a significant amount of SSH traffic.
@@ -172,4 +175,14 @@ Segregating SSH traffic is a low-cost, high-reward strategy that makes managing 
 🛡️ **New to SSH Security? Start Here!**
 Kick off your SSH hardening journey with [Your First Steps to a Hardened SSH Server](https://dev.to/sebos/your-first-step-to-a-hardened-ssh-server-49mj).
 
-Drop a comment or reach out—we’re here to help. For more content like this, tools, and walkthroughs, visit my site at **Sebos Technology**.
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
+
+---
+
+☕ **Did you find this article helpful?**  
+Consider supporting more content like this by buying me a coffee:  
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow)](https://www.buymeacoffee.com/sebostechnology)  
+Your support helps me write more Linux tips, tutorials, and deep dives.
+
+[https://www.buymeacoffee.com/sebostechnology](https://www.buymeacoffee.com/sebostechnology)
