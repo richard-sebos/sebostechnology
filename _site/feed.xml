@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-07-22T04:30:07-06:00</updated>
+  <updated>2025-08-03T15:23:05-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,67 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Boost SSH Speed with SSH Multiplexing</title>
+    <link href="http://localhost:4000/posts/SSH-Multiplex/" rel="alternate" type="text/html" title="Boost SSH Speed with SSH Multiplexing" />
+    <published>2025-08-03T04:00:00-06:00</published>
+  
+    <updated>2025-08-03T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/SSH-Multiplex/</id>
+    <content type="text/html" src="http://localhost:4000/posts/SSH-Multiplex/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="SSH" />
+    
+  
+
+  <summary>Introduction to SSH Multiplexing
+
+In previous discussions, we’ve focused on making remote server access via SSH more secure. This time, let’s shift our focus to performance and usability—specifically, how to make SSH connections faster and more efficient. Enter SSH Multiplexing, a feature that significantly improves connection times by reusing existing SSH sessions.
+
+Table of Contents
+
+
+  Intro...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Just-in-Time (JIT) SSH Access with a Bastion Host on Proxmox VE</title>
+    <link href="http://localhost:4000/posts/JIT-Access/" rel="alternate" type="text/html" title="Just-in-Time (JIT) SSH Access with a Bastion Host on Proxmox VE" />
+    <published>2025-07-27T02:00:00-06:00</published>
+  
+    <updated>2025-07-27T16:25:55-06:00</updated>
+  
+    <id>http://localhost:4000/posts/JIT-Access/</id>
+    <content type="text/html" src="http://localhost:4000/posts/JIT-Access/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Security" />
+    
+    <category term="Proxmox" />
+    
+  
+
+  <summary>Introduction
+
+Strong security doesn’t have to be complicated. This guide walks through setting up a secure, time-limited SSH access system using a bastion host in a Proxmox Virtual Environment (VE). It combines a few simple tools and practices—network rules, SSH certificates, and a bit of scripting—to give you a flexible and secure way to manage who can access your servers, when, and for how lo...</summary>
+
+  </entry>
 
   
   <entry>
@@ -100,66 +161,6 @@ SSH keys are simple to create and are usually one of the first tools Linux admin
 
 When I first encountered the idea of tunneling SSH traffic over Tor, two things came to mind: it sounded incredibly cool—and frustratingly complex. There was also a sense that it might edge me a little closer to feeling like a hacker. This article walks through how SSH over Tor works, how I set it up myself, and whether it’s actually practical… or merely a tinfoil‑hat experiment.
 ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Monitoring Robot Network Traffic with Suricata</title>
-    <link href="http://localhost:4000/posts/Suricata-Reporting/" rel="alternate" type="text/html" title="Monitoring Robot Network Traffic with Suricata" />
-    <published>2025-07-01T03:00:00-06:00</published>
-  
-    <updated>2025-07-21T19:14:49-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Suricata-Reporting/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Suricata-Reporting/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="Networking" />
-    
-  
-
-  <summary>Introduction
-
-In a previous phase of this robotics project, Suricata was installed as part of the initial system build. At that stage, only a few basic rules were added for initial monitoring purposes. Now that the core application stack is largely in place, it’s time to take a deeper look into how the robot is interacting with the network. Understanding these interactions is critical not only ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Using a Jump Server and SSH ProxyJump in Your Homelab</title>
-    <link href="http://localhost:4000/posts/Jump-Server/" rel="alternate" type="text/html" title="Using a Jump Server and SSH ProxyJump in Your Homelab" />
-    <published>2025-06-29T02:00:00-06:00</published>
-  
-    <updated>2025-07-21T19:14:49-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Jump-Server/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Jump-Server/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-    <category term="Networking" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>What Is a Jump Server (or Bastion Host)?
-
-If you’re running multiple Linux servers in your homelab or a small network, having a centralized way to access them can save a lot of time and improve security. This is where a jump server—also called a bastion host—comes into play.
-
-A jump server acts as a secure gateway between your workstation and your internal systems. Instead of connecting to each...</summary>
 
   </entry>
 

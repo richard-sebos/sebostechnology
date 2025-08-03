@@ -1,0 +1,3 @@
+remote_user: <user>
+remote_host: <bastion IP/DNS>
+service_url: <jit_access URL>

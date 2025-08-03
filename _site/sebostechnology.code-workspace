@@ -17,6 +17,12 @@
 		},
 		{
 			"path": "../../ros2_robot_sim"
+		},
+		{
+			"path": "../../jit_ssh"
+		},
+		{
+			"path": "../../../temp"
 		}
 	],
 	"settings": {}
