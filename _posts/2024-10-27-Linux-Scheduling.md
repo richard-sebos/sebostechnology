@@ -8,7 +8,6 @@ image:
   alt: "Linux Scheduling"
 ---
 
-![Linux Scheduler Banner](assets/images/LinuxScheduling.png)
 ## An Intro to systemd Timers
 
 When I first began using Linux, **crontab** was the go-to tool for scheduling tasks on Unix and Linux systems. Its flexibility in a single line of text was impressive, allowing you to create highly specific schedules. For instance, if you wanted a task to run on the 15th of each month at 5:45 am but only on Mondays, crontab could handle it effortlessly with the simple format: `45 5 15 * 1`, followed by your task command. In 2010, however, **systemd** emerged, it offering an alternative method for scheduling tasks, adding new capabilities to Linux systems.
