@@ -1,8 +1,11 @@
 ---
 title: Level Up Your Linux Scheduling
-date: 2024-10-14 17:59 +0000
+date: 2024-10-27 15:06 +0000
 categories: [Linux, DEVOPS]
 tags: [Linux, systemd, scheduling, devops]
+image:
+  path: /assets/img/LinuxScheduling.png
+  alt: "Linux Scheduling"
 ---
 
 ![Linux Scheduler Banner](assets/images/LinuxScheduling.png)
