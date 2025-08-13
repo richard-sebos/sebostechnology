@@ -32,18 +32,22 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Understanding SSH and Reverse SSH - A Guide for Beginers" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="When I first started using SSH, I saw it as a straightforward way to access a remote server from my local desktop. In the simplest terms, SSH (Secure Shell) was my go-to tool for connecting to a remote server to execute commands. The typical usage was clear: initiate a connection from my local machine, and access a remote resource." />
-<meta property="og:description" content="When I first started using SSH, I saw it as a straightforward way to access a remote server from my local desktop. In the simplest terms, SSH (Secure Shell) was my go-to tool for connecting to a remote server to execute commands. The typical usage was clear: initiate a connection from my local machine, and access a remote resource." />
+<meta name="description" content="When I first started using SSH (Secure Shell), it felt straightforward: open a terminal, run a command, and connect to a remote server. SSH was my go-to tool for securely running commands and managing servers over a network." />
+<meta property="og:description" content="When I first started using SSH (Secure Shell), it felt straightforward: open a terminal, run a command, and connect to a remote server. SSH was my go-to tool for securely running commands and managing servers over a network." />
 <link rel="canonical" href="http://localhost:4000/posts/Reverse-SSH/" />
 <meta property="og:url" content="http://localhost:4000/posts/Reverse-SSH/" />
 <meta property="og:site_name" content="Sebos Technology" />
+<meta property="og:image" content="http://localhost:4000/assets/img/Reverse-SSH.png" />
+<meta property="og:image:alt" content="Reverse SSH Guide" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-12-08T10:21:00-06:00" />
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/Reverse-SSH.png" />
+<meta name="twitter:image:alt" content="Reverse SSH Guide" />
 <meta property="twitter:title" content="Understanding SSH and Reverse SSH - A Guide for Beginers" />
 <meta name="twitter:site" content="@SebosInfo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-12-08T10:21:00-06:00","datePublished":"2024-12-08T10:21:00-06:00","description":"When I first started using SSH, I saw it as a straightforward way to access a remote server from my local desktop. In the simplest terms, SSH (Secure Shell) was my go-to tool for connecting to a remote server to execute commands. The typical usage was clear: initiate a connection from my local machine, and access a remote resource.","headline":"Understanding SSH and Reverse SSH - A Guide for Beginers","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Reverse-SSH/"},"url":"http://localhost:4000/posts/Reverse-SSH/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-12-08T10:21:00-06:00","datePublished":"2024-12-08T10:21:00-06:00","description":"When I first started using SSH (Secure Shell), it felt straightforward: open a terminal, run a command, and connect to a remote server. SSH was my go-to tool for securely running commands and managing servers over a network.","headline":"Understanding SSH and Reverse SSH - A Guide for Beginers","image":{"alt":"Reverse SSH Guide","url":"http://localhost:4000/assets/img/Reverse-SSH.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Reverse-SSH/"},"url":"http://localhost:4000/posts/Reverse-SSH/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -620,6 +624,103 @@
 
 
 
+  
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
 
 <!-- Add header for code snippets -->
 
@@ -664,6 +765,39 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -712,17 +846,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -730,38 +853,6 @@
   
   
 
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
   
 
   
@@ -817,6 +908,15 @@
       
 
       
+        
+        
+        
+
+        
+
+        <div class="mt-3 mb-3">
+          <a href="/assets/img/Reverse-SSH.png" class="popup img-link preview-img shimmer"><img src="/assets/img/Reverse-SSH.png"  alt="Reverse SSH Guide" width="1200" height="630"  loading="lazy"></a><figcaption class="text-center pt-2 pb-2">Reverse SSH Guide</figcaption></div>
+      
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
@@ -857,7 +957,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="701 words"
+  title="702 words"
 >
   <em>3 min</em> read</span>
 
@@ -891,23 +991,23 @@
   
 
   <div class="content">
-    <p>When I first started using SSH, I saw it as a straightforward way to access a remote server from my local desktop. In the simplest terms, SSH (Secure Shell) was my go-to tool for connecting to a remote server to execute commands. The typical usage was clear: initiate a connection from my local machine, and access a remote resource.</p>
+    <p>When I first started using SSH (Secure Shell), it felt straightforward: open a terminal, run a command, and connect to a remote server. SSH was my go-to tool for securely running commands and managing servers over a network.</p>
 
-<p>However, as I delved deeper into SSH concepts like jump and tunnel connections, I began to see the power of creating secure, encrypted tunnels. These tunnels allow traffic to pass securely between machines. Even then, the model was still straightforward—I’d start locally and connect to remote resources.</p>
+<p>Over time, I learned about SSH features like jump hosts and port forwarding, which can create encrypted tunnels between machines. In the standard model, you start from your local machine and connect outward to a remote system.</p>
 
-<p>But what happens when your local machine doesn’t have direct access to the remote resource? This is where <strong>Reverse SSH</strong> becomes a valuable tool.</p>
-
-<hr />
-<p>Here’s a brief table of contents for your article:</p>
+<p>But what happens when your local machine <strong>can’t</strong> connect to that remote system directly — maybe because of strict firewalls or NAT restrictions?
+That’s where <strong>Reverse SSH</strong> comes in.</p>
 
 <hr />
 
-<h2 id="table-of-contents"><span class="me-2">Table of Contents</span><a href="#table-of-contents" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="table-of-contents"><span class="me-2"><strong>Table of Contents</strong></span><a href="#table-of-contents" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <ol>
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#what-is-reverse-ssh">What Is Reverse SSH?</a></li>
-  <li><a href="#setting-up-reverse-ssh">Setting Up Reverse SSH</a>
+  <li>
+    <p><a href="#setting-up-reverse-ssh">Setting Up Reverse SSH</a></p>
+
     <ul>
       <li><a href="#restricting-access">Restricting Access</a></li>
       <li><a href="#starting-the-reverse-ssh-connection">Starting the Reverse SSH Connection</a></li>
@@ -919,30 +1019,60 @@
 
 <hr />
 
-<p>You can now link this table to the corresponding sections in the article for easy navigation.</p>
-<h3 id="what-is-reverse-ssh"><span class="me-2">What Is Reverse SSH?</span><a href="#what-is-reverse-ssh" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h2 id="what-is-reverse-ssh"><span class="me-2"><strong>What Is Reverse SSH?</strong></span><a href="#what-is-reverse-ssh" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>Reverse SSH leverages a common network rule: <strong>traffic initiated from a device is generally allowed to return to that device</strong>. This principle underpins much of how web browsing works. Normally, SSH involves a local device initiating a connection to a remote server. But in cases where firewall rules or network configurations block this access, Reverse SSH offers a solution.</p>
+<p>Normally, SSH connections start from a <strong>local machine</strong> to a <strong>remote server</strong>. But sometimes that path is blocked by firewall rules, NAT, or limited inbound access.</p>
 
-<p>With Reverse SSH, the remote device initiates the SSH connection, creating a secure tunnel back to the local device. Through this tunnel, the local device can communicate with the remote server as if it had direct access.</p>
+<p>Reverse SSH flips this around: <strong>the remote device initiates the SSH connection back to the local device</strong>, creating a secure tunnel that the local device can then use to communicate with the remote one.</p>
+
+<p><strong>Key principle:</strong>
+Most networks allow return traffic for outbound connections. Reverse SSH takes advantage of this by having the remote device open the connection first.</p>
 
 <hr />
 
-<h3 id="setting-up-reverse-ssh"><span class="me-2">Setting Up Reverse SSH</span><a href="#setting-up-reverse-ssh" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="visual-example"><span class="me-2"><strong>Visual Example</strong></span><a href="#visual-example" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>To illustrate how Reverse SSH works, I tested it using three devices:</p>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>   Local Device (192.168.178.19)         Remote Device (192.168.178.17)
+           +---------+                                +---------+
+           |         |                                |         |
+           |   SSH   |&lt;-- Tunnel (Port 7000) -- SSH --|   SSH   |
+           | Client  |                                | Server  |
+           +---------+                                +---------+
+                  ^
+                  |
+                  +---------( Initiated from Remote )
+</pre></td></tr></tbody></table></code></div></div>
 
-<ol>
-  <li><strong>Remote device (192.168.178.17):</strong> Initiates the Reverse SSH connection.</li>
-  <li><strong>Local device (192.168.178.19):</strong> Utilizes the Reverse SSH connection to access the remote server.</li>
-  <li><strong>Testing device (192.168.178.10):</strong> Always maintains direct SSH access to the remote device.</li>
-</ol>
+<hr />
 
-<p>Initially, both the local and testing devices had SSH access to the remote device.</p>
+<h2 id="setting-up-reverse-ssh"><span class="me-2"><strong>Setting Up Reverse SSH</strong></span><a href="#setting-up-reverse-ssh" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h4 id="restricting-access"><span class="me-2">Restricting Access</span><a href="#restricting-access" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>I tested Reverse SSH using three devices:</p>
 
-<p>To simulate a real-world scenario, I modified the firewall on the remote device to allow SSH access only from the testing device:</p>
+<ul>
+  <li><strong>Remote device:</strong> <code class="language-plaintext highlighter-rouge">192.168.178.17</code> → Initiates the Reverse SSH connection.</li>
+  <li><strong>Local device:</strong> <code class="language-plaintext highlighter-rouge">192.168.178.19</code> → Uses the tunnel to access the remote device.</li>
+  <li><strong>Testing device:</strong> <code class="language-plaintext highlighter-rouge">192.168.178.10</code> → Always has direct SSH access to the remote device.</li>
+</ul>
+
+<p>Initially, both the local and testing devices could SSH directly into the remote device.</p>
+
+<hr />
+
+<h3 id="restricting-access"><span class="me-2"><strong>Restricting Access</strong></span><a href="#restricting-access" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>To simulate a real-world block, I configured the firewall on the remote device to allow SSH only from the testing device:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -954,11 +1084,13 @@
 <span class="nb">sudo </span>ufw <span class="nb">enable</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>After applying these rules, the local device could no longer access the remote device directly.</p>
+<p>After applying these rules, the local device could no longer connect directly to the remote device.</p>
 
-<h4 id="starting-the-reverse-ssh-connection"><span class="me-2">Starting the Reverse SSH Connection</span><a href="#starting-the-reverse-ssh-connection" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<hr />
 
-<p>Next, I initiated a Reverse SSH connection from the remote device to the local device:</p>
+<h3 id="starting-the-reverse-ssh-connection"><span class="me-2"><strong>Starting the Reverse SSH Connection</strong></span><a href="#starting-the-reverse-ssh-connection" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>From the remote device, I ran:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -966,7 +1098,13 @@
 </pre></td><td class="rouge-code"><pre>ssh <span class="nt">-R</span> 7000:localhost:22 richard@192.168.178.19
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>This command forwards SSH traffic from the remote device’s port 22 through a tunnel to port 7000 on the local device. With this tunnel in place, the local device can connect back to the remote device:</p>
+<p><strong>Explanation:</strong></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">-R 7000:localhost:22</code> → Forwards port 22 from the remote device through the tunnel to port 7000 on the local device.</li>
+</ul>
+
+<p>Now, from the <strong>local device</strong>, I could connect through the tunnel:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -974,9 +1112,7 @@
 </pre></td><td class="rouge-code"><pre>ssh richard@localhost <span class="nt">-p</span> 7000
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>This command uses the tunnel to access the remote device, granting terminal access as if the local device had a direct connection.</p>
-
-<p>To run the Reverse SSH connection in the background, you can use the following command:</p>
+<p>To run the Reverse SSH session in the background:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
@@ -984,35 +1120,62 @@
 </pre></td><td class="rouge-code"><pre>ssh <span class="nt">-f</span> <span class="nt">-N</span> <span class="nt">-R</span> 7000:localhost:22 richard@192.168.178.19
 </pre></td></tr></tbody></table></code></div></div>
 
+<p><strong>Flags:</strong></p>
+
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">-f</code>: Runs the SSH session in the background.</li>
-  <li><code class="language-plaintext highlighter-rouge">-N</code>: Useful for port forwarding without executing remote commands.</li>
-  <li>
-    <h2 id="but-why-would-you-need-reverse-ssh-if-you-already-have-access-to-the-remote-device"><span class="me-2">But why would you need Reverse SSH if you already have access to the remote device?</span><a href="#but-why-would-you-need-reverse-ssh-if-you-already-have-access-to-the-remote-device" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-  </li>
+  <li><code class="language-plaintext highlighter-rouge">-f</code> → Run in the background after authentication.</li>
+  <li><code class="language-plaintext highlighter-rouge">-N</code> → Don’t execute remote commands; useful for port forwarding only.</li>
 </ul>
 
-<h3 id="why-use-reverse-ssh"><span class="me-2">Why Use Reverse SSH?</span><a href="#why-use-reverse-ssh" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<hr />
 
-<p>You might wonder: if the connection starts with the remote server, doesn’t that imply access is already available? The answer lies in automation. Reverse SSH is often used for scenarios where remote devices—like IoT devices—need to initiate a connection or, in a worst-case scenario, allow unauthorized control of a remote server.</p>
+<h2 id="why-use-reverse-ssh"><span class="me-2"><strong>Why Use Reverse SSH?</strong></span><a href="#why-use-reverse-ssh" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>In my case, I discovered that adding a simple line to my SSH configuration effectively blocked Reverse SSH, even when the firewall rules didn’t:</p>
+<p>Reverse SSH is useful when:</p>
+
+<ul>
+  <li>Managing <strong>IoT devices</strong> or remote systems behind restrictive firewalls.</li>
+  <li>Accessing servers without exposing port 22 to the entire internet.</li>
+  <li>Automating remote maintenance or troubleshooting without opening inbound rules.</li>
+</ul>
+
+<p><strong>Security tip:</strong>
+Even if firewall rules allow it, you can restrict Reverse SSH with:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>AllowUsers richard@192.168.178.10  <span class="c"># Restrict to Richard on the testing device</span>
+</pre></td><td class="rouge-code"><pre>AllowUsers richard@192.168.178.10
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>This highlights the importance of carefully restricting which users and devices can access your SSH servers.</p>
+<p>Other security measures:</p>
+
+<ul>
+  <li>Use <code class="language-plaintext highlighter-rouge">PermitOpen</code> to limit which ports can be forwarded.</li>
+  <li>Keep <code class="language-plaintext highlighter-rouge">GatewayPorts</code> disabled unless absolutely necessary.</li>
+  <li>Use key-based authentication and disable password logins.</li>
+</ul>
 
 <hr />
 
-<h3 id="conclusion"><span class="me-2">Conclusion</span><a href="#conclusion" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h2 id="conclusion"><span class="me-2"><strong>Conclusion</strong></span><a href="#conclusion" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>Reverse SSH is a powerful tool for navigating network restrictions, enabling secure communication when direct connections aren’t possible. It’s especially useful for automation or managing devices in restrictive environments.</p>
+<p>Reverse SSH is a powerful technique for working around restrictive network environments while keeping your connections secure. By flipping the connection direction, you can access remote devices that would otherwise be unreachable.</p>
 
-<p>So, how would you use Reverse SSH in your setup? Whether for troubleshooting, automation, or security testing, it’s a technique worth mastering.</p>
+<p>Whether for automation, troubleshooting, or managing devices in the field, it’s a tool worth adding to your SSH skill set.</p>
+
+<hr />
+
+<p><strong>Expert Linux Server Support &amp; Optimization</strong>
+I help businesses <strong>streamline Linux servers</strong>, <strong>secure IT infrastructure</strong>, and <strong>automate workflows</strong> for better performance and reliability. Whether you’re <strong>troubleshooting a Linux system</strong>, <strong>optimizing server speed</strong>, or <strong>deploying new infrastructure</strong>, I’ve got you covered.</p>
+
+<p>📩 <strong>Let’s work together:</strong> <a href="mailto:info@sebostechnology.com">Contact me</a> or drop a comment.
+📚 <strong>Learn more:</strong> Explore my latest <strong>Linux tutorials</strong>, <strong>server security guides</strong>, and <strong>automation tips</strong> at <a href="https://sebostechnology.com">Sebo Technology</a>.</p>
+
+<hr />
+
+<p>☕ <strong>Support More Linux Content</strong>
+If you found this guide useful, consider <a href="https://www.buymeacoffee.com/sebostechnology">buying me a coffee</a> to support future <strong>Linux tips, tutorials, and deep-dive guides</strong>. Your contribution keeps this resource growing.</p>
 
 
   </div>
@@ -1156,6 +1319,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/Linux-Scheduling/">Level Up Your Linux Scheduling</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/SSH-Multiplex/">Boost SSH Speed with SSH Multiplexing</a>
         </li>
       
@@ -1178,13 +1348,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/Agent-Forwarding/">Secure Remote Deployments with SSH Agent Forwarding and GitHub</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/SSH-Polices/">Secure SSH Access with Modular Policy Files</a>
         </li>
       
     </ul>
