@@ -3,162 +3,163 @@ title: Streamlining SSH Key Management
 date: 2024-10-13 19:12 +0000
 categories: [SSH, Auth Keys]
 tags: [ SSH, servers, cybersecurity]
+image: 
+  path: /assets/img/KeyManagement.png
+  alt: "Bash script to help generate SSH keys" 
 ---
 
-# Automating and Securing SSH Configurations with a Custom Scrip 
+## Introduction  
 
-When managing multiple servers on a daily basis, SSH authentication keys are invaluable. In the past, I would typically create a single key pair and reuse it across all my servers. While convenient, this approach poses a significant security risk—if that key were to be compromised, it could expose all of my servers to potential threats. To mitigate this risk, generating unique key pairs for each server is the best practice, but managing all those keys can quickly clutter the `.ssh` directory. To address this, I developed a Bash script that not only generates key pairs but also keeps the directory organized and simplifies the process overall.
+When working with multiple servers, **SSH keys** are indispensable for secure authentication. Early in my workflow, I relied on a single key pair reused across all systems. While convenient, this practice introduces a major security risk: if that key is compromised, every connected server is at risk.
 
-# the .ssh/config
-SSH relies on the `.ssh/config` file to store information about various SSH connections. In this file, you define several key parameters:  
-- **Host** – The alias used to reference the server.  
-- **HostName** – The server’s IP address or DNS name.  
-- **User** – The username SSH will use to log in.  
-- **IdentityFile** – The path to the SSH key pair for authentication.
+## Table of Contents
+1. [Introduction](#introduction)  
+2. [The Role of `.ssh/config`](#the-role-of-sshconfig)  
+3. [How the Script Works](#how-the-script-works)  
+   - [1. Server Directory](#1-server-directory)  
+   - [2. File Permissions](#2-file-permissions)  
+   - [3. Generating the Keys](#3-generating-the-keys)  
+   - [4. Creating the Config File](#4-creating-the-config-file)  
+   - [5. Linking to `.ssh/config`](#5-linking-to-sshconfig)  
+   - [6. Testing the Connection](#6-testing-the-connection)  
+4. [Example Run](#example-run)  
+5. [Why This Matters](#why-this-matters)  
+6. [Next Steps](#next-steps)  
 
-By using include files within the SSH config, it becomes much easier to organize multiple server logins. The script I developed automates this process by creating individual config files for each server and linking them back to the main `.ssh/config` file. Here's how the script works:
+---
+
+A safer approach is to generate **unique key pairs per server**. The challenge, however, is that managing dozens of keys can quickly clutter your `.ssh` directory. To solve this, I created a **Bash script** that automates key generation, keeps configurations organized, and makes connecting to servers seamless.
+
+---
+
+## Leveraging the `.ssh/config` File
+
+The `.ssh/config` file defines how you connect to different servers. Some of the most common parameters include:
+
+* **Host** – The alias you’ll use for quick access.
+* **HostName** – The server’s IP address or DNS record.
+* **User** – The login username.
+* **IdentityFile** – The private key file for authentication.
+
+By splitting configurations into **include files**, SSH setups become easier to manage. My script automates this by generating per-server config files and linking them back to your main `.ssh/config`.
+
+---
 
 ## How the Script Works
-The script takes a hostname, IP address, and username as inputs. It then generates the necessary SSH keys, creates a config file for the server, and automatically links that file to the main `.ssh/config` file.
 
-### Server Directory
-Creates the directory to store the SSH key pair and configuration file
+The script takes three inputs—**hostname**, **IP address**, and **username**—and handles everything else automatically:
 
-```
-# Define directories
+1. Creates a secure directory for keys and configuration.
+2. Generates a new SSH key pair.
+3. Copies the public key to the target server.
+4. Builds a dedicated config file.
+5. Updates the main `.ssh/config` to include the new entry.
+6. Tests the connection.
+
+---
+
+### 1. Server Directory
+
+Each server gets its own folder under `~/.ssh/include.d/` for keys and configs:
+
+```bash
 config_directory=/home/${local_user}/.ssh/include.d/${host_name}
-echo "${config_directory}"
-# Check if the SSH config directory exists, create it if not
-if [ ! -d "${config_directory}" ]; then
-  echo "Creating SSH config directory at ${config_directory}..."
-  mkdir -p ${config_directory}
-  if [ $? -ne 0 ]; then
-    echo "Error: Failed to create config directory at ${config_directory}"
-    exit 1
-  fi
-fi
+mkdir -p ${config_directory}
 ```
-### File Permissions
-To secure the keys generated in the next steps, the default file permissions must be set to `600`. This ensures that only the file owner has read and write access. The following code sets the correct permissions on the parent directory to maintain this level of security.
 
-```
-# Set default ACL permissions on the login directory
+---
+
+### 2. File Permissions
+
+Security starts with proper permissions. The script enforces strict ACL rules to keep your keys safe:
+
+```bash
 setfacl -d -m u::rw,g::-,o::- ${config_directory}
-if [ $? -ne 0 ]; then
-  echo "Error: Failed to set ACL on ${config_directory}"
-  exit 1
-fi
 ```
-### Generates the Keys
 
-With a designated place to store the keys, the script proceeds to generate the SSH key pair and copy them to the server
+---
 
-> **Note:** The script does not prompt for a password when generating the key pair, but it will ask for the remote server’s login password during the connection process.
+### 3. Generating the Keys
 
-```
-# Generate a new SSH key pair using ed25519 algorithm, with no passphrase (-N "")
-ssh-keygen -t ed25519 -f ${config_directory}/${host_name} -N ""  # Empty passphrase
-if [ $? -ne 0 ]; then
-  echo "Error: SSH key generation failed for ${host_name}"
-  exit 1
-fi
+It then creates a new **ed25519 key pair** (with no passphrase by default) and pushes the public key to the remote server:
 
-# Copy the SSH key to the remote host
-echo "Copying SSH public key to ${user}@${ip_address}..."
+```bash
+ssh-keygen -t ed25519 -f ${config_directory}/${host_name} -N ""
 ssh-copy-id -i ${config_directory}/${host_name}.pub ${user}@${ip_address}
-if [ $? -ne 0 ]; then
-  echo "Error: Failed to copy SSH public key to ${user}@${ip_address}"
-  exit 1
-fi
-
 ```
 
-### .ssh config File for Server
+---
 
-The config file for the new login is created and stored in the same directory as the SSH keys.
+### 4. Creating the Config File
 
-```
-# Create the config file inside the config_directory and write the necessary SSH config lines
-echo "Creating SSH config file at ${config_directory}/config..."
+Next, a lightweight config file is generated for the server:
+
+```bash
 cat <<EOL > ${config_directory}/config
 Host ${host_name}
      HostName ${ip_address}
      User ${user}
      IdentityFile ${config_directory}/${host_name}
 EOL
-
 ```
 
-### Making Server Callable
+---
 
-One of the key benefits of using a config file is that it simplifies connecting to servers. By linking the server’s address and username to a single alias, you can easily initiate a connection with a simple `ssh <alias>` command, eliminating the need to remember or type the full server details each time.
-The next step adds the server’s config file to the main `.ssh/config`, ensuring it's included for future SSH connections.
+### 5. Linking to `.ssh/config`
 
-```
-# Append the Include line to ~/.ssh/config if it's not already present
-ssh_config_file=/home/${local_user}/.ssh/config
+The script ensures your main config file includes the new entry automatically:
 
-# Ensure the ~/.ssh/config file exists
-if [ ! -f "${ssh_config_file}" ]; then
-  touch "${ssh_config_file}"
-  chmod 600 "${ssh_config_file}"
-fi
-
-# Check if the Include line is already in the file
-if ! grep -Fxq "Include ${config_directory}/config" "${ssh_config_file}"; then
-  echo "Adding 'Include ${config_directory}/config' to ${ssh_config_file}..."
-  #echo "Include ${config_directory}/config" >> "${ssh_config_file}"
-  echo "Include ${config_directory}/config" | cat - "${ssh_config_file}" > temp_file && mv temp_file ${ssh_config_file}
-  if [ $? -ne 0 ]; then
-    echo "Error: Failed to append the Include line to ${ssh_config_file}"
-    exit 1
-  fi
-fi
-
-
+```bash
+echo "Include ${config_directory}/config" | cat - ~/.ssh/config > temp_file && mv temp_file ~/.ssh/config
 ```
 
-### Test the Connection
-Finally, it test the login:
+---
 
-```
-# Try to SSH into the server using the newly created key
+### 6. Testing the Connection
+
+Finally, it validates the setup by attempting a login:
+
+```bash
 ssh ${host_name}
-if [ $? -ne 0 ]; then
-  echo "Error: Failed to connect to ${host_name}"
-  exit 1
-fi
-
-echo "SSH key successfully created, user logged into the server, and config files updated."
-
 ```
 
-Don't forget to logout the remote server at the end of the script.
+If successful, you can now connect to the server with a simple:
 
-Creating a new authentication key and login is simple:  
-**Usage:** `create_ssh_login.bash <host_name> <ip_address> <username>`
+```bash
+ssh <hostname>
+```
 
-Once the script completes, you can easily connect to the server with:  
-`ssh <hostname>`
+---
 
-Running it for:
+## Example
 
- `create_ssh_login.bash proxmox 192.168.177.7 richard `
- will create the blow directory structure.
+Running:
+
+```bash
+create_ssh_login.bash proxmox 192.168.177.7 richard
+```
+
+Produces the following structure:
+
 ```
 ~/.ssh
 ├── config
 ├── include.d/
 │   └── proxmox/
-│      ├── proxmox.pub
 │      ├── proxmox
+│      ├── proxmox.pub
 │      ├── config
-
-
 ```
 
-What I appreciate about this script is that it enhances SSH key security while making it easier to generate keys and keep them well-organized.
+---
 
-For the full version of the script, visit https://github.com/richard-sebos/Streamlining-SSH-Key.
+## Why This Matters
 
-What steps are you taking to secure your SSH connections?
+This script makes it easy to:
+
+* Improve SSH key security by using **unique keys per server**.
+* Keep the `.ssh` directory neat and manageable.
+* Simplify connections with one-line `ssh <alias>` commands.
+
+For the full script, visit [GitHub: Streamlining-SSH-Key](https://github.com/richard-sebos/Streamlining-SSH-Key).
+
