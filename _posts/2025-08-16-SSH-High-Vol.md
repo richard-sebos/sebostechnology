@@ -4,8 +4,7 @@ date: 2025-08-17 12:00:00 +0000
 categories: [Linux, SSH, Performance]
 tags: [ssh, linux, devops, sysadmin, networking, performance]
 excerpt: "Exploring SSH tuning for high-volume environments and discovering how SSH multiplexing outperforms traditional server tweaks."
-image: 
-  path: /assets/img/HighVol-SSH.png
+image: /assets/img/HighVol-SSH.png
 ---
 ## Introduction
 
