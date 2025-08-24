@@ -76,6 +76,8 @@ roles/build_ssh/
 * The `tasks` directory houses the core Ansible logic that ties everything together.
 * The `handlers` directory includes restart handlers for applying SSH configuration changes.
 
+[Code Here](https://github.com/richard-sebos/sebostechnology/tree/main/assets/code/Asnible-SSH-Deploy)
+
 This approach enables the creation of a standardized SSH server configuration while allowing for environment-specific customizations. It offers a balance between control and flexibility, letting you build consistent configurations and then adapt them for special requirements as needed.
 
 ---
@@ -91,6 +93,14 @@ By combining modular configuration with Ansible automation, this approach provid
 
 Through modular design and automation, we can treat SSH not just as a secure access method—but as a well-engineered component of your infrastructure’s security baseline.
 
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
 
+---
+
+☕ **Did you find this article helpful?**  
+Consider supporting more content like this by buying me a coffee:  
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow)](https://www.buymeacoffee.com/sebostechnology)  
+Your support helps me write more Linux tips, tutorials, and deep dives.
 
 
