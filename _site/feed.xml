@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-17T16:39:02-06:00</updated>
+  <updated>2025-08-23T20:18:53-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,36 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Modular SSH Configuration with Ansible</title>
+    <link href="http://localhost:4000/posts/Asnible-SSH-Deploy/" rel="alternate" type="text/html" title="Modular SSH Configuration with Ansible" />
+    <published>2025-08-23T06:00:00-06:00</published>
+  
+    <updated>2025-08-23T06:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Asnible-SSH-Deploy/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Asnible-SSH-Deploy/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="DevOps" />
+    
+    <category term="Linux" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>Introduction
+
+With SSH being one of the primary attack vectors in modern infrastructure, hardening the SSH daemon (sshd) is a critical step in any system security strategy. Ideally, your organization maintains a standardized sshd_config file, reviewed periodically for compliance and security posture. However, reality often differs. In practice, environments typically fall into one of three cate...</summary>
+
+  </entry>
 
   
   <entry>
@@ -134,34 +164,6 @@ Strong security doesn’t have to be complicated. This guide walks through setti
   <summary>Introduction
 
 Modern Linux distributions often include hundreds or even thousands of individual programs. Each one of these programs adds another potential entry point for malicious actors seeking to compromise your system. This raises an important question: what if you could run an application in isolation, without the need to introduce even more applications or dependencies? This is where Lin...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Stop Reusing Old SSH Keys How to Use a Signing CA for Expiring SSH Auth</title>
-    <link href="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" rel="alternate" type="text/html" title="Stop Reusing Old SSH Keys How to Use a Signing CA for Expiring SSH Auth" />
-    <published>2025-07-13T04:00:00-06:00</published>
-  
-    <updated>2025-07-21T19:14:49-06:00</updated>
-  
-    <id>http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/</id>
-    <content type="text/html" src="http://localhost:4000/posts/OpenSSH-Cert-SSH-Keys/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>Introduction to SSH Authentication Keys
-
-SSH keys are simple to create and are usually one of the first tools Linux administrators learn to use. They provide a secure, passwordless method to access remote servers by pairing a private key on the local machine with a public key stored on the server. However, a key limitation is that traditional SSH keys, generated using tools like ssh-keygen, do ...</summary>
 
   </entry>
 
