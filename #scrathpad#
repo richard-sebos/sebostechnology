@@ -1,0 +1,5 @@
+sudo firewall-cmd --permanent --add-rich-rule='
+rule family="ipv4"
+  source address="192.168.35:q.0/24"
+  service name="ssh"
+  accept'
