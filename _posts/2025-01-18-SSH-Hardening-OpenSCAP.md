@@ -3,6 +3,9 @@ title: SSH Hardening Made Easy with OpenSCAP
 date: 2025-01-18 22:53 16:21 +0000
 categories: [Linux, DEVOPS]
 tags: [CyberSecurity, Server Hardening, Secure SSH, Hardening Guide]
+image: 
+  path: /assets/img/SSH-OpenSCAP.png
+  alt: "Securing SSH with OpenSCAP"
 ---
 
 ## Why is SSH Important?
@@ -91,7 +94,12 @@ Ultimately, saying "I saw this on a YouTube video" doesn’t carry the same weig
 
 OpenSCAP has become one of my go-to tools for SSH hardening and general security auditing. Its combination of automation, insight, and educational value makes it a standout resource. Whether you’re managing enterprise systems or tinkering with Linux as a hobby, OpenSCAP provides a structured way to enhance your security practices while deepening your technical knowledge.
 
-What other tools have you used that combine functionality with learning opportunities? Share your recommendations—I’d love to explore them!
-
 > *Disclaimer:* I wasn’t contacted or sponsored by OpenSCAP to write this article. It’s simply a tool I find immensely useful and believe others will too.
 
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
+
+☕ Did you find this article helpful?
+Consider supporting more content like this by buying me a coffee:
+Buy Me A Coffee
+Your support helps me write more Linux tips, tutorials, and deep dives.
