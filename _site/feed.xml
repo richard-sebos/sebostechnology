@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-26T20:18:39-06:00</updated>
+  <updated>2025-09-07T19:46:44-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,62 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>How to Secure Different User Types in Linux: A Guide for IT Teams</title>
+    <link href="http://localhost:4000/posts/Users-Tiers/" rel="alternate" type="text/html" title="How to Secure Different User Types in Linux: A Guide for IT Teams" />
+    <published>2025-09-05T04:00:00-06:00</published>
+  
+    <updated>2025-09-05T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Users-Tiers/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Users-Tiers/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>Introduction
+
+In my previous article, we discussed how to access a Linux application via SSH and the methods for securing SSH itself. Now, we turn our attention to securing the users of these systems. Most Linux environments I set up typically have two primary classes of users: Linux Administrators and Application Administrators. These roles often involve straightforward hardening strategies. H...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Secure SSH Shell Applications</title>
+    <link href="http://localhost:4000/posts/SSH-App/" rel="alternate" type="text/html" title="Secure SSH Shell Applications" />
+    <published>2025-08-31T06:00:00-06:00</published>
+  
+    <updated>2025-08-31T21:07:56-06:00</updated>
+  
+    <id>http://localhost:4000/posts/SSH-App/</id>
+    <content type="text/html" src="http://localhost:4000/posts/SSH-App/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="DevOps" />
+    
+    <category term="Linux" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>While modern software often leans heavily on graphical interfaces and web applications, command-line-based applications are still very much alive and in use. In fact, SSH-based shell applications remain a lightweight, efficient way for users to interact with terminal-based programs. However, if not configured carefully, these applications can inadvertently provide users with unrestricted shell ...</summary>
+
+  </entry>
 
   
   <entry>
@@ -108,62 +164,6 @@ Table of Contents
 
 
   Intro...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Just-in-Time (JIT) SSH Access with a Bastion Host on Proxmox VE</title>
-    <link href="http://localhost:4000/posts/JIT-Access/" rel="alternate" type="text/html" title="Just-in-Time (JIT) SSH Access with a Bastion Host on Proxmox VE" />
-    <published>2025-07-27T02:00:00-06:00</published>
-  
-    <updated>2025-07-27T16:25:55-06:00</updated>
-  
-    <id>http://localhost:4000/posts/JIT-Access/</id>
-    <content type="text/html" src="http://localhost:4000/posts/JIT-Access/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Security" />
-    
-    <category term="Proxmox" />
-    
-  
-
-  <summary>Introduction
-
-Strong security doesn’t have to be complicated. This guide walks through setting up a secure, time-limited SSH access system using a bastion host in a Proxmox Virtual Environment (VE). It combines a few simple tools and practices—network rules, SSH certificates, and a bit of scripting—to give you a flexible and secure way to manage who can access your servers, when, and for how lo...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Using chroot to Restrict Linux Applications for Enhanced Security</title>
-    <link href="http://localhost:4000/posts/SSH-chroot/" rel="alternate" type="text/html" title="Using chroot to Restrict Linux Applications for Enhanced Security" />
-    <published>2025-07-20T02:00:00-06:00</published>
-  
-    <updated>2025-07-21T19:09:22-06:00</updated>
-  
-    <id>http://localhost:4000/posts/SSH-chroot/</id>
-    <content type="text/html" src="http://localhost:4000/posts/SSH-chroot/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>Introduction
-
-Modern Linux distributions often include hundreds or even thousands of individual programs. Each one of these programs adds another potential entry point for malicious actors seeking to compromise your system. This raises an important question: what if you could run an application in isolation, without the need to introduce even more applications or dependencies? This is where Lin...</summary>
 
   </entry>
 
