@@ -117,4 +117,11 @@ Remember, defense in depth is key. Use these techniques together to build a soli
 
 If you have questions, suggestions, or topics you’d love to see covered, drop a comment below. Let’s make robotics not just exciting and innovative—but secure as well.
 
-For more content like this, tools, and walkthroughs, visit my site at **[Sebos Technology](https://sebostechnology.com)**.
+---
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
+
+☕ Did you find this article helpful?
+Consider supporting more content like this by buying me a coffee:
+Buy Me A Coffee
+Your support helps me write more Linux tips, tutorials, and deep dives.
