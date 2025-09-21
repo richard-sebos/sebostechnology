@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-09-07T19:46:44-06:00</updated>
+  <updated>2025-09-21T11:40:00-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,41 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Customizing Password Policies in Linux Using PAM and User Groups</title>
+    <link href="http://localhost:4000/posts/Tier-Passwds/" rel="alternate" type="text/html" title="Customizing Password Policies in Linux Using PAM and User Groups" />
+    <published>2025-09-21T04:00:00-06:00</published>
+  
+    <updated>2025-09-21T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Tier-Passwds/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Tier-Passwds/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Security" />
+    
+  
+
+  <summary>Introduction
+
+In the previous article, we explored how to set up accounts for different types of users, including RF Guns, Application Users, Application Developers, and System Administrators, with a focus on account locks and expirations. Building on that foundation, this article examines how to implement password criteria tailored to each of these user types.
+
+
+
+Table of Contents
+
+
+  Introduc...</summary>
+
+  </entry>
 
   
   <entry>
@@ -131,39 +166,6 @@ With SSH being one of the primary attack vectors in modern infrastructure, harde
   <summary>Introduction
 
 In many cases, a default SSH installation, especially with a few added security tweaks, is perfectly sufficient. But what happens when you’re dealing with a corporate environment where hundreds or even thousands of users are logging in daily to access applications? Can a default configuration handle that kind of load effectively? The short answer is: not quite. In this article, we...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Boost SSH Speed with SSH Multiplexing</title>
-    <link href="http://localhost:4000/posts/SSH-Multiplex/" rel="alternate" type="text/html" title="Boost SSH Speed with SSH Multiplexing" />
-    <published>2025-08-03T04:00:00-06:00</published>
-  
-    <updated>2025-08-03T04:00:00-06:00</updated>
-  
-    <id>http://localhost:4000/posts/SSH-Multiplex/</id>
-    <content type="text/html" src="http://localhost:4000/posts/SSH-Multiplex/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-    <category term="SSH" />
-    
-  
-
-  <summary>Introduction to SSH Multiplexing
-
-In previous discussions, we’ve focused on making remote server access via SSH more secure. This time, let’s shift our focus to performance and usability—specifically, how to make SSH connections faster and more efficient. Enter SSH Multiplexing, a feature that significantly improves connection times by reusing existing SSH sessions.
-
-Table of Contents
-
-
-  Intro...</summary>
 
   </entry>
 
