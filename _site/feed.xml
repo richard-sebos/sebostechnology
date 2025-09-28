@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Sebos Technology</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-09-21T11:40:00-06:00</updated>
+  <updated>2025-09-28T14:51:55-06:00</updated>
   <author>
     <name>Richard Chamberlain</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,72 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Linux Printing with CUPS</title>
+    <link href="http://localhost:4000/posts/CUPS/" rel="alternate" type="text/html" title="Linux Printing with CUPS" />
+    <published>2025-09-24T04:00:00-06:00</published>
+  
+    <updated>2025-09-24T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/CUPS/</id>
+    <content type="text/html" src="http://localhost:4000/posts/CUPS/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="Infrastructure" />
+    
+  
+
+  <summary>1. Introduction
+
+Printing is one of those technologies people rarely think about—until it stops working. Despite the rise of paperless workflows, printing remains deeply embedded in both personal and professional environments. Whether it’s the receipt from your local coffee shop, the label on an Amazon package, or a contract printed in an office, some form of printing made it possible.
+
+
+
+Table...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>ESP32 Debug Helper for macOS (with MicroPython)</title>
+    <link href="http://localhost:4000/posts/Mac-ESP32/" rel="alternate" type="text/html" title="ESP32 Debug Helper for macOS (with MicroPython)" />
+    <published>2025-09-21T04:00:00-06:00</published>
+  
+    <updated>2025-09-21T04:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/Mac-ESP32/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Mac-ESP32/" />
+    <author>
+      <name>Richard Chamberlain</name>
+    </author>
+
+  
+    
+    <category term="ESP32" />
+    
+    <category term="MicroPython" />
+    
+    <category term="macOS" />
+    
+    <category term="Development" />
+    
+  
+
+  <summary>Introduction
+
+As a Linux administrator, I spend much of my time working on the command line. When I decided to dive back into ESP32 programming, I initially installed the Arduino IDE. However, I quickly realized I wanted a different way to interact with my ESP32 boards — one that better fit the way I like to work.
+
+Since I planned to use MicroPython rather than C++ with Arduino, the toolchain a...</summary>
+
+  </entry>
 
   
   <entry>
@@ -106,66 +172,6 @@ In my previous article, we discussed how to access a Linux application via SSH a
   
 
   <summary>While modern software often leans heavily on graphical interfaces and web applications, command-line-based applications are still very much alive and in use. In fact, SSH-based shell applications remain a lightweight, efficient way for users to interact with terminal-based programs. However, if not configured carefully, these applications can inadvertently provide users with unrestricted shell ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Modular SSH Configuration with Ansible</title>
-    <link href="http://localhost:4000/posts/Asnible-SSH-Deploy/" rel="alternate" type="text/html" title="Modular SSH Configuration with Ansible" />
-    <published>2025-08-23T06:00:00-06:00</published>
-  
-    <updated>2025-08-24T08:07:07-06:00</updated>
-  
-    <id>http://localhost:4000/posts/Asnible-SSH-Deploy/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Asnible-SSH-Deploy/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="DevOps" />
-    
-    <category term="Linux" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>Introduction
-
-With SSH being one of the primary attack vectors in modern infrastructure, hardening the SSH daemon (sshd) is a critical step in any system security strategy. Ideally, your organization maintains a standardized sshd_config file, reviewed periodically for compliance and security posture. However, reality often differs. In practice, environments typically fall into one of three cate...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Optimizing SSH for High-Volume Environments</title>
-    <link href="http://localhost:4000/posts/SSH-High-Vol/" rel="alternate" type="text/html" title="Optimizing SSH for High-Volume Environments" />
-    <published>2025-08-17T06:00:00-06:00</published>
-  
-    <updated>2025-08-17T13:10:11-06:00</updated>
-  
-    <id>http://localhost:4000/posts/SSH-High-Vol/</id>
-    <content type="text/html" src="http://localhost:4000/posts/SSH-High-Vol/" />
-    <author>
-      <name>Richard Chamberlain</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-    <category term="SSH" />
-    
-    <category term="Performance" />
-    
-  
-
-  <summary>Introduction
-
-In many cases, a default SSH installation, especially with a few added security tweaks, is perfectly sufficient. But what happens when you’re dealing with a corporate environment where hundreds or even thousands of users are logging in daily to access applications? Can a default configuration handle that kind of load effectively? The short answer is: not quite. In this article, we...</summary>
 
   </entry>
 
