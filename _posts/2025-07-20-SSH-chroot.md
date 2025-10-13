@@ -7,13 +7,6 @@ pin: false
 image:
   path: /assets/img/SSH_chroot.png
   alt: "Using chroot to restrict Linux applications"
----
-
-Here’s your full article rewritten with an **opinionated**, confident tone — maintaining professionalism but now with a more assertive and experienced voice throughout.
-
----
-
-# Using `chroot` to Restrict Linux Applications for Enhanced Security
 
 ---
 
@@ -223,6 +216,3 @@ Your support helps me keep sharing practical Linux security tactics that actuall
 
 [https://www.buymeacoffee.com/sebostechnology](https://www.buymeacoffee.com/sebostechnology)
 
----
-
-Let me know if you'd like the same tone applied to a follow-up article (like `jailkit`, `Docker vs chroot`, or an automated chroot builder script). Happy to help expand this into a full series.
