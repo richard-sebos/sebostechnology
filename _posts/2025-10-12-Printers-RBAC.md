@@ -184,3 +184,11 @@ I’ve been in IT just a bit longer than CUPS has been around, and I can’t thi
 | `systemctl restart cups`                                | Restart CUPS service                                          |
 | `lpoptions -p printer -l`                               | List available options for a printer                          |
 
+---
+**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.  
+📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
+
+☕ Did you find this article helpful?
+Consider supporting more content like this by buying me a coffee:
+Buy Me A Coffee
+Your support helps me write more Linux tips, tutorials, and deep dives.
