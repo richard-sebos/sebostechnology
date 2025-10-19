@@ -5,7 +5,7 @@ date: 2025-07-13 10:00:00 +0000
 categories: [Linux, Security]
 tags: [SSH, OpenSSH, Security, Linux, DevOps, Infrastructure, Certificates]
 image:
-  path: /assets/img/SSH_Auth.png
+  path: /assets/img/SSH_AUTH.png
   alt: "Expiring SSH keys with OpenSSH Signing CA"
 ---
 ## **Introduction to SSH Authentication Keys**
