@@ -5,7 +5,7 @@ categories: [Security, Proxmox]
 tags: [ssh, bastion, homelab, jit-access, openssh]
 pin: false
 image: 
-  path: /assets/img/JIT-Access.png
+  path: /assets/img/JIT-SSH.png
   alt: "Bastion Host SSH Access"
 ---
 
