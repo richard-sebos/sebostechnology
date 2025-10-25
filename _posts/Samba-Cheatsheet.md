@@ -1,3 +1,10 @@
+---
+title: Samba Admin Cheatsheet for Oracle Linux 9
+date: 2025-10-25 10:00 +0000
+categories: [Linux, Infrastructure]
+tags: [Samba, OracleLinux, FileSharing, LinuxAdmin, Security, SMB]
+---
+
 # 🧰 Samba Admin Cheatsheet for Oracle Linux 9
 
 > *Quick reference for troubleshooting, securing, and validating Samba shares on Oracle Linux 9. This cheatsheet complements the [main setup guide](./samba-on-oracle-linux-9.md), providing fast answers when you’re deep in the trenches.*
