@@ -3,9 +3,6 @@ title: Samba Admin Cheatsheet for Oracle Linux 9
 date: 2025-10-25 10:00 +0000
 categories: [Linux, Infrastructure]
 tags: [Samba, OracleLinux, FileSharing, LinuxAdmin, Security, SMB]
-image:
-  path: /assets/img/Samba_Init.png
-  alt: Secure Samba file sharing setup on Oracle Linux 9 for mixed environments
 ---
 
 # 🧰 Samba Admin Cheatsheet for Oracle Linux 9
@@ -88,4 +85,4 @@ This cheatsheet is designed to be your **fast-access toolkit** when working with
 
 For full installation instructions and share setup details, head back to the main article:
 
-👉 [**Samba on Oracle Linux 9: Secure File Sharing for Mixed Environments**](./samba-on-oracle-linux-9.md)
+👉 [**Samba on Oracle Linux 9: Secure File Sharing for Mixed Environments**](https://richard-sebos.github.io/sebostechnology/posts/Samba/)
