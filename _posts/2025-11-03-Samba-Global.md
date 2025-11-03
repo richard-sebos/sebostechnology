@@ -5,7 +5,7 @@ date: 2025-10-25 10:00 +0000
 categories: [Linux, Infrastructure]
 tags: [Samba, SMB, OracleLinux, FileSharing, LinuxAdmin, Security]
 image:
-  path: /assets/img/Samba_Global_Security.png
+  path: /assets/img/Samba_Init.png
   alt: Hardened Samba server configuration on Oracle Linux with secure global settings
 ---
 
