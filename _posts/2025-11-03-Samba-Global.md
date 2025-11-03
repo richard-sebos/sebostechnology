@@ -147,6 +147,7 @@ Here’s a quick recap of what we did to lock down the `[global]` section:
 At this point, the Samba server is in a stable state. If no other changes were made, any shares you define would automatically inherit the security settings we’ve configured here.
 
 That said, individual shares often need a bit more attention—sometimes locking things down even further, and other times relaxing rules based on specific needs. In the next part of this series, we’ll dive into share-level security and how to fine-tune access where it matters most.
+
 ---
 Need Linux expertise? I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.
 📬 Drop a comment or email me to collaborate. For more tutorials, tools, and insights, visit sebostechnology.com.
