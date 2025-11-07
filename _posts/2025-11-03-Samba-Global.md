@@ -153,3 +153,5 @@ Need Linux expertise? I help businesses streamline servers, secure infrastructur
 📬 Drop a comment or email me to collaborate. For more tutorials, tools, and insights, visit sebostechnology.com.
 
 ☕ Did you find this article helpful? Consider supporting more content like this by buying me a coffee: Buy Me A Coffee Your support helps me write more Linux tips, tutorials, and deep dives.
+
+<script async data-uid="149965af7a" src="https://sebos-technology.kit.com/149965af7a/index.js"></script>
