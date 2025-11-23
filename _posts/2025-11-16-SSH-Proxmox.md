@@ -221,3 +221,8 @@ This is what works for me. Hopefully it gives you a few ideas to make your own s
 * [Proxmox SSH Access Guide](https://pve.proxmox.com/wiki/SSH)
 * [OpenSSH `sshd_config` Manual](https://man.openbsd.org/sshd_config)
 * [Yubikey for SSH](https://developers.yubico.com/SSH/)
+
+---
+Need Linux expertise? I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered. 📬 Drop a comment or email me to collaborate. For more tutorials, tools, and insights, visit sebostechnology.com.
+
+☕ Did you find this article helpful? Consider supporting more content like this by buying me a coffee: Buy Me A Coffee Your support helps me write more Linux tips, tutorials, and deep dives.
