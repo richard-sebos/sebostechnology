@@ -7,9 +7,6 @@ tags: [AIDE, Automation, Bash, Scripting, GPG, FileIntegrity, SystemD, LinuxAdmi
 image:
   path: /assets/img/AIDEinMotion.png
   alt: Step-by-step guide to building custom AIDE automation scripts with cryptographic verification
-series: "AIDE Security Series"
-series_part: 3
-previous_post: /posts/aide-automation-signing/
 ---
 
 
