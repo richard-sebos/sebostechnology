@@ -1,0 +1,13 @@
+---
+title: "AIDE in Motion Automating and Signing System Integrity Checks"
+subtitle: Proving System Integrity with GPG Signatures and Cryptographic Verification of AIDE Baselines and Reports
+series: "AIDE Security Series"
+series_part: 2
+previous_post: /posts/2025-11-23-AIDE-Overview.md
+date: 2025-11-30 10:00 +0000
+categories: [Linux, Security]
+tags: [AIDE, OracleLinux, FileIntegrity, GPG, Cryptography, Automation, LinuxAdmin, Security, Monitoring]
+image:
+  path: /assets/img/AIDEinMotion.png
+  alt: AIDE automation with GPG cryptographic signing and verification workflow on Oracle Linux 9
+---
