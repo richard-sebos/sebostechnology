@@ -1,5 +1,5 @@
 ---
-title: "AIDE Daily Automation Build Checklist: Your Implementation Roadmap"
+title: "AIDE Daily Automation Build Checklist Your Implementation Roadmap"
 subtitle: A Complete Step-by-Step Checklist for Deploying Signed, Verifiable AIDE Integrity Monitoring
 date: 2025-12-14 10:15 +0000
 categories: [Linux, Security]
