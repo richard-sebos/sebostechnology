@@ -6,7 +6,7 @@ categories: [Linux, Security]
 tags: [AIDE, Checklist, Automation, GPG, FileIntegrity, Implementation, Deployment, LinuxAdmin, Security]
 ---
 
-> This checklist is a companion to the main article, **AIDE in Motion**, and the detailed **AIDE Automation Build Guide**, which explains each step in greater depth.
+> This checklist is a companion to the main article, **[AIDE in Motion](https://richard-sebos.github.io/sebostechnology/posts/AIDE-in-Motion/)**, and the detailed **[AIDE Automation Build Guide](https://richard-sebos.github.io/sebostechnology/posts/Guide-AIDE-in-Motion/)**, which explains each step in greater depth.
 
 
 # ✅ **AIDE Daily Integrity Automation — Build Checklist**
