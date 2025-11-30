@@ -6,7 +6,7 @@ categories: [Linux, Security]
 tags: [AIDE, Automation, Bash, Scripting, GPG, FileIntegrity, SystemD, LinuxAdmin, Security, Tutorial]
 ---
 
-> This guide accompanies the main article, **[AIDE in Motion: Automating and Signing System Integrity Checks](https://richard-sebos.github.io/sebostechnology/posts/AIDE-in-Motion/)**, and pairs with the **AIDE Daily Integrity Checklist** for a concise, printable summary of the workflow.
+> This guide accompanies the main article, **[AIDE in Motion: Automating and Signing System Integrity Checks](https://richard-sebos.github.io/sebostechnology/posts/AIDE-in-Motion/)**, and pairs with the **[AIDE Daily Integrity Checklist](https://richard-sebos.github.io/sebostechnology/posts/CheckList-AIDE-in-Motion/)** for a concise, printable summary of the workflow.
 
 This section walks you through **how to build your own automation script**, step by step. Instead of copying a pre-made solution, you’ll learn how each component fits together so you can adapt it to your environment, strengthen the workflow, or extend it with your own logic.
 
