@@ -1,6 +1,8 @@
 ---
 title: AIDE - File Integrity Monitoring for System Security
 subtitle: Implement Silent File Verification with AIDE to Detect Unauthorized Changes Before Attackers Cover Their Tracks
+series: "AIDE Security Series"
+series_part: 1
 date: 2025-11-23 10:00 +0000
 categories: [Linux, Security]
 tags: [AIDE, OracleLinux, FileIntegrity, IntrusionDetection, LinuxAdmin, Security, Monitoring]
