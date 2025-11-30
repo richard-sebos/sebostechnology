@@ -4,9 +4,6 @@ subtitle: Learn to Design and Implement Custom AIDE Automation with Cryptographi
 date: 2025-12-07 10:00 +0000
 categories: [Linux, Security]
 tags: [AIDE, Automation, Bash, Scripting, GPG, FileIntegrity, SystemD, LinuxAdmin, Security, Tutorial]
-image:
-  path: /assets/img/AIDEinMotion.png
-  alt: Step-by-step guide to building custom AIDE automation scripts with cryptographic verification
 ---
 
 
