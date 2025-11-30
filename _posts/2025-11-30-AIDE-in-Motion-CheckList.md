@@ -5,11 +5,10 @@ date: 2025-12-14 10:00 +0000
 categories: [Linux, Security]
 tags: [AIDE, Checklist, Automation, GPG, FileIntegrity, Implementation, Deployment, LinuxAdmin, Security]
 image:
-  path: /assets/img/aide_checklist_banner.png
+  path: /assets/img/AIDEinMotion.png
   alt: Complete implementation checklist for AIDE daily automation with cryptographic verification
 series: "AIDE Security Series"
 series_part: 4
-previous_post: /assets/img/AIDEinMotion.png
 pin: true
 ---
 
