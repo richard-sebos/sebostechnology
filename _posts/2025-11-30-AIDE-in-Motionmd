@@ -158,22 +158,12 @@ Your system now maintains a verifiable chain of integrity reports:
 
 These signatures and hashes ensure that even if logs in `/var/log` are tampered with, it will be immediately detectable — because the verification artifacts are protected inside `/root/.aide`.
 
+*(references Build Guide + Checklist)*
+> For a deeper walkthrough on building your own automation script, see the **AIDE Automation Build Guide**, and for a quick reference, use the **AIDE Daily Integrity Checklist**, both available alongside this article.
 
 ---
 
-### 🧪 Automating the Workflow
 
-To streamline the process, you can create a script that:
-
-1. Verifies the previous AIDE log.
-2. Runs `aide --check` and logs the output.
-3. (Optionally) Reinitializes the baseline.
-4. Hashes and signs the new log file.
-
-By automating these steps with `cron` or `systemd.timer`, your system performs daily integrity checks and maintains a cryptographically verifiable audit trail.
-You can find a full example script [**here**](*insert-link-or-path*).
-
----
 
 ## 🧭 Conclusion – Integrity You Can Prove
 
