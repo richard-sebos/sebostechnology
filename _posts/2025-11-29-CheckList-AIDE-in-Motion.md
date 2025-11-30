@@ -4,9 +4,6 @@ subtitle: A Complete Step-by-Step Checklist for Deploying Signed, Verifiable AID
 date: 2025-11-29 10:15 +0000
 categories: [Linux, Security]
 tags: [AIDE, Checklist, Automation, GPG, FileIntegrity, Implementation, Deployment, LinuxAdmin, Security]
-image:
-  path: /assets/img/AIDEinMotion.png
-  alt: Complete implementation checklist for AIDE daily automation with cryptographic verification
 ---
 
 > This checklist is a companion to the main article, **AIDE in Motion**, and the detailed **AIDE Automation Build Guide**, which explains each step in greater depth.
