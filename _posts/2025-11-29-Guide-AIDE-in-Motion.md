@@ -1,7 +1,7 @@
 ---
 title: "Build Your Own AIDE Automation - Guide"
 subtitle: Learn to Design and Implement Custom AIDE Automation with Cryptographic Verification from First Principles
-date: 2025-12-07 10:20 +0000
+date: 2025-11-29 10:20 +0000
 categories: [Linux, Security]
 tags: [AIDE, Automation, Bash, Scripting, GPG, FileIntegrity, SystemD, LinuxAdmin, Security, Tutorial]
 ---
