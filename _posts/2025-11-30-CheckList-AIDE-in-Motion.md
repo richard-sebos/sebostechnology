@@ -7,9 +7,6 @@ tags: [AIDE, Checklist, Automation, GPG, FileIntegrity, Implementation, Deployme
 image:
   path: /assets/img/AIDEinMotion.png
   alt: Complete implementation checklist for AIDE daily automation with cryptographic verification
-series: "AIDE Security Series"
-series_part: 4
-pin: true
 ---
 
 > This checklist is a companion to the main article, **AIDE in Motion**, and the detailed **AIDE Automation Build Guide**, which explains each step in greater depth.
