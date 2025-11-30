@@ -1,11 +1,11 @@
 ---
-title: "Build Your Own AIDE Automation - AIDE in Motion Automating and Signing System Integrity Checks"
+title: "Build Your Own AIDE Automation - Guide"
 subtitle: Learn to Design and Implement Custom AIDE Automation with Cryptographic Verification from First Principles
 date: 2025-12-07 10:00 +0000
 categories: [Linux, Security]
 tags: [AIDE, Automation, Bash, Scripting, GPG, FileIntegrity, SystemD, LinuxAdmin, Security, Tutorial]
 image:
-  path: /posts/2025-11-23-AIDE-Overview.md
+  path: /assets/img/AIDEinMotion.png
   alt: Step-by-step guide to building custom AIDE automation scripts with cryptographic verification
 series: "AIDE Security Series"
 series_part: 3
