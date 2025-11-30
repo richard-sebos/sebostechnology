@@ -158,8 +158,7 @@ Your system now maintains a verifiable chain of integrity reports:
 
 These signatures and hashes ensure that even if logs in `/var/log` are tampered with, it will be immediately detectable — because the verification artifacts are protected inside `/root/.aide`.
 
-*(references Build Guide + Checklist)*
-> For a deeper walkthrough on building your own automation script, see the **AIDE Automation Build Guide**, and for a quick reference, use the **AIDE Daily Integrity Checklist**, both available alongside this article.
+> For a deeper walkthrough on building your own automation script, see the **[AIDE Automation Build Guide](https://richard-sebos.github.io/sebostechnology/posts/Guide-AIDE-in-Motion/)**, and for a quick reference, use the **[AIDE Daily Integrity Checklist](https://richard-sebos.github.io/sebostechnology/posts/CheckList-AIDE-in-Motion/)**, both available alongside this article.
 
 ---
 
