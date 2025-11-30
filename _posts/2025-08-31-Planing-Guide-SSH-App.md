@@ -5,6 +5,7 @@ categories: [DevOps, Linux, Security]
 tags: [ssh, security, linux, devops]
 excerpt: "Securing SSH shell applications is straightforward and can be done quickly with a few well-placed configurations. This article walks through how to set up a terminal-based application accessed via SSH and secure it in a way that restricts users to just the application.."
 ---
+
 > This hands-on build guide is designed to complement the main article on securing [SSH shell applications](https://richard-sebos.github.io/sebostechnology/posts/SSH-App/) and works  for a quick planning reference.
 
 # 🛠️ **Hands-On Build Guide: Creating a Restricted SSH Shell Application**
