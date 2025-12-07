@@ -208,4 +208,9 @@ But one thing is certain:
  * [AIDE Daily Automation Build Checklist](https://richard-sebos.github.io/sebostechnology/posts/CheckList-AIDE-in-Motion/)
  * [Build Your Own AIDE Automation - Guide](https://richard-sebos.github.io/sebostechnology/posts/Guide-AIDE-in-Motion/)
 3. **[AIDE Automation Framework From Integrity Checks to Self-Verification](https://richard-sebos.github.io/sebostechnology/posts/Chaining-Logs/)**
-  * [AIDE Ledger Chaining- Cheat Sheet](https://richard-sebos.github.io/sebostechnology/posts/AIDE-Chaining-Cheat-Sheet/) 
+  * [AIDE Ledger Chaining- Cheat Sheet](https://richard-sebos.github.io/sebostechnology/posts/AIDE-Chaining-Cheat-Sheet/)
+
+---
+Need Linux expertise? I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered. 📬 Drop a comment or email me to collaborate. For more tutorials, tools, and insights, visit sebostechnology.com.
+
+☕ Did you find this article helpful? Consider supporting more content like this by buying me a coffee: Buy Me A Coffee Your support helps me write more Linux tips, tutorials, and deep dives.
