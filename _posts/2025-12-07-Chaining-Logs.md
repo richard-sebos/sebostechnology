@@ -2,7 +2,7 @@
 title: "AIDE Automation Framework From Integrity Checks to Self-Verification"
 subtitle: Modular scripting, cryptographic signing, and a tamper-evident ledger for Linux integrity management
 series: "AIDE Security Series"
-date: 2025-12-07 10:00 +0000
+date: 2025-12-07 20:00 +0000
 categories: [Linux, Security]
 tags: [AIDE, FileIntegrity, GPG, Cryptography, Automation, LinuxAdmin, Security, Monitoring, Blockchain, Ledger]
 image:
