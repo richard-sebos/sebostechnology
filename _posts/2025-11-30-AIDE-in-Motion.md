@@ -176,7 +176,14 @@ This adds an important layer of assurance to your Linux environment — one that
 
 ### 📚 Related Resources
 
-* [AIDE-001: Every File Deserves a Fingerprint – AIDE on Oracle Linux 9](https://github.com/richard-sebos/articles/blob/main/Aide/AID-001/2025-11-xx-AIDE-Overview.md)
+### 🧩 Related Articles in the Series
+
+1. **[AIDE - File Integrity Monitoring for System Security](https://richard-sebos.github.io/sebostechnology/posts/AIDE-Overview/)**
+2. **[AIDE in Motion Automating and Signing System Integrity Checks](https://richard-sebos.github.io/sebostechnology/posts/AIDE-in-Motion/)**
+ * [AIDE Daily Automation Build Checklist](https://richard-sebos.github.io/sebostechnology/posts/CheckList-AIDE-in-Motion/)
+ * [Build Your Own AIDE Automation - Guide](https://richard-sebos.github.io/sebostechnology/posts/Guide-AIDE-in-Motion/)
+3. **[AIDE Automation Framework From Integrity Checks to Self-Verification](https://richard-sebos.github.io/sebostechnology/posts/Chaining-Logs/)**
+  * [AIDE Ledger Chaining- Cheat Sheet](https://richard-sebos.github.io/sebostechnology/posts/AIDE-Chaining-Cheat-Sheet/) 
 * `man aide.conf` and `man aide`
 * `man systemd.timer`
 * `gpg --help` for signing options
