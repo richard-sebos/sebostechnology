@@ -143,6 +143,9 @@ And most importantly: **You’ve done it right.** This is a setup you can confid
 > 💡 **Pro Tip:** Even with a locked-down Samba config, consider encrypting sensitive data at rest. All it takes is one zero-day exploit for a seemingly safe system to become a target.
 
 ---
-Need Linux expertise? I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered. 📬 Drop a comment or email me to collaborate. For more tutorials, tools, and insights, visit sebostechnology.com.
+  I'm Richard, a systems administrator with decades of experience in Linux infrastructure, security, and automation. These tutorials come from real-world implementations and lab testing.
 
-☕ Did you find this article helpful? Consider supporting more content like this by buying me a coffee: Buy Me A Coffee Your support helps me write more Linux tips, tutorials, and deep dives.
+  **More guides:** [sebostechnology.com](https://sebostechnology.com)
+  **Need help with your infrastructure?** I offer consulting for server automation, security hardening, and infrastructure optimization.
+
+  **Found this valuable?** [Buy me a coffee](https://buymeacoffee.com/sebostechnology) to support more in-depth technical content
