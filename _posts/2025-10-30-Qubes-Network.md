@@ -129,3 +129,10 @@ Would you like me to show you how to write a **LinkedIn post caption** that intr
 | 🔒 Verify TOR Routing       | `curl https://check.torproject.org`                                         | Confirms you're using the TOR network                         | Run in Whonix AppVM                             |
 | 📁 Save as File             | `cat > qubes-net-cheatsheet.txt <<EOF ... EOF`                              | Save this cheat sheet to a file in a VM                       | Replace with actual content                     |
 
+---
+  I'm Richard, a systems administrator with decades of experience in Linux infrastructure, security, and automation. These tutorials come from real-world implementations and lab testing.
+
+  **More guides:** [sebostechnology.com](https://sebostechnology.com)
+  **Need help with your infrastructure?** I offer consulting for server automation, security hardening, and infrastructure optimization.
+
+  **Found this valuable?** [Buy me a coffee](https://buymeacoffee.com/sebostechnology) to support more in-depth technical content
