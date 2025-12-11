@@ -1,3 +1,13 @@
+---
+title: "A Hungry Tale About File Permissions"
+subtitle: Understanding Linux File Permissions Through a Story About Burgers
+date: 2025-12-10 10:00 +0000
+categories:  [Linux, Education]
+tags: [Linux, FilePermissions, Tutorial, Beginner, LinuxAdmin, chmod, UnixPermissions]
+image:
+  path: /assets/img/file_permissions.png
+  alt: Understanding Linux File Permissions Through a Story About Burgers
+---
 
 File permissions used to feel super abstract to me. All those numbers and letters — `rwx`, `r--`, `755`, `644`... it was like some secret code I wasn’t in on.
 
