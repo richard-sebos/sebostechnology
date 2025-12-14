@@ -1,5 +1,5 @@
 ---
-title: "When One Witness Isn't Enough: Remote Verification for AIDE"
+title: When One Witness Isn't Enough - Remote Verification for AIDE
 subtitle: Building a Distributed Integrity Network with Remote Backup and Cryptographic Verification
 date: 2025-12-14 10:00 +0000
 categories: [Linux, Security]
