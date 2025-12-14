@@ -4,9 +4,6 @@ subtitle: Essential Commands for Secure Remote AIDE Verification and Distributed
 date: 2025-12-14 09:00 +0000
 categories: [Linux, Security]
 tags: [AIDE, CommandReference, Rsync, SSH, RemoteBackup, FileIntegrity, LinuxAdmin, Security, CheatSheet]
-image:
-  path: /assets/img/AIDE-Command-Reference.png
-  alt: AIDE remote aggregation command reference with SSH security and rsync configuration
 ---
 
 > **Note:** This reference provides the key commands and concepts for building a remote AIDE verification system. For a complete, production-ready implementation with automation scripts, monitoring, and enterprise-grade security hardening, [contact me for consulting](https://sebostechnology.com).
