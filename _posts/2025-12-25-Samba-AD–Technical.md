@@ -1,7 +1,7 @@
 ---
 title: Samba AD – Technical Considerations and Common Questions
 subtitle: Answers to practical deployment questions about SSH access, password policies, and domain integration
-date: 2025-12-21 09:00 +0000
+date: 2025-12-21 09:30 +0000
 categories: [Linux, Enterprise]
 tags: [SambaAD, ActiveDirectory, SSH, PasswordPolicy, PAM, SSSD, LinuxSecurity, DomainIntegration]
 image:
