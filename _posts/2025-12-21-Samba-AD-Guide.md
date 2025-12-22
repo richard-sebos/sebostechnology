@@ -1,7 +1,7 @@
 ---
 title: Samba AD User & Group Management Guide
 subtitle: Complete walkthrough for creating users, groups, OUs, and access policies in Samba Active Directory
-date: 2025-01-15 09:00 +0000
+date: 2025-12-21 09:00 +0000
 categories: [Linux, Enterprise]
 tags: [SambaAD, ActiveDirectory, UserManagement, GroupPolicy, LDAP, DomainJoin, AccessControl, EnterpriseLinux]
 ---
