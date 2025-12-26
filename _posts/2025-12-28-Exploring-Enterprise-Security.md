@@ -1,7 +1,7 @@
 ---
 title: "Linux for Business - Exploring Enterprise Security at Small Business Scale"
 subtitle: Building a secure, low-cost corporate office infrastructure with open-source tools and enterprise-grade security
-date: 2025-12-25 10:00 +0000
+date: 2025-12-28 10:00 +0000
 categories: [Linux, Business]
 tags: [EnterpriseLinux, BusinessSecurity, SambaAD, SELinux, Ansible, CUPS, SmallBusiness, Infrastructure, OpenSource]
 image:
