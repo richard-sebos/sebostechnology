@@ -12,7 +12,10 @@ image:
 > "The most dangerous phrase in the language is, 'We've always done it this way.'"
 > — Grace Hopper
 
-A few years ago, I had an idea for a project focused on building a Linux-based business setup that small to medium-sized businesses could realistically use. The original goal was to create a zero-cost desktop environment built entirely on open-source software. At the time, however, there were several fundamental problems with this approach. While Linux itself was a solid operating system, the desktop ecosystem still needed time to mature. I was viewing the problem primarily through the lens of which applications could run on Linux, rather than considering what a complete Linux-based infrastructure could provide for an entire office. I was also overly focused on the idea of "zero cost" instead of the broader business value and benefits. Ultimately, the biggest limitation was my own skill set—I needed to mature technically before the project could become viable.
+A few years ago, I had an idea for a project focused on building a Linux-based business setup that small to medium-sized businesses could realistically use. The original goal was to create a zero-cost desktop environment built entirely on open-source software. At the time, however, there were several fundamental problems with this approach. 
+ - While Linux itself was a solid operating system, the desktop ecosystem still needed time to mature.
+ - I was viewing the problem primarily through the lens of which applications could run on Linux, rather than considering what a complete Linux-based infrastructure could provide for an entire office.
+ - I was also overly focused on the idea of "zero cost" instead of the broader business value and benefits. Ultimately, the biggest limitation was my own skill set—I needed to mature technically before the project could become viable.
 
 I believe I am now at a point where I can properly tackle this idea, but the key question remains: **does business actually need this?**
 
