@@ -76,7 +76,9 @@ Could the same level of security be achieved using Windows combined with third-p
 
 Linux server design practices already include a cohesive set of tools that are designed to work together to enhance security, such as centralized logging with journalctl, SELinux and Auditd for creating custom security roles, DAC/ACL/MAC for fine-grained permissions, SSH and Ansible for remote management, and integrated services like Samba and CUPS. By extending these proven server-side practices to the desktop and connecting systems to a Samba Active Directory server, an enterprise-grade setup can be created without relying heavily on third-party software.
 
+[Security Tools Quick Reference](https://richard-sebos.github.io/sebostechnology/posts/Linux-Security-Tools-Quick-Reference/)
 ## What's Next
+
 
 Over the next 3-6 months, I plan to build out this environment and document the process through a series of articles covering:
 
