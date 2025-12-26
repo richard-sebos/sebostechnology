@@ -1,7 +1,7 @@
 ---
 title: "Linux Security Tools Quick Reference"
 subtitle: Brief descriptions of security tools mentioned in Linux for Business - Exploring Enterprise Security
-date: 2025-12-25 09:00 +0000
+date: 2025-12-28 09:00 +0000
 categories: [Linux, Security]
 tags: [DAC, ACL, MAC, SELinux, AppArmor, Auditd, Ansible, SambaAD, CUPS, Reference]
 ---
