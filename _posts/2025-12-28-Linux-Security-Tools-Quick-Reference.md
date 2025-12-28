@@ -6,7 +6,7 @@ categories: [Linux, Security]
 tags: [DAC, ACL, MAC, SELinux, AppArmor, Auditd, Ansible, SambaAD, CUPS, Reference]
 ---
 
-> **Companion Guide:** Quick reference for tools mentioned in [Linux for Business - Exploring Enterprise Security at Small Business Scale](https://github.com/richard-sebos/sebostechnology/blob/main/_posts/2025-12-28-Exploring-Enterprise-Security.md).
+> **Companion Guide:** Quick reference for tools mentioned in [Linux for Business - Exploring Enterprise Security at Small Business Scale](https://richard-sebos.github.io/sebostechnology/posts/Exploring-Enterprise-Security/).
 
 ---
 
