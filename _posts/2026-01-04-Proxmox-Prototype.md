@@ -1,7 +1,7 @@
 ---
 title: Prototyping a Larger Project with Proxmox
 subtitle: Building a Virtual Infrastructure Foundation for Enterprise Linux Testing and Development
-date: 2025-01-01 10:00 +0000
+date: 2026-01-01 10:00 +0000
 categories: [Linux, Infrastructure]
 tags: [Proxmox, Virtualization, NetworkDesign, VLAN, Backup, ResourceManagement, LinuxAdmin, ProjectPlanning]
 image:
