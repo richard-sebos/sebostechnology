@@ -159,11 +159,30 @@ This approach also shifts the conversation inside IT. Rather than asking, *“Wh
 And this is where things really start to come together. Flatpak solves **how applications get onto the system**. In the next article, we’ll look at **OSTree** and how it solves the other half of the problem—how the operating system itself is updated in a controlled, predictable, and low-drama way.
 
 ---
+## What’s Next
 
-**Need Linux expertise?** I help businesses streamline servers, secure infrastructure, and automate workflows. Whether you're troubleshooting, optimizing, or building from scratch—I've got you covered.
-📬 Drop a comment or [email me](mailto:info@sebostechnology.com) to collaborate. For more tutorials, tools, and insights, visit [sebostechnology.com](https://sebostechnology.com).
 
-☕ Did you find this article helpful?
-Consider supporting more content like this by buying me a coffee:
-Buy Me A Coffee
-Your support helps me write more Linux tips, tutorials, and deep dives.
+Over the next 3-6 months, I plan to build out this environment and document the process through a series of articles covering:
+
+* Article 1: [Introduction - Why this project matters and what Linux can offer businesses](https://richard-sebos.github.io/sebostechnology/posts/Exploring-Enterprise-Security/)
+* Article 2: [Proxmox Virtualization Best Practices - Setting up a robust virtualization foundation](https://richard-sebos.github.io/sebostechnology/posts/Proxmox-Prototype/)
+* Article 3: [Making Linux Work as a Corporate Desktop](https://richard-sebos.github.io/sebostechnology/posts/Linux-Corporate-Desktop-Usability-Security/)
+* Article 4: [OS Updates on the Corporate Linux Desktop](https://richard-sebos.github.io/sebostechnology/posts/OSTree/)
+* Article 5: SMB Infrastructure Planning - Designing the complete 11-VM environment
+* Article 6: Ansible Automation Setup - Building the control server for automated deployments
+* Article 7-8: Core Services - Samba Active Directory, file servers, print services, and management tools
+* Article 9-10: Desktop Environment - Configuring secure Linux workstations
+* Article 11-12: Security Hardening - SELinux policies, firewalls, monitoring, and backup strategies
+
+My goals are to:
+
+* Help business owners understand that there are viable alternatives for securing their systems
+* Highlight what Linux-based systems are capable of in real-world business environments
+* Provide practical tools, configurations, and guidance for users who are new to Linux as well as experienced IT professionals
+* Continue developing my own skills in Linux-based security and infrastructure design
+
+Call to Action
+
+Whether you're evaluating alternatives to expensive licensing, building your first Linux infrastructure, or simply curious about enterprise security on open-source platforms—I'd love to hear from you.
+
+If you are a business owner, system administrator, or IT professional interested in improving security without relying solely on expensive licensing and third-party tools, I invite you to follow along. Experiment with these ideas, ask questions, challenge assumptions, and share your experiences. Together, we can explore what a secure, Linux-based business environment can look like in practice.
