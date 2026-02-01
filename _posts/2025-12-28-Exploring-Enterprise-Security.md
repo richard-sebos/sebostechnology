@@ -82,13 +82,15 @@ Linux server design practices already include a cohesive set of tools that are d
 
 Over the next 3-6 months, I plan to build out this environment and document the process through a series of articles covering:
 
-* **Article 1: Introduction** - Why this project matters and what Linux can offer businesses (this article)
-* **Article 2: Proxmox Virtualization Best Practices** - Setting up a robust virtualization foundation
-* **Article 3: SMB Infrastructure Planning** - Designing the complete 11-VM environment
-* **Article 4: Ansible Automation Setup** - Building the control server for automated deployments
-* **Article 5-8: Core Services** - Samba Active Directory, file servers, print services, and management tools
-* **Article 9-10: Desktop Environment** - Configuring secure Linux workstations
-* **Article 11-12: Security Hardening** - SELinux policies, firewalls, monitoring, and backup strategies
+* Article 1: [Introduction - Why this project matters and what Linux can offer businesses](https://richard-sebos.github.io/sebostechnology/posts/Exploring-Enterprise-Security/)
+* Article 2: [Proxmox Virtualization Best Practices - Setting up a robust virtualization foundation](https://richard-sebos.github.io/sebostechnology/posts/Proxmox-Prototype/)
+* Article 3: [Making Linux Work as a Corporate Desktop](https://richard-sebos.github.io/sebostechnology/posts/Linux-Corporate-Desktop-Usability-Security/)
+* Article 4: [OS Updates on the Corporate Linux Desktop](https://richard-sebos.github.io/sebostechnology/posts/OSTree/)
+* Article 5: SMB Infrastructure Planning - Designing the complete 11-VM environment
+* Article 6: Ansible Automation Setup - Building the control server for automated deployments
+* Article 7-8: Core Services - Samba Active Directory, file servers, print services, and management tools
+* Article 9-10: Desktop Environment - Configuring secure Linux workstations
+* Article 11-12: Security Hardening - SELinux policies, firewalls, monitoring, and backup strategies
 
 My goals are to:
 
