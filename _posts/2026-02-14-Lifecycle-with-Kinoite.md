@@ -5,7 +5,7 @@ date: 2026-02-14 04:00 +0000
 categories: [Linux, Enterprise]
 tags: [Kinoite, OSTree, Flatpak, Ansible, EnterpriseLinux, Automation, DesktopManagement, Fedora, DevOps]
 image:
-  path: /assets/img/Linux_Corporate_Desktop.png
+  path: /assets/img/Kinoite-Lifecycle.png
   alt: Enterprise desktop lifecycle management with Fedora Kinoite, OSTree, and Flatpak automation
 ---
 
