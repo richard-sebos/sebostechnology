@@ -1,5 +1,5 @@
 ---
-title: "Enterprise Desktop Update Lifecycle with Kinoite"
+title: Enterprise Desktop Update Lifecycle with Kinoite
 subtitle: Building Repeatable Build, Test, and Deployment Pipelines for Immutable Enterprise Desktops
 date: 2026-02-14 04:00 +0000
 categories: [Linux, Enterprise]
