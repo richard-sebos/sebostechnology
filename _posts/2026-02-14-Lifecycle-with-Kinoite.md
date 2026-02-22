@@ -184,7 +184,8 @@ Over the next 3-6 months, I plan to build out this environment and document the 
 * Article 3: [Making Linux Work as a Corporate Desktop](https://richard-sebos.github.io/sebostechnology/posts/Linux-Corporate-Desktop-Usability-Security/)
 * Article 4: [OS Updates on the Corporate Linux Desktop](https://richard-sebos.github.io/sebostechnology/posts/OSTree/)
 * Article 5: **Enterprise Desktop Update Lifecycle with Kinoite** *(this article)*
-* Articles 6-12: Prometheus Monitoring, SMB Infrastructure Planning, Ansible Automation, Core Services (AD/File/Print), Desktop Environment, and Security Hardening
+* Article 6: [Bringing Prometheus Monitoring to the Linux Corporate Desktop](https://richard-sebos.github.io/sebostechnology/posts/Prometheus/)
+* Articles 7-12: SMB Infrastructure Planning, Ansible Automation, Core Services (AD/File/Print), Desktop Environment, and Security Hardening
 
 ### My goals are to:
 
