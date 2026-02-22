@@ -13,6 +13,16 @@ image:
 
 ---
 
+When I started thinking about Linux as a serious corporate desktop, one thing became obvious pretty quickly: we already have a mature monitoring stack on the server side. Why not use it on the desktop too?
+
+Tools like AIDE, Prometheus, Loki, and Grafana are common in backend infrastructure. They’re trusted, battle-tested, and already integrated into operational workflows. Extending that same tooling to corporate desktops isn’t adding complexity — it’s creating consistency.
+
+For this project, Grafana will eventually be the visualization layer. But dashboards don’t create insight on their own. First, you need reliable, structured metrics.
+
+That’s where Prometheus comes in.
+
+---
+
 ## Table of Contents
 
 1. [What Prometheus Actually Brings to the Table](#what-prometheus-actually-brings-to-the-table)
@@ -22,16 +32,6 @@ image:
 5. [Using Prometheus Before You Even Touch Grafana](#using-prometheus-before-you-even-touch-grafana)
 6. [Addressing the Security Reality](#addressing-the-security-reality)
 7. [Why This Actually Matters](#why-this-actually-matters)
-
----
-
-When I started thinking about Linux as a serious corporate desktop, one thing became obvious pretty quickly: we already have a mature monitoring stack on the server side. Why not use it on the desktop too?
-
-Tools like AIDE, Prometheus, Loki, and Grafana are common in backend infrastructure. They’re trusted, battle-tested, and already integrated into operational workflows. Extending that same tooling to corporate desktops isn’t adding complexity — it’s creating consistency.
-
-For this project, Grafana will eventually be the visualization layer. But dashboards don’t create insight on their own. First, you need reliable, structured metrics.
-
-That’s where Prometheus comes in.
 
 ---
 
