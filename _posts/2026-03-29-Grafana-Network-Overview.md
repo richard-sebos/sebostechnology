@@ -118,6 +118,7 @@ Prometheus picks up changes to `file_sd` target files automatically — no resta
 ## 📊 The High-Level Overview
 
 ![Network Overview Dashboard — Summary Stats and Host Tables](/assets/img/Grafana-Network-Overview.png)
+
 *The network overview dashboard showing the summary stat panels and per-subnet host tables.*
 
 The four stat panels at the top of the dashboard give a fleet-wide pulse check. All four pull from the global `node_exporter` job without any subnet filtering — they reflect the entire monitored environment.
