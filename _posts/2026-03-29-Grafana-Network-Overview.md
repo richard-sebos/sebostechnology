@@ -5,7 +5,7 @@ date: 2026-03-29 10:00 +0000
 categories: [Linux, Security]
 tags: [Grafana, Prometheus, NodeExporter, Observability, Monitoring, SMB, Dashboard]
 image:
-  path: /assets/img/Grafana-Network-Overview.png
+  path: /assets/img/Grafana-Network.png
   alt: Grafana network overview dashboard showing all hosts grouped by subnet
 ---
 
