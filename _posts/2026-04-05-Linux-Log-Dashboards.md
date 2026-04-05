@@ -109,9 +109,6 @@ Seven stat panels give a complete picture of the selected host's log activity ov
 
 ## 🔬 Dashboard 2 — Linux Host Logs
 
-![Linux Host Logs Dashboard — Per-Host Detail View](/assets/img/All_Logs.png)
-*The Linux Host Logs dashboard showing log volume, error counts, and full log streams for a single host.*
-
 The detail dashboard is where investigation happens. You arrive here from the Log Summary, with the host already selected. A back-link at the top navigates back to the Log Summary, keeping the flow intact.
 
 ### At-a-Glance Counts
@@ -129,10 +126,13 @@ The chart also supports annotations — you can click directly on a point in the
 The lower half of the dashboard contains three log panels. Each one shows the actual log lines, with timestamps, sorted newest-first. Clicking any line expands it to show all attached Loki labels and the full raw log entry — useful when you need to see exactly which systemd unit generated an entry, or what priority level Promtail assigned it.
 
 **All Logs** — the complete log stream for this host across all Promtail scrape jobs. This is the unfiltered view: every journal entry, every auth event, every application log that Promtail is collecting. Use this when you want full context around an event — to see what else was happening at the same time as an error, or to trace a sequence of events across multiple services.
+![All Logs](/assets/img/All_Logs.png)
 
 **Errors & Warnings** — the same log stream as All Logs, but pre-filtered to lines that match error and warning patterns. This is the first panel to check when the Errors or Warnings stat panel is red or yellow. Rather than scrolling through hundreds of normal log lines, you see only the entries that need attention. The filter catches a broad set of severity keywords so nothing slips through on an unusual phrasing.
+![Errors & Warnings](/assets/img/Error_Warning.png)
 
 **Auth & Security** — scoped specifically to the auth log: SSH login attempts, sudo usage, PAM authentication events, and privilege escalation. On Rocky/RHEL hosts this is `/var/log/secure`; on Ubuntu/Debian hosts it is `/var/log/auth.log`. This panel is the right place to start when Failed Logins or Invalid Users is elevated — the raw auth log entries show exactly which user, from which IP address, at what time.
+![Auth & Security](/assets/img/Auth_Secure.png)
 
 ---
 
