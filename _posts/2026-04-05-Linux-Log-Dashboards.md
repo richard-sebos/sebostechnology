@@ -119,7 +119,7 @@ The detail dashboard is where investigation happens. You arrive here from the Lo
 The top of the screen repeats the same stat panels from the Log Summary — Errors, Warnings, Failed Logins, and Invalid Users — scoped to this host. Having the counts visible while you read through the log panels below means you don't need to scroll back up to remember what you're looking for.
 
 ### Log Volume by Level
-
+![Log Volume by Level](/assets/img/LogVolume.png)
 Below the stat panels, a time series shows how log activity broke down across severity levels over the selected time range. Before reading a single log line, this chart tells you *when* the problem occurred. A spike at 2am in the error series is the first thing that narrows your search. A gradual rise in warning volume over several days tells a different story than a sudden burst — and you can see that difference at a glance before opening any log panel.
 
 The chart also supports annotations — you can click directly on a point in the time series and add a comment to mark it. This is useful during an active investigation: annotate when an incident started, when a change was made, or when a service was restarted. Those markers stay on the chart for the duration of your session, giving you reference points as you work through the log panels below. If you are handing off an investigation to someone else, the annotations help communicate what has already been checked and what the timeline looks like.
